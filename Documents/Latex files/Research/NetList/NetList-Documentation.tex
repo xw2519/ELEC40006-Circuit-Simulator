@@ -1,0 +1,41 @@
+\documentclass[a4paper, titlepage]{article}
+
+\usepackage{biblatex}
+\addbibresource{biblography.bib}
+
+\title{NetList Documentation}
+\author{Adam, Brandon Cann, Xin Wang \thanks{document compiled by Xin Wang}}
+\date{7 May 2020}
+
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+
+    \maketitle
+    \tableofcontents
+    \pagebreak
+    \noindent
+    \section{Introduction}
+    According to the provided project briefing, a netlist describing the circuit will be provided in a file using a reduced SPICE format. It is required by the team to formulate an approach to read the file and store the information in a comprehensible data structure. 
+    \par
+    \noindent
+    This document will research the format of the SPICE netlist and explore the different approaches in storing the information a certain way. This document is primarily used for planning the most effective way to approach the problem. 
+    
+    \section{SPICE NetList format}
+    Source file for any version of SPICE has the following format \cite{spice}.
+    \begin{quotation}
+        {\fontfamily{qcr}\selectfont
+            TITLE \par
+            ELEMENT \par
+            .MODEL STATEMENTS \par
+            ANALYSIS COMMANDS \par
+            OUTPUT COMMANDS \par
+            .END \par
+        }
+    \end{quotation}
+
+    \pagebreak
+    \printbibliography[title={References}]
+
+\end{document}
