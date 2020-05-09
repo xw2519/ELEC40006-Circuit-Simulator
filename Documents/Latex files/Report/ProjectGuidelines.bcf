@@ -2183,7 +2183,6 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">spice</bcf:citekey>
-    <bcf:citekey order="2">parse</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

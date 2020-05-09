@@ -1,22 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.2)  6 MAY 2020 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  9 MAY 2020 13:51
 entering extended mode
-**"e:/Work/Latex Workspace/Project Guidelines/ProjectGuidelines.tex"
-("e:/Work/Latex Workspace/Project Guidelines/ProjectGuidelines.tex"
+**"e:/Work/ELEC40006/Documents/Latex files/Report/ProjectGuidelines.tex"
+("e:/Work/ELEC40006/Documents/Latex files/Report/ProjectGuidelines.tex"
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\report.cls"
-Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -38,58 +37,365 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count175
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count176
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count177
+\c@listtotal=\count178
+\c@listcount=\count179
+\c@liststart=\count180
+\c@liststop=\count181
+\c@citecount=\count182
+\c@citetotal=\count183
+\c@multicitecount=\count184
+\c@multicitetotal=\count185
+\c@instcount=\count186
+\c@maxnames=\count187
+\c@minnames=\count188
+\c@maxitems=\count189
+\c@minitems=\count190
+\c@citecounter=\count191
+\c@maxcitecounter=\count192
+\c@savedcitecounter=\count193
+\c@uniquelist=\count194
+\c@uniquename=\count195
+\c@refsection=\count196
+\c@refsegment=\count197
+\c@maxextratitle=\count198
+\c@maxextratitleyear=\count199
+\c@maxextraname=\count266
+\c@maxextradate=\count267
+\c@maxextraalpha=\count268
+\c@abbrvpenalty=\count269
+\c@highnamepenalty=\count270
+\c@lownamepenalty=\count271
+\c@maxparens=\count272
+\c@parenlevel=\count273
+\blx@tempcnta=\count274
+\blx@tempcntb=\count275
+\blx@tempcntc=\count276
+\blx@maxsection=\count277
+\blx@maxsegment@0=\count278
+\blx@notetype=\count279
+\blx@parenlevel@text=\count280
+\blx@parenlevel@foot=\count281
+\blx@sectionciteorder@0=\count282
+\blx@entrysetcounter=\count283
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language78
+\c@mincomprange=\count284
+\c@maxcomprange=\count285
+\c@mincompwidth=\count286
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count287
+\c@savedafterword=\count288
+\c@annotator=\count289
+\c@savedannotator=\count290
+\c@author=\count291
+\c@savedauthor=\count292
+\c@bookauthor=\count293
+\c@savedbookauthor=\count294
+\c@commentator=\count295
+\c@savedcommentator=\count296
+\c@editor=\count297
+\c@savededitor=\count298
+\c@editora=\count299
+\c@savededitora=\count300
+\c@editorb=\count301
+\c@savededitorb=\count302
+\c@editorc=\count303
+\c@savededitorc=\count304
+\c@foreword=\count305
+\c@savedforeword=\count306
+\c@holder=\count307
+\c@savedholder=\count308
+\c@introduction=\count309
+\c@savedintroduction=\count310
+\c@namea=\count311
+\c@savednamea=\count312
+\c@nameb=\count313
+\c@savednameb=\count314
+\c@namec=\count315
+\c@savednamec=\count316
+\c@translator=\count317
+\c@savedtranslator=\count318
+\c@shortauthor=\count319
+\c@savedshortauthor=\count320
+\c@shorteditor=\count321
+\c@savedshorteditor=\count322
+\c@labelname=\count323
+\c@savedlabelname=\count324
+\c@institution=\count325
+\c@savedinstitution=\count326
+\c@lista=\count327
+\c@savedlista=\count328
+\c@listb=\count329
+\c@savedlistb=\count330
+\c@listc=\count331
+\c@savedlistc=\count332
+\c@listd=\count333
+\c@savedlistd=\count334
+\c@liste=\count335
+\c@savedliste=\count336
+\c@listf=\count337
+\c@savedlistf=\count338
+\c@location=\count339
+\c@savedlocation=\count340
+\c@organization=\count341
+\c@savedorganization=\count342
+\c@origlocation=\count343
+\c@savedoriglocation=\count344
+\c@origpublisher=\count345
+\c@savedorigpublisher=\count346
+\c@publisher=\count347
+\c@savedpublisher=\count348
+\c@language=\count349
+\c@savedlanguage=\count350
+\c@origlanguage=\count351
+\c@savedoriglanguage=\count352
+\c@pageref=\count353
+\c@savedpageref=\count354
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
+\locallabelnumberwidth=\skip63
+\locallabelalphawidth=\skip64
+\localshorthandwidth=\skip65
+\localshortjournalwidth=\skip66
+\localshortserieswidth=\skip67
+\localshorttitlewidth=\skip68
+\localshortauthorwidth=\skip69
+\localshorteditorwidth=\skip70
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+\c@textcitecount=\count355
+\c@textcitetotal=\count356
+\c@textcitemaxnames=\count357
+\c@biburlbigbreakpenalty=\count358
+\c@biburlbreakpenalty=\count359
+\c@biburlnumpenalty=\count360
+\c@biburlucpenalty=\count361
+\c@biburllcpenalty=\count362
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count363
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count364
+\c@bbx:relatedtotal=\count365
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx"
+File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+File: biblatex.cfg 
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/parskip\parskip.sty"
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count366
+\lst@gtempboxa=\box45
+\lst@token=\toks16
+\lst@length=\count367
+\lst@currlwidth=\dimen137
+\lst@column=\count368
+\lst@pos=\count369
+\lst@lostspace=\dimen138
+\lst@width=\dimen139
+\lst@newlines=\count370
+\lst@lineno=\count371
+\lst@maxwidth=\dimen140
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count372
+\lst@skipnumbers=\count373
+\lst@framebox=\box46
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+\@quotelevel=\count374
+\@quotereset=\count375
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count176
-\l__pdf_internal_box=\box45
-) ("e:/Work\Latex Workspace\Project Guidelines\ProjectGuidelines.aux")
+\l__kernel_color_stack_int=\count376
+\l__pdf_internal_box=\box47
+) ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.aux")
 \openout1 = `ProjectGuidelines.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count177
-\scratchdimen=\dimen137
-\scratchbox=\box46
-\nofMPsegments=\count178
-\nofMParguments=\count179
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count180
-\MPscratchDim=\dimen138
-\MPnumerator=\count181
-\makeMPintoPDFobject=\count182
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count377
+\scratchdimen=\dimen141
+\scratchbox=\box48
+\nofMPsegments=\count378
+\nofMParguments=\count379
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen142
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
+\everyMPtoPDFconversion=\toks18
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-) [1
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `ProjectGuidelines.bcf'.
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\Latex Workspace\Project Guidelines\ProjectGuidelines.aux") ) 
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'ProjectGuidelines.bbl' found.
+ ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.bbl")
+Package biblatex Info: Reference section=0 on input line 15.
+Package biblatex Info: Reference segment=0 on input line 15.
+\c@lstlisting=\count383
+ [1
+
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.toc"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
+)
+\tf@toc=\write4
+\openout4 = `ProjectGuidelines.toc'.
+
+ [1] [2] [3] [4]
+<./Images/Netlist breakdown.png, id=27, 502.87875pt x 261.97874pt>
+File: ./Images/Netlist breakdown.png Graphic file (type png)
+<use ./Images/Netlist breakdown.png>
+Package pdftex.def Info: ./Images/Netlist breakdown.png  used on input line 89.
+(pdftex.def)             Requested size: 377.15813pt x 196.48357pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 94.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 94.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 102.
+ [5 <./Images/Netlist breakdown.png>] [6] [7] [8] [9] [10] ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.aux")
+Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
+\openout1 = `ProjectGuidelines.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1155 strings out of 480930
- 17763 string characters out of 2900700
- 250267 words of memory out of 3000000
- 17072 multiletter control sequences out of 15000+200000
- 534742 words of font info for 32 fonts, out of 3000000 for 9000
+ 10547 strings out of 480930
+ 186663 string characters out of 2900700
+ 860922 words of memory out of 3000000
+ 26342 multiletter control sequences out of 15000+200000
+ 540761 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,4n,25p,255b,122s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "e:/Work\Latex Workspace\Project Guidelines\ProjectGuidelines.pdf" (1 page, 42357 bytes).
+ 35i,8n,62p,875b,1714s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.pdf" (11 pages, 155875 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

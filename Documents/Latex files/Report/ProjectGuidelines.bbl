@@ -43,38 +43,6 @@
       \endverb
       \keyw{NetList}
     \endentry
-    \entry{parse}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0c032dac2de73cfdf81d1b36be8621cc}{%
-           family={Shankar},
-           familyi={S\bibinitperiod},
-           given={Archana},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d914915b9636943df69405ed649bc1ae}{%
-           family={Gilbert},
-           familyi={G\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-        {{hash=bbcb03a06e92a097d2cf53bbc48d9118}{%
-           family={Jampel},
-           familyi={J\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{8312717cf638dcc613433fef471c789f}
-      \strng{fullhash}{8312717cf638dcc613433fef471c789f}
-      \strng{bibnamehash}{8312717cf638dcc613433fef471c789f}
-      \strng{authorbibnamehash}{8312717cf638dcc613433fef471c789f}
-      \strng{authornamehash}{8312717cf638dcc613433fef471c789f}
-      \strng{authorfullhash}{8312717cf638dcc613433fef471c789f}
-      \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{title}{Transient Analysis and Synthesis of Linear Circuits using Constraint Logic Programming}
-      \field{year}{1996}
-    \endentry
   \enddatalist
 \endrefsection
 \endinput

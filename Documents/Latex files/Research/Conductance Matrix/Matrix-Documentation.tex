@@ -1,0 +1,28 @@
+\documentclass[a4paper, titlepage]{article}
+
+\usepackage{biblatex}
+\addbibresource{biblography.bib}
+\setcounter{tocdepth}{4}
+
+\title{NetList Documentation}
+\author{Adam, Brandon Cann, Xin Wang \thanks{document compiled by Xin Wang}}
+\date{7 May 2020}
+
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+    \section{Adjacency List}
+    An Adjacency List is a vector where each element is a pair, the pair being the edge destination and weight.
+
+    \subsection{Adjacency Matrix}
+    An Adjacency Matrix is a square matrix of size $N x N$. If the inputted graph has some edges from \textit{a} to \textit{b} then
+    in the Adjacency Matrix at the $a^{th}$ row and $b^{th}$ will be non-zero for a weighted graph otherwise it will default to 0.
+
+    \subsection{Trade-offs}
+    \begin{itemize}
+        \item For a sparse graph, Adjacency List requires less space because they do not waste any space to represent edges that are not present.
+        \item Different data structure facilitate different operations. For example, finding all adjacent vertices in an Adjacency List is 
+        found by reading the list. In an Adjacency Matrix, an entire row must be scanned.
+    \end{itemize}
+\end{document}
