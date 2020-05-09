@@ -26,15 +26,18 @@ struct CirElement
     float initval;
 };
 
+// Parser module
 // Returns boolean true if there is an aplhabetical letter
 bool isdigit(const std::string& input);
 
 // Return the float version of the abbreviated string 
 float custom_pow(std::string val_str);
 
+// Spilts string into words separated by space and pushed into a vector
+std::vector<std::string> tokeniser (std::string input);
+
 // Returns type CirElement from input stream
 CirElement parse(std::string input);
 
-std::vector<std::string> tokeniser (std::string input);
 
 #endif
