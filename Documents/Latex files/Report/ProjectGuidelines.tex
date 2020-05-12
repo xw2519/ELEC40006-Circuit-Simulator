@@ -15,7 +15,7 @@ tabsize=2
 \begin{document}
 \begin{titlepage}
 	\centering
-	{\scshape\LARGE ELEC4006 \par}
+	{\scshape\LARGE ELEC40006 \par}
 	\vspace{1cm}
 	{\scshape\Large Electronics design project\par}
 	\vspace{1.5cm}
@@ -41,19 +41,29 @@ into a graph data structure, performs analysis using conductance matrices and ou
 \end{abstract}
 \pagebreak
 \section{Overview of the report}
-This report is the distillation of multiple research documents relating to different components of the program.
+This report is the distillation of multiple research documents relating to different components of the program. \par
 Section 2 gives an abstract view of the design of the program, breaking the program down into 3 modules.
 Section 3 provides a summary of the testing methodologies and a comparison to both handwritten results and results of 
 established circuit simulator software. 
 Section 4 delves into the further work done and some potential ideas to build on.
 Section 5, the last section, summarises the report and discusses our overall experiences with the development of this project.
-
-\section{Design}
+\par
+\textit{Talk about added functions and anything else.}
+\pagebreak
+\section{Design of modules}
+The software package is spilt into 3 modules:
+\begin{itemize}
+	\item Parser
+	\item Analysis
+	\item Interpreter
+	\item Main
+\end{itemize}
 More in-depth information can be found under research papers of the respective topics.
+\footnote{Test scripts and their respective descriptions are found under "Tests Scripts" folder for reference.}
 \par
 Object Orientated Programming approach has to be implemented.
 
-\subsection{Parse Netlist}
+\subsection{Parse module}
 
 Format of an circuit description is \cite{spice}:
 		$$\tt{<letter><name><node\textit{i}> ... [modelname][parametervalues]}$$
@@ -68,7 +78,7 @@ The graph data structure contains the following member variables:
 \end{itemize}
 
 \par
-Aspects to consider regarding input component:
+Aspects to consider regarding parse module:
 \begin{itemize}
 	\item Identifying circuit elements
 	\item Support for powers of ten
@@ -81,8 +91,6 @@ Aspect to consider regarding storage component:
 \begin{itemize}
 	\item Proper constructors and deconstructors are implemented
 \end{itemize}
-
-\pagebreak
 Block diagram depicting the breakdown of Parse Netlist module:
 \begin{figure}[h]
     \centering
@@ -91,7 +99,8 @@ Block diagram depicting the breakdown of Parse Netlist module:
     \label{fig:Netlist breakdown}
 \end{figure}
 
-Pseudocode implementation: \footnote{Can be expanded to have a textfile containing the library of components supported which can be imported} \footnote{Test scripts and their respective descriptions are found under "Tests Scripts" folder for reference.}
+\subsubsection{Pseudocode implementation:}
+Can be expanded to have a textfile containing the library of components supported which can be imported.
 \begin{lstlisting}[language=C++]
 	CirElement 
 	{
@@ -143,10 +152,11 @@ Pseudocode implementation: \footnote{Can be expanded to have a textfile containi
 			}
 	}
 \end{lstlisting}
-
-\par
 \pagebreak
+\subsection{Analysis module}
 
+
+\pagebreak
 \section{Testing}
 \subsection{\textit{Data struct}}
 The script \textit{Data struct test.sh}, when called, will compile \textit{Data struct.cpp} and passes in input 

@@ -11,18 +11,20 @@
   breaklines=true,
   postbreak=\raisebox{0ex}[0ex][0ex]{\color{red}$\hookrightarrow$\space}
 }
-
+\graphicspath{ {./Images/} }
 \addbibresource{biblography.bib}
 \setcounter{tocdepth}{4}
 
-\title{Netlist Documentation}
+\title{Parser Documentation}
 \author{Adam, Brandon Cann, Xin Wang \thanks{document compiled by Xin Wang}}
 \date \today
+\date{ \today \\ v1.0}
 
 \setlength{\parskip}{1em}
 
 \begin{document}
     \maketitle
+    
     \tableofcontents
     \pagebreak
  
@@ -131,9 +133,18 @@
     \end{itemize}
     The theoretical output is an ordered vector of branches and an ordered vector of nodes. 
     \textbf{Position starts from 1 as node 0 indicates GND.}
+    \par
+    This area will be explored more in-depth in the analysis module.
+    \pagebreak
 
     \section{Implementation}
-    \subsection{struct CirElement}
+    Block diagram depicting the breakdown of Parse Netlist module:
+    \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.75]{Netlist breakdown}
+    \caption{Netlist module breakdown}
+    \label{fig:Netlist breakdown}
+    \end{figure}
     
     \begin{lstlisting}[language=C++]
         CirElement 
@@ -149,14 +160,16 @@
     
             methods:
     
-                parse(string: input)
+                parser(cin)
                 {
                     Tokenise
                     Put in values into respective variables
                     Detect values, pass into custom_pow
                     Detect if initial_val is entered:
                         Pass into variable otherwise default 0
+                    Push CirElement into vector
                 }
+
                 custom_pow(string: input)
                 {
                     Check if there are keywords e.g. k, m, M, G
@@ -172,12 +185,14 @@
                         Multiply/divide the digit by keyword
                         Recursion to cover case: 5M7k
                 }
+
                 tokeniser(string: input)
                 {
                     Call regex to tokenise the string 
                     Push each token into a vector 
                     Return vector
                 }
+
                 isdigit(string: input)
                 {
                     Iterate over string

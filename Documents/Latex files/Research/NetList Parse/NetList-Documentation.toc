@@ -14,8 +14,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Network Diagram/Graphs}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Implementation}{4}%
+\contentsline {section}{\numberline {5}Implementation}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}struct CirElement}{4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Miscellaneous}{6}%
+\contentsline {section}{\numberline {6}Miscellaneous}{7}%
