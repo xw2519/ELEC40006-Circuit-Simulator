@@ -90,16 +90,18 @@ float custom_pow(std::string val_str)
     return digits + custom_pow(val_str);
 }
 
-CirElement parse(std::string buf)
+std::vector<CirElement> parser(std::istream& cin)
 {
     CirElement x;
+    std::vector<CirElement> circuit;
     std::vector<std::string> store;
+    std::string line;
 
-    
+    while (std::getline(std::cin, line)){
     //Tokenise
-    store = tokeniser(buf);
+    store = tokeniser(line);
 
-    // Get element char
+    // Get circuit element name
     if (tolower(store[0][0]) == 'r' || tolower(store[0][0]) == 'c' || tolower(store[0][0]) == 'l' || tolower(store[0][0]) == 'v' || tolower(store[0][0]) == 'i')
     {
         //std::cout << "got ehre" << std::endl;
@@ -116,7 +118,6 @@ CirElement parse(std::string buf)
     
     // Get nodes
     x.n1 = store[1];
-
     x.n2 = store[2];
     
     // Detect and get values. Must have values
@@ -141,6 +142,9 @@ CirElement parse(std::string buf)
         x.initval = 0;
     }
     
-    return x;
+    // Push into vector representing circuit inputted
+    circuit.push_back(x);
+    }
+    return circuit;
 }
 

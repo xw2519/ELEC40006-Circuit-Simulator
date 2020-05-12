@@ -37,7 +37,7 @@ float custom_pow(std::string val_str);
 std::vector<std::string> tokeniser (std::string input);
 
 // Returns type CirElement from input stream
-CirElement parse(std::string input);
+std::vector<CirElement> parser(std::istream& cin);
 
 
 #endif

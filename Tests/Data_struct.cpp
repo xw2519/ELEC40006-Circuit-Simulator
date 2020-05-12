@@ -10,11 +10,7 @@ int main()
     vector<CirElement> store;
     CirElement x;
 
-    while (std::getline(std::cin, line))
-    {
-        // cout << "Input " << line << endl;
-        store.push_back(parse(line));
-    }
+    store = parser(cin);
     
     for (int i = 0; i < store.size(); i++)
     {
