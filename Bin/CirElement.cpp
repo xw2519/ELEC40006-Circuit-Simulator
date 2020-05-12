@@ -96,11 +96,26 @@ std::vector<CirElement> parser(std::istream& cin)
     std::vector<CirElement> circuit;
     std::vector<std::string> store;
     std::string line;
+    bool firsttime = true;
 
-    while (std::getline(std::cin, line)){
+    while (std::getline(std::cin, line))
+    {
+
+    // Check for beginning TITLE
+    if (firsttime)
+    {
+        firsttime = false;
+        continue;
+    }
+
+    // Check for .END
+    if (line == ".END")
+    {
+        break;
+    }
+    
     //Tokenise
     store = tokeniser(line);
-
     // Get circuit element name
     if (tolower(store[0][0]) == 'r' || tolower(store[0][0]) == 'c' || tolower(store[0][0]) == 'l' || tolower(store[0][0]) == 'v' || tolower(store[0][0]) == 'i')
     {
@@ -116,9 +131,9 @@ std::vector<CirElement> parser(std::istream& cin)
         exit;
     }
     
-    // Get nodes
-    x.n1 = store[1];
-    x.n2 = store[2];
+    // Get nodes in the format "n1", "n2", etc
+    x.n1 = stoi(store[1]);
+    x.n2 = stoi(store[2]);
     
     // Detect and get values. Must have values
     if (store.size() < 3)
@@ -148,3 +163,36 @@ std::vector<CirElement> parser(std::istream& cin)
     return circuit;
 }
 
+int N_int(std::vector<CirElement> circuit)
+{
+    int M, N = 0;
+
+    // Scan for 'v' or 'i' independent sources
+    for(auto const& value: circuit)
+    {
+        if (tolower(value.D) == 'v' || tolower(value.D) == 'i')
+        {
+            M++;
+        }
+    }
+    
+    assert(circuit.size()>M);
+     return (circuit.size() - M);
+}
+
+int M_int(std::vector<CirElement> circuit)
+{
+    int M, N = 0;
+
+    // Scan for 'v' or 'i' independent sources
+    for(auto const& value: circuit)
+    {
+        if (tolower(value.D) == 'v' || tolower(value.D) == 'i')
+        {
+            M++;
+        }
+    }
+    
+    assert(circuit.size()>M);
+    return M;
+}

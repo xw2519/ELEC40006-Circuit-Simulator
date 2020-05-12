@@ -20,8 +20,8 @@ struct CirElement
 {
     char D;
     std::string descrip;
-    std::string n1;
-    std::string n2;
+    int n1;
+    int n2;
     float value;
     float initval;
 };
@@ -39,5 +39,10 @@ std::vector<std::string> tokeniser (std::string input);
 // Returns type CirElement from input stream
 std::vector<CirElement> parser(std::istream& cin);
 
+// Return number of elements in circuit: N
+int N_int(std::vector<CirElement> circuit);
+
+// Return number of independent voltage sources in circuit: M
+int M_int(std::vector<CirElement> circuit);
 
 #endif
