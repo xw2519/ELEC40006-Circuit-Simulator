@@ -11,6 +11,8 @@ int main()
     CirElement x;
 
     store = parser(cin);
+
+    cout << "N: " << N_int(store) << " " << "M: " << M_int(store) << endl;
     
     for (int i = 0; i < store.size(); i++)
     {

@@ -1,5 +1,7 @@
 set -e
 
-g++ -I /path/to/Eigen/ my_program.cpp TransientAnalysis.cpp CirElement.cpp -o zoology
+g++ -I /path/to/Eigen/ TransientAnalysis.cpp CirElement.cpp -o zoology
 
-./Data_struct < Data_struct_input.txt
+
+./zoology < ../../ELEC40006/Tests/Data_struct_input.txt 
+

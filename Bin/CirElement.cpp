@@ -165,7 +165,8 @@ std::vector<CirElement> parser(std::istream& cin)
 
 int N_int(std::vector<CirElement> circuit)
 {
-    int M, N = 0;
+    int M = 0;
+    int N = 0;
 
     // Scan for 'v' or 'i' independent sources
     for(auto const& value: circuit)
@@ -176,13 +177,13 @@ int N_int(std::vector<CirElement> circuit)
         }
     }
     
-    assert(circuit.size()>M);
      return (circuit.size() - M);
 }
 
 int M_int(std::vector<CirElement> circuit)
 {
-    int M, N = 0;
+    int M = 0;
+    int N = 0;
 
     // Scan for 'v' or 'i' independent sources
     for(auto const& value: circuit)
@@ -193,6 +194,5 @@ int M_int(std::vector<CirElement> circuit)
         }
     }
     
-    assert(circuit.size()>M);
     return M;
 }
