@@ -153,11 +153,16 @@ INPUT .\Images\Analysis breakdown.png
 INPUT .\Images\Analysis breakdown.png
 INPUT .\Images\Analysis breakdown.png
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
-INPUT Images\Matrix struct.png
-INPUT .\Images\Matrix struct.png
-INPUT .\Images\Matrix struct.png
-INPUT .\Images\Matrix struct.png
-INPUT .\Images\Matrix struct.png
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux

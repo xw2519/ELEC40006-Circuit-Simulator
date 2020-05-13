@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  12 MAY 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  12 MAY 2020 20:20
 entering extended mode
 **"e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
 ("e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
@@ -359,9 +359,6 @@ LaTeX Warning: Label `fig:figure3' multiply defined.
 
 LaTeX Warning: Label `fig:figure3' multiply defined.
 
-
-LaTeX Warning: Label `fig:figure3' multiply defined.
-
 )
 \openout1 = `"Analysis Module.aux"'.
 
@@ -474,18 +471,47 @@ File: ./Images/Matrix4.png Graphic file (type png)
 <use ./Images/Matrix4.png>
 Package pdftex.def Info: ./Images/Matrix4.png  used on input line 199.
 (pdftex.def)             Requested size: 14.90564pt x 23.48769pt.
- [8 <./Images/Matrix4.png>]
-<./Images/Analysis breakdown.png, id=62, 724.7075pt x 202.7575pt>
+ [8 <./Images/Matrix4.png>] [9]
+<./Images/Analysis breakdown.png, id=65, 322.20375pt x 202.7575pt>
 File: ./Images/Analysis breakdown.png Graphic file (type png)
 <use ./Images/Analysis breakdown.png>
-Package pdftex.def Info: ./Images/Analysis breakdown.png  used on input line 218.
-(pdftex.def)             Requested size: 724.70573pt x 202.757pt.
-<./Images/Matrix struct.png, id=63, 750.805pt x 353.32pt>
-File: ./Images/Matrix struct.png Graphic file (type png)
-<use ./Images/Matrix struct.png>
-Package pdftex.def Info: ./Images/Matrix struct.png  used on input line 228.
-(pdftex.def)             Requested size: 750.80316pt x 353.31914pt.
- [9 <./Images/Analysis breakdown.png> <./Images/Matrix struct.png>] [10] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux")
+Package pdftex.def Info: ./Images/Analysis breakdown.png  used on input line 221.
+(pdftex.def)             Requested size: 322.20296pt x 202.757pt.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 229.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 241.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 241.
+
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 250--251
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[10 <./Images/Analysis breakdown.png>]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 264--265
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 273--274
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[11] [12] [13] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -494,17 +520,17 @@ Package logreq Info: Writing requests to '"Analysis Module".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11722 strings out of 480930
- 209773 string characters out of 2900700
- 835079 words of memory out of 3000000
- 27507 multiletter control sequences out of 15000+200000
+ 12259 strings out of 480930
+ 215357 string characters out of 2900700
+ 844080 words of memory out of 3000000
+ 28031 multiletter control sequences out of 15000+200000
  538655 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,61p,891b,1402s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,62p,891b,1571s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.pdf" (11 pages, 323679 bytes).
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.pdf" (14 pages, 321029 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

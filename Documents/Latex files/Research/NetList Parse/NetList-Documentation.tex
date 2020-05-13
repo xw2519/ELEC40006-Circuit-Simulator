@@ -141,11 +141,11 @@
     Block diagram depicting the breakdown of Parse Netlist module:
     \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.75]{Netlist breakdown}
+    \includegraphics[width=145mm,scale=1]{Netlist breakdown}
     \caption{Netlist module breakdown}
     \label{fig:Netlist breakdown}
     \end{figure}
-    
+    \subsection{CirElement struct}
     \begin{lstlisting}[language=C++]
         CirElement 
         {
@@ -157,48 +157,83 @@
                 node2: node this node is connected to
                 value: float
                 initial_val: float
-    
-            methods:
-    
-                parser(cin)
-                {
-                    Tokenise
-                    Put in values into respective variables
-                    Detect values, pass into custom_pow
-                    Detect if initial_val is entered:
-                        Pass into variable otherwise default 0
-                    Push CirElement into vector
-                }
+        }
+    \end{lstlisting}
+    \subsection{Parser}
+    \begin{lstlisting}[language=C++]
+        parser(cin)
+            {
+                Tokenise
+                Put in values into respective variables
+                Detect values, pass into custom_pow
+                Detect if initial_val is entered:
+                    Pass into variable otherwise default 0
+                Push CirElement into vector
+            }
+    \end{lstlisting}
+    \subsubsection{custom pow}
 
-                custom_pow(string: input)
-                {
-                    Check if there are keywords e.g. k, m, M, G
+    \begin{lstlisting}[language=C++]
+        custom_pow(string: input)
+            {
+                Check if there are keywords e.g. k, m, M, G
     
-                    If not present, two scenario:
-                        Unknown letter present: extract digits 
-                        Convert to float
-                        Empty string (End of recursion): return 0
+                If not present, two scenario:
+                    Unknown letter present: extract digits 
+                    Convert to float
+                    Empty string (End of recursion): return 0
     
-                    If present:
-                        Find position where keyword appears
-                        Take string before keyword and convert
-                        Multiply/divide the digit by keyword
-                        Recursion to cover case: 5M7k
-                }
+                If present:
+                    Find position where keyword appears
+                    Take string before keyword and convert
+                    Multiply/divide the digit by keyword
+                    Recursion to cover case: 5M7k
+            }
+    \end{lstlisting}
 
-                tokeniser(string: input)
-                {
-                    Call regex to tokenise the string 
-                    Push each token into a vector 
-                    Return vector
-                }
+    \subsubsection{tokeniser}
+    \begin{lstlisting}[language=C++]
+        tokeniser(string: input)
+            {
+                Call regex to tokenise the string 
+                Push each token into a vector 
+                Return vector
+            }
+    \end{lstlisting}
 
-                isdigit(string: input)
-                {
-                    Iterate over string
-                    Take each character and into 'isdigit' test
-                    Return boolean
-                }
+    \subsubsection{isdigit}
+    \begin{lstlisting}[language=C++]
+        isdigit(string: input)
+            {
+                Iterate over string
+                Take each character and into 'isdigit' test
+                Return boolean
+            }
+    \end{lstlisting}
+    \subsection{Node N}
+    \begin{lstlisting}[language=C++]
+        getnodeN(vector<CirElement>: input)
+        {
+            Declare counter: M
+            Find vector size: S
+            Scan entire vector
+            {
+                Find times 'V' or 'I' occur
+            }
+            'N' is S - M
+            Return N
+        }
+    \end{lstlisting}
+    \subsection{Node M}
+    \begin{lstlisting}[language=C++]
+        getnodeN(vector<CirElement>: input)
+        {
+            Declare counter: M
+            Scan entire vector
+            {
+                Find times 'V' or 'I' occur
+            }
+            Return M
         }
     \end{lstlisting}
 

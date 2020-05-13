@@ -210,8 +210,11 @@
         \item $b_a$: $N \times 1$ Either 0 or the sum of independent current sources.
         \item $b_b$: $M \times 1$ Values of independent voltage sources.
     \end{itemize}
-
     \pagebreak
+    \section{The use of Eigen library}
+
+
+    \pagebreak    
     \section{Implementation}
     \begin{figure}[htp]
         \centering
@@ -219,18 +222,63 @@
         \caption{\textit{Analysis module} breakdown}
         \label{fig:figure3}
     \end{figure}
-    \subsection{struct Matrix}
-    A matrix is represented by a vector of vectors.
-    \par
-    A breakdown of the Matrix data type and its methods.
-    \begin{figure}[htp]
-        \centering
-        \includegraphics[width=80mm,scale=1]{Matrix struct}
-        \caption{\textit{Matrix submodule} breakdown}
-        \label{fig:figure3}
-    \end{figure}
 
+    \subsection{Analysis}
+    \begin{lstlisting}[language=C++]
+        Analyser
+        {
+            Get N and M
+            Initialise matrices
+            Form Ax = b
+            Check circuit semantics
+            Find inverse of A
+            Solve for x
+        }
+    \end{lstlisting}
+
+    \subsubsection{FormMatrix}
+    \begin{lstlisting}[language=C++]
+        FormMatrix(vector<CirElement>)
+        {
+            For loop over entire circuit vector
+            {
+                Identify component type
+
+                Case: R,C or L
+                {
+                    Check if grounded
+                    Insert in A matrix [Diagonal and non-diagonal]
+                }
+                
+                Case: I
+                {
+                    Check if grounded
+                    Insert in b matrix
+                }
+
+                Case: V
+                {
+                    Check if grounded
+                    Add 1 or -1 in A matrix             
+                    Insert in b matrix
+                    Insert in x matrix [Unknown values are 0]            
+                }
+            }
+        }
+    \end{lstlisting}
+    \subsubsection{SemanticCheck}
+    \begin{lstlisting}[language=C++]
+        SemanticCheck(vector<CirElement>)
+        {
+            Check if node are at least paired [Ignore node 0]
+        }
+    \end{lstlisting}
     
+    \pagebreak
+    \section{Miscellaneous}
+
+
+
     \pagebreak
     \printbibliography[title={References}]
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  12 MAY 2020 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  12 MAY 2020 19:08
 entering extended mode
 **"e:/Work/ELEC40006/Documents/Latex files/Research/NetList Parse/NetList-Documentation.tex"
 ("e:/Work/ELEC40006/Documents/Latex files/Research/NetList Parse/NetList-Documentation.tex"
@@ -390,12 +390,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    Font shape `OT1/qcr/bx/n' in size <12> not available
 (Font)              Font shape `OT1/qcr/b/n' tried instead on input line 73.
  [3] [4]
-<./Images/Netlist breakdown.png, id=33, 402.50375pt x 221.82875pt>
+<./Images/Netlist breakdown.png, id=33, 795.97375pt x 363.3575pt>
 File: ./Images/Netlist breakdown.png Graphic file (type png)
 <use ./Images/Netlist breakdown.png>
 Package pdftex.def Info: ./Images/Netlist breakdown.png  used on input line 144.
-(pdftex.def)             Requested size: 301.87706pt x 166.37114pt.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+(pdftex.def)             Requested size: 795.97182pt x 363.3566pt.
+
+Overfull \hbox (67.56058pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -404,23 +409,23 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 156.
- [5 <./Images/Netlist breakdown.png>] [6] [7] [8] ("e:/Work\ELEC40006\Documents\Latex files\Research\NetList Parse\NetList-Documentation.aux")
+ [5 <./Images/Netlist breakdown.png>] [6] [7] [8] [9] ("e:/Work\ELEC40006\Documents\Latex files\Research\NetList Parse\NetList-Documentation.aux")
 Package logreq Info: Writing requests to 'NetList-Documentation.run.xml'.
 \openout1 = `NetList-Documentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11061 strings out of 480930
- 193096 string characters out of 2900700
- 863301 words of memory out of 3000000
- 26843 multiletter control sequences out of 15000+200000
+ 11080 strings out of 480930
+ 193275 string characters out of 2900700
+ 889301 words of memory out of 3000000
+ 26862 multiletter control sequences out of 15000+200000
  539650 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,62p,895b,1722s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,62p,895b,1613s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rmm.enc} <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qcrb.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\NetList Parse\NetList-Documentation.pdf" (9 pages, 230912 bytes).
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\NetList Parse\NetList-Documentation.pdf" (10 pages, 235881 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
