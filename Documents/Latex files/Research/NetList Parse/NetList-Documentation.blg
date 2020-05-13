@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'NetList-Documentation.blg'
+[69] biber-MSWIN64:322> INFO - === 
+[88] Biber.pm:415> INFO - Reading 'NetList-Documentation.bcf'
+[184] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[199] Biber.pm:4256> INFO - Processing section 0
+[200] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[209] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[224] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[226] bibtex.pm:1653> INFO - LaTeX decoding ...
+[233] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[265] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[267] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[268] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[272] bbl.pm:652> INFO - Writing 'NetList-Documentation.bbl' with encoding 'UTF-8'
+[288] bbl.pm:755> INFO - Output to NetList-Documentation.bbl

@@ -1,0 +1,19 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[1] Config.pm:307> INFO - Logfile is 'Analysis Module.blg'
+[71] biber-MSWIN64:322> INFO - === 
+[90] Biber.pm:415> INFO - Reading 'Analysis Module.bcf'
+[187] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[203] Biber.pm:4256> INFO - Processing section 0
+[204] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[214] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[230] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[233] bibtex.pm:1653> INFO - LaTeX decoding ...
+[239] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[257] Utils.pm:304> WARN - year field '2005 - 2019' in entry 'nodeanalysis' is not an integer - this will probably not sort properly.
+[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[266] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[267] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[268] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[269] bbl.pm:652> INFO - Writing 'Analysis Module.bbl' with encoding 'UTF-8'
+[271] bbl.pm:755> INFO - Output to Analysis Module.bbl
+[272] Biber.pm:128> INFO - WARNINGS: 1

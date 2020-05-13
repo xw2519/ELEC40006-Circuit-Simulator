@@ -2,14 +2,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Overview of the report}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Design}{3}%
+\contentsline {section}{\numberline {2}Design of modules}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Parse Netlist}{3}%
+\contentsline {subsection}{\numberline {2.1}Parse module}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Testing}{7}%
+\contentsline {subsubsection}{\numberline {2.1.1}Pseudocode implementation:}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}\textit {Data struct}}{7}%
+\contentsline {subsection}{\numberline {2.2}Analysis module}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Add-on}{8}%
+\contentsline {section}{\numberline {3}Testing}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusion}{9}%
+\contentsline {subsection}{\numberline {3.1}\textit {Data struct}}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Add-on}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusion}{10}%
