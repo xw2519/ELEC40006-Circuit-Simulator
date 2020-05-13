@@ -1,9 +1,9 @@
 # Circuit Simulator
 
 A C++ software package that performs a transient simulation of a circuit
-by applying concepts of KCL and linear algebra to solve for the voltage at each node per time cycle.
+by applying concepts of Modified Nodal Analysis (MNA) to solve for the unknown voltages at each node per time cycle.
 
-Input file describing the circuit follows the format of SPICE netlists.
+Input file describing the circuit follows the format of SPICE netlists. For more information detailing the format of SPICE netlists, please see Project Report documentation.
 
 ## Table of content
 - [Circuit Simulator](#circuit-simulator)
@@ -12,9 +12,8 @@ Input file describing the circuit follows the format of SPICE netlists.
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installing](#installing)
-  - [Running the tests](#running-the-tests)
-    - [Break down into end to end tests](#break-down-into-end-to-end-tests)
-    - [And coding style tests](#and-coding-style-tests)
+  - [Test scripts](#test-scripts)
+    - [Data_struct test](#datastruct-test)
   - [Documentation](#documentation)
     - [Project Report](#project-report)
     - [Research Documents](#research-documents)
@@ -23,7 +22,7 @@ Input file describing the circuit follows the format of SPICE netlists.
   - [Acknowledgments](#acknowledgments)
 ## Link to Github repository
 
-https://github.com/xw2519/ELEC40006.git
+Project repository: https://github.com/xw2519/ELEC40006.git
 
 ## Getting Started
 
@@ -55,24 +54,18 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Test scripts
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+### Data_struct test
 
-Explain what these tests test and why
+*Data_struct_test.sh* compiles *Parser.cpp* with *Data_struct.cpp* into a file called *Data_struct* before running it with the input textfile *Data_struct_input.txt*. 
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+This test shows the functionality of the Parser module, testing the functionality of its support functions such as *tokeniser* and *converter*.
 
 ```
-Give an example
+./Data_struct_test.sh
 ```
 
 ## Documentation
@@ -99,10 +92,7 @@ Each document is titled by the date of the meeting in the format DDMMYYYY.
 
 ## Scope of functionality
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Kexing Ying [Department of Mathematics]
