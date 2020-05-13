@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'NetList-Documentation.blg'
-[80] biber-MSWIN64:322> INFO - === 
-[102] Biber.pm:415> INFO - Reading 'NetList-Documentation.bcf'
-[213] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
-[231] Biber.pm:4256> INFO - Processing section 0
-[232] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
-[251] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
-[270] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
-[273] bibtex.pm:1653> INFO - LaTeX decoding ...
-[278] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
-[322] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[324] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[324] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[327] bbl.pm:652> INFO - Writing 'NetList-Documentation.bbl' with encoding 'UTF-8'
-[333] bbl.pm:755> INFO - Output to NetList-Documentation.bbl
+[1] Config.pm:307> INFO - Logfile is 'NetList-Documentation.blg'
+[79] biber-MSWIN64:322> INFO - === 
+[101] Biber.pm:415> INFO - Reading 'NetList-Documentation.bcf'
+[210] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[228] Biber.pm:4256> INFO - Processing section 0
+[229] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[254] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[271] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[274] bibtex.pm:1653> INFO - LaTeX decoding ...
+[280] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[314] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[315] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[315] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[318] bbl.pm:652> INFO - Writing 'NetList-Documentation.bbl' with encoding 'UTF-8'
+[321] bbl.pm:755> INFO - Output to NetList-Documentation.bbl
