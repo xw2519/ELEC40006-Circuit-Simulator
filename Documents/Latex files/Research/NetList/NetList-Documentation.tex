@@ -119,12 +119,12 @@
         \item Directed and Weighted
     \end{itemize}
     \par
-    A graph $G=(X,U)$ consists of: \cite{parse}
+    A graph $G=(V, E)$ consists of: \cite{parse}  % changed X to V for vertices and from U to E for edges
     \begin{itemize}
-        \item a finite set $X = {x1,x2,...,xn}$ whose elements are called nodes or vertices
-        \item a subset U of the Cartesian product $X x X$, the elements of which are called arcs.
+        \item a finite set $V = \left\{ x_1, x_2, \dots, x_n \right \}$ whose elements are called nodes or vertices % added underscore for index and changed { } to \{ \} for proper notation of sets
+        \item a subset $E$ of the Cartesian product $V \times V$, the elements of which are called arcs. % changed x to \times
     \end{itemize}
-    The network graph defined will consist of two vector structure:
+    The network graph defined will consists of two vector structures:
     \begin{itemize}
         \item Vector of nodes in the circuit
         \item Vector of branches in the circuit
