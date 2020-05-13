@@ -1,4 +1,4 @@
-#include "../../../Documents/ELEC40006/Bin/CirElement.hpp"
+#include "../../../Documents/ELEC40006/Bin/Parser.hpp"
 #include <iostream>
 #include <vector>
 
@@ -10,11 +10,9 @@ int main()
     vector<CirElement> store;
     CirElement x;
 
-    while (std::getline(std::cin, line))
-    {
-        // cout << "Input " << line << endl;
-        store.push_back(parse(line));
-    }
+    store = parser(cin);
+
+    cout << "N: " << N_int(store) << " " << "M: " << M_int(store) << endl;
     
     for (int i = 0; i < store.size(); i++)
     {
