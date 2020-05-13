@@ -8,8 +8,8 @@
 # ===============================================================
 */
 
-#ifndef CirElement_hpp
-#define CirElement_hpp
+#ifndef Parser_hpp
+#define Parser_hpp
 
 #include <string>
 #include <iostream>
@@ -28,10 +28,10 @@ struct CirElement
 
 // Parser module
 // Returns boolean true if there is an aplhabetical letter
-bool isdigit(const std::string& input);
+bool is_digit(const std::string& input);
 
 // Return the float version of the abbreviated string 
-float custom_pow(std::string val_str);
+float converter(std::string val_str);
 
 // Spilts string into words separated by space and pushed into a vector
 std::vector<std::string> tokeniser (std::string input);
@@ -39,6 +39,8 @@ std::vector<std::string> tokeniser (std::string input);
 // Returns type CirElement from input stream
 std::vector<CirElement> parser(std::istream& cin);
 
+
+// Analysis module
 // Return number of elements in circuit: N
 int N_int(std::vector<CirElement> circuit);
 

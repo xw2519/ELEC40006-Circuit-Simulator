@@ -1,4 +1,4 @@
-#include "CirElement.hpp"
+#include "Parser.hpp"
 #include <cmath>
 #include <assert.h>
 #include <regex>
@@ -27,7 +27,7 @@ bool is_digit(const std::string& input)
     return !input.empty() && it == input.end();
 }
 
-float custom_pow(std::string val_str)
+float converter(std::string val_str)
 {
     float digits;
     // Check if there are any abbreviations
@@ -43,9 +43,16 @@ float custom_pow(std::string val_str)
             {
                 str_digits = str_digits + c;
             }
+        }
+        
+        if (str_digits.size() == 0)
+        {
+            return 0;
+        }
+        else
+        {
             return std::stof(str_digits);
         }
-        return 0;
     }
 
     // A recognised abbreviation detected
@@ -87,7 +94,7 @@ float custom_pow(std::string val_str)
     val_str.erase(0, abbre_pos+1);
 
     // Recursion to cover the rest of the string
-    return digits + custom_pow(val_str);
+    return digits;
 }
 
 std::vector<CirElement> parser(std::istream& cin)
@@ -109,7 +116,7 @@ std::vector<CirElement> parser(std::istream& cin)
     }
 
     // Check for .END
-    if (line == ".END")
+    if (line == ".end")
     {
         break;
     }
@@ -132,8 +139,9 @@ std::vector<CirElement> parser(std::istream& cin)
     }
     
     // Get nodes in the format "n1", "n2", etc
-    x.n1 = stoi(store[1]);
-    x.n2 = stoi(store[2]);
+    // Remove 'N' char from string
+    x.n1 = stoi(store[1].erase(0,1));
+    x.n2 = stoi(store[2].erase(0,1));
     
     // Detect and get values. Must have values
     if (store.size() < 3)
@@ -145,7 +153,7 @@ std::vector<CirElement> parser(std::istream& cin)
 
     // Ensure all digits
     //assert(is_digit(values));
-    x.value = custom_pow(values);
+    x.value = converter(values);
 
     // Detect if optional entry is entered otherwise default to 0
     if (store.size()!=4)
