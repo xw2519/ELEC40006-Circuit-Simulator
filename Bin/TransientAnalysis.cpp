@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Eigen/Core"
-#include "CirElement.hpp"
+#include "Eigen/Dense"
+#include "Parser.hpp"
 #include <vector>
 
 using namespace std;
@@ -18,19 +19,18 @@ int main()
     // Form matrices "Ax = b"
     // Declare and intialise matrices to 0
     Eigen::MatrixXf A; A.setZero((N+M),(N+M));
-    Eigen::VectorXf x = Eigen::VectorXf::Zero((N+M)); // Declare [(N+M) X 1] matrix of type float
     Eigen::VectorXf b = Eigen::VectorXf::Zero((N+M));
 
     cout << "A: " << endl;
     cout << A << endl;
-    cout << "x: " << endl;
-    cout << x << endl;
+    
     cout << "b: " <<endl;
     cout << b << endl;
 
     // Variable declarations
     int vcount = 0;
 
+    // Matrix entry module
     // Loop over entire circuit vector and fill in values
     for(auto const& value: circuit)
     {
@@ -101,6 +101,9 @@ int main()
             }
         }
     }
+
+    // Get solution: matrix x
+    Eigen::VectorXf x = A.colPivHouseholderQr().solve(b);
 
     cout << "A: " << endl;
     cout << A << endl;
