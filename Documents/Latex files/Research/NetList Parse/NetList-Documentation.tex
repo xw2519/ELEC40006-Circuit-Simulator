@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{biblatex}
 \usepackage{parskip}
+\usepackage{multicol}
 
 \usepackage{listings}
 \usepackage{xcolor}
@@ -30,34 +31,62 @@
  
     \section{Introduction}
     \indent
-    According to the provided project briefing, a netlist describing the circuit will be provided in a file using a reduced SPICE format. It is required by the team to formulate an approach to read the file and store the information in a comprehensible data structure. 
+    Based on the provided project briefing, a netlist describing the circuit will be provided in a file 
+    using a reduced SPICE format. It is required by the team to formulate an approach to reading the input format and 
+    store the information in a comprehensible and efficient data structure. 
     \par
-    This document will research the format of the SPICE netlist and explore the different approaches in storing the information a certain way. This document is primarily used for planning the most effective way to approach the problem
-    as well as allowing fellow teammates to engage productively on a equal knowledge footing. 
+    This document will research the format of the SPICE netlist and explore the different approaches in 
+    storing the information a certain way. 
+    \par
+    \begin{center}
+        \textit{This document is primarily used for planning the most effective 
+        way to approach the problem as well as allowing fellow teammates to 
+        engage productively on a equal knowledge footing.}
+    \end{center}
     \section{Input (.cir) file}
     Source file for any version of SPICE has the following format \cite{spice}.
     \begin{quotation}
         {\fontfamily{qcr}\selectfont
-            TITLE \par
-            ELEMENT \par
-            .MODEL STATEMENTS \par
-            ANALYSIS COMMANDS \par
-            OUTPUT COMMANDS \par
-            .END \par
+            title \par
+            elements \par
+            .model statements \par
+            analysis commands \par
+            output commands \par
+            .end \par
         }
     \end{quotation}
 
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=60mm,scale=1]{spice netlist example}
+        \caption{Netlist input example}
+        \label{fig:Netlist input example}
+    \end{figure}
+
     \textbf{Important points to note:}
     \begin{itemize}
-        \item First line {\fontfamily{qcr}\selectfont TITLE } is used as a title on output files.
-        \item File must end with command {\fontfamily{qcr}\selectfont .END} followed by a new line.
+        \item First line {\fontfamily{qcr}\selectfont title } is used as a title on output files.
+        \begin{itemize}
+            \item Parser ignores the first line of the netlist.
+        \end{itemize}
+        \item File must end with command {\fontfamily{qcr}\selectfont .end}.
+        \begin{itemize}
+            \item Parser exits when {\fontfamily{qcr}\selectfont .end} is encountered.
+        \end{itemize}
         \item Comment begins with '*' which covers entire line.
+        \begin{itemize}
+            \item Parser ignores entire line if a '*' char is at the beginning.
+        \end{itemize}
     \end{itemize}
 
     \section{Netlist Element Format}
-    A circuit description is called a \textbf{netlist} which consists of statements defining a each circuit element.
+    A \textbf{netlist} will contain a set of statements defining elements in a circuit.
     \par
-    Connections are described by naming nodes [Actually stored as numbers].
+    Connections are described by naming nodes. The program will automatically assign a number to the nodes in the circuit
+    starting from 1. 
+    \par
+    \textbf{Node 0 is defined as Ground}. It is necessary to have a Node 0 since it is the reference point for 
+    all voltages specified.
     \par
     Format of an element description is:
         $$\tt{<D><description> <n1> <n2> [value] [parameters]}$$
@@ -67,17 +96,23 @@
             \item $\tt{[value]}$: The value a circuit component takes e.g. 500 ohms
         \end{itemize}
     \par
-    We have to consider the situation where the input syntax is correct but the circuit represented is wrong.
-    To overcome this, we need a function to check if the circuit described is realistic. 
+    Initial stage of the parser will only be able to support input with nodes starting from N1 and ground defined as N0.
+    SPICE defined ground node as $0$. Suport for complex values such as 4k5 will be added at a later stage too.
+    This will be revised when basic function of Analysis module is implemented.
+    \par
+    We have to consider a situation where the input syntax is correct but the circuit represented is unrealizable.
+    To overcome this, we will need a function to check if the circuit described is realistic. This is explored more
+    in the Analysis module.
 
-    \subsection{Passive Elements in {\fontfamily{qcr}\selectfont 'letter'}}
+    \subsection{Elements in {\fontfamily{qcr}\selectfont 'D'}}
+    Current supported elements are basic passive elements. \par
     Passive elements are composed of the following:
     \begin{itemize}
         \item Resistors: {\fontfamily{qcr}\selectfont R} $$ \tt R<description> <n1> <n2> <value> $$
-        \item Capacitor: {\fontfamily{qcr}\selectfont C} where we can specify the initial value of C for transient analysis.$$ \tt C<description> <n1> <n2> <value> [ic=<value>] $$
-        \item Inductor: {\fontfamily{qcr}\selectfont L} where we can specify the initial value of L for transient analysis.$$ \tt L<description> <n1> <n2> <value> [il=<value>] $$
+        \item Capacitor: {\fontfamily{qcr}\selectfont C}. $$ \tt C<description> <n1> <n2> <value>$$
+        \item Inductor: {\fontfamily{qcr}\selectfont L}. $$ \tt L<description> <n1> <n2> <value>$$
     \end{itemize}
-
+    Both $C$ and $L$ will have to consider complex cases. First version implemented will cover resistors only.
     \subsection{Independent Sources}
     \begin{itemize}
         \item Voltage Sources 
@@ -93,10 +128,13 @@
     \par
     The character after the letter must be a unique instance name and followed by the nodes associated with + and - respectively.
     \par
-    \textbf {When users are entering component values, it is important that the software recognises common abbreviations for units.}
+    \textbf {When users are entering component values, it is important that the software recognises common abbreviations 
+    for units.}
 
     \subsection{Support for powers of ten}
-    In order to support {\fontfamily{qcr}\selectfont spice} format, the following abbreviations for powers of ten must be recognised:
+    In order to support {\fontfamily{qcr}\selectfont spice} format, the following abbreviations for powers of ten 
+    must be recognised and are case sensitive:
+    \begin{multicols}{2}
     \begin{itemize}
         \item f [femto]: $ 10^{-15} $
         \item p [pico]: $ 10^{-12} $
@@ -108,43 +146,32 @@
         \item G [giga]: $ 10^{+9} $
         \item T [tera]: $ 10^{+12} $
     \end{itemize}
+    \end{multicols}
     Any unrecognised characters are ignored.
 
+    \pagebreak
     \section{Network Diagram/Graphs}
-    Network Graphs show the relationships between a set of entries. Each entry is represented by a \textit{Node} and the connections between nodes are represented through \textit{Edges}.
+    Network Graphs show the relationships between a set of entries and a circuit is a good example of a graph.
+    Each entry is represented by a \textit{Node} and the connections between nodes are represented through \textit{Edges}.
     \par
-    There are four main types of network graphs:
-    \begin{itemize}
-        \item Undirected and Unweighted
-        \item Directed and Unweighted
-        \item Undirected and Weighted
-        \item Directed and Weighted
-    \end{itemize}
+    Through Modified Nodal Analysis, an algorithm can be created to form the expression $Ax = b$.
     \par
-    A graph $G=(V, E)$ consists of: \cite{parse}  % changed X to V for vertices and from U to E for edges
-    \begin{itemize}
-        \item a finite set $V = \left\{ x_1, x_2, \dots, x_n \right \}$ whose elements are called nodes or vertices % added underscore for index and changed { } to \{ \} for proper notation of sets
-        \item a subset $E$ of the Cartesian product $V \times V$, the elements of which are called arcs. % changed x to \times
-    \end{itemize}
-    The network graph defined will consists of two vector structures:
-    \begin{itemize}
-        \item Vector of nodes in the circuit
-        \item Vector of branches in the circuit
-    \end{itemize}
-    The theoretical output is an ordered vector of branches and an ordered vector of nodes. 
-    \textbf{Position starts from 1 as node 0 indicates GND.}
+    The circuit inputted will be in vector of nodes which will then be read and inputted into the required matrices.
+
     \par
-    This area will be explored more in-depth in the analysis module.
+    This will be explored further in the analysis module.
     \pagebreak
 
     \section{Implementation}
     Block diagram depicting the breakdown of Parse Netlist module:
-    \begin{figure}[h]
-    \centering
-    \includegraphics[width=145mm,scale=1]{Netlist breakdown}
-    \caption{Netlist module breakdown}
-    \label{fig:Netlist breakdown}
-    \end{figure}
+    \begin{center}
+        \begin{figure}[h]
+        \includegraphics[width=\linewidth]{Netlist breakdown}
+        \caption{Netlist module breakdown}
+        \label{fig:Netlist breakdown}
+        \end{figure}
+    \end{center}
+    
     \subsection{CirElement struct}
     \begin{lstlisting}[language=C++]
         CirElement 
@@ -171,10 +198,10 @@
                 Push CirElement into vector
             }
     \end{lstlisting}
-    \subsubsection{custom pow}
-
+    \subsubsection{converter}
+    Basic function: e.g. 5k, 50 etc
     \begin{lstlisting}[language=C++]
-        custom_pow(string: input)
+        converter(string: input)
             {
                 Check if there are keywords e.g. k, m, M, G
     
@@ -187,7 +214,6 @@
                     Find position where keyword appears
                     Take string before keyword and convert
                     Multiply/divide the digit by keyword
-                    Recursion to cover case: 5M7k
             }
     \end{lstlisting}
 
@@ -238,7 +264,7 @@
     \end{lstlisting}
 
     \pagebreak
-    \section{Miscellaneous}
+    \section{Add-ons}
     There are more components to consider such as:
     \begin{itemize}
         \item Voltage controlled dependent sources
@@ -249,8 +275,7 @@
         \item Python implementation
         \item Efficient way to use recursion and not efficient to use matrix but more accurate.
     \end{itemize}
-
-
+    
     \pagebreak
     \printbibliography[title={References}]
 

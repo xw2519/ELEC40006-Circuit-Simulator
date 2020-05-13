@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Bin/Parser_module.cpp
-#include "Parser_module.hpp"
-=======
 #include "Parser.hpp"
->>>>>>> 6eb1d5cdf2a0046d86b102093ff9f9892d052f58:Bin/Parser.cpp
 #include <cmath>
 #include <assert.h>
 #include <regex>
@@ -108,20 +104,6 @@ std::vector<CirElement> parser(std::istream& cin)
     std::vector<std::string> store;
     std::string line;
     bool firsttime = true;
-<<<<<<< HEAD:Bin/Parser_module.cpp
-
-    while (std::getline(std::cin, line)){
-
-    // Skip first line as it is the title
-    if (firsttime)
-    {
-        firsttime = false;
-        continue;
-    }
-    
-    // Check if end of the line 
-    if (line == ".END")
-=======
 
     while (std::getline(std::cin, line))
     {
@@ -135,7 +117,6 @@ std::vector<CirElement> parser(std::istream& cin)
 
     // Check for .END
     if (line == ".end")
->>>>>>> 6eb1d5cdf2a0046d86b102093ff9f9892d052f58:Bin/Parser.cpp
     {
         break;
     }

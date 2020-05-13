@@ -58,6 +58,8 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
@@ -107,13 +109,18 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tex-gyre\ot1qcr.f
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tex-gyre\ot1qcr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\rm-qcrr.tfm
 OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\NetList Parse\NetList-Documentation.toc
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT Images\spice netlist example.png
+INPUT .\Images\spice netlist example.png
+INPUT .\Images\spice netlist example.png
+INPUT .\Images\spice netlist example.png
+INPUT .\Images\spice netlist example.png
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\rm-qcrb.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT Images\Netlist breakdown.png
 INPUT .\Images\Netlist breakdown.png
 INPUT .\Images\Netlist breakdown.png
@@ -140,8 +147,6 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -156,8 +161,6 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
