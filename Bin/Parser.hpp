@@ -8,13 +8,8 @@
 # ===============================================================
 */
 
-<<<<<<< HEAD:Bin/Parser_module.hpp
-#ifndef Parser_module_hpp
-#define Parser_module_hpp
-=======
 #ifndef Parser_hpp
 #define Parser_hpp
->>>>>>> 6eb1d5cdf2a0046d86b102093ff9f9892d052f58:Bin/Parser.hpp
 
 #include <string>
 #include <iostream>

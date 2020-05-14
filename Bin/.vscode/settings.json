@@ -47,6 +47,7 @@
         "functional": "cpp",
         "iterator": "cpp",
         "map": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "core": "cpp"
     }
 }

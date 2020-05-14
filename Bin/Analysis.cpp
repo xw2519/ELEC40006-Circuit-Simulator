@@ -1,17 +1,9 @@
-#include <iostream>
-#include <string>
-#include "Eigen/Core"
-#include "Eigen/Dense"
-#include "Parser.hpp"
-#include <vector>
+#include "Analysis.hpp"
 
 using namespace std;
 
-int main()
+Eigen::VectorXf Analysis(std::vector<CirElement> circuit)
 {
-    // Call Parser component
-    vector<CirElement> circuit = parser(cin);
-
     // Get 'N' and 'M' 
     int N = N_int(circuit);
     int M = M_int(circuit);
@@ -20,12 +12,6 @@ int main()
     // Declare and intialise matrices to 0
     Eigen::MatrixXf A; A.setZero((N+M),(N+M));
     Eigen::VectorXf b = Eigen::VectorXf::Zero((N+M));
-
-    cout << "A: " << endl;
-    cout << A << endl;
-    
-    cout << "b: " <<endl;
-    cout << b << endl;
 
     // Variable declarations
     int vcount = 0;
@@ -104,11 +90,5 @@ int main()
 
     // Get solution: matrix x
     Eigen::VectorXf x = A.colPivHouseholderQr().solve(b);
-
-    cout << "A: " << endl;
-    cout << A << endl;
-    cout << "x: " << endl;
-    cout << x << endl;
-    cout << "b: " <<endl;
-    cout << b << endl;
+    return x;
 }
