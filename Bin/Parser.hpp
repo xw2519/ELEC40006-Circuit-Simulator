@@ -14,8 +14,13 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <cmath>
+#include <assert.h>
+#include <regex>
+#include <algorithm>
 
 
+// struct for circuit element
 struct CirElement
 {
     char D;
@@ -23,9 +28,22 @@ struct CirElement
     int n1;
     int n2;
     float value;
-    float initval;
 };
 
+// struct for circuit sources
+struct CirSrc
+{
+    char D;
+    std::string descrip;
+    int n1;
+    int n2;
+    std::string type;
+    float DC;
+    float A;
+    float freq;
+};
+
+// Parser module
 // Returns boolean true if there is an aplhabetical letter
 bool is_digit(const std::string& input);
 
@@ -35,8 +53,8 @@ float converter(std::string val_str);
 // Spilts string into words separated by space and pushed into a vector
 std::vector<std::string> tokeniser (std::string input);
 
-// Returns type CirElement from input stream
-std::vector<CirElement> parser(std::istream& cin);
+// Sorts input into respective vectors: vector<CirElement> and vector<CirSrc>
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources);
 
 
 // Analysis module
@@ -44,6 +62,6 @@ std::vector<CirElement> parser(std::istream& cin);
 int N_int(std::vector<CirElement> circuit);
 
 // Return number of independent voltage sources in circuit: M
-int M_int(std::vector<CirElement> circuit);
+int M_int(std::vector<CirSrc> sources);
 
 #endif
