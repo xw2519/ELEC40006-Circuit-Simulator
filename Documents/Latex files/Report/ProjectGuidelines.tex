@@ -3,6 +3,8 @@
 \usepackage{biblatex}
 \usepackage{parskip}
 \usepackage{listings}
+
+
 \lstset{%
 basicstyle=\ttfamily,
 breaklines = true,
@@ -21,7 +23,7 @@ tabsize=2
 	\vspace{1.5cm}
 	{\huge\bfseries Circuit Simulation Report\par}
 	\vspace{2cm}
-	{\Large\ Adam\\ Brandon Cann\\ Xin Wang \par}
+	{\Large\ Adam Rehman\\ Brandon Cann\\ Xin Wang \par}
 	\vfill
 % Bottom of the page
 	{\large \today\par}
@@ -40,6 +42,7 @@ into a graph data structure, performs analysis using conductance matrices and ou
 -- Comaparison to commercial software?
 \end{abstract}
 \pagebreak
+
 \section{Overview of the report}
 This report is the distillation of multiple research documents relating to different components of the program. \par
 Section 2 gives an abstract view of the design of the program, breaking the program down into 3 modules.
@@ -50,113 +53,44 @@ Section 5, the last section, summarises the report and discusses our overall exp
 \par
 \textit{Talk about added functions and anything else.}
 \pagebreak
-\section{Design of modules}
-The software package is spilt into 3 modules:
-\begin{itemize}
-	\item Parser
-	\item Analysis
-	\item Interpreter
-	\item Main
-\end{itemize}
-More in-depth information can be found under research papers of the respective topics.
-\footnote{Test scripts and their respective descriptions are found under "Tests Scripts" folder for reference.}
-\par
-Object Orientated Programming approach has to be implemented.
 
-\subsection{Parse module}
-
-Format of an circuit description is \cite{spice}:
-		$$\tt{<letter><name><node\textit{i}> ... [modelname][parametervalues]}$$
-From research, the best type of data structure to express a circuit is a \textbf{Graph Data Structure}.
-The graph data structure contains the following member variables:
-\begin{itemize}
-	\item $\tt{letter}$: Name of component 
-	\item $\tt{name}$: Name of node 
-	\item $\tt{node1}$: Name of node 1
-	\item $\tt{node2}$: Name of node 2
-	\item $\tt{compval}$: Value of the component e.g. 5 ohms or 3 volt
-\end{itemize}
-
-\par
-Aspects to consider regarding parse module:
-\begin{itemize}
-	\item Identifying circuit elements
-	\item Support for powers of ten
-	\begin{itemize}
-		\item When users are entering component values, it is important the program recognises common abbreviations for units
-		\item If an abbreviation is not recognised, it is ignored
-	\end{itemize} 
-\end{itemize}
-Aspect to consider regarding storage component:
-\begin{itemize}
-	\item Proper constructors and deconstructors are implemented
-\end{itemize}
-Block diagram depicting the breakdown of Parse Netlist module:
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.75]{Netlist breakdown}
-    \caption{Netlist module breakdown}
-    \label{fig:Netlist breakdown}
-\end{figure}
-
-\subsubsection{Pseudocode implementation:}
-Can be expanded to have a textfile containing the library of components supported which can be imported.
-\begin{lstlisting}[language=C++]
-	CirElement 
-	{
-		variables:
-
-			letter: component name
-			name: name of node
-			node1: node this node is connected to 
-			node2: node this node is connected to
-			value: float
-			initial_val: float
-
-		methods:
-
-			parse(string: input)
-			{
-				Tokenise
-				Put in values into respective variables
-				Detect values, pass into custom_pow
-				Detect if initial_val is entered:
-					Pass into variable otherwise default 0
-			}
-			custom_pow(string: input)
-			{
-				Check if there are keywords e.g. k, m, M, G
-
-				If not present, two scenario:
-					Unknown letter present: extract digits 
-					Convert to float
-					Empty string (End of recursion): return 0
-
-				If present:
-					Find position where keyword appears
-					Take string before keyword and convert
-					Multiply/divide the digit by keyword
-					Recursion to cover case: 5M7k
-			}
-			tokeniser(string: input)
-			{
-				Call regex to tokenise the string 
-				Push each token into a vector 
-				Return vector
-			}
-			isdigit(string: input)
-			{
-				Iterate over string
-				Take each character and into 'isdigit' test
-				Return boolean
-			}
-	}
-\end{lstlisting}
+\section{Project management}
 \pagebreak
+
+\subsection{Project timeline}
+
+\pagebreak
+
+\subsection{Management approach}
+\pagebreak
+
+\subsection{Project responsibilities breakdown}
+\pagebreak
+
+\section{Design of software modules}
+\pagebreak
+
+\subsection{Parser module}
+\pagebreak
+\subsubsection{Features}
+\pagebreak
+\subsubsection{Pseudocode}
+\pagebreak
+
 \subsection{Analysis module}
-
-
 \pagebreak
+\subsubsection{Features}
+\pagebreak
+\subsubsection{Pseudocode}
+\pagebreak
+
+\subsection{Transient module}
+\pagebreak
+\subsubsection{Features}
+\pagebreak
+\subsubsection{Pseudocode}
+\pagebreak
+
 \section{Testing}
 \subsection{\textit{Data struct}}
 The script \textit{Data struct test.sh}, when called, will compile \textit{Data struct.cpp} and passes in input 
@@ -166,11 +100,13 @@ text file \textit{Data struct input.txt}.
 \par
 This test is used to check the format of CirElement data structure functions as envisioned and that the methods associated with
 CirElement such as \textit{custom pow} functions correctly.
+\pagebreak
 
+\section{Software comparisons}
 \pagebreak
-\section{Add-on}
+
+\section{After project report}
 \pagebreak
-\section{Conclusion}
-\pagebreak
+
 \printbibliography[title={References}]
 \end{document}
