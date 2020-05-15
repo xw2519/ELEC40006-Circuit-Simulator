@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Notations}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Algorithm design for MNA}{6}%
+\contentsline {section}{\numberline {3}General Algorithm design for MNA}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}$A$ matrix}{6}%
 \defcounter {refsection}{0}\relax 
@@ -30,16 +30,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}$b$ matrix}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Dependent sources}{9}%
+\contentsline {section}{\numberline {4}Support for $C$ and $L$ elements}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}The use of Eigen library}{10}%
+\contentsline {subsection}{\numberline {4.1}Theory behind capacitor and inductor}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Implementation}{11}%
+\contentsline {subsection}{\numberline {4.2}Changes required}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Analysis}{11}%
+\contentsline {section}{\numberline {5}Dependent sources}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}FormMatrix}{11}%
+\contentsline {section}{\numberline {6}The use of Eigen library}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}SemanticCheck}{12}%
+\contentsline {section}{\numberline {7}Implementation}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Miscellaneous}{13}%
+\contentsline {subsection}{\numberline {7.1}Analysis}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.1}FormMatrix}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {7.1.2}SemanticCheck}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Version history}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1}Version 1.0}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Miscellaneous}{15}%

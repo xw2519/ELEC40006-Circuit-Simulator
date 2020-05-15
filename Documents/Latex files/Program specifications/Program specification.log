@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  15 MAY 2020 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  15 MAY 2020 22:39
 entering extended mode
-**"e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
-("e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
+**"e:/Work/ELEC40006/Documents/Latex files/Program specifications/Program specification.tex"
+("e:/Work/ELEC40006/Documents/Latex files/Program specifications/Program specification.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -269,24 +269,93 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 File: biblatex.cfg 
 )) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/parskip\parskip.sty"
 Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.sty"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count366
+\mult@box=\box45
+\multicol@leftmargin=\dimen137
+\c@unbalance=\count367
+\c@collectmore=\count368
+\doublecol@number=\count369
+\multicoltolerance=\count370
+\multicolpretolerance=\count371
+\full@width=\dimen138
+\page@free=\dimen139
+\premulticols=\dimen140
+\postmulticols=\dimen141
+\multicolsep=\skip71
+\multicolbaselineskip=\skip72
+\partial@page=\box46
+\last@line=\box47
+\maxbalancingoverflow=\dimen142
+\mult@rightbox=\box48
+\mult@grightbox=\box49
+\mult@gfirstbox=\box50
+\mult@firstbox=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\c@minrows=\count372
+\c@columnbadness=\count373
+\c@finalcolumnbadness=\count374
+\last@try=\dimen143
+\multicolovershoot=\dimen144
+\multicolundershoot=\dimen145
+\mult@nat@firstbox=\box89
+\colbreak@box=\box90
+\mc@col@check@num=\count375
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
-\lst@mode=\count366
-\lst@gtempboxa=\box45
+\lst@mode=\count376
+\lst@gtempboxa=\box91
 \lst@token=\toks16
-\lst@length=\count367
-\lst@currlwidth=\dimen137
-\lst@column=\count368
-\lst@pos=\count369
-\lst@lostspace=\dimen138
-\lst@width=\dimen139
-\lst@newlines=\count370
-\lst@lineno=\count371
-\lst@maxwidth=\dimen140
+\lst@length=\count377
+\lst@currlwidth=\dimen146
+\lst@column=\count378
+\lst@pos=\count379
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count380
+\lst@lineno=\count381
+\lst@maxwidth=\dimen149
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count372
-\lst@skipnumbers=\count373
-\lst@framebox=\box46
+\c@lstnumber=\count382
+\lst@skipnumbers=\count383
+\lst@framebox=\box92
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
@@ -306,88 +375,42 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty"
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.sty"
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen141
-\captionmargin@=\dimen142
-\captionwidth=\dimen143
-\caption@tempdima=\dimen144
-\caption@indent=\dimen145
-\caption@parindent=\dimen146
-\caption@hangindent=\dimen147
-Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count374
-\c@continuedfloat=\count375
-Package caption Info: listings package is loaded.
-)
-\c@KVtest=\count376
-\sf@farskip=\skip71
-\sf@captopadj=\dimen148
-\sf@capskip=\skip72
-\sf@nearskip=\skip73
-\c@subfigure=\count377
-\c@subfigure@save=\count378
-\c@lofdepth=\count379
-\c@subtable=\count380
-\c@subtable@save=\count381
-\c@lotdepth=\count382
-\sf@top=\skip74
-\sf@bottom=\skip75
-)
-\@quotelevel=\count383
-\@quotereset=\count384
+\@quotelevel=\count384
+\@quotereset=\count385
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count385
-\l__pdf_internal_box=\box47
-) ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux"
+\l__kernel_color_stack_int=\count386
+\l__pdf_internal_box=\box93
+) ("e:/Work\ELEC40006\Documents\Latex files\Program specifications\Program specification.aux")
+\openout1 = `"Program specification.aux"'.
 
-LaTeX Warning: Label `fig:figure3' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure3' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure3' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure3' multiply defined.
-
-)
-\openout1 = `"Analysis Module.aux"'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count386
-\scratchdimen=\dimen149
-\scratchbox=\box48
-\nofMPsegments=\count387
-\nofMParguments=\count388
+\scratchcounter=\count387
+\scratchdimen=\dimen150
+\scratchbox=\box94
+\nofMPsegments=\count388
+\nofMParguments=\count389
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count389
-\MPscratchDim=\dimen150
-\MPnumerator=\count390
-\makeMPintoPDFobject=\count391
+\MPscratchCnt=\count390
+\MPscratchDim=\dimen151
+\MPnumerator=\count391
+\makeMPintoPDFobject=\count392
 \everyMPtoPDFconversion=\toks18
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -401,139 +424,56 @@ File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `"Analysis Module.bcf"'.
+\openout3 = `"Program specification.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"Analysis Module".bbl' found.
- ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.bbl")
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
-\c@lstlisting=\count392
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: ... file '"Program specification".bbl' found.
+ ("e:/Work\ELEC40006\Documents\Latex files\Program specifications\Program specification.bbl")
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
+\c@lstlisting=\count393
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 23.
+(Font)              <6> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 23.
+(Font)              <9> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 23.
+(Font)              <5> on input line 27.
  [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.toc"
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Program specifications\Program specification.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 7.
+(Font)              <7> on input line 5.
 )
 \tf@toc=\write4
-\openout4 = `"Analysis Module.toc"'.
+\openout4 = `"Program specification.toc"'.
 
  [1] [2]
-<./Images/Equations.png, id=21, 154.77824pt x 126.4725pt>
-File: ./Images/Equations.png Graphic file (type png)
-<use ./Images/Equations.png>
-Package pdftex.def Info: ./Images/Equations.png  used on input line 58.
-(pdftex.def)             Requested size: 154.77786pt x 126.47218pt.
-<./Images/Matrix.png, id=23, 244.5135pt x 99.9735pt>
-File: ./Images/Matrix.png Graphic file (type png)
-<use ./Images/Matrix.png>
-Package pdftex.def Info: ./Images/Matrix.png  used on input line 59.
-(pdftex.def)             Requested size: 244.5129pt x 99.97324pt.
- [3 <./Images/Equations.png> <./Images/Matrix.png>]
-<./Images/Highlighted matrix.png, id=30, 392.06474pt x 214.401pt>
-File: ./Images/Highlighted matrix.png Graphic file (type png)
-<use ./Images/Highlighted matrix.png>
-Package pdftex.def Info: ./Images/Highlighted matrix.png  used on input line 72.
-(pdftex.def)             Requested size: 392.06378pt x 214.40047pt.
- [4 <./Images/Highlighted matrix.png>] [5]
-<./Images/Circuit2.png, id=43, 125.268pt x 103.587pt>
-File: ./Images/Circuit2.png Graphic file (type png)
-<use ./Images/Circuit2.png>
-Package pdftex.def Info: ./Images/Circuit2.png  used on input line 142.
-(pdftex.def)             Requested size: 125.26768pt x 103.58675pt.
-<./Images/Matrix2.png, id=44, 231.264pt x 109.6095pt>
-File: ./Images/Matrix2.png Graphic file (type png)
-<use ./Images/Matrix2.png>
-Package pdftex.def Info: ./Images/Matrix2.png  used on input line 143.
-(pdftex.def)             Requested size: 231.26343pt x 109.6092pt.
- [6 <./Images/Circuit2.png> <./Images/Matrix2.png>]
-<./Images/Matrix3.png, id=52, 71.0655pt x 66.84975pt>
-File: ./Images/Matrix3.png Graphic file (type png)
-<use ./Images/Matrix3.png>
-Package pdftex.def Info: ./Images/Matrix3.png  used on input line 161.
-(pdftex.def)             Requested size: 17.76633pt x 16.71239pt.
- [7 <./Images/Matrix3.png>]
-<./Images/Matrix4.png, id=57, 59.62276pt x 93.951pt>
-File: ./Images/Matrix4.png Graphic file (type png)
-<use ./Images/Matrix4.png>
-Package pdftex.def Info: ./Images/Matrix4.png  used on input line 199.
-(pdftex.def)             Requested size: 14.90564pt x 23.48769pt.
- [8 <./Images/Matrix4.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 215.
- [9] [10] [11]
-<./Images/Analysis breakdown.png, id=71, 322.20375pt x 202.7575pt>
-File: ./Images/Analysis breakdown.png Graphic file (type png)
-<use ./Images/Analysis breakdown.png>
-Package pdftex.def Info: ./Images/Analysis breakdown.png  used on input line 273.
-(pdftex.def)             Requested size: 322.20296pt x 202.757pt.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 281.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 293.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
-File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 293.
-
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 302--303
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-[12 <./Images/Analysis breakdown.png>]
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 316--317
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 326--327
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[13] [14] [15] [16] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux")
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package logreq Info: Writing requests to '"Analysis Module".run.xml'.
-\openout1 = `"Analysis Module.run.xml"'.
+<./Images/Program flow.png, id=22, 1174.3875pt x 280.04625pt>
+File: ./Images/Program flow.png Graphic file (type png)
+<use ./Images/Program flow.png>
+Package pdftex.def Info: ./Images/Program flow.png  used on input line 74.
+(pdftex.def)             Requested size: 345.0pt x 82.26678pt.
+ [3 <./Images/Program flow.png>] ("e:/Work\ELEC40006\Documents\Latex files\Program specifications\Program specification.aux")
+Package logreq Info: Writing requests to '"Program specification".run.xml'.
+\openout1 = `"Program specification.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12262 strings out of 480930
- 215413 string characters out of 2900700
- 844081 words of memory out of 3000000
- 28034 multiletter control sequences out of 15000+200000
- 539270 words of font info for 47 fonts, out of 3000000 for 9000
+ 10342 strings out of 480930
+ 184033 string characters out of 2900700
+ 816704 words of memory out of 3000000
+ 26137 multiletter control sequences out of 15000+200000
+ 538186 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,62p,891b,1571s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.pdf" (17 pages, 330610 bytes).
+ 35i,11n,37p,895b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Program specifications\Program specification.pdf" (4 pages, 138860 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

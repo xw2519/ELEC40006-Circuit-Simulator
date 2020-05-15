@@ -15,7 +15,8 @@
 #include "Eigen/Dense"
 #include "Parser.hpp"
 #include <vector>
+#include <complex>
 
-Eigen::VectorXf Analysis(std::vector<CirElement> circuit);
+Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources);
 
 #endif
