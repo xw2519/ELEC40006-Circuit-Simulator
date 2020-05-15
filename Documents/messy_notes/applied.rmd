@@ -1,0 +1,652 @@
+---
+title: Messy Notes for Applied
+author: Kexing Ying
+date: May 15, 2020
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+geometry: margin = 1.5in
+urlcolor: red
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{amsmath, amsthm}
+  - \usepackage{mathtools}
+  - \usepackage[ruled,vlined]{algorithm2e}
+  - \newtheorem{theorem}{Theorem}
+  - \newtheorem{corollary}{Corollary}[theorem]
+---
+
+\newpage
+
+# Circuits
+
+In this section we will discuss the method of using matrices in solving the potiential and conductance 
+problem regarding circuits.
+
+I will assume you can manipulate matrices and use basic linear algebra, I will also assume you can construct 
+the incidence matrix of a graph.
+
+## Null-Spaces
+
+Consider an incidence matrix $A$ representing a circuit. 
+
+Then (if we let $\Phi$ be the vector representing the potiential at each node) 
+we have $A \Phi = w$ is the potiential difference across each edge.
+
+With this, we see that there is the trivial right null-vector $\Phi_0 = \left(\mathbf{1} \right)$,
+as if each node has the same potiential, the the potiential difference across 
+each edge is zero. In fact, this is the **only** linearly independent right null-vector of $A$ (given that 
+the circuit is connected) since if there is two nodes that have different potiential, 
+then of course there is going to be some edge with some potiential difference.
+
+On the other hand, for $-A^T w = f$ where $w$ is the potiential difference across each node,
+we have $f$ being the vector representing the *sum* of the potientials out of each node.
+
+Then the dimension of the left null-space of $A$ is represented by the number of "loops" 
+of the circuit and we can find the basis of the left null-space by the following method:
+
+1. Let $w_i \in \mathbb{R}^n$ be the vector representing the path of a loop where $n$ is
+the number of edges of the circuit.
+
+2. For each edge the path traverses, put a $1$ in that position if the path follows the 
+directed graph and a $-1$ if it goes against it.
+
+3. Fill in the rest with $0$s.
+
+Thus, by rank-nullity, we can easily verify our previous statement that the trivial right-null
+vector is the only right-null vector.
+
+## Connected Graphs
+
+The question is what happens when we have two disconnected graphs representing a single 
+graph? 
+
+Well, with two disconnected graphs, we can see there are two trivial right-null vectors, 
+i.e. $\Phi_0 = \left(\mathbf{1}, \mathbf{0} \right)$ and $\Phi_0' = \left(\mathbf{0}, \mathbf{1} \right)$.
+We can easily see that our original trivial null-vector is in the span of these two new 
+null-vectors.
+
+## Useful Terms 
+
+- $A$ is the *incidence matrix* of the graph
+
+- $K = A^T A$ is the *Laplacian matrix* of the graph
+
+- $C = \text{diag}(c_1, \dots c_n)$ the *conductance* matrix of the graph
+
+- $K_c = A^T C A$ is the *weighted Laplacian matrix* of the graph
+
+- $-A^Tw$ is called the *divergence* of the currents (at the nodes)
+
+- $C_{e}$ is the *effective conductance* of a circuit
+
+## KCL Cannot Hold at All nodes!
+
+Consider the result from the *fundamental theorem of linear algebra*:
+
+- The null space of $A^T$ is orthogonal to the row space of $A$, i.e. $\ker A^T \perp \text{csp} A$.
+
+(This is true because if $v \in \ker A$, then the dot product of $v$ and the rows of $A$ must be 
+zero, so it must be perpendicular to the row vectors of $A$. But for all $w \in \text{rsp} A$, 
+$w$ is a linear combination of the row vectors of $A$, so $v \cdot w = 0$ and hence, as 
+$\text{rsp} A = \text{csp} A^T$, we have $\ker A \perp \text{csp} A^T$.)
+
+With that, let use suppose *KCL* holds at all the nodes. Then, we have $\mathbf{0} = A^T w$ for some 
+$w$ representing the potiential difference across each edge. Then, by definition, $w$ is in the 
+null-space of $A^T$. But this, by our aforementioned lemma must be perpendicular to any vectors in 
+$\text{csp} A = \text{Im} A$ and hence, if $w \neq 0$ (which we are assuming as otherwise we would have 
+a circuit not doing anything!) there does not exist some potiential vector $\Phi$ such that $w = A\Phi$.  
+
+Physically, this means that under the assumption that *KCL* holds at all nodes, there will be **no** 
+non-trivial potiential that will produce a current through our circuit (but of course the trivial
+null-vectors of $A$ satisfy our equation $\mathbf{0} = A^T A \Phi$).
+
+## Method for Finding the Potientials
+
+Just solve $$ f = A^T C A \Phi = K_c \Phi $$ and we are done!
+
+Okay, perhaps this is not very helpful so to expand on what I've said above, let us consider two types
+of questions.
+
+### Specified Conductance
+
+First, perhaps we are given the net currents at the boundary nodes, i.e. $f$ is known and we are asked 
+to find $\Phi$ such that $f = K_c \Phi$. Then, you might just think to do something like 
+$\Phi = K_c ^{-1} f$ to determine $\Phi$. But this is no good as $K_c$ is singular and therefore not 
+invertible (recall that we have the trivial null-vector for $A$, $\Phi_0$ so $K_c \Phi_0 = A^T C (A\Phi_0)
+= A^T C \mathbf{0} = \mathbf{0}$). So what we do is we set one of the nodes to have potiential zero, 
+i.e. we will have that node as our reference potiential (if you think about this physically what I'm saying 
+is that the potiential at one node doesn't really mean much - its the potiential difference that actually does 
+the work so fixing one node potiential doens't effect what we are really after - the potiential difference).
+
+So what we do have now is some mathematical trickery. If we fix the $i$-th nodes to have potiential zero,
+then when we multiply $K_c$ with this potiential vector, you can see that the $i$-th row and collumn of $K_c$ 
+nolonger contribute to the multiplication so by removing them, we receive a new linear system $K_c' \Phi' = f'$.
+Now, by repeating this process until its solvable, we should receive some vector $\bar{x}$ that is satisfied 
+by our original system and hence we have a solution space 
+$$S = \bar{x} + \ker A := \{\bar{x} + x_0 \mid x_0 \in \ker A \}.$$
+
+### Specified Potientials
+
+So now what if we are given the potientials at the boundary nodes and are asked to find the potientials at the 
+non-boundary nodes while also finding the net-currents out of the boundary nodes? 
+
+Well, thats a lot asked from us, but I think we can manage. So in this case we have $K_c \Phi = f$ where 
+$\Phi = (x_1, x_2, x_3, \dots)^T$ and $f = (f_1, -f_1, 0, \dots)^T$ where $x_1, x_2$ are given and we are 
+asked to find the rest (if it's not in this form then just rewrite it in this form). And then all we have to do 
+is to use the [Schur complement](https://en.wikipedia.org/wiki/Schur_complement) and Wikipedia can explain the rest.
+
+One more comment. The effective conductance of the system $C_e = f_1$.
+
+## Calculating the Effective Conductance
+
+We will now present some trickery in calculating the effective conductance of a circuit 
+by simplifying the circuit whenever we see edges in series or parallel.
+
+### Edges in Parallel 
+
+I'm going to talk about parallel first because it is nicer to work out mathematically.
+
+Suppose we have the following graph represting a particular section of another graph with parallel edges.
+
+\begin{center}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+%Shape: Ellipse [id:dp829851062863453] 
+\draw   (160.7,220.4) .. controls (160.7,209.35) and (198.67,200.4) .. (245.5,200.4) .. controls (292.33,200.4) and (330.3,209.35) .. (330.3,220.4) .. controls (330.3,231.45) and (292.33,240.4) .. (245.5,240.4) .. controls (198.67,240.4) and (160.7,231.45) .. (160.7,220.4) -- cycle ;
+%Shape: Circle [id:dp9737682550697424] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (157.95,220.4) .. controls (157.95,218.88) and (159.18,217.65) .. (160.7,217.65) .. controls (162.22,217.65) and (163.45,218.88) .. (163.45,220.4) .. controls (163.45,221.92) and (162.22,223.15) .. (160.7,223.15) .. controls (159.18,223.15) and (157.95,221.92) .. (157.95,220.4) -- cycle ;
+%Shape: Circle [id:dp35076255197956563] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (327.55,220.4) .. controls (327.55,218.88) and (328.78,217.65) .. (330.3,217.65) .. controls (331.82,217.65) and (333.05,218.88) .. (333.05,220.4) .. controls (333.05,221.92) and (331.82,223.15) .. (330.3,223.15) .. controls (328.78,223.15) and (327.55,221.92) .. (327.55,220.4) -- cycle ;
+
+% Text Node
+\draw (234,185) node [anchor=north west][inner sep=0.75pt]    {$c_{a}$};
+% Text Node
+\draw (236,245) node [anchor=north west][inner sep=0.75pt]    {$c_{b}$};
+% Text Node
+\draw (146,210.4) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (334,210.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+
+\end{tikzpicture}
+
+\end{center}
+
+Let us write out the incidence matrix and the conductance matrix,
+$$
+A =
+\begin{pmatrix}
+-1 & 1 \\ -1 & 1
+\end{pmatrix},
+\hspace{2mm}
+C = 
+\begin{pmatrix}
+c_a & 0 \\ 0 & c_b
+\end{pmatrix}.
+$$
+Then, if let the system have unit potiential at node 1 and zero potiential at node 2, we have 
+$$
+f = A^T C A \Phi = 
+\begin{pmatrix}
+-1 & -1 \\ 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+c_a & 0 \\ 0 & c_b
+\end{pmatrix}
+\begin{pmatrix}
+-1 & 1 \\ -1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 \\ 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+c_a + c_b \\ -(c_a + c_b)
+\end{pmatrix}
+$$
+implying that for edges in parallel, we shall add the conductance.
+
+### Edges in Series
+
+It's a very similar story for edges in series but the matrices doesn't multiply as nicely so we will omit 
+it the proof but the result is that given the below graph,
+
+\begin{center}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Circle [id:dp35076255197956563] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (327.55,219.4) .. controls (327.55,218.88) and (328.78,217.65) .. (330.3,217.65) .. controls (331.82,217.65) and (333.05,218.88) .. (333.05,220.4) .. controls (333.05,221.92) and (331.82,223.15) .. (330.3,223.15) .. controls (328.78,223.15) and (327.55,221.92) .. (327.55,220.4) -- cycle ;
+%Shape: Circle [id:dp9417251220811065] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (242.95,219.4) .. controls (242.95,218.88) and (244.18,217.65) .. (245.7,217.65) .. controls (247.22,217.65) and (248.45,218.88) .. (248.45,220.4) .. controls (248.45,221.92) and (247.22,223.15) .. (245.7,223.15) .. controls (244.18,223.15) and (242.95,221.92) .. (242.95,220.4) -- cycle ;
+%Shape: Circle [id:dp0686829237101314] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (156.95,219.4) .. controls (156.95,217.88) and (158.18,216.65) .. (159.7,216.65) .. controls (161.22,216.65) and (162.45,217.88) .. (162.45,219.4) .. controls (162.45,220.92) and (161.22,222.15) .. (159.7,222.15) .. controls (158.18,222.15) and (156.95,220.92) .. (156.95,219.4) -- cycle ;
+%Straight Lines [id:da5944259677353316] 
+\draw    (159.7,219.4) -- (330.3,219.4) ;
+
+% Text Node
+\draw (191,205.4) node [anchor=north west][inner sep=0.75pt]    {$c_{a}$};
+% Text Node
+\draw (283,205.4) node [anchor=north west][inner sep=0.75pt]    {$c_{b}$};
+% Text Node
+\draw (146,210.4) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (334,210.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+
+\end{tikzpicture}
+
+\end{center}
+
+we can treat the system as one edge with conductance $c_ac_b/(c_a + c_b)$.
+
+# Random Walks 
+
+In this section, we shall examine another system - random walks on a graph and explore 
+its similarity to a circuit system. With this, we will conclude that in fact the two 
+systems are the same and are said to be *harmonic* and for each method of solving the 
+specific problem, an equivalent method can be used for the other.
+
+We shall also consider two additional methods for solving problems involving harmonic 
+graphs - *algebraic* and the *method of relaxation*.
+
+## A Stroll Through Central London
+
+Consider the much reduced (an worse) tubemap of central London,
+
+\begin{figure}
+\centering
+\includegraphics[height=1.5in]{./walk.png}
+\caption{A fictional tubemap of central London.}
+\end{figure}
+
+and suppose, your very drunk friend, Xin, gotten himself wasted at *Station $A$*. 
+Wanting to get home, Xin takes a random tube at each station and gets off at the next 
+rinse and repeat until he reaches some station we will specify.
+
+We would now like to pose three questions:
+
+1. What is the probability that, if Xin starts at *Oxford Circus*, he reaches *Bond Street* 
+before reaching *Green Park*?
+
+2. What is the probability if Xin starts at *Piccadilly Circus* instead?
+
+3. What is the probability that if Xin starts as *Bond Steet* and leaves, he reaches 
+*Green Park* rather than returning to *Bond Street*?
+
+### An Recursive Algorithm for Question 1
+
+Often times, it is helpful to first simulate our problem with a computer programme so we can see perhaps 
+there is a pattern to our answer. To achieve this however, there are many different methods. Here I have prepared 
+a pseudocode representation for a recursive implementation of simulating one random walk however there are 
+different ways of achieving the same without recursions.
+
+\begin{algorithm}[H]
+  \SetAlgoLined
+  \SetKwFunction{FMain}{walkNext}
+  \SetKwProg{Fn}{Function}{:}{}
+
+  \SetKwFunction{CStation}{stations}
+  \SetKwProg{Cl}{Class}{:}{}
+
+  \SetKw{kwLet}{let}
+  \SetKw{kwChoose}{choose from}
+  
+  \Cl{\CStation{name, connected}}{
+    \kwLet{self.name = name}\;
+    \kwLet{self.connected = connected}\;
+  }
+
+  \Fn{\FMain{currentStation}}{
+    \eIf{currentStation $\neq$ bondStreet $\lor$ greenPark}{
+      \FMain{\kwChoose{currentStation.connected}}\;    
+    }{
+      \Return{currentStation}
+    }
+  }
+ \caption{An recursive method of simulating random walks}
+\end{algorithm}
+
+By making each station a data structure containing its name and its adjacent stations, we can recursively 
+choose the next station until we reach Bond Street or Green Park.
+
+\begin{algorithm}[H]
+  \SetAlgoLined
+  \SetKwFunction{FMain}{walkNext}
+  \SetKw{kwPass}{Pass}
+  \SetKw{kwLet}{let}
+
+  \kwLet{reachedBondStreet = 0}\;
+
+  \While{runs $\le$ $n$} {
+    \eIf{\FMain{oxfordCircus} $=$ bondStreet}{
+      bondStreet += 1\;
+    }{
+      \kwPass
+    }
+    runs += 1\;
+  }
+
+  \kwLet{probability = $reachedBondStreet/n$}
+ \caption{Finding the probability given our method of simulating one random walk}
+\end{algorithm}
+
+Thus, by doing sufficiently large number of such random walks, we can compare the ratio of the number times 
+Xin reached Bond Street against the total number of runs.
+
+By implementing this algorithm in an actual programming language, it seems that this probability 
+appears to be around $2 / 5$ which is exactly the same value if we attempted to compute this as if this was 
+a circuit with unit conductances on each edge.
+
+This is surprising as on the surface, neither systems seemed to have anything to do with each other, but however, 
+later we will find out that both systems are *harmonic* and therefore are essentially the same.
+
+## An Algebraic Method
+
+As promised, I will now present an algebraic method in solving the random walker problem.
+
+Let use first rephrase the question so we can refer to it easier. Consider the graph drawn below.
+We can easily see that the graph and the tubemap are infact the same with Bond Street being node 1,
+Green Park as node 2 and so on.
+
+With that, we can rephrase the question such that we are asked to find $p_3$ where 
+$p_i$ represents the probability of reaching node 1 before reaching node 4.
+
+Consider the *law of total probability*:
+
+- Given a event $E \in \mathcal{F}$ and $B = \{B_i | i \in \mathcal{I}\} \subseteq \mathcal{F}$  for some 
+index set $\mathcal{I}$, if $B$ forms a partition of the sample space $\Omega$, then 
+$$
+P(E) = \sum_{i \in \mathcal{I}}P(E | B_i)P(B_i).
+$$
+
+\begin{figure}
+\centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Circle [id:dp35076255197956563] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (323.55,162.4) .. controls (323.55,160.88) and (324.78,159.65) .. (326.3,159.65) .. controls (327.82,159.65) and (329.05,160.88) .. (329.05,162.4) .. controls (329.05,163.92) and (327.82,165.15) .. (326.3,165.15) .. controls (324.78,165.15) and (323.55,163.92) .. (323.55,162.4) -- cycle ;
+%Shape: Circle [id:dp9417251220811065] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (233.95,102.4) .. controls (233.95,100.88) and (235.18,99.65) .. (236.7,99.65) .. controls (238.22,99.65) and (239.45,100.88) .. (239.45,102.4) .. controls (239.45,103.92) and (238.22,105.15) .. (236.7,105.15) .. controls (235.18,105.15) and (233.95,103.92) .. (233.95,102.4) -- cycle ;
+%Shape: Circle [id:dp0686829237101314] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (142.95,161.4) .. controls (142.95,159.88) and (144.18,158.65) .. (145.7,158.65) .. controls (147.22,158.65) and (148.45,159.88) .. (148.45,161.4) .. controls (148.45,162.92) and (147.22,164.15) .. (145.7,164.15) .. controls (144.18,164.15) and (142.95,162.92) .. (142.95,161.4) -- cycle ;
+%Straight Lines [id:da5944259677353316] 
+\draw    (145.7,161.4) -- (236.7,102.4) ;
+%Straight Lines [id:da6450577900800967] 
+\draw    (236.7,102.4) -- (326.3,162.4) ;
+%Shape: Circle [id:dp24894190681032202] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (233.55,222.4) .. controls (233.55,220.88) and (234.78,219.65) .. (236.3,219.65) .. controls (237.82,219.65) and (239.05,220.88) .. (239.05,222.4) .. controls (239.05,223.92) and (237.82,225.15) .. (236.3,225.15) .. controls (234.78,225.15) and (233.55,223.92) .. (233.55,222.4) -- cycle ;
+%Straight Lines [id:da3966263499064042] 
+\draw    (145.7,161.4) -- (236.3,222.4) ;
+%Straight Lines [id:da1821539361067317] 
+\draw    (236.7,102.4) -- (236.3,222.4) ;
+%Straight Lines [id:da3374921124672794] 
+\draw    (326.3,162.4) -- (236.3,222.4) ;
+
+% Text Node
+\draw (132,152.4) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (330,153.6) node [anchor=north west][inner sep=0.75pt]    {$2$};
+% Text Node
+\draw (231,80.6) node [anchor=north west][inner sep=0.75pt]    {$3$};
+% Text Node
+\draw (230,227.6) node [anchor=north west][inner sep=0.75pt]    {$4$};
+% Text Node
+\draw (173,187.6) node [anchor=north west][inner sep=0.75pt]    {$a$};
+% Text Node
+\draw (289,188.6) node [anchor=north west][inner sep=0.75pt]    {$b$};
+% Text Node
+\draw (173,120.6) node [anchor=north west][inner sep=0.75pt]    {$c$};
+% Text Node
+\draw (290,119.6) node [anchor=north west][inner sep=0.75pt]    {$d$};
+% Text Node
+\draw (223,153.6) node [anchor=north west][inner sep=0.75pt]    {$e$};
+
+\end{tikzpicture}
+\caption{A graph representation of the tubemap.}
+\end{figure}
+
+Then, starting at node 3, we see that Xin can either go to node 1, 2 or 4, so the events of Xin going to node 1, 
+node 2 and goint to node 4 partitions the sample space. Therefore by the law of total probability, we have 
+$$
+p_3 = \frac{1}{3} \times p_1 + \frac{1}{3} \times p_2 + \frac{1}{3} \times p_4.
+$$
+Similarily, we see that going to node 3 or node 4 from node 2 partitions the sample space, so 
+$$
+p_2 = \frac{1}{2} \times p_3 + \frac{1}{2} \times p_4.
+$$
+Now, if we started from node 4, then there is of course no change of reaching node 1 before node 4 (as you 
+are aleady at node 4!) so $p_4 = 0$. Similarily if we started from node 1, then the probability of reaching 1 
+before 4 is 1, so $p_1 = 1$.
+
+Thus, by plugging in $p_1 = 1$ and $p_4 = 0$, we have a system of equations with two unknowns,
+$$
+\begin{split}
+p_3 & = \frac{1}{3} + \frac{1}{3} \times p_2 \\
+p_2 & = \frac{1}{2} \times p_3
+\end{split}
+$$
+which is easily solvable resulting in $p_3 = 2 / 5$ and $p_2 = 1 / 5$ would you imagine it! It's exactly 
+what we expected from the simulated solution (and the same solution as the matrix method).
+
+## Connection Between the Two Systems
+
+Recall our equation for circuits, $f = K \Phi$ where in which at the non-boundary nodes, we had the 
+enforcement of *KCL*. So suppose $\phi_i$ is the potiential at a non-boundary node. As *KCL* is upheld at 
+this node, we have the $i$-th row of $K \Phi$ being zero. So by denoting $\deg(i)$ by the number of edges 
+connected to node $i$, we have 
+$$
+\deg(i) x_i - \sum_{\mathclap{\substack{j \in \text{connected}\\ \text{nodes}}}} x_j = 0,
+$$
+so by rearranging, we have,
+\begin{equation}
+x_i = \sum_{\mathclap{\substack{j \in \text{connected}\\ \text{nodes}}}} x_j/ \deg(i),
+\end{equation}
+which is exactly what we have done for the algebraic method for random walks.
+
+### Intuitive Interpretation
+
+Intuitively we can interpret both system as graphs with some variables associated with the nodes.
+Furthermore, as demonstrated by the above equation, we see that in both system, the node variable of 
+each node is the **average** of the its neighbouring node variables. In the case of circuits, the potientials 
+(the node variable) of each node is the average of its neighbours (assuming uniform conductance) and 
+similarly in the case of the random walk, the probability (the node variable) is the average of its neighbours 
+(assuming each path is equally likely).
+
+With that, we can abstract graph systems such as these in which each nodes of the graph is associated with a 
+node variable that is the average of its neighbouring nodes and we will call such systems *harmonic*.
+
+And thus, as these systems are essentially the same in our framework, we can utilize a method of one system 
+interchangably with another.
+
+### Weighted Harmonic Graphs
+
+However, what if our conductances/ probabilites of going to each neighbouring stations are not the same? 
+Then we shall call the harmonic system *weighted*.
+
+As an extention of the regular harmonic system, we see that we do not need to change our original framework much 
+but to weight each node variable according to the conductances/ probabilites or whatever other system we are using 
+resulting in 
+\begin{equation}
+x_i = \sum_{\mathclap{\substack{j \in \text{connected}\\ \text{nodes}}}} (x_j/ c_j),
+\end{equation}
+where $c_j$ denotes the weight we have assigned to the edge connecting the $i$-th node and the $j$-th node.
+
+## Method of Relaxation
+
+With our interpretation in mind, we can now construct another algorithm that converges to our desired 
+node variables by averaging the each node variables with the adjacent ones (with weighing dependent one the 
+edge variables if the edge variables are not uniform) over and over agains for sufficiently large number of times.
+
+Below are some pseudocode describing this method.
+
+We first create a object called $\tt{Node}$ containing information about its neighbours and it's initial potiential and
+we will let a $\tt{graph}$ to be a collection of $\tt{node : Node}$.
+
+\begin{algorithm}[H]
+  \SetAlgoLined
+  \SetKwFunction{CNodes}{Node}
+  \SetKwProg{Cl}{Class}{:}{}
+
+  \SetKw{kwLet}{let}
+  \SetKw{kwDec}{declared}
+  
+  \Cl{\CNodes{name, nodeVariable, connected, weighing}}{
+    \kwLet{self.name = name}\;
+    \kwLet{self.connected = connected}\;
+    \kwLet{self.$weighing_i$ = $weighing_i$}\;
+    \eIf {\kwDec{nodeVariable}}{
+      \kwLet{self.nodeVariable = nodeVariable}\;
+      \kwLet{self.boundary = True}
+
+    }{
+      \kwLet{self.nodeVariable = 0}\;
+      \kwLet{self.boundary = False}
+    }
+  }
+  \kwLet{graph = $\{node_1, node_2, \cdots, node_k\}$}\;
+ \caption{Constructing the object of nodes and creating a graph as a set of nodes}
+\end{algorithm}
+
+Then by looping over all the non-boundary nodes for sufficient amount of times the node variables of 
+each node converges to the true value.
+
+\begin{algorithm}[H]
+  \SetAlgoLined
+  \SetKw{kwLet}{let}
+  \SetKw{kwPass}{Pass}
+  
+  \While{runs $\le$ $n$}{
+    \For {node $\in$ graph $\land$ node.boundary $=$ False} {
+      node.nodeVariable = $\sum\limits_{\mathclap{i \in node.connected}} weighing_i \times node_i.nodeVariable$
+    }
+    runs += 1
+  } 
+ \caption{Constructing the object of nodes and creating a graph as a set of nodes}
+\end{algorithm}
+
+# Harmonic Graphs
+
+In this section we shall examine some properties of harmonic graphs. 
+
+## Maximum Principle
+
+Given a harmonic graph, it is rather natural to seperate its nodes into *boundary nodes* and *internal nodes* (all other 
+nodes). Then the *maximum principle* states the following:
+
+- For a harmonic graph, the node variables attains maximum and minimum at the boundary nodes.
+
+To see why this is true recall that for a (weighted) harmonic graph, each internal node has node variable that is 
+a weighted average of its neighbouring node variables. So if a harmonic graph attains its maximum node variable at 
+a internal node, then all nodes adjacent must be less equal to it. However, as the node variable is the weighted 
+average of the adjacent node variables, if there is one adjacent node variable strictly less than it, the weighted 
+average will be smaller resulting in a contradiction. Therefore, all adjacent nodes must have the same node variable 
+as the maximum. Now repeat this until it reaches a boundary node, resulting in our original statement.
+
+The same argument works for the minimum.
+
+## Uniqueness Principle
+
+Given two harmonic graphs, the uniqueness principle states that if the graphs have the same boundary conditions (and 
+the same edge variables if it is not uniform), then they also have the same node variables everywhere.
+
+This is true because if we let $x_i$ and $p_i$ denote the $i$-th node variable of the two graphs, then the graph with 
+node variables defined by $d_i = x_i - p_i$ attains maximum and minimum at one of its boundary nodes. But at the 
+boundary nodes, $x_i = p_i$ implying $\max_j d_j = \min_j dj = 0$ and hence has node variable zero everywhere.
+
+This is a very important principle as this ensures that our solution for the random walk problem is the same as 
+the circuit and is the same for any other harmonic graphs for that matter!
+
+## Dirichlet's Principle
+
+The energy dissipation associated with any circuit with two boundary nodes with potiential 1 and 0 is 
+defined to be 
+$$
+\xi(\Phi) = \Phi^T K \Phi
+$$
+where $K$ is the (weighted) Laplacian and $\Phi$ is any potiential vector. 
+
+Dirichlet's principle states that the potential vector $\Phi_*$ satisfying *KCL* at all internal nodes minimizes 
+the energy dissipation, i.e. 
+$$\xi(\Phi_*) = \min_\Phi \xi(\Phi).$$
+
+## Thomson's Principle
+
+By mathematical manipulation the energy dissipation from a cirucit can also be written as
+$$
+\begin{split}
+\xi(\Phi) = \Phi^T K \Phi & = \Phi^T A^T C A \Phi\\
+& = (-A \Phi)^T (-CA \Phi)\\
+& = \sum_{\mathclap{k \in \text{edges}}} w_k\left(\frac{w_k}{c_k}\right)\\
+& = \hat{\xi}(w),
+\end{split}
+$$
+where $w_k$ is the current in the $k$-th edge and $c_k$ is the conductance in the 
+$k$-th edge.
+
+Notice that this new expression of energy dissipation does not have potiential as it's variable but 
+the edge currents. So as a corollary of Dirichlet's principle, the current vector such that all 
+the internal nodes satisfies *KCL* also minimizes energy dissipation.
+
+## Tellegen's Theorem
+
+Given a circuit with incidence matrix $A$ and any vector $w$ satisfying *KCL* at all nodes 
+($w$ does not need to equal some $A\Phi$ for some potiential vector $\Phi$), then for any $e$ 
+a potiential difference vector, Tellegen's theorem states,
+$$ e^T w = \mathbf{0}. $$
+
+\begin{proof}
+Since $e$ is some vector of potiential difference, then there exist some $\Phi \in \mathbb{R}^n$, a potiential 
+vector, such that $e = -A\Phi$. Thus
+\begin{align*}
+e^T w = (- A\Phi)^T w & = - \Phi^T A^T w \\
+& = - \Phi^T (w^T A)^T\\
+& = - \Phi^T \mathbf{0} = \mathbf{0}
+\end{align*}
+as required.
+\end{proof}
+
+Now suppose that $w$ is some vector that satisfies $-A^T w = f$ then for all $e$ a potiential 
+difference vector such that $e = -A\Phi$, we have
+$$
+e^T w = x^T f.
+$$
+
+\begin{proof}
+\begin{align*}
+e^T w = (- A\Phi)^T w &= - \Phi^T A^T w \\
+& = - \Phi^T (- (- A^T w))\\
+& = \Phi^T f. 
+\end{align*}
+\end{proof}
+
+\begin{corollary}
+Suppose we have two boundary nodes with potiential 1 and 0. Let $w$ be the current in the cirucit 
+and let $e$ be the potiential difference of the cirucit, i.e. $e = -A\Phi$ where $\Phi$ is the potiential 
+vector of the circuit. Then the effective conductance is the energy dissipation.
+\end{corollary}
+
+\begin{proof}
+By considering Tellegen's theorem and the fact that other than the two boundary nodes, all other nodes 
+satisfy \textit{KCL}, we have
+$$
+e^T w = x^T f = x_1 C_e + x_0 (-C_e) = C_e.
+$$
+But we also have, 
+\begin{align*}
+e^T w & = (-A\Phi)^T(-CA\Phi)\\
+& = \Phi^T A^T CA\Phi\\
+& = \Phi^T K \Phi = \xi(\Phi).
+\end{align*}
+So therefore $C_e = \xi(\Phi)$ as required.
+\end{proof}
