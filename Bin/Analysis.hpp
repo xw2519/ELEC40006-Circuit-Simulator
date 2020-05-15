@@ -17,6 +17,6 @@
 #include <vector>
 #include <complex>
 
-Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources ,std::complex omega);
+Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources);
 
 #endif

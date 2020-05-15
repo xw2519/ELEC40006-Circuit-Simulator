@@ -2,16 +2,16 @@
 
 using namespace std;
 
-Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources ,std::complex omega)
+Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources)
 {
     // Get 'N' and 'M' 
     int N = N_int(circuit);
-    int M = M_int(circuit);
+    int M = M_int(sources);
 
     // Form matrices "Ax = b"
     // Declare and intialise matrices to 0
-    Eigen::MatrixXcf A; A.setZero((N+M),(N+M));
-    Eigen::VectorXcf b = Eigen::VectorXcf::Zero((N+M));
+    Eigen::MatrixXf A; A.setZero((N+M),(N+M));
+    Eigen::VectorXf b = Eigen::VectorXf::Zero((N+M));
 
 
     // Matrix entry module for circuit elements
@@ -64,38 +64,41 @@ Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> so
 
     for(auto const& src: sources)
     {
-        switch(tolower(sources.D))
+        switch(tolower(src.D))
         {
             case 'v': // Notation: < n+ >, < n- >
             {
                 vcount++;
-                if (sources.n2 == 0)
+                if (src.n2 == 0)
                 {
-                    A(sources.n1-1,(N+vcount-1)) = 1;
-                    A((N+vcount-1),sources.n1-1) = 1;
+                    A(src.n1-1,(N+vcount-1)) = 1;
+                    A((N+vcount-1),src.n1-1) = 1;
                 }
-                if (sources.n1 == 0)
+                if (src.n1 == 0)
                 {
-                    A(sources.n2-1,(N+vcount-1)) = -1;
-                    A((N+vcount-1),sources.n2-1) = -1;
+                    A(src.n2-1,(N+vcount-1)) = -1;
+                    A((N+vcount-1),src.n2-1) = -1;
                 }
-                b(N+vcount-1) = sources.value;
+                b(N+vcount-1) = src.DC;
                 break;
             }
             case 'i': // Current goes from N1 to N2
             {
-                if (sources.n1!=0)
+                if (src.n1!=0)
                 {
-                    b(sources.n1-1) = b(sources.n1-1) - sources.value;
+                    b(src.n1-1) = b(src.n1-1) - src.DC;
                 }
-                if (sources.n2!=0)
+                if (src.n2!=0)
                 {
-                    b(sources.n2-1) = b(sources.n2-1) + sources.value;
+                    b(src.n2-1) = b(src.n2-1) + src.DC;
                 }
                 break;
             }
         }
     }
+
+    cout << A << endl;
+    cout << b << endl;
 
     // Get solution: matrix x
     Eigen::VectorXf x = A.colPivHouseholderQr().solve(b);

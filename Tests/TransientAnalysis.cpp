@@ -11,10 +11,13 @@ using namespace std;
 int main()
 {
     // Call Parser component
-    vector<CirElement> circuit = parser(cin);
+    vector<CirElement> circuit;
+    vector<CirSrc> sources;
+
+    parser(cin, circuit, sources);
 
     
-    Eigen::VectorXf x = Analysis(circuit);
+    Eigen::VectorXf x = Analysis(circuit, sources);
 
     cout << "x: " << endl;
     cout << x << endl;
