@@ -10,7 +10,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Notations}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Algorithm design for MNA}{6}%
+\contentsline {section}{\numberline {3}General Algorithm design for MNA}{6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}$A$ matrix}{6}%
 \defcounter {refsection}{0}\relax 
@@ -30,9 +30,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}$b$ matrix}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Support for $C$ and $L$}{9}%
+\contentsline {section}{\numberline {4}Support for $C$ and $L$ elements}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Changes required}{9}%
+\contentsline {subsection}{\numberline {4.1}Theory behind capacitor and inductor}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Changes required}{9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Dependent sources}{10}%
 \defcounter {refsection}{0}\relax 
