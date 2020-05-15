@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1589475002 "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex" "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.pdf" "Timeline" 1589475015
+["pdflatex"] 1589564671 "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex" "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.pdf" "Timeline" 1589564672
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1588803624 10016677 2ec5bb806e2debf93b1063d30ceaa460 ""
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1589473117 135735 c42ad2c60f57181ce51b1f94a147eabc ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -11,6 +11,7 @@
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb" 1136856948 34869 e1ce30bc89749102259639e60ab677b3 ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb" 1136856948 35118 a8551d23cfb4fcceb64f161610e925d2 ""
+  "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/vf/bitstrea/charter/bchr8t.vf" 1136775854 2348 67712062c9694a242fa13da6829cc4f1 ""
@@ -101,13 +102,13 @@
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/t1bch.fd" 1585257378 817 e9917b6850ae4e6942b543ca308d874c ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "Timeline.aux" 1589475003 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "Timeline.tex" 1589475014 2856 3614c3e3e6a60e56da4be479552ea286 ""
-  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.aux" 1589475003 8 a94a2480d3289e625eea47cd1b285758 ""
-  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex" 1589475014 2856 3614c3e3e6a60e56da4be479552ea286 ""
+  "Timeline.aux" 1589564672 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "Timeline.tex" 1589564670 3302 899fea8d4525109d1479a96066b74413 ""
+  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.aux" 1589564672 8 a94a2480d3289e625eea47cd1b285758 ""
+  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex" 1589564670 3302 899fea8d4525109d1479a96066b74413 ""
   (generated)
-  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.log"
-  "Timeline.aux"
-  "Timeline.pdf"
   "Timeline.log"
+  "Timeline.aux"
+  "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.log"
+  "Timeline.pdf"
   "e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.pdf"
