@@ -1,0 +1,236 @@
+---
+title: Messy Notes for Applied
+author: Kexing Ying
+date: May 15, 2020
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 3
+    number_sections: true
+geometry: margin = 1.5in
+urlcolor: red
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{amsmath}
+---
+
+# Circuits
+
+## Null-Spaces
+
+Consider an adjacency matrix $A$ representing a circuit. 
+
+Then (if we let $\Phi$ be the vector representing the potiential at each node) 
+we have $A \Phi = w$ is the potiential difference across each edge.
+
+With this, we see that there is the trivial right null-vector $\Phi_0 = \left(\mathbf{1} \right)$,
+as if each node has the same potiential, the the potiential difference across 
+each edge is zero. In fact, this is the **only** right null-vector of $A$ (given that 
+the circuit is connected) since if there is two nodes that have different potiential, 
+then of course there is going to be some edge with some potiential difference.
+
+On the other hand, for $-A^T w = f$ where $w$ is the potiential difference across each node,
+we have $f$ being the vector representing the *sum* of the potientials out of each node.
+
+Then the dimension of the left null-space of $A$ is represented by the number of "loops" 
+of the circuit and we can find the basis of the left null-space by the following method:
+
+1. Let $w_i \in \mathbb{R}^n$ be the vector representing the path of a loop where $n$ is
+the number of edges of the circuit.
+
+2. For each edge the path traverses, put a $1$ in that position if the path follows the 
+directed graph and a $-1$ if it goes against it.
+
+3. Fill in the rest with $0$s.
+
+Thus, by rank-nullity, we can easily verify our previous statement that the trivial right-null
+vector is the only right-null vector.
+
+## Connected Graphs
+
+The question is what happens when we have two disconnected graphs representing a single 
+graph? 
+
+Well, with two disconnected graphs, we can see there are two trivial right-null vectors, 
+i.e. $\Phi_0 = \left(\mathbf{1}, \mathbf{0} \right)$ and $\Phi_0' = \left(\mathbf{0}, \mathbf{1} \right)$.
+We can easily see that our original trivial null-vector is in the span of these two new 
+null-vectors.
+
+## Useful Terms 
+
+- $A$ is the *adjacency matrix* of the graph
+
+- $K = A^T A$ is the *Laplacian matrix* of the graph
+
+- $C = \text{diag}(c_1, \dots c_n)$ the *conductance* matrix of the graph
+
+- $K_c = A^T C A$ is the *weighted Laplacian matrix* of the graph
+
+- $-A^Tw$ is called the *divergence* of the currents (at the nodes)
+
+- $C_{e}$ is the *effective conductance* of a circuit
+
+## KCL Cannot Hold at All nodes!
+
+Consider the result from the *fundamental theorem of linear algebra*:
+
+- The null space of $A^T$ is orthogonal to the row space of $A$, i.e. $\ker A^T \perp \text{csp} A$.
+
+(This is true because if $v \in \ker A$, then the dot product of $v$ and the rows of $A$ must be 
+zero, so it must be perpendicular to the row vectors of $A$. But for all $w \in \text{rsp} A$, 
+$w$ is a linear combination of the row vectors of $A$, so $v \cdot w = 0$ and hence, as 
+$\text{rsp} A = \text{csp} A^T$, we have $\ker A \perp \text{csp} A^T$.)
+
+With that, let use suppose *KCL* holds at all the nodes. Then, we have $\mathbf{0} = A^T w$ for some 
+$w$ representing the potiential difference across each edge. Then, by definition, $w$ is in the 
+null-space of $A^T$. But this, by our aforementioned lemma must be perpendicular to any vectors in 
+$\text{csp} A = \text{Im} A$ and hence, if $w \neq 0$ (which we are assuming as otherwise we would have 
+a circuit not doing anything!) there does not exist some potiential vector $\Phi$ such that $w = A\Phi$.  
+
+Physically, this means that under the assumption that *KCL* holds at all nodes, there will be **no** 
+non-trivial potiential that will produce a current through our circuit (but of course the trivial
+null-vectors of $A$ satisfy our equation $\mathbf{0} = A^T A \Phi$).
+
+## Method for Finding the Potientials
+
+Just solve $$ f = A^T C A \Phi = K_c \Phi $$ and we are done!
+
+Okay, perhaps this is not very helpful so to expand on what I've said above, let us consider two types
+of questions.
+
+### Specified Conductance
+
+First, perhaps we are given the net currents at the grounded nodes, i.e. $f$ is known and we are asked 
+to find $\Phi$ such that $f = K_c \Phi$. Then, you might just think to do something like 
+$\Phi = K_c ^{-1} f$ to determine $\Phi$. But this is no good as $K_c$ is singular and therefore not 
+invertible (recall that we have the trivial null-vector for $A$, $\Phi_0$ so $K_c \Phi_0 = A^T C (A\Phi_0)
+= A^T C \mathbf{0} = \mathbf{0}$). So what we do is we set one of the nodes to have potiential zero, 
+i.e. we will have that node as our reference potiential (if you think about this physically what I'm saying 
+is that the potiential at one node doesn't really mean much - its the potiential difference that actually does 
+the work so fixing one node potiential doens't effect what we are really after - the potiential difference).
+
+So what we do have now is some mathematical trickery. If we fix the $i$-th nodes to have potiential zero,
+then when we multiply $K_c$ with this potiential vector, you can see that the $i$-th row and collumn of $K_c$ 
+nolonger contribute to the multiplication so by removing them, we receive a new linear system $K_c' \Phi' = f'$.
+Now, by repeating this process until its solvable, we should receive some vector $\bar{x}$ that is satisfied 
+by our original system and hence we have a solution space 
+$$S = \bar{x} + \ker A := \{\bar{x} + x_0 \mid x_0 \in \ker A \}.$$
+
+### Specified Potientials
+
+So now what if we are given the potientials at the grounded nodes and are asked to find the potientials at the 
+non-grounded nodes while also finding the net-currents out of the grounded nodes? 
+
+Well, thats a lot asked from us, but I think we can manage. So in this case we have $K_c \Phi = f$ where 
+$\Phi = (x_1, x_2, x_3, \dots)^T$ and $f = (f_1, -f_1, 0, \dots)^T$ where $x_1, x_2$ are given and we are 
+asked to find the rest (if it's not in this form then just rewrite it in this form). And then all we have to do 
+is to use the [Schur complement](https://en.wikipedia.org/wiki/Schur_complement) and Wikipedia can explain the rest.
+
+One more comment. The effective conductance of the system $C_e = f_1$.
+
+## Calculating the Effective Conductance
+
+We will now present some trickery in calculating the effective conductance of a circuit 
+by simplifying the circuit whenever we see edges in series or parallel.
+
+### Edges in Parallel 
+
+I'm going to talk about parallel first because it is nicer to work out mathematically.
+
+Suppose we have the following graph represting a particular section of another graph with parallel edges.
+
+\begin{center}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+
+%Shape: Ellipse [id:dp829851062863453] 
+\draw   (160.7,220.4) .. controls (160.7,209.35) and (198.67,200.4) .. (245.5,200.4) .. controls (292.33,200.4) and (330.3,209.35) .. (330.3,220.4) .. controls (330.3,231.45) and (292.33,240.4) .. (245.5,240.4) .. controls (198.67,240.4) and (160.7,231.45) .. (160.7,220.4) -- cycle ;
+%Shape: Circle [id:dp9737682550697424] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (157.95,220.4) .. controls (157.95,218.88) and (159.18,217.65) .. (160.7,217.65) .. controls (162.22,217.65) and (163.45,218.88) .. (163.45,220.4) .. controls (163.45,221.92) and (162.22,223.15) .. (160.7,223.15) .. controls (159.18,223.15) and (157.95,221.92) .. (157.95,220.4) -- cycle ;
+%Shape: Circle [id:dp35076255197956563] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (327.55,220.4) .. controls (327.55,218.88) and (328.78,217.65) .. (330.3,217.65) .. controls (331.82,217.65) and (333.05,218.88) .. (333.05,220.4) .. controls (333.05,221.92) and (331.82,223.15) .. (330.3,223.15) .. controls (328.78,223.15) and (327.55,221.92) .. (327.55,220.4) -- cycle ;
+
+% Text Node
+\draw (234,185) node [anchor=north west][inner sep=0.75pt]    {$c_{a}$};
+% Text Node
+\draw (236,245) node [anchor=north west][inner sep=0.75pt]    {$c_{b}$};
+% Text Node
+\draw (146,210.4) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (334,210.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+
+\end{tikzpicture}
+
+\end{center}
+
+Let us write out the incidence matrix and the conductance matrix,
+$$
+A =
+\begin{pmatrix}
+-1 & 1 \\ -1 & 1
+\end{pmatrix},
+\hspace{2mm}
+C = 
+\begin{pmatrix}
+c_a & 0 \\ 0 & c_b
+\end{pmatrix}.
+$$
+Then, if let the system have unit potiential at node 1 and zero potiential at node 2, we have 
+$$
+f = A^T C A \Phi = 
+\begin{pmatrix}
+-1 & -1 \\ 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+c_a & 0 \\ 0 & c_b
+\end{pmatrix}
+\begin{pmatrix}
+-1 & 1 \\ -1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 \\ 0
+\end{pmatrix}
+=
+\begin{pmatrix}
+c_a + c_b \\ -(c_a + c_b)
+\end{pmatrix}
+$$
+implying that for edges in parallel, we shall add the conductance.
+
+### Edges in Series
+
+It's a very similar story for edges in series but the matrices doesn't multiply as nicely so we will omit 
+it the proof but the result is that given the below graph,
+
+\begin{center}
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Circle [id:dp35076255197956563] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (327.55,219.4) .. controls (327.55,218.88) and (328.78,217.65) .. (330.3,217.65) .. controls (331.82,217.65) and (333.05,218.88) .. (333.05,220.4) .. controls (333.05,221.92) and (331.82,223.15) .. (330.3,223.15) .. controls (328.78,223.15) and (327.55,221.92) .. (327.55,220.4) -- cycle ;
+%Shape: Circle [id:dp9417251220811065] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (242.95,219.4) .. controls (242.95,218.88) and (244.18,217.65) .. (245.7,217.65) .. controls (247.22,217.65) and (248.45,218.88) .. (248.45,220.4) .. controls (248.45,221.92) and (247.22,223.15) .. (245.7,223.15) .. controls (244.18,223.15) and (242.95,221.92) .. (242.95,220.4) -- cycle ;
+%Shape: Circle [id:dp0686829237101314] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (156.95,219.4) .. controls (156.95,217.88) and (158.18,216.65) .. (159.7,216.65) .. controls (161.22,216.65) and (162.45,217.88) .. (162.45,219.4) .. controls (162.45,220.92) and (161.22,222.15) .. (159.7,222.15) .. controls (158.18,222.15) and (156.95,220.92) .. (156.95,219.4) -- cycle ;
+%Straight Lines [id:da5944259677353316] 
+\draw    (159.7,219.4) -- (330.3,219.4) ;
+
+% Text Node
+\draw (191,205.4) node [anchor=north west][inner sep=0.75pt]    {$c_{a}$};
+% Text Node
+\draw (283,205.4) node [anchor=north west][inner sep=0.75pt]    {$c_{b}$};
+% Text Node
+\draw (146,210.4) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (334,210.4) node [anchor=north west][inner sep=0.75pt]    {$2$};
+
+\end{tikzpicture}
+
+\end{center}
+
+we can treat the system as one edge with conductance $c_ac_b/(c_a + c_b)$.
