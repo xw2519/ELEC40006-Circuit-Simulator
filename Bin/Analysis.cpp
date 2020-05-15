@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Eigen::VectorXf Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources)
+Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources)
 {
     // Get 'N' and 'M' 
     int N = N_int(circuit);
