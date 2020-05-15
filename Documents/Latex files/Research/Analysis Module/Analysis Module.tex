@@ -110,7 +110,7 @@
     \end{itemize}
 
     \pagebreak
-    \section{Algorithm design for MNA}
+    \section{General Algorithm design for MNA}
     Matrices need that need to be generated:
     \begin{itemize}
         \item $A$ 
@@ -212,13 +212,18 @@
     \end{itemize}
     \pagebreak
 
-    \section{Support for $C$ and $L$}
-    Adding support for reactive elements, the algorithm needs to be changed. Initially the $Analysis$ module supports only resistors,
-    meaning the data type used to store values are $float$. In order to support elements like capacitors and inductors, complex 
-    impedance needs to replace the $float$ data type. \par
+    \section{Support for $C$ and $L$ elements}
+    Adding support for reactive elements, the code in requires modifications and additions. Before that is possible, 
+    further insight is required as to how $C$ and $L$ can be represented in MNA. This will allow us to identify what functions 
+    need to be implemented and how to best incorporate it into the existing codebase.\par
+    \subsection{Theory behind capacitor and inductor}
+    Capacitors can be seen as a current source defined by the equation:
     \begin{center}
-        Capacitor: $\frac{1}{j\omega C}$ \par
-        Inductor: $j\omega L$ \par
+        $i_{(t)} = C\frac{dv}{dt}$ \par
+    \end{center}
+    Inductors can be seen as a voltage source defined by the equation:
+    \begin{center}
+        $v_{(t)} = L\frac{di}{dt}$ \par
     \end{center}
     \subsection{Changes required}
     \begin{itemize}
