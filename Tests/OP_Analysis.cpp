@@ -17,7 +17,7 @@ int main()
     parser(cin, circuit, sources);
 
     
-    Eigen::VectorXf x = Analysis(circuit, sources);
+    Eigen::VectorXf x = OP_Analysis(circuit, sources);
 
     cout << "x: " << endl;
     cout << x << endl;
