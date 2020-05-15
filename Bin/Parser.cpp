@@ -1,16 +1,20 @@
 #include "Parser.hpp"
-#include <cmath>
-#include <assert.h>
-#include <regex>
-
 
 std::vector<std::string> tokeniser (std::string input)
 {
+
+    // Remove '(' char
+    replace(input.begin(), input.end(), '(', ' ');
+
+    // Remove ')' char
+    input.erase(std::remove(input.begin(), input.end(), ')'), input.end());
+
     // Regex for tokenizing whitespaces
     std::regex reg("\\s+");
  
     // Get an iterator after filtering through the regex
     std::sregex_token_iterator iter(input.begin(), input.end(), reg, -1);
+
     // Keep a dummy end iterator - Needed to construct a vector
     // using (start, end) iterators.
     std::sregex_token_iterator end;
@@ -97,110 +101,128 @@ float converter(std::string val_str)
     return digits;
 }
 
-std::vector<CirElement> parser(std::istream& cin)
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources)
 {
     CirElement x;
-    std::vector<CirElement> circuit;
+    CirSrc y;
     std::vector<std::string> store;
     std::string line;
     bool firsttime = true;
 
     while (std::getline(std::cin, line))
     {
+        // Check for beginning TITLE
+        if (firsttime)
+        {
+            firsttime = false;
+            continue;
+        }
 
-    // Check for beginning TITLE
-    if (firsttime)
-    {
-        firsttime = false;
-        continue;
-    }
+        // Check for .end
+        if (line == ".end")
+        {
+            break;
+        }
+        
+        //Tokenise
+        store = tokeniser(line);
 
-    // Check for .END
-    if (line == ".end")
-    {
-        break;
-    }
-    
-    //Tokenise
-    store = tokeniser(line);
-    // Get circuit element name
-    if (tolower(store[0][0]) == 'r' || tolower(store[0][0]) == 'c' || tolower(store[0][0]) == 'l' || tolower(store[0][0]) == 'v' || tolower(store[0][0]) == 'i')
-    {
-        //std::cout << "got ehre" << std::endl;
-        x.D = store[0][0];
-        store[0].erase(store[0].begin() + 0);
-        x.descrip = store[0];
-    }
-    else
-    {
-        //std::cout << buf[0] << std::endl;
-        std::cerr << "Unknown element" << std::endl;
-        exit;
-    }
-    
-    // Get nodes in the format "n1", "n2", etc
-    // Remove 'N' char from string
-    x.n1 = stoi(store[1].erase(0,1));
-    x.n2 = stoi(store[2].erase(0,1));
-    
-    // Detect and get values. Must have values
-    if (store.size() < 3)
-    {
-        std::cerr << "No values entered." << std::endl;
-    }
-    std::string values;
-    values = store[3];
+        // Get circuit element name
+        // If R, C, L then proceed normal
+        if (tolower(store[0][0]) == 'r' || tolower(store[0][0]) == 'c' || tolower(store[0][0]) == 'l')
+        {
+            // Store the element and description
+            x.D = store[0][0];
+            store[0].erase(store[0].begin() + 0);
+            x.descrip = store[0];
 
-    // Ensure all digits
-    //assert(is_digit(values));
-    x.value = converter(values);
+            // Get nodes in the format "n1", "n2", etc
+            // Remove 'N' char from string
+            x.n1 = stoi(store[1].erase(0,1));
+            x.n2 = stoi(store[2].erase(0,1));
 
-    // Detect if optional entry is entered otherwise default to 0
-    if (store.size()!=4)
-    {
-        x.initval = stof(store[4]);
+            // Detect and get values. Must have values
+            if (store.size() < 3)
+            {
+                std::cerr << "No values entered." << std::endl;
+            }
+            std::string values;
+            values = store[3];
+
+            // Ensure all digits
+            //assert(is_digit(values));
+            x.value = converter(values);
+
+            // Push into vector representing circuit inputted
+            circuit.push_back(x);
+        }
+
+        // If V or I then call Src resolver
+        else if (tolower(store[0][0]) == 'v' || tolower(store[0][0]) == 'i')
+        {
+            // Store the element and description
+            y.D = store[0][0];
+            store[0].erase(store[0].begin() + 0);
+            y.descrip = store[0];
+
+            // Get nodes in the format "n1", "n2", etc
+            // Remove 'N' char from string
+            y.n1 = stoi(store[1].erase(0,1));
+            y.n2 = stoi(store[2].erase(0,1));
+
+            if (store[3] != "SINE") // Case of DC input
+            {
+                // Detect and get values. Must have values
+                if (store.size() < 3)
+                {
+                    std::cerr << "No values entered." << std::endl;
+                    exit;
+                }
+
+                // Ensure all digits
+                //assert(is_digit(values));
+                y.type = "DC";
+                y.DC = converter(store[3]);
+                y.A = 0;
+                y.freq = 0;
+
+                // Push into sources vector
+                sources.push_back(y);
+            }
+            else if (store[3] == "SINE")
+            {
+                // Ensure all digits
+                //assert(is_digit(values));
+                y.type = "SINE";
+                y.DC = converter(store[4]);
+                y.A = converter(store[5]);
+                y.freq = converter(store[6]);
+
+                // Push into sources vector
+                sources.push_back(y);
+            }
+            else
+            {
+                std::cerr << "Source type recognised." << std::endl;
+                exit;
+            }
+        }
+        else
+        {
+            //std::cout << buf[0] << std::endl;
+            std::cerr << "Unknown element" << std::endl;
+            exit;
+        }
+        store.clear();
     }
-    else
-    {
-        x.initval = 0;
-    }
-    
-    // Push into vector representing circuit inputted
-    circuit.push_back(x);
-    }
-    return circuit;
 }
 
 int N_int(std::vector<CirElement> circuit)
 {
-    int M = 0;
-    int N = 0;
-
-    // Scan for 'v' or 'i' independent sources
-    for(auto const& value: circuit)
-    {
-        if (tolower(value.D) == 'v' || tolower(value.D) == 'i')
-        {
-            M++;
-        }
-    }
-    
-     return (circuit.size() - M);
+     return circuit.size();
 }
 
-int M_int(std::vector<CirElement> circuit)
+int M_int(std::vector<CirSrc> sources)
 {
-    int M = 0;
-    int N = 0;
-
-    // Scan for 'v' or 'i' independent sources
-    for(auto const& value: circuit)
-    {
-        if (tolower(value.D) == 'v' || tolower(value.D) == 'i')
-        {
-            M++;
-        }
-    }
-    
-    return M;
+    return sources.size();
 }

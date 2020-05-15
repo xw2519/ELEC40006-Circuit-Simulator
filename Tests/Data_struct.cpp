@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-#include "../../../Documents/ELEC40006/Bin/Parser_module.hpp"
-=======
-#include "../../../Documents/ELEC40006/Bin/CirElement.hpp"
->>>>>>> master
-=======
+
 #include "../../../Documents/ELEC40006/Bin/Parser.hpp"
->>>>>>> 6eb1d5cdf2a0046d86b102093ff9f9892d052f58
 #include <iostream>
 #include <vector>
 
@@ -16,26 +9,23 @@ int main()
 {
     std::string line;
     vector<CirElement> store;
+    vector<CirSrc> sources;
     CirElement x;
 
-<<<<<<< HEAD
-    store = parser(cin);
-<<<<<<< HEAD
-=======
-    while (std::getline(std::cin, line))
-    {
-        // cout << "Input " << line << endl;
-        store.push_back(parse(line));
-    }
->>>>>>> master
-=======
+    // Sort input
+    parser(cin, store, sources);
 
-    cout << "N: " << N_int(store) << " " << "M: " << M_int(store) << endl;
->>>>>>> 6eb1d5cdf2a0046d86b102093ff9f9892d052f58
-    
+    cout << "N: " << N_int(store) << endl;
+    cout << "M: " << M_int(sources) << endl;
+    cout << "Circuit elements" << endl;
     for (int i = 0; i < store.size(); i++)
     {
-        cout << store[i].D << store[i].descrip << "         " << store[i].n1 << "         " << store[i].n2 << "         " << store[i].value << "         " << store[i].initval << endl;
+        cout << store[i].D << store[i].descrip << "         " << store[i].n1 << "         " << store[i].n2 << "         " << store[i].value << endl;
+    }
+    cout << "Sources" << endl;
+    for (int i = 0; i < sources.size(); i++)
+    {
+        cout << sources[i].D << sources[i].descrip << "         " << sources[i].n1 << "         " << sources[i].n2 << "         " << sources[i].type << "         " << sources[i].DC << "         " << sources[i].A << "         " << sources[i].freq << endl;
     }
     
 }
