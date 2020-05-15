@@ -3,15 +3,16 @@
 \usepackage{biblatex}
 \usepackage{parskip}
 \usepackage{multicol}
-
 \usepackage{listings}
 \usepackage{xcolor}
+
 \lstset{
   basicstyle=\ttfamily,
   columns=fullflexible,
   breaklines=true,
   postbreak=\raisebox{0ex}[0ex][0ex]{\color{red}$\hookrightarrow$\space}
 }
+
 \graphicspath{ {./Images/} }
 \addbibresource{biblography.bib}
 \setcounter{tocdepth}{4}
@@ -19,7 +20,7 @@
 \title{Parser Documentation}
 \author{Adam Rehman, Brandon Cann, Xin Wang \thanks{document compiled by Xin Wang}}
 \date \today
-\date{ \today}
+\date{\today}
 
 \setlength{\parskip}{1em}
 
@@ -130,7 +131,24 @@
     \par
     \textbf {When users are entering component values, it is important that the software recognises common abbreviations 
     for units.}
+    \subsubsection{Voltage sources}
+    Voltage sources have two modes: $DC$ and $SINE$. \par
+    In the event of $SINE$, voltage source requires three mandatory field:
+    \begin{itemize}
+        \item DC offset: $DCoff$
+        \item Amplitude: $A$
+        \item Frequency: $freq$
+    \end{itemize}
+    This can be represented in the equation: $[DCoff]+[A]sine(2\pi [freq])$ \par
+    For example:
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=60mm,scale=1]{SINE wave example}
+        \caption{Example SPICE format of sine voltage input}
+        \label{fig:Netlist input example}
+    \end{figure}
 
+    \pagebreak
     \subsection{Support for powers of ten}
     In order to support {\fontfamily{qcr}\selectfont spice} format, the following abbreviations for powers of ten 
     must be recognised and are case sensitive:
@@ -174,94 +192,96 @@
     
     \subsection{CirElement struct}
     \begin{lstlisting}[language=C++]
-        CirElement 
+        struct CirElement 
         {
-            variables:
-    
-                letter: component name
-                name: name of node
-                node1: node this node is connected to 
-                node2: node this node is connected to
-                value: float
-                initial_val: float
+            letter: component name
+            name: name of node
+            node1: node this node is connected to 
+            node2: node this node is connected to
+            value: float
+        }
+
+        struct CirSrc
+        {
+            letter: component name
+            name: name of node
+            node1: node this node is connected to 
+            node2: node this node is connected to
+            type: string: DEFAULT "DC"
+            DC: float
+            A: float
+            freq: float
         }
     \end{lstlisting}
     \subsection{Parser}
     \begin{lstlisting}[language=C++]
-        parser(cin)
-            {
-                Tokenise
-                Put in values into respective variables
+        parser(cin, &vector<CirElement>, &vector<CirSrc>)
+        {
+            Tokenise
+            Put in values into respective variables
+                if 'v' or 'i' detected:
+                    Call SrcSort
+                if other elements detected:
+                    Push into CirElement
                 Detect values, pass into custom_pow
-                Detect if initial_val is entered:
-                    Pass into variable otherwise default 0
                 Push CirElement into vector
-            }
+        }
     \end{lstlisting}
     \subsubsection{converter}
     Basic function: e.g. 5k, 50 etc
     \begin{lstlisting}[language=C++]
         converter(string: input)
-            {
-                Check if there are keywords e.g. k, m, M, G
+        {
+            Check if there are keywords e.g. k, m, M, G
     
-                If not present, two scenario:
-                    Unknown letter present: extract digits 
-                    Convert to float
-                    Empty string (End of recursion): return 0
+            If not present, two scenario:
+                Unknown letter present: extract digits 
+                Convert to float
+                Empty string (End of recursion): return 0
     
-                If present:
-                    Find position where keyword appears
-                    Take string before keyword and convert
-                    Multiply/divide the digit by keyword
-            }
+            If present:
+                Find position where keyword appears
+                Take string before keyword and convert
+                Multiply/divide the digit by keyword
+        }
     \end{lstlisting}
 
     \subsubsection{tokeniser}
     \begin{lstlisting}[language=C++]
         tokeniser(string: input)
-            {
-                Call regex to tokenise the string 
-                Push each token into a vector 
-                Return vector
-            }
+        {
+            Call regex to tokenise the string 
+            Push each token into a vector 
+            Return vector
+        }
     \end{lstlisting}
 
     \subsubsection{isdigit}
     \begin{lstlisting}[language=C++]
         isdigit(string: input)
-            {
-                Iterate over string
-                Take each character and into 'isdigit' test
-                Return boolean
-            }
+        {
+            Iterate over string
+            Take each character and into 'isdigit' test
+            Return boolean
+        }
     \end{lstlisting}
     \subsection{Node N}
     \begin{lstlisting}[language=C++]
         getnodeN(vector<CirElement>: input)
         {
-            Declare counter: M
-            Find vector size: S
-            Scan entire vector
-            {
-                Find times 'V' or 'I' occur
-            }
-            'N' is S - M
-            Return N
+            Return size of vector<CirElement>
         }
     \end{lstlisting}
     \subsection{Node M}
     \begin{lstlisting}[language=C++]
-        getnodeN(vector<CirElement>: input)
+        getnodeM(vector<CirSrc>)
         {
-            Declare counter: M
-            Scan entire vector
-            {
-                Find times 'V' or 'I' occur
-            }
-            Return M
+            Return size of vector<CirSrc>
         }
     \end{lstlisting}
+    \pagebreak
+    \section{Version history}
+    \subsection{Version 1.0}
 
     \pagebreak
     \section{Add-ons}

@@ -10,24 +10,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Independent Sources}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Support for powers of ten}{4}%
+\contentsline {subsubsection}{\numberline {3.2.1}Voltage sources}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Network Diagram/Graphs}{5}%
+\contentsline {subsection}{\numberline {3.3}Support for powers of ten}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Implementation}{6}%
+\contentsline {section}{\numberline {4}Network Diagram/Graphs}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}CirElement struct}{6}%
+\contentsline {section}{\numberline {5}Implementation}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Parser}{6}%
+\contentsline {subsection}{\numberline {5.1}CirElement struct}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}converter}{7}%
+\contentsline {subsection}{\numberline {5.2}Parser}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}tokeniser}{7}%
+\contentsline {subsubsection}{\numberline {5.2.1}converter}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.3}isdigit}{7}%
+\contentsline {subsubsection}{\numberline {5.2.2}tokeniser}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Node N}{7}%
+\contentsline {subsubsection}{\numberline {5.2.3}isdigit}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Node M}{8}%
+\contentsline {subsection}{\numberline {5.3}Node N}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Add-ons}{9}%
+\contentsline {subsection}{\numberline {5.4}Node M}{9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Version history}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Version 1.0}{10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Add-ons}{11}%
