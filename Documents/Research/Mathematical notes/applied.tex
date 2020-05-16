@@ -359,6 +359,8 @@ given the below graph,
 we can treat the system as one edge with conductance
 \(c_ac_b/(c_a + c_b)\).
 
+\newpage
+
 \section{Random Walks}\label{random-walks}
 
 In this section, we shall examine another system - random walks on a
@@ -688,6 +690,8 @@ times the node variables of each node converges to the true value.
  \caption{Constructing the object of nodes and creating a graph as a set of nodes}
 \end{algorithm}
 
+\newpage
+
 \section{Harmonic Graphs}\label{harmonic-graphs}
 
 In this section we shall examine some properties of harmonic graphs.
@@ -819,6 +823,8 @@ e^T w & = (-A\Phi)^T(-CA\Phi)\\
 \end{align*}
 So therefore $C_e = \xi(\Phi)$ as required.
 \end{proof}
+
+\newpage
 
 \section{Spring-mass Systems}\label{spring-mass-systems}
 
@@ -1018,6 +1024,8 @@ the complementary function would be the linear combination of the
 solutions. See \href{https://www.overleaf.com/read/jgsdhbwydjgt}{here}
 for an example.
 
+\newpage
+
 \section{\texorpdfstring{As \(n \to \infty\) and
 Beyond!}{As n \textbackslash{}to \textbackslash{}infty and Beyond!}}\label{as-n-to-infty-and-beyond}
 
@@ -1205,10 +1213,277 @@ Then as
 \(u_{i+1} - u_{i} + v_{j+1} - v_{j} = \hat{f}_{i,j} \Delta x \Delta y\),
 we have \[
 \begin{split}
-\hat{f}_{i,j} & = \frac{1}{\Delta x \Delta y}(u_{i+1} - u_{i} + v_{j+1} - v_{j})
+\hat{f}_{i,j} & = \frac{1}{\Delta x \Delta y}(u_{i+1} - u_{i} + v_{j+1} - v_{j})\\
+& = -\hat{c}\left(\frac{1}{(\Delta x)^2} (\phi_{i+1,j} - 2 \phi_{i,j} + \phi_{i+1,j})\right) - \hat{c}\left(\frac{1}{(\Delta y)^2}(\phi_{i,j+1}- 2\phi_{i,j} + \phi_{i,j-1})\right).
 \end{split}
+\] Then by letting \(\Delta x \to 0\) and~\(\Delta y \to 0\), we have,
+\[
+\hat{f}(x, y) = -\hat{c}\left(\frac{\partial^2 \phi}{\partial x^2} + \frac{\partial^2 \phi}{\partial y^2}\right) = \nabla^2 \phi
 \]
 
-WIP.
+\subsubsection{Current Density}\label{current-density}
+
+We will now define the notion of \emph{current densities} for later use.
+
+Recall our decomposition of the source density in the \(x\) direction,
+\[
+\begin{split}
+u_i & = -\hat{c}\frac{\Delta y}{\Delta x}(\phi_{i, j}- \phi_{i-1,j})\\
+ & = -\hat{c}\Delta y\frac{(\phi(x, y)- \phi(x- \Delta x, y))}{\Delta x},
+\end{split}
+\] and thus as \(\Delta x \to 0\), we define, \[
+\lim_{\Delta x \to 0} u_i = \Delta y j_x(x) = -\Delta y\hat{c} \frac{\partial \phi}{\partial x},
+\] where \(j_x\) is the current density in the \(x\) direction and
+\(j_x = -\hat{c} \frac{\partial \phi}{\partial x}\).
+
+Similarily, we define the current density in the \(y\) direction as
+\(j_y = -\hat{c} \frac{\partial \phi}{\partial y}\). Then, by using this
+notation, we can write the flux as, \[
+\hat{f} = \nabla^2 \phi = \frac{\partial}{\partial x}\left(-\hat{c} \frac{\partial \phi}{\partial x} \right) + \frac{\partial}{\partial y}\left(- \hat{c} \frac{\partial \phi}{\partial y} \right) = \frac{\partial j_x}{\partial x} + \frac{\partial j_y}{\partial y} = \nabla \cdot \mathbf{J},
+\] where \(\mathbf{J} = (j_x, j_y)^T\).
+
+\subsection{Introduction to Harmonic
+Functions}\label{introduction-to-harmonic-functions}
+
+Harmonic functions are functions with the complex variable
+\(z = x + iy\), that is, \(h\) is harmonic if, \(h = h(z)\). It turns
+out, we can treat harmonic function in much of the same way as real
+function when doing calculus.
+
+This is useful to us as we would like to find some \emph{real}-valued
+function \(\phi\) satisfying the continuous version of the \emph{KCL}
+equation, \(\nabla^2 \phi = 0\). What we can do it find some harmonic
+function \(h\) satisfying the equation instead, i.e. \(\nabla^2 h= 0\),
+then the conjugate of \(h\) must also satisfy the equation also
+resulting \(\nabla^2(h + \bar{h})= 0\) which is a real valued function.
+
+While this is all well and good, the question of course is now why
+bother with the complex? Well, the answer is simple, it turns out
+\textbf{all} harmonic functions satisfy our \emph{KCL} equation!
+
+\begin{proof}
+Let $h$ be a harmonic function $h = h(z) = h(x + iy)$. Then by chain rule,
+$$
+\frac{\partial h}{\partial x} = h'(z)\frac{\partial}{\partial x}(x + iy) = h'(z)\\
+\implies \frac{\partial^2 h}{\partial x^2} = \frac{\partial h'}{\partial x} = h''(z)
+$$
+and similarly,
+$$
+\frac{\partial^2 h}{\partial y^2} = -h''(z).
+$$
+Thus,
+$$\nabla^2 h = h''(z) - h''(z) =0.$$
+\end{proof}
+
+Furthermore, consider the concept of \emph{current density} introduced
+earlier. By algebraic manipulation, we can easily show that if
+\(\phi = \Re \{h(z)\}\) then \(j_x - i j_y = -\hat{c}h'(z)\).
+
+\subsection{Boundary Conditions on a
+Domain}\label{boundary-conditions-on-a-domain}
+
+Just like the discrete harmonic graphs, the nodes within a domain either
+satisfy \emph{KCL} or has potiential specified. If, at a position, we
+specify the potiential, then we call this a boundary condition of
+\emph{Dirichlet type}. On the other hand, if the position satisies
+\emph{KCL}, then we call the boundary condition of \emph{Neumann type}.
+
+\begin{figure}
+\centering
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Polygon Curved [id:ds6574623779756841] 
+\draw   (268,103.6) .. controls (276.5,87.6) and (309.5,78.6) .. (340.5,100.6) .. controls (371.5,122.6) and (322.5,123.6) .. (351.5,156.6) .. controls (380.5,189.6) and (277.5,195.6) .. (268,163.6) .. controls (258.5,131.6) and (259.5,119.6) .. (268,103.6) -- cycle ;
+%Curve Lines [id:da6168671800176511] 
+\draw [line width=3]    (268,163.6) .. controls (273.47,173.39) and (281.01,179.19) .. (294.5,182.6) .. controls (307.99,186.01) and (317.96,187.69) .. (334.5,182.6) ;
+%Curve Lines [id:da013550627123953163] 
+\draw [line width=3]    (288,89.6) .. controls (307.5,85.6) and (314.69,87.65) .. (325.5,92.6) .. controls (336.31,97.55) and (339.5,97.6) .. (345.5,106.6) ;
+%Straight Lines [id:da07975827121551426] 
+\draw    (369.5,153.6) -- (320.3,177.72) ;
+\draw [shift={(318.5,178.6)}, rotate = 333.89] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da8420028202534697] 
+\draw    (371.5,138.6) -- (326.53,100.89) ;
+\draw [shift={(325,99.6)}, rotate = 399.99] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da9940736987720762] 
+\draw    (245.5,147.6) -- (337,153.47) ;
+\draw [shift={(339,153.6)}, rotate = 183.67] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da7355711351189946] 
+\draw    (239.5,126.6) -- (256.45,112.86) ;
+\draw [shift={(258,111.6)}, rotate = 500.96] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (294,123) node [anchor=north west][inner sep=0.75pt]    {$D$};
+% Text Node
+\draw (268,189) node [anchor=north west][inner sep=0.75pt]    {$\phi =0$};
+% Text Node
+\draw (301,67) node [anchor=north west][inner sep=0.75pt]    {$\phi =V$};
+% Text Node
+\draw (369.5,140.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {Dirichlet Type};
+% Text Node
+\draw (148,130.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {Neumann Type};
+
+\end{tikzpicture}
+\end{figure}
+
+With this in mind, we can then ask the usual questions:
+
+\begin{itemize}
+\item
+  What is the potential function \(\phi(x,y)\) inside the domain \(D\).
+\item
+  What is the effective conductance of the whole system.
+\item
+  If a Dirichlet type boundary condition holds at the same boundary
+  point, what is the current there. Or similarity, if the Neumann type
+  condition holds, what it the potiential there (Dirichlet-to-Neumann
+  map)?
+\end{itemize}
+
+\subsubsection{Example 1. Rectangular
+Conductor}\label{example-1.-rectangular-conductor}
+
+Suppose we have a rectangular sheet of metal with uniform conductivity
+\(\hat{c} = 1\). Suppose that this rectangular sheet had height \(H\)
+and width \(L\) with the left side attached to an electrode rod held at
+potiential \(\phi = 1\)~and the right side grounded. Thus with have the
+left and right boundary of the metal sheet have boundary condition of
+Dirichlet type while the top and bottom with Neumann type. We can
+therefore immediately deduce that \(j_y(\pm H/2) = 0\).
+
+With this in consideration, we are now asked to find some harmonic
+function \(h\) such that \(\Re h\) satisfy the boundary conditions.
+
+Let's try \(h(z)= -z/L\). Then \(\phi(x, y) = \Re h(z) = - x/L\) which
+satisfies the boundary conditions of Dirichlet type as
+\(\phi(-L, y) = 1\) and \(\phi(0, y) = 0\) as required. Now, by
+considering \(j_x - ij_y = -h'(z) = 1/L \in \mathbb{R}\) so \(j_y = 0\)
+everywhere, and certainly also zero at the boundary conditions of
+Neumann type.
+
+With that, by the uniqueness principle, we can now concluded
+\(\phi(x, y) = - x/L\) is indeed the require function of potientials.
+
+\begin{figure}
+\centering
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Square [id:dp04571335404326016] 
+\draw   (240,41) -- (319.5,41) -- (319.5,120.5) -- (240,120.5) -- cycle ;
+%Straight Lines [id:da16991034965282426] 
+\draw    (319.5,131.8) -- (319.5,22.8) ;
+\draw [shift={(319.5,20.8)}, rotate = 450] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da039046238517146614] 
+\draw    (229.5,80.8) -- (349.5,80.8) ;
+\draw [shift={(351.5,80.8)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da9521635731512492] 
+\draw [line width=3]    (240,41) -- (240,120.5) ;
+%Straight Lines [id:da6696319689663679] 
+\draw [line width=3]    (319.5,41) -- (319.5,120.5) ;
+%Curve Lines [id:da7266842547156307] 
+\draw    (235.5,133.8) .. controls (221.85,131.85) and (213.9,115.64) .. (231.13,102.78) ;
+\draw [shift={(232.5,101.8)}, rotate = 505.62] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Curve Lines [id:da12674015901960023] 
+\draw    (330.5,133.8) .. controls (340.25,127.95) and (345.25,116.4) .. (328.81,102.85) ;
+\draw [shift={(327.5,101.8)}, rotate = 397.87] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da8320697140599913] 
+\draw    (319.5,41) -- (331.5,40.8) ;
+
+% Text Node
+\draw (326.5,20.2) node [anchor=north west][inner sep=0.75pt]    {$y$};
+% Text Node
+\draw (352,75.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (226,133.4) node [anchor=north west][inner sep=0.75pt]    {$\phi =1$};
+% Text Node
+\draw (301,133.4) node [anchor=north west][inner sep=0.75pt]    {$\phi =0$};
+% Text Node
+\draw (213,59.4) node [anchor=north west][inner sep=0.75pt]    {$-L$};
+% Text Node
+\draw (337,37.4) node [anchor=north west][inner sep=0.75pt]    {$H/2$};
+
+\end{tikzpicture}
+\caption{A rectangular sheet of metal with two electrodes connected.}
+\end{figure}
+
+Let's now find the effective conductance of this system. As in the
+discrete case the effective conductance of this system is defined to be
+the net current entering the circuit via the electrodes. Thus, by
+integrating \(j_x\) with respect to \(y\) would do the trick in this
+case, \[C_e = \int_{-H/2}^{H/2} j_x dy = \frac{H}{L}.\]
+
+\subsubsection{Example 2. Circular
+Conductor}\label{example-2.-circular-conductor}
+
+Now suppose that we have a circular sheet with uniform conductivity such
+that the inner electrode is held at unit potiential while the outer
+boundary is grounded.
+
+\begin{figure}
+\centering
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da535563826717941] 
+\draw    (193.3,100.2) -- (348.3,100.2) ;
+\draw [shift={(350.3,100.2)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da344825467313578] 
+\draw    (270.3,176.2) -- (270.3,22.2) ;
+\draw [shift={(270.3,20.2)}, rotate = 450] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Shape: Circle [id:dp05806867408616001] 
+\draw  [line width=3]  (213.65,100.2) .. controls (213.65,68.91) and (239.01,43.55) .. (270.3,43.55) .. controls (301.59,43.55) and (326.95,68.91) .. (326.95,100.2) .. controls (326.95,131.49) and (301.59,156.85) .. (270.3,156.85) .. controls (239.01,156.85) and (213.65,131.49) .. (213.65,100.2) -- cycle ;
+%Shape: Circle [id:dp20548233722838893] 
+\draw  [line width=3]  (245.3,100.2) .. controls (245.3,86.39) and (256.49,75.2) .. (270.3,75.2) .. controls (284.11,75.2) and (295.3,86.39) .. (295.3,100.2) .. controls (295.3,114.01) and (284.11,125.2) .. (270.3,125.2) .. controls (256.49,125.2) and (245.3,114.01) .. (245.3,100.2) -- cycle ;
+%Straight Lines [id:da43076148237152645] 
+\draw    (295.3,20.2) -- (294.3,176.2) ;
+%Straight Lines [id:da9683934661448754] 
+\draw    (327.38,21.2) -- (326.3,176.2) ;
+%Curve Lines [id:da5783029806206519] 
+\draw    (211,156) .. controls (235.79,155.22) and (247.81,153.28) .. (252.99,126.85) ;
+\draw [shift={(253.3,125.2)}, rotate = 460.12] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Curve Lines [id:da6716597560020423] 
+\draw    (216,43) .. controls (223.84,36.57) and (227.85,38.9) .. (235.86,45.93) ;
+\draw [shift={(237.3,47.2)}, rotate = 221.63] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (352,98.4) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (254,24.4) node [anchor=north west][inner sep=0.75pt]    {$y$};
+% Text Node
+\draw (273,179.4) node [anchor=north west][inner sep=0.75pt]    {$x=\rho $};
+% Text Node
+\draw (321,177.4) node [anchor=north west][inner sep=0.75pt]    {$x=1$};
+% Text Node
+\draw (177,46.4) node [anchor=north west][inner sep=0.75pt]    {$\phi =0$};
+% Text Node
+\draw (170,145.4) node [anchor=north west][inner sep=0.75pt]    {$\phi =1$};
+
+\end{tikzpicture}
+
+\end{figure}
+
+Let's try \(h(z) = \log z / \log \rho\). As then
+\(\phi(x, y) = \Re h(z) = \log \left| z \right| / \log \rho\) which
+satisies the boundary conditions.
+
+But what about the effective conductance?
+
+Again, as the effective conductance is defined to be
+\(\int_{s_0}^{s_1} \mathbf{J}\cdot n ds\), we need to find \(n\) - the
+normal vector from the inner circle. But this is simply
+\(n = \exp(i \theta)\), so \[
+\mathbf{J} \cdot n = \Re \{(j_x - ij_y)e^{i\theta}\} = \Re\{-\hat{c} h'(z) e^{i\theta}\} = - \frac{1}{\log \rho}.
+\] And thus, by multiply this density by the arc-length of the circle,
+we have \(C_e = -\frac{2\pi}{\log \rho}\).
 
 \end{document}
