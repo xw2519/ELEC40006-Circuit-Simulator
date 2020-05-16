@@ -58,7 +58,7 @@ Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc>
         }
     }
 
-    // Matrix entry module for sources
+    // Matrix entry module for independent sources
     // Loop over entire circuit vector and fill in values
     int vcount = 0;
 
@@ -69,16 +69,32 @@ Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc>
             case 'v': // Notation: < n+ >, < n- >
             {
                 vcount++;
-                if (src.n2 == 0)
+
+                if (src.n2 == 0 && src.n1 != 0)
                 {
                     A(src.n1-1,(N+vcount-1)) = 1;
                     A((N+vcount-1),src.n1-1) = 1;
                 }
-                if (src.n1 == 0)
+
+                if (src.n1 == 0 && src.n2 != 0)
                 {
                     A(src.n2-1,(N+vcount-1)) = -1;
                     A((N+vcount-1),src.n2-1) = -1;
                 }
+
+                if (src.n1 != 0 && src.n2 != 0) // n1 is + terminal and n2 is - terminal
+                {
+                    /* Debugging purposes
+                    cout << "None grounded node detected" << endl;
+                    */
+
+                    A(src.n2-1,(N+vcount-1)) = -1;
+                    A((N+vcount-1),src.n2-1) = -1;
+
+                    A(src.n1-1,(N+vcount-1)) = 1;
+                    A((N+vcount-1),src.n1-1) = 1;
+                }
+
                 b(N+vcount-1) = src.DC;
                 break;
             }
@@ -96,9 +112,13 @@ Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc>
             }
         }
     }
-
+    
+    /* Debugging purposes
+    cout << "A matrix: " << endl;
     cout << A << endl;
+    cout << "b matrix: " << endl;
     cout << b << endl;
+    */
 
     // Get solution: matrix x
     Eigen::VectorXf x = A.colPivHouseholderQr().solve(b);
