@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  14 MAY 2020 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  15 MAY 2020 18:44
 entering extended mode
 **"e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex"
 ("e:/Work/ELEC40006/Documents/Latex files/Timeline/Timeline.tex"
@@ -295,24 +295,29 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 98.
+(Font)              <7> on input line 100.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 98.
- [1
+(Font)              <5> on input line 100.
+
+Overfull \hbox (2.56956pt too wide) in paragraph at lines 102--104
+\T1/bch/m/it/10 Documentation and mi-nor im-prove-ments on code-base is a con-stant pro-cess through-
+ []
+
+[1
 
 {C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Timeline\Timeline.aux") ) 
 Here is how much of TeX's memory you used:
- 12157 strings out of 480930
- 253523 string characters out of 2900700
- 460018 words of memory out of 3000000
- 27824 multiletter control sequences out of 15000+200000
+ 12209 strings out of 480930
+ 254882 string characters out of 2900700
+ 466401 words of memory out of 3000000
+ 27876 multiletter control sequences out of 15000+200000
  549662 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,14n,60p,469b,899s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Timeline\Timeline.pdf" (1 page, 44364 bytes).
+{C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Timeline\Timeline.pdf" (1 page, 57141 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
