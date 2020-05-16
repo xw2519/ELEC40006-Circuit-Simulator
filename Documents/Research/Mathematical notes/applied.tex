@@ -69,11 +69,12 @@
 \makeatother
 
 \usepackage{tikz}
-\usepackage{amsmath, amsthm}
+\usepackage{amsthm}
 \usepackage{mathtools}
 \usepackage[ruled,vlined]{algorithm2e}
 \newtheorem{theorem}{Theorem}
 \newtheorem{corollary}{Corollary}[theorem]
+\newtheorem*{remark}{Remark}
 
 \title{Messy Notes for Applied}
 \author{Kexing Ying}
@@ -84,7 +85,7 @@
 
 {
 \hypersetup{linkcolor=black}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
 \newpage
@@ -259,9 +260,6 @@ conductance of a circuit by simplifying the circuit whenever we see
 edges in series or parallel.
 
 \subsubsection{Edges in Parallel}\label{edges-in-parallel}
-
-I'm going to talk about parallel first because it is nicer to work out
-mathematically.
 
 Suppose we have the following graph represting a particular section of
 another graph with parallel edges.
@@ -752,7 +750,7 @@ dissipation, i.e. \[\xi(\Phi_*) = \min_\Phi \xi(\Phi).\]
 
 \subsection{Thomson's Principle}\label{thomsons-principle}
 
-By mathematical manipulation the energy dissipation from a cirucit can
+By mathematical manipulation the energy dissipation from a circuit can
 also be written as \[
 \begin{split}
 \xi(\Phi) = \Phi^T K \Phi & = \Phi^T A^T C A \Phi\\
@@ -802,8 +800,8 @@ e^T w = (- A\Phi)^T w &= - \Phi^T A^T w \\
 \end{proof}
 
 \begin{corollary}
-Suppose we have two boundary nodes with potiential 1 and 0. Let $w$ be the current in the cirucit 
-and let $e$ be the potiential difference of the cirucit, i.e. $e = -A\Phi$ where $\Phi$ is the potiential 
+Suppose we have two boundary nodes with potiential 1 and 0. Let $w$ be the current in the circuit 
+and let $e$ be the potiential difference of the circuit, i.e. $e = -A\Phi$ where $\Phi$ is the potiential 
 vector of the circuit. Then the effective conductance is the energy dissipation.
 \end{corollary}
 
@@ -821,5 +819,396 @@ e^T w & = (-A\Phi)^T(-CA\Phi)\\
 \end{align*}
 So therefore $C_e = \xi(\Phi)$ as required.
 \end{proof}
+
+\section{Spring-mass Systems}\label{spring-mass-systems}
+
+In this section we will consider a spring-mass system as a harmonic
+graph and through the usage of physical laws such as \emph{Hookes'} and
+\emph{Newton's second law} we will find a method for finding the
+position of the individual masses as a function of time.
+
+\subsection{Hookes' Law}\label{hookes-law}
+
+We will use two laws from physics to solve our problem so I shall
+briefly introduce them here.
+
+Consider the spring-mass system described in the figure below, we can
+easily imagine the system as a harmonic graph with the node variables
+being the distance of each mass to their equilibrium positions (i.e.~the
+displacements) \(\phi_i = \hat{x}_i - x_i\) and the edge variables being
+the spring constants \(c_i\).
+
+\begin{figure}
+\centering
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Shape: Square [id:dp4770875329523414] 
+\draw   (180,81) -- (189.5,81) -- (189.5,90.5) -- (180,90.5) -- cycle ;
+%Shape: Square [id:dp610923931183637] 
+\draw   (321,81) -- (330.5,81) -- (330.5,90.5) -- (321,90.5) -- cycle ;
+%Shape: Square [id:dp645947014730305] 
+\draw   (250,81) -- (259.5,81) -- (259.5,90.5) -- (250,90.5) -- cycle ;
+%Shape: Resistor [id:dp08990575577200755] 
+\draw   (189.5,85.5) -- (200.39,85.5) -- (202.81,80.5) -- (207.65,90.5) -- (212.49,80.5) -- (217.33,90.5) -- (222.17,80.5) -- (227.01,90.5) -- (231.85,80.5) -- (236.69,90.5) -- (239.11,85.5) -- (250,85.5) ;
+%Shape: Resistor [id:dp6253833584356869] 
+\draw   (260.2,85.5) -- (271.14,85.5) -- (273.58,80.5) -- (278.44,90.5) -- (283.3,80.5) -- (288.17,90.5) -- (293.03,80.5) -- (297.9,90.5) -- (302.76,80.5) -- (307.62,90.5) -- (310.06,85.5) -- (321,85.5) ;
+%Straight Lines [id:da8569847792249894] 
+\draw    (184.5,110.2) -- (338.5,110.2) ;
+\draw [shift={(340.5,110.2)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da43999178473202294] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (184.75,85.75) -- (184.5,110.2) ;
+%Straight Lines [id:da4866539470347948] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (254.75,85.75) -- (254.5,110.2) ;
+%Straight Lines [id:da06540671559686162] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (325.75,85.75) -- (325.5,110.2) ;
+%Shape: Square [id:dp5097758133607224] 
+\draw   (190,129) -- (199.5,129) -- (199.5,138.5) -- (190,138.5) -- cycle ;
+%Shape: Square [id:dp8603200860244262] 
+\draw   (231,129) -- (240.5,129) -- (240.5,138.5) -- (231,138.5) -- cycle ;
+%Shape: Resistor [id:dp894707986742318] 
+\draw   (199.5,133.55) -- (205.17,133.55) -- (206.43,127.5) -- (208.95,139.6) -- (211.47,127.5) -- (213.99,139.6) -- (216.51,127.5) -- (219.03,139.6) -- (221.55,127.5) -- (224.07,139.6) -- (225.33,133.55) -- (231,133.55) ;
+%Shape: Resistor [id:dp7054004136652554] 
+\draw   (240.2,133) -- (251.14,133) -- (253.58,128.5) -- (258.44,137.5) -- (263.3,128.5) -- (268.17,137.5) -- (273.03,128.5) -- (277.9,137.5) -- (282.76,128.5) -- (287.62,137.5) -- (290.06,133) -- (301,133) ;
+%Straight Lines [id:da2557767227745209] 
+\draw    (159.5,71.6) -- (159.5,150.6) ;
+\draw [shift={(159.5,152.6)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da2452306220658811] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (184.75,85.75) -- (159.5,85.6) ;
+%Straight Lines [id:da3283021762322267] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (159.5,133.6) -- (194.75,133.75) ;
+%Shape: Square [id:dp9157524101846266] 
+\draw   (301,128) -- (310.5,128) -- (310.5,137.5) -- (301,137.5) -- cycle ;
+%Straight Lines [id:da12751473148360892] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (194.75,110.75) -- (194.5,135.2) ;
+%Straight Lines [id:da8448451493709981] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (236,110.3) -- (235.75,134.75) ;
+%Straight Lines [id:da13574455531129237] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (306,110.3) -- (305.75,134.75) ;
+
+% Text Node
+\draw (176,70) node [anchor=north west][inner sep=0.75pt]    {$m_{1}$};
+% Text Node
+\draw (246,70) node [anchor=north west][inner sep=0.75pt]    {$m_{2}$};
+% Text Node
+\draw (317,70) node [anchor=north west][inner sep=0.75pt]    {$m_{3}$};
+% Text Node
+\draw (346,107) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (173,113.4) node [anchor=north west][inner sep=0.75pt]    {$x_{1}$};
+% Text Node
+\draw (248,113.4) node [anchor=north west][inner sep=0.75pt]    {$x_{2}$};
+% Text Node
+\draw (320,113.4) node [anchor=north west][inner sep=0.75pt]    {$x_{3}$};
+% Text Node
+\draw (212.65,65.4) node [anchor=north west][inner sep=0.75pt]    {$c_{1}$};
+% Text Node
+\draw (287,65.4) node [anchor=north west][inner sep=0.75pt]    {$c_{2}$};
+% Text Node
+\draw (155,160) node [anchor=north west][inner sep=0.75pt]    {$t$};
+% Text Node
+\draw (140,80) node [anchor=north west][inner sep=0.75pt]    {$t_{0}$};
+% Text Node
+\draw (140,127) node [anchor=north west][inner sep=0.75pt]    {$t_{1}$};
+% Text Node
+\draw (191.5,95) node [anchor=north west][inner sep=0.75pt]    {$\hat{x}_{1}$};
+% Text Node
+\draw (297.5,95) node [anchor=north west][inner sep=0.75pt]    {$\hat{x}_{3}$};
+% Text Node
+\draw (226.5,95) node [anchor=north west][inner sep=0.75pt]    {$\hat{x}_{2}$};
+
+\end{tikzpicture}
+
+\caption{A spring-mass system with three masses in two position in time.}
+\end{figure}
+
+Then \emph{Hookes' law} states that the tension in spring \(i\) is given
+by \[T_i = c_i (\phi_{i+1} - \phi_i). \] Thus, by writing in matrix
+form, we have, \[\mathbf{T} = C A \Phi,\] where \(\mathbf{T}\)~is the
+tension vector, \(C\)~the spring constant vector, \(A\) the incidence
+matrix and \(\Phi\)~the displacement vector.
+
+Now by considering the sum of the tension connected to the \(i\)-th mass
+is the force experienced by that mass, we have,
+\[- A^T \mathbf{T} = f,\] where \(f\)~is the force vector denoting the
+force experienced by each mass.
+
+\subsection{Boundary Condition}\label{boundary-condition}
+
+With this equation in mind, let us consider the boundary condition where
+the system is in equilibrium.
+
+At equilibrium, the net force at each mass other than the boundary
+masses is zero. Suppose there is some external force acting on the
+system \(f_{\text{ext}} = (f_i)^T\), then we have
+\[ f_{\text{ext}} + f = 0,\] where \(f = -A^TCA \Phi\), thus,
+\[f_{\text{ext}} = A^T CA \Phi = K\Phi.\]
+
+\begin{remark}
+Note the similarity of this with the equation derived from circuits.
+\end{remark}
+
+\subsection{Spring-mass System in
+Motion}\label{spring-mass-system-in-motion}
+
+Now suppose that our system is no longer in equilibrium, then we can no
+longer assume the net force at each mass is zero; but we can instead
+utilize Newton's second law (\(F = ma\)), \[
+f_{\text{ext}} + f = M \frac{d^2\mathbf{x}}{dt^2} = M \frac{d^2}{dt^2}(\mathbf{x} - \mathbf{x}_0) = M \frac{d^2\Phi}{dt^2},
+\] where \(M := \text{diag}(m_1, \cdots, m_n)\) is the mass matrix,
+\(\mathbf{x}\) is the position vector of the masses and \(\mathbf{x}_0\)
+is the initial position of the masses.
+
+\begin{remark}
+Note that the second equality is true since $\mathbf{x}_0$ is a constant.
+\end{remark}
+
+Thus, by rewritting the above equation, we have \[
+f_{\text{ext}} - K \Phi =  M \frac{d^2\Phi}{dt^2}.
+\]
+
+But now the question becomes: how do we solve such a system?
+
+I will outline the main steps below and then elaborate on how to solve
+the differential equation as solving the boundary condition equation is
+exactly the same as what we have done for circuits.
+
+\begin{itemize}
+\tightlist
+\item
+  We will first find the general solution to the complementary function
+  of the differential equation, i.e.~the solution to the equation
+  \[ M \frac{d^2\Phi}{dt^2} + K \Phi_{\text{CF}} = 0. \]
+\item
+  Then I will find a particular solution to the boundary condition
+  equation, \[f_{\text{ext}} = K\Phi.\]
+\item
+  Then general solution will simply be the sum of the complementary
+  function with the particular solution.
+\end{itemize}
+
+To solve \(M \frac{d^2\Phi}{dt^2} + K \Phi_{\text{CF}} = 0\), we will
+use the eigenvalue method. Suppose our solution is in the form
+\(\Phi(t) = v \exp(i \omega t)\) for some \(\omega \in \mathbb{R}\)~and
+\(v \in \mathbb{C}^n\). Then by subsituting \(\Phi\) into our
+differential equation, we have
+\[-K(ve^{i\omega t}) = - \omega^2 v e^{i\omega t},\]
+\[\implies K v = \omega^2 v,\] thus \(v\)~is an eigenvector of \(K\)
+(whose existence is guarenteed by the fact that \(K\) is symmetric) so
+we have found \(\Phi(t) = v\exp(i \omega t)\)~satisfying the
+differential equation.
+
+But now we've encountered the problem that our solution is not
+neccessarily real as \(v \in \mathbb{C}^n\). Thus, by considering that,
+as both \(K\) and \(\omega^2\)~are real, by taking the complex conjugate
+on both sides of the equation \[Kv = \omega^2 v,\] we have,
+\[K\bar{v} = \omega^2 \bar{v},\] implying the conjugate of \(v\) is also
+a eigenvector of \(K\) with eigenvalue \(\omega^2\). Thus, with this, we
+can find the real-valued solutions of our differential equation by
+considering \[
+\begin{split}
+\frac{1}{2}ve^{i \omega t} + \frac{1}{2} \bar{v}e^{-i \omega t} & = \Re\{ve^{i \omega t}\} \in \mathbb{R}\\
+\frac{1}{2i}ve^{i \omega t} - \frac{1}{2i} \bar{v}e^{-i \omega t} & = \Im\{ve^{i \omega t}\} \in \mathbb{R}
+\end{split}
+\] we have found real-valued soltuions to our differential equation and
+the complementary function would be the linear combination of the
+solutions. See \href{https://www.overleaf.com/read/jgsdhbwydjgt}{here}
+for an example.
+
+\section{\texorpdfstring{As \(n \to \infty\) and
+Beyond!}{As n \textbackslash{}to \textbackslash{}infty and Beyond!}}\label{as-n-to-infty-and-beyond}
+
+In this section we will consider a harmonic graph with \(n\) nodes as
+\(n \to \infty\). Physically, we can interpret this as the problem of
+finding the electric potiential at some position in a metal rod among
+other things.
+
+We will first examine what happend to our model in a one dimensional
+case - as in the rod perspective and then we will also expand the system
+to a two dimensional case such the problem of finding the electric
+potiential on a metal plate.
+
+\subsection{\texorpdfstring{Conductances in \(\mathbb{R}\) and
+\(\mathbb{R}^2\)}{Conductances in \textbackslash{}mathbb\{R\} and \textbackslash{}mathbb\{R\}\^{}2}}\label{conductances-in-mathbbr-and-mathbbr2}
+
+Up to now, we have simply assigned a number to an edge saying that
+corresponds to its conductance without regard to the physical length of
+the wire or any other physical attributes. This was prefectly fine since
+we only cared for the `topology' of the graph but it's less than ideal
+when working with one dimensional rods that conduct electricity. This is
+because as the rod increases in length, it is natural to expect it will
+be increasingly `harder' for electrons to traverse the entire distance
+so the conductance should be negatively proportional to the length. With
+that in mind, we will define the conductance of a rod to be \[
+c = \frac{\hat{c}}{L},
+\] where \(\hat{c}\) is the \emph{conductivity} of the metarial and
+\(L\) the length of the rod.
+
+Now, suppose that our wire is no longer one dimensional and has now a
+mysterious property called ``width''. As the width of the rod increases,
+physically we can imagine there being more space for the electrons so we
+would expect the conductance to increase as the width increases. Hence,
+in a two dimensional case, we define the conductance as
+\[c = \frac{H}{L}\hat{c},\] where \(H\) denotes the width increases.
+
+\subsection{1-D Continuum Limit}\label{d-continuum-limit}
+
+Suppose we have a wire along the real interval \([0, 1]\) and we place
+\(N + 1\) nodes equidistant apart, i.e.~for all
+\(i \in {0, 1, \cdots N}\) there is a node at the position \(i / N\).
+Now let us denote the position of the \(i\)-th node on the inverval by
+\(x_i\), and the potiential at this position by \(\phi(x_i)\) thus
+\(x_i = i / N = i \Delta x\) where \(\Delta x = 1 / N\).
+
+Then by considering our incidence matrix \(A_N\) for all \(N\), we have
+\(A_N \Phi\) being the potiential difference vector at each node i.e.
+\((A_N \Phi)_i = \phi(x_{i+1}) - \phi(x_i) = \Delta \phi_i\). Now, by
+defining the conductance between the \(i+1\)-th node and the \(i\)-node
+as \(c_i / \Delta x\) (recall the reasoning above), we have
+\((-CA_N \Phi)_i = -c_i \frac{\Delta \phi_i}{\Delta x} = w_i\), where
+\(w_i\) represent the current on the edge between the \(i+1\)-th and the
+\(i\)-th node.
+
+\begin{figure}
+\centering
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da8569847792249894] 
+\draw    (184.5,110.2) -- (338.5,110.2) ;
+\draw [shift={(340.5,110.2)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6342731364122922] 
+\draw    (190.5,101.6) -- (190.5,110.6) ;
+%Straight Lines [id:da7378121291485908] 
+\draw    (320.5,101.6) -- (320.5,110.6) ;
+%Shape: Circle [id:dp39062931789107225] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (186.75,110.6) .. controls (186.75,108.53) and (188.43,106.85) .. (190.5,106.85) .. controls (192.57,106.85) and (194.25,108.53) .. (194.25,110.6) .. controls (194.25,112.67) and (192.57,114.35) .. (190.5,114.35) .. controls (188.43,114.35) and (186.75,112.67) .. (186.75,110.6) -- cycle ;
+%Shape: Circle [id:dp5374761279814373] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (316.75,110.6) .. controls (316.75,108.53) and (318.43,106.85) .. (320.5,106.85) .. controls (322.57,106.85) and (324.25,108.53) .. (324.25,110.6) .. controls (324.25,112.67) and (322.57,114.35) .. (320.5,114.35) .. controls (318.43,114.35) and (316.75,112.67) .. (316.75,110.6) -- cycle ;
+%Straight Lines [id:da7434534333576173] 
+\draw    (185.5,149.2) -- (339.5,149.2) ;
+\draw [shift={(341.5,149.2)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da9968578260518652] 
+\draw    (191.5,140.6) -- (191.5,149.6) ;
+%Straight Lines [id:da49456819784503137] 
+\draw    (321.5,140.6) -- (321.5,149.6) ;
+%Shape: Circle [id:dp11924077022975177] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (187.75,149.6) .. controls (187.75,147.53) and (189.43,145.85) .. (191.5,145.85) .. controls (193.57,145.85) and (195.25,147.53) .. (195.25,149.6) .. controls (195.25,151.67) and (193.57,153.35) .. (191.5,153.35) .. controls (189.43,153.35) and (187.75,151.67) .. (187.75,149.6) -- cycle ;
+%Shape: Circle [id:dp6259995402563507] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (317.75,149.6) .. controls (317.75,147.53) and (319.43,145.85) .. (321.5,145.85) .. controls (323.57,145.85) and (325.25,147.53) .. (325.25,149.6) .. controls (325.25,151.67) and (323.57,153.35) .. (321.5,153.35) .. controls (319.43,153.35) and (317.75,151.67) .. (317.75,149.6) -- cycle ;
+%Shape: Circle [id:dp013286300420789043] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (256,149.2) .. controls (256,147.13) and (257.68,145.45) .. (259.75,145.45) .. controls (261.82,145.45) and (263.5,147.13) .. (263.5,149.2) .. controls (263.5,151.27) and (261.82,152.95) .. (259.75,152.95) .. controls (257.68,152.95) and (256,151.27) .. (256,149.2) -- cycle ;
+%Straight Lines [id:da7623978469655686] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (260.5,175.6) -- (260.5,194.6) ;
+\draw [shift={(260.5,196.6)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da013447265129785668] 
+\draw    (186.5,209.2) -- (340.5,209.2) ;
+\draw [shift={(342.5,209.2)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da33140389575695295] 
+\draw    (192.5,200.6) -- (192.5,209.6) ;
+%Straight Lines [id:da15838414392114086] 
+\draw    (322.5,200.6) -- (322.5,209.6) ;
+%Straight Lines [id:da07116873063457807] 
+\draw [line width=3.75]    (192.5,209.6) -- (322.5,209.6) ;
+%Shape: Circle [id:dp6424225125956027] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (318.75,209.6) .. controls (318.75,207.53) and (320.43,205.85) .. (322.5,205.85) .. controls (324.57,205.85) and (326.25,207.53) .. (326.25,209.6) .. controls (326.25,211.67) and (324.57,213.35) .. (322.5,213.35) .. controls (320.43,213.35) and (318.75,211.67) .. (318.75,209.6) -- cycle ;
+%Shape: Circle [id:dp8748283004055388] 
+\draw  [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ,fill opacity=1 ] (188.75,209.6) .. controls (188.75,207.53) and (190.43,205.85) .. (192.5,205.85) .. controls (194.57,205.85) and (196.25,207.53) .. (196.25,209.6) .. controls (196.25,211.67) and (194.57,213.35) .. (192.5,213.35) .. controls (190.43,213.35) and (188.75,211.67) .. (188.75,209.6) -- cycle ;
+%Straight Lines [id:da6256103133210043] 
+\draw    (245.5,136.6) -- (257.5,136.6) ;
+\draw [shift={(259.5,136.6)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6199463047423193] 
+\draw    (213.5,136.6) -- (201.5,136.6) ;
+\draw [shift={(199.5,136.6)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+
+% Text Node
+\draw (346,107) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (185,85) node [anchor=north west][inner sep=0.75pt]    {$0$};
+% Text Node
+\draw (315,86) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (236,115) node [anchor=north west][inner sep=0.75pt]    {$N=1$};
+% Text Node
+\draw (347,146) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (186,124) node [anchor=north west][inner sep=0.75pt]    {$0$};
+% Text Node
+\draw (316,125) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (236,156) node [anchor=north west][inner sep=0.75pt]    {$N=2$};
+% Text Node
+\draw (235,218) node [anchor=north west][inner sep=0.75pt]    {$N\rightarrow \infty $};
+% Text Node
+\draw (348,206) node [anchor=north west][inner sep=0.75pt]    {$x$};
+% Text Node
+\draw (187,184) node [anchor=north west][inner sep=0.75pt]    {$0$};
+% Text Node
+\draw (317,185) node [anchor=north west][inner sep=0.75pt]    {$1$};
+% Text Node
+\draw (217,129) node [anchor=north west][inner sep=0.75pt]    {$\Delta x_{i}$};
+
+\end{tikzpicture}
+\caption{Bringing the number of nodes to infinity.}
+\end{figure}
+
+Now, by considering \(- A^T w = f\) where \(f\)~is the vector
+representing the sum of currents out of the nodes, let's define
+\(\hat{f_i}\Delta x = (f)_i\), where \(\hat{f_i}\) represents the source
+current density at the \(i\)-th node. The reason why we are doing this
+is because the net current out of each node is dependent on the
+conductance of its neighbouring edges; but as \(\Delta x \to 0\)~the
+conductance tends to infinity which doesn't have any physical
+representations. Thus, by dividing \(f\) by \(\Delta x\) we can recieve
+a notion of the density of the net current out of each position (also
+know as \emph{electric flux}). Then, by rewritting, we have
+\((- A^T w)_i = w_{i+1} - w_i = \Delta w_i = \hat{f}_i \Delta x\).
+
+Finally, by plugging in our equation for \(w_i\), we have \[
+\hat{f}_i = \frac{\Delta w_i}{\Delta x} = \frac{1}{\Delta x}\left(-c_i \frac{\Delta \phi_i}{\Delta x}\right),
+\] and as \(N \to \infty\), we have \(\Delta x \to 0\) and \[
+\hat{f}(x) = \frac{dw}{dx} = \frac{d}{dx}\left(-c(x) \frac{d\phi}{dx}\right).
+\] (Oftentimes, we have \(c(x)\) being a constant as the metarial
+throughout the rod is the same, then we can bring out \(c\)~ from the
+derivative resulting in the differential equation
+\(\hat{f}(x) = -c \frac{d^2 \phi}{dx^2}\).)
+
+\subsection{2-D Continuum Limit}\label{d-continuum-limit-1}
+
+Let's now consider the two dimensional limit. This time, rather having
+each node represeting some length \(\Delta x\) that tends to 0, we will
+let each node represent some area \(\Delta x \Delta y \to 0\). As we are
+working with a two dimensional plane alike the Cartesian coordinates, we
+will denote each node by a tuple of two numbers \(i,j\). With that, we
+shall again define the soure density by
+\(f_{i,j} = \hat{f}_{i,j} \Delta x \Delta y\). As argued before, we will
+also define the conductance at each position by
+\(c = \hat{c} \frac{\Delta y}{\Delta x}\).
+
+Then, by decomposing the contributing currents at each node into the
+\(x\) and \(y\)~directions denoted by \(u_i\) and \(v_j\) we have, \[
+\begin{split}
+u_{i+1} & = -c(\phi_{i+1, j}- \phi_{i,j}) = -\hat{c}\frac{\Delta y}{\Delta x}(\phi_{i+1, j}- \phi_{i,j})\\
+u_{i} & = -c(\phi_{i, j}- \phi_{i-1,j}) = -\hat{c}\frac{\Delta y}{\Delta x}(\phi_{i, j}- \phi_{i-1,j})\\
+v_{j+1} & = -c(\phi_{i, j+1}- \phi_{i,j}) = -\hat{c}\frac{\Delta x}{\Delta y}(\phi_{i, j+1}- \phi_{i,j})\\
+v_{j} & = -c(\phi_{i, j}- \phi_{i,j-1}) = -\hat{c}\frac{\Delta x}{\Delta y}(\phi_{i, j}- \phi_{i,j-1})
+\end{split}
+\] where \(\phi_{i,j}\) is the potiential at the \(i,j\)-th node.
+
+Then as
+\(u_{i+1} - u_{i} + v_{j+1} - v_{j} = \hat{f}_{i,j} \Delta x \Delta y\),
+we have \[
+\begin{split}
+\hat{f}_{i,j} & = \frac{1}{\Delta x \Delta y}(u_{i+1} - u_{i} + v_{j+1} - v_{j})
+\end{split}
+\]
+
+WIP.
 
 \end{document}
