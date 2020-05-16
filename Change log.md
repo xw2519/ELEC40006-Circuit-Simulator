@@ -45,5 +45,5 @@ Authors:
 - Minor code optimisation.
 
 ### 16 May 2020
-- Caught a bug in Analysis module not calculating non-grounded voltage source.
+- Caught a bug in Analysis module not calculating non-grounded voltage and current source.
 - Research into v2.0 begun.
