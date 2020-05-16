@@ -186,6 +186,8 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Analysis Module\Analysis Module.aux
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Analysis Module\Analysis Module.run.xml
 OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Analysis Module\Analysis Module.run.xml
@@ -195,6 +197,8 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
@@ -227,3 +231,5 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb

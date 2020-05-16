@@ -232,14 +232,21 @@
     \end{figure}
     \subsubsection{$x_b$ matrix}
     Corresponds to the number of voltage sources. Example given in Figure 2.
+
     \subsection{$b$ matrix}
-    This matrix has dimension $[(N \times M)) \times 1]$ and contains the independent current and voltage sources.
-    
+    This matrix has dimension $[(N \times M)) \times 1]$ and contains the independent 
+    current and voltage sources.
     The matrix is composed of two matrices: $b_a$ and $b_b$:
     \begin{itemize}
-        \item $b_a$: $N \times 1$ Either 0 or the sum of independent current sources.
-        \item $b_b$: $M \times 1$ Values of independent voltage sources.
+        \item $b_a$: $[N \times 1]$ Either 0 or the sum of independent current sources.
+        \item $b_b$: $[M \times 1]$ Values of independent voltage sources.
     \end{itemize}
+    \subsubsection{$b_a$ matrix}
+    Each element in the matrix represent the sum of current sources at that node. \par
+    If there is no current sources, then value is 0.
+    \subsubsection{$b_b$ matrix}
+    Each element in the matrix represent the the value of independent voltage source. \par
+
     \pagebreak
 
     \section{Support for $C$ and $L$ elements}
@@ -273,9 +280,14 @@
     \pagebreak
 
     \section{Dependent sources}
-    \subsection{Voltage Controlled Current Source (VCVS)}
+    \subsection{Voltage Controlled Voltage Source (VCVS)}
+    \subsection{Current Controlled Voltage Source (CCVS)}
+    \subsection{Voltage Controlled Current Source (VCCS)}
+    \subsection{Current Controlled Current Source (CCCS)}
     \pagebreak
 
+    \section{Op amp support}
+    \pagebreak
     \section{The use of Eigen library}
     Eigen is a linear algebra library used in the C++ environment. For our project, we chose to implement 
     Eigen functions to handle the matrix related operations such as finding inverse matrix 
@@ -362,7 +374,18 @@
 
     \section{Version history}
     \subsection{Version 1.0}
-    
+    Basic functionality of the Analysis module is implemented.
+    \subsubsection{List of functions}
+    \begin{itemize}
+        \item Basic circuit components recognised.
+        \item Able to perform DC [.op] analysis.
+    \end{itemize}
+    \subsubsection{Still to do for v2.0}
+    \begin{itemize}
+        \item Transient capabilities.
+        \item Dependent sources.
+        \item C and L elements.
+    \end{itemize}
     \pagebreak
     \section{Miscellaneous}
 

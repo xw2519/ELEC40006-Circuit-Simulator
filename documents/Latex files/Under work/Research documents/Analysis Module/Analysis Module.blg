@@ -1,15 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'Analysis Module.blg'
-[80] biber-MSWIN64:322> INFO - === 
-[100] Biber.pm:415> INFO - Reading 'Analysis Module.bcf'
+[75] biber-MSWIN64:322> INFO - === 
+[96] Biber.pm:415> INFO - Reading 'Analysis Module.bcf'
 [202] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[220] Biber.pm:4256> INFO - Processing section 0
-[220] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
-[230] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
-[245] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
-[248] bibtex.pm:1653> INFO - LaTeX decoding ...
-[256] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
-[276] Utils.pm:304> WARN - year field '2005 - 2019' in entry 'nodeanalysis' is not an integer - this will probably not sort properly.
-[277] Utils.pm:320> ERROR - BibTeX subsystem: C:\Users\alw\AppData\Local\Temp\biber_tmp_aAW9\biblography.bib_27872.utf8, line 42, syntax error: at end of input, expected end of entry ("}" or ")") (skipping to next "@")
-[277] Biber.pm:128> INFO - WARNINGS: 1
-[277] Biber.pm:132> INFO - ERRORS: 1
+[221] Biber.pm:4256> INFO - Processing section 0
+[222] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[232] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[248] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[252] bibtex.pm:1653> INFO - LaTeX decoding ...
+[262] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[282] Utils.pm:304> WARN - year field '2005 - 2019' in entry 'nodeanalysis' is not an integer - this will probably not sort properly.
+[293] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[293] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[293] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[294] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[297] bbl.pm:652> INFO - Writing 'Analysis Module.bbl' with encoding 'UTF-8'
+[298] bbl.pm:755> INFO - Output to Analysis Module.bbl
+[299] Biber.pm:128> INFO - WARNINGS: 1

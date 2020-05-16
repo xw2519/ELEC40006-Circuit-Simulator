@@ -34,6 +34,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}$b$ matrix}{8}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1}$b_a$ matrix}{8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.2}$b_b$ matrix}{8}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Support for $C$ and $L$ elements}{9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1}Theory behind capacitor and inductor}{9}%
@@ -42,20 +46,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Dependent sources}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Voltage Controlled Current Source (VCVS)}{10}%
+\contentsline {subsection}{\numberline {5.1}Voltage Controlled Voltage Source (VCVS)}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}The use of Eigen library}{11}%
+\contentsline {subsection}{\numberline {5.2}Current Controlled Voltage Source (CCVS)}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Implementation}{12}%
+\contentsline {subsection}{\numberline {5.3}Voltage Controlled Current Source (VCCS)}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Analysis}{12}%
+\contentsline {subsection}{\numberline {5.4}Current Controlled Current Source (CCCS)}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}FormMatrix}{12}%
+\contentsline {section}{\numberline {6}Op amp support}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}SemanticCheck}{13}%
+\contentsline {section}{\numberline {7}The use of Eigen library}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Version history}{14}%
+\contentsline {section}{\numberline {8}Implementation}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Version 1.0}{14}%
+\contentsline {subsection}{\numberline {8.1}Analysis}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Miscellaneous}{15}%
+\contentsline {subsubsection}{\numberline {8.1.1}FormMatrix}{13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.1.2}SemanticCheck}{14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Version history}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Version 1.0}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.1.1}List of functions}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.1.2}Still to do for v2.0}{15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Miscellaneous}{16}%
