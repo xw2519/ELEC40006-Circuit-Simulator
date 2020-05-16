@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber Analysis Module"] 1589476200 "Analysis Module.bcf" "Analysis Module.bbl" "Analysis Module" 1589559872
-  "Analysis Module.bcf" 1589559872 101798 adcd83e2d5c83c731566da48804e36b1 "pdflatex"
+["biber Analysis Module"] 1589476200 "Analysis Module.bcf" "Analysis Module.bbl" "Analysis Module" 1589643437
+  "Analysis Module.bcf" 1589643437 101798 adcd83e2d5c83c731566da48804e36b1 "pdflatex"
   "biblography.bib" 1589404630 740 d8d659a41ec9f6aba2654d29f6d37cfd ""
   (generated)
-  "Analysis Module.blg"
   "Analysis Module.bbl"
-["pdflatex"] 1589559870 "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex" "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.pdf" "Analysis Module" 1589559872
-  "Analysis Module.aux" 1589559872 6551 3d63c085d92400f55166104a54905524 "pdflatex"
+  "Analysis Module.blg"
+["pdflatex"] 1589643435 "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.tex" "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.pdf" "Analysis Module" 1589643437
+  "Analysis Module.aux" 1589643437 6735 b6c05c468f4a2db6a062a67463d0a3d1 "pdflatex"
   "Analysis Module.bbl" 1589476202 1634 28530c8c5e171b5728a9efc863cd62e4 "biber Analysis Module"
-  "Analysis Module.run.xml" 1589559872 2397 dccb474e06a699e2c137cbddd55bc80e "pdflatex"
-  "Analysis Module.tex" 1589559869 13352 0357e00bcec2dd0ab193475f5656e1e3 ""
-  "Analysis Module.toc" 1589559872 2842 bc75b42a6b7e0d086a0ebbaebb6cc62d "pdflatex"
+  "Analysis Module.run.xml" 1589643437 2397 dccb474e06a699e2c137cbddd55bc80e "pdflatex"
+  "Analysis Module.tex" 1589643430 13411 fbcc116f8272c54cc069ae2b95029d7e ""
+  "Analysis Module.toc" 1589643437 2968 6f5154bcd366ca53caeed27b16d46230 "pdflatex"
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1588425917 11548 1a11383e12a022291277a2336d645ae9 ""
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1588803624 10016677 2ec5bb806e2debf93b1063d30ceaa460 ""
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1589473117 135735 c42ad2c60f57181ce51b1f94a147eabc ""
@@ -103,14 +103,14 @@
   "Images/Matrix2.png" 1589404630 11408 a1851883070c6c462cae09dbc5639978 ""
   "Images/Matrix3.png" 1589404630 3282 0fa0c69f847a78c97cf873c1495cad39 ""
   "Images/Matrix4.png" 1589404630 3743 deb52990dd2069f183f8cb6a5b965a24 ""
-  "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.aux" 1589559872 6551 3d63c085d92400f55166104a54905524 ""
-  "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex" 1589559869 13352 0357e00bcec2dd0ab193475f5656e1e3 ""
+  "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.aux" 1589643437 6735 b6c05c468f4a2db6a062a67463d0a3d1 ""
+  "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.tex" 1589643430 13411 fbcc116f8272c54cc069ae2b95029d7e ""
   (generated)
-  "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.pdf"
+  "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.log"
+  "Analysis Module.bcf"
+  "Analysis Module.log"
+  "Analysis Module.toc"
   "Analysis Module.aux"
+  "e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.pdf"
   "Analysis Module.run.xml"
   "Analysis Module.pdf"
-  "Analysis Module.bcf"
-  "Analysis Module.toc"
-  "Analysis Module.log"
-  "e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.log"

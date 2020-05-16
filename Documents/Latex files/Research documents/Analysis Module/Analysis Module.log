@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  15 MAY 2020 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  16 MAY 2020 16:37
 entering extended mode
-**"e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
-("e:/Work/ELEC40006/Documents/Latex files/Research/Analysis Module/Analysis Module.tex"
+**"e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.tex"
+("e:/Work/ELEC40006/Documents/Latex files/Research documents/Analysis Module/Analysis Module.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -346,7 +346,7 @@ Package caption Info: listings package is loaded.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count385
 \l__pdf_internal_box=\box47
-) ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux"
+) ("e:/Work\ELEC40006\Documents\Latex files\Research documents\Analysis Module\Analysis Module.aux"
 
 LaTeX Warning: Label `fig:figure3' multiply defined.
 
@@ -405,7 +405,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Analysis Module".bbl' found.
- ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.bbl")
+ ("e:/Work\ELEC40006\Documents\Latex files\Research documents\Analysis Module\Analysis Module.bbl")
 Package biblatex Info: Reference section=0 on input line 22.
 Package biblatex Info: Reference segment=0 on input line 22.
 \c@lstlisting=\count392
@@ -424,7 +424,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 23.
  [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.toc"
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Research documents\Analysis Module\Analysis Module.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 7.
 )
@@ -478,7 +478,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <./Images/Analysis breakdown.png, id=71, 322.20375pt x 202.7575pt>
 File: ./Images/Analysis breakdown.png Graphic file (type png)
 <use ./Images/Analysis breakdown.png>
-Package pdftex.def Info: ./Images/Analysis breakdown.png  used on input line 273.
+Package pdftex.def Info: ./Images/Analysis breakdown.png  used on input line 274.
 (pdftex.def)             Requested size: 322.20296pt x 202.757pt.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -487,34 +487,34 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 281.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 282.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 293.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 282.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 294.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 293.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 294.
 
-Overfull \hbox (51.00403pt too wide) in paragraph at lines 302--303
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 303--304
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 [12 <./Images/Analysis breakdown.png>]
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 316--317
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 317--318
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 326--327
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 327--328
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13] [14] [15] [16] ("e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.aux")
+[13] [14] [15] [16] ("e:/Work\ELEC40006\Documents\Latex files\Research documents\Analysis Module\Analysis Module.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -524,14 +524,14 @@ Package logreq Info: Writing requests to '"Analysis Module".run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  12262 strings out of 480930
- 215413 string characters out of 2900700
+ 215553 string characters out of 2900700
  844081 words of memory out of 3000000
  28034 multiletter control sequences out of 15000+200000
  539270 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,62p,891b,1571s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 50i,11n,62p,901b,1571s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\Analysis Module\Analysis Module.pdf" (17 pages, 330610 bytes).
+Output written on "e:/Work\ELEC40006\Documents\Latex files\Research documents\Analysis Module\Analysis Module.pdf" (17 pages, 330983 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
