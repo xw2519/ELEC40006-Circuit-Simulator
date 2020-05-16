@@ -38,12 +38,13 @@
     \par
     This document will research the format of the SPICE netlist and explore the different approaches in 
     storing the information a certain way. 
-    \par
+    \vfill
     \begin{center}
         \textit{This document is primarily used for planning the most effective 
         way to approach the problem as well as allowing fellow teammates to 
         engage productively on a equal knowledge footing.}
     \end{center}
+    \pagebreak
     \section{Input (.cir) file}
     Source file for any version of SPICE has the following format \cite{spice}.
     \begin{quotation}
@@ -89,64 +90,54 @@
     \textbf{Node 0 is defined as Ground}. It is necessary to have a Node 0 since it is the reference point for 
     all voltages specified.
     \par
-    Format of an element description is:
-        $$\tt{<D><description> <n1> <n2> [value] [parameters]}$$
-        \begin{itemize}
-            \item $\tt{<D>}:$ A character that is a unique identifier for each type of support circuit component
-            \item $\tt{<description>}$ A string without space e.g. 5
-            \item $\tt{[value]}$: The value a circuit component takes e.g. 500 ohms
-        \end{itemize}
-    \par
     Initial stage of the parser will only be able to support input with nodes starting from N1 and ground defined as N0.
     SPICE defined ground node as $0$. Suport for complex values such as 4k5 will be added at a later stage too.
     This will be revised when basic function of Analysis module is implemented.
     \par
     We have to consider a situation where the input syntax is correct but the circuit represented is unrealizable.
     To overcome this, we will need a function to check if the circuit described is realistic. This is explored more
-    in the Analysis module.
+    in the $Analysis$ module.
 
-    \subsection{Elements in {\fontfamily{qcr}\selectfont 'D'}}
+    \subsection{Basic components}
     Current supported elements are basic passive elements. \par
-    Passive elements are composed of the following:
+    Passive elements are composed of the following:\footnote{Initial conditions for C and L are optional and default set to 0}
     \begin{itemize}
         \item Resistors: {\fontfamily{qcr}\selectfont R} $$ \tt R<description> <n1> <n2> <value> $$
-        \item Capacitor: {\fontfamily{qcr}\selectfont C}. $$ \tt C<description> <n1> <n2> <value>$$
-        \item Inductor: {\fontfamily{qcr}\selectfont L}. $$ \tt L<description> <n1> <n2> <value>$$
+        \item Capacitor: {\fontfamily{qcr}\selectfont C}. $$ \tt C<description> <n1> <n2> <value><initial-condition>$$ 
+        \item Inductor: {\fontfamily{qcr}\selectfont L}. $$ \tt L<description> <n1> <n2> <value><initial-condition>$$ 
     \end{itemize}
-    Both $C$ and $L$ will have to consider complex cases. First version implemented will cover resistors only.
+    Both $C$ and $L$ will be considered at a later stage. First versions implemented will cover resistors only. This
+    approach will allow the core functionalities of the program to be consolidated and, with the experience gained, 
+    will allow us to find the best approach to implement more complex functions.
+    \vfill
+    
     \subsection{Independent Sources}
+    The character after the letter must be a unique instance name.
+    \subsubsection{Independent DC sources}
     \begin{itemize}
-        \item Voltage Sources 
+        \item Voltage Sources: 
         \begin{center}
-            $\tt V<description> <n1> <n2><value>$
+            $\tt V<description> <n+> <n-><value>$
         \end{center}
-        \item Current Sources
+        \item Current Sources:
         \begin{center}
-            $\tt I<description> <n1> <n2><value>$
+            $\tt I<description> <n+> <n-><value>$
         \end{center}
     \end{itemize}
-
-    \par
-    The character after the letter must be a unique instance name and followed by the nodes associated with + and - respectively.
-    \par
+    \subsubsection{Independent $Sine$ sources}
+    \begin{itemize}
+        \item Voltage Sources: 
+        \begin{center}
+            $\tt V<description> <n+> <n->SINE<Offset><Amplitude><Frequency>$
+        \end{center}
+        \item Current Sources:
+        \begin{center}
+            $\tt I<description> <n+> <n->SINE<Offset><Amplitude><Frequency>$
+        \end{center}
+    \end{itemize}
     \textbf {When users are entering component values, it is important that the software recognises common abbreviations 
     for units.}
-    \subsubsection{Voltage sources}
-    Voltage sources have two modes: $DC$ and $SINE$. \par
-    In the event of $SINE$, voltage source requires three mandatory field:
-    \begin{itemize}
-        \item DC offset: $DCoff$
-        \item Amplitude: $A$
-        \item Frequency: $freq$
-    \end{itemize}
-    This can be represented in the equation: $[DCoff]+[A]sine(2\pi [freq])$ \par
-    For example:
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=60mm,scale=1]{SINE wave example}
-        \caption{Example SPICE format of sine voltage input}
-        \label{fig:Netlist input example}
-    \end{figure}
+    \subsubsection{Diode}
 
     \pagebreak
     \subsection{Support for powers of ten}
@@ -160,13 +151,13 @@
         \item u [micro]: $ 10^{-6} $
         \item m [milli]: $ 10^{-3} $
         \item k [kilo]: $ 10^{+3} $
-        \item M [mega]: $ 10^{+6} $
-        \item G [giga]: $ 10^{+9} $
-        \item T [tera]: $ 10^{+12} $
+        \item Meg [mega]: $ 10^{+6} $
+        \item g [giga]: $ 10^{+9} $
+        \item t [tera]: $ 10^{+12} $
     \end{itemize}
     \end{multicols}
     Any unrecognised characters are ignored.
-
+    
     \pagebreak
     \section{Network Diagram/Graphs}
     Network Graphs show the relationships between a set of entries and a circuit is a good example of a graph.
@@ -282,6 +273,17 @@
     \pagebreak
     \section{Version history}
     \subsection{Version 1.0}
+    Basic functionality of the Parser is implemented.
+    \subsubsection{List of functions}
+    \begin{itemize}
+        \item Basic circuit components recognised.
+    \end{itemize}
+    \subsubsection{Still to do for v2.0}
+    \begin{itemize}
+        \item Recognise SINE voltage source.
+        \item Recognise grounded nodes appear as $0$ only.
+        \item Recognise transient function calls.
+    \end{itemize}
 
     \pagebreak
     \section{Add-ons}

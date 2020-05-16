@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{subfig}
+\usepackage{amsmath}
 
 \graphicspath{ {./Images/} }
 
@@ -35,8 +36,11 @@
     like resistors and voltage source. Support for capacitors and inductors, and non-linear components 
     will be added at a later stage.
     \par
-    This document is primarily used for planning the most effective way to approach the problem
-    as well as allowing fellow teammates to engage productively on a equal knowledge footing. 
+    \vfill
+    \begin{center}
+        \textit{This document is primarily used for planning the most effective way to approach the problem
+        as well as allowing fellow teammates to engage productively on a equal knowledge footing. }
+    \end{center}
     
     \pagebreak
     \section{Modified Nodal Analysis}
@@ -49,7 +53,7 @@
         \item Establish a reference node (Ground)
         \item Name remaining nodes
         \item Name current through each voltage source
-        \item Apply KCL at each node. \textbf{Currents out of node is taken to be positive.}
+        \item Apply KCL at each node.\textbf{ Currents out of node is taken to be positive.}
         \item Write equation and solve for unknowns
     \end{itemize}
 
@@ -65,8 +69,8 @@
     \subsection{Characteristics of the MNA matrix}
     All circuits when presented in matrix for, will always result in the form:
     $$Ax = b$$
-    In the given example matrix\footnote{Red highlight is $[N\times N]$ and matrix is $[(N+M)\times (N+M)]$ where 
-    $N$ is the nodes in the circuit and $M$ is the number of independent sources.}:
+    In the given example matrix\footnote{Green highlight is $[N\times N]$
+     and $N$ is the nodes in the circuit and $M$ is the number of independent sources.}:
     \begin{figure}[h]
         \centering
         \includegraphics[width=50mm,scale=1]{Highlighted matrix}
@@ -78,7 +82,7 @@
     \begin{itemize}
         \item Matrix A
         \begin{itemize}
-            \item The highlighted part is size $[N \times N]$ and contains values of passive elements
+            \item The highlighted part is size $[(N+M) \times (N+M)]$ and contains values of passive elements
             \item The main diagonal is positive values only. Non-diagonal values are either 0 or negative.
             \item If an element is grounded, it will appear along diagonal. 
         \end{itemize}
@@ -98,16 +102,42 @@
     Solution is found by:
     $$x = A^{-1}b$$
     \vfill
+
     \subsection{Notations}
-    The naming notation is the following:\cite{nodeanalysis}.
+    \subsubsection{Naming notations}
+    The naming notation is the following: \cite{nodeanalysis}.
     \begin{itemize}
-        \item Ground is labelled \textbf{Node 0}
+        \item Ground is labelled \textbf{0} without 'N' char
         \item Each node is given a label starting from 1 to $N$ 
         \item Node voltage name: $v\_N$
         \item Current through V sources: $i\_VoltageSourceName$
         \item Independent voltage sources: $vname$
         \item Independent voltage sources: $iname$
     \end{itemize}
+    \subsubsection{Matrix notation}
+    $$Ax = b$$
+    \begin{itemize}
+        \item $A$ matrix is composed of four small matrices:
+        $$
+        \begin{bmatrix}
+        A_{a}& A_{b}\\A_{c}&A_{d} 
+        \end{bmatrix}
+        $$
+        \item $x$ matrix is composed of two smaller matrices:
+        $$
+        \begin{bmatrix}
+        x_{a}\\x_{b}
+        \end{bmatrix}
+        $$
+        \item $b$ matrix is composed of two smaller matrices:
+        $$
+        \begin{bmatrix}
+        b_{a}\\b_{b} 
+        \end{bmatrix}
+        $$
+    \end{itemize}
+
+    
 
     \pagebreak
     \section{General Algorithm design for MNA}

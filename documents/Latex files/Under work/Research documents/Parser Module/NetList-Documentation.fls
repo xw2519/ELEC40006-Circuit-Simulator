@@ -1,7 +1,7 @@
-PWD e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module
+PWD e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.tex
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.log
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.tex
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.log
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
@@ -72,19 +72,19 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.bcf
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.bbl
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.bbl
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.bbl
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.bcf
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.bbl
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.bbl
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.bbl
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -98,34 +98,28 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.t
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy9.tfm
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.pdf
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.pdf
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.toc
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.toc
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.toc
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.toc
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.toc
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tex-gyre\ot1qcr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tex-gyre\ot1qcr.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\rm-qcrr.tfm
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.toc
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
 INPUT Images\spice netlist example.png
 INPUT .\Images\spice netlist example.png
 INPUT .\Images\spice netlist example.png
 INPUT .\Images\spice netlist example.png
 INPUT .\Images\spice netlist example.png
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt10.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt8.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\tex-gyre\rm-qcrb.tfm
-INPUT Images\SINE wave example.png
-INPUT .\Images\SINE wave example.png
-INPUT .\Images\SINE wave example.png
-INPUT .\Images\SINE wave example.png
-INPUT .\Images\SINE wave example.png
 INPUT Images\Netlist breakdown.png
 INPUT .\Images\Netlist breakdown.png
 INPUT .\Images\Netlist breakdown.png
@@ -138,12 +132,12 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux
-INPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.run.xml
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.run.xml
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.run.xml
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.run.xml
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\tex-gyre\q-rmm.enc
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -166,13 +160,13 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr9.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qcrb.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qcrb.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qcrr.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\tex-gyre\qcrr.pfb

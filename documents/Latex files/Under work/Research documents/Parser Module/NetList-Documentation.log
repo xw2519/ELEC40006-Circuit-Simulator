@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  14 MAY 2020 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  16 MAY 2020 22:04
 entering extended mode
-**"e:/Work/ELEC40006/Documents/Latex files/Research/Parser Module/NetList-Documentation.tex"
-("e:/Work/ELEC40006/Documents/Latex files/Research/Parser Module/NetList-Documentation.tex"
+**"e:/Work/ELEC40006/documents/Latex files/Under work/Research documents/Parser Module/NetList-Documentation.tex"
+("e:/Work/ELEC40006/documents/Latex files/Under work/Research documents/Parser Module/NetList-Documentation.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -382,11 +382,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count386
 \l__pdf_internal_box=\box93
-) ("e:/Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux"
-
-LaTeX Warning: Label `fig:Netlist input example' multiply defined.
-
-)
+) ("e:/Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux")
 \openout1 = `NetList-Documentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -432,7 +428,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'NetList-Documentation.bbl' found.
- ("e:/Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.bbl")
+ ("e:/Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.bbl")
 Package biblatex Info: Reference section=0 on input line 27.
 Package biblatex Info: Reference segment=0 on input line 27.
 \c@lstlisting=\count393
@@ -448,37 +444,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 28.
  [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.toc"
-LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 9.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tex-gyre\ot1qcr.fd"
-File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
-)
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 9.
 )
 \tf@toc=\write4
 \openout4 = `NetList-Documentation.toc'.
 
- [1]
-<./Images/spice netlist example.png, id=17, 237.2865pt x 121.05225pt>
+ [1] [2]
+LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 51.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tex-gyre\ot1qcr.fd"
+File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
+)
+<./Images/spice netlist example.png, id=21, 237.2865pt x 121.05225pt>
 File: ./Images/spice netlist example.png Graphic file (type png)
 <use ./Images/spice netlist example.png>
-Package pdftex.def Info: ./Images/spice netlist example.png  used on input line 62.
+Package pdftex.def Info: ./Images/spice netlist example.png  used on input line 63.
 (pdftex.def)             Requested size: 237.2859pt x 121.05194pt.
- [2 <./Images/spice netlist example.png>]
-LaTeX Font Info:    Font shape `OT1/qcr/bx/n' in size <12> not available
-(Font)              Font shape `OT1/qcr/b/n' tried instead on input line 108.
- [3]
-<./Images/SINE wave example.png, id=31, 163.20975pt x 13.2495pt>
-File: ./Images/SINE wave example.png Graphic file (type png)
-<use ./Images/SINE wave example.png>
-Package pdftex.def Info: ./Images/SINE wave example.png  used on input line 146.
-(pdftex.def)             Requested size: 163.20934pt x 13.24945pt.
- [4 <./Images/SINE wave example.png>] [5] [6]
-<./Images/Netlist breakdown.png, id=45, 678.535pt x 383.4325pt>
+ [3 <./Images/spice netlist example.png>] [4] [5] [6] [7]
+<./Images/Netlist breakdown.png, id=46, 678.535pt x 383.4325pt>
 File: ./Images/Netlist breakdown.png Graphic file (type png)
 <use ./Images/Netlist breakdown.png>
-Package pdftex.def Info: ./Images/Netlist breakdown.png  used on input line 187.
+Package pdftex.def Info: ./Images/Netlist breakdown.png  used on input line 178.
 (pdftex.def)             Requested size: 345.0pt x 194.95122pt.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -488,27 +475,24 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 195.
- [7 <./Images/Netlist breakdown.png>] [8] [9] [10] [11] [12] ("e:/Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.aux")
-
-LaTeX Warning: There were multiply-defined labels.
-
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 186.
+ [8 <./Images/Netlist breakdown.png>] [9] [10] [11] [12] [13] ("e:/Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.aux")
 Package logreq Info: Writing requests to 'NetList-Documentation.run.xml'.
 \openout1 = `NetList-Documentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11204 strings out of 480930
- 195477 string characters out of 2900700
- 896078 words of memory out of 3000000
- 26980 multiletter control sequences out of 15000+200000
- 539650 words of font info for 49 fonts, out of 3000000 for 9000
+ 11193 strings out of 480930
+ 195514 string characters out of 2900700
+ 896039 words of memory out of 3000000
+ 26971 multiletter control sequences out of 15000+200000
+ 539315 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,11n,62p,895b,1613s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rmm.enc} <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qcrb.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Research\Parser Module\NetList-Documentation.pdf" (13 pages, 246940 bytes).
+ 35i,11n,62p,916b,1613s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-rmm.enc}<C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/tex-gyre/qcrr.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Research documents\Parser Module\NetList-Documentation.pdf" (14 pages, 238786 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
