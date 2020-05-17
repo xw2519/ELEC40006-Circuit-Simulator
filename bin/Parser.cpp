@@ -2,7 +2,6 @@
 
 std::vector<std::string> tokeniser (std::string input)
 {
-
     // Remove '(' char if present
     replace(input.begin(), input.end(), '(', ' ');
 
