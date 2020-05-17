@@ -97,10 +97,11 @@ float converter(std::string val_str)
     return digits;
 }
 
-void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources)
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources, std::vector<CirFunctions>& functions)
 {
     CirElement x;
     CirSrc y;
+    CirFunctions z;
     std::vector<std::string> store;
     std::string line;
 
@@ -158,7 +159,7 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
             }
             else if (tolower(store[1][0]) != 'n' && tolower(store[2][0]) != 'n')
             {
-                std::cerr << "Nodes are inputted wrongly" << std::endl;
+                std::cerr << "Incorrect nodes inputted." << std::endl;
             }
             else
             {
@@ -249,15 +250,29 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
 
             else
             {
-                std::cerr << "Source type recognised." << std::endl;
+                std::cerr << "Source type unrecognised." << std::endl;
                 exit;
             }
+        }
+
+        // Recognise .tran function
+        else if (store[0] == ".tran")
+        {
+            // Store function parameter
+            z.func_name = store[0];
+            z.tprint = stoi(store[1]);
+            z.tstop = stoi(store[2]);
+            z.tstart = stoi(store[3]);
+            z.tmax = stoi(store[4]);
+
+            // Push into vector
+            functions.push_back(z);
         }
 
         else
         {
             //std::cout << buf[0] << std::endl;
-            std::cerr << "Unknown element" << std::endl;
+            std::cerr << "Unknown netlist line entered" << std::endl;
             exit;
         }
 

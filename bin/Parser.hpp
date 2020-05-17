@@ -43,6 +43,16 @@ struct CirSrc
     float freq;
 };
 
+// struct for circuit function parameters
+struct CirFunctions
+{
+    std::string func_name;
+    float tprint;
+    float tstop;
+    float tstart;
+    float tmax;
+};
+
 // Parser module
 // Returns boolean true if there is an aplhabetical letter
 bool is_digit(const std::string& input);
@@ -54,7 +64,7 @@ float converter(std::string val_str);
 std::vector<std::string> tokeniser (std::string input);
 
 // Sorts input into respective vectors: vector<CirElement> and vector<CirSrc>
-void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources);
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources, std::vector<CirFunctions>& functions);
 
 
 // Analysis module
