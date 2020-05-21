@@ -1,4 +1,4 @@
-#include "Parser.hpp"
+#include "parser.hpp"
 
 std::vector<std::string> tokeniser (std::string input)
 {
@@ -8,16 +8,9 @@ std::vector<std::string> tokeniser (std::string input)
     // Remove ')' char if present
     input.erase(std::remove(input.begin(), input.end(), ')'), input.end());
 
-    // 'Regex' for tokenizing whitespaces
-    std::regex reg("\\s+");
- 
-    // Get an iterator after filtering through 'Regex'
-    std::sregex_token_iterator iter(input.begin(), input.end(), reg, -1);
-    std::sregex_token_iterator end;
- 
-    std::vector<std::string> vec(iter, end);
-
-    return vec;
+    std::istringstream iss(input);
+    std::vector<std::string> tokensied ((std::istream_iterator<std::string>(iss)), std::istream_iterator<std::string>());
+    return tokensied;
 }
 
 bool is_digit(const std::string& input)
@@ -27,7 +20,7 @@ bool is_digit(const std::string& input)
     return !input.empty() && it == input.end();
 }
 
-float converter(std::string val_str)
+float converter(const std::string& val_str)
 {
     float digits;
     // Check if there are any abbreviations
@@ -62,19 +55,19 @@ float converter(std::string val_str)
     switch (val_str[abbre_pos])
     {
     case 'f':
-        digits = digits/pow(10, 15);
+        digits = digits/1000000000000000;
         break;
     case 'p':
-        digits = digits/pow(10, 12);
+        digits = digits/1000000000000;
         break;
     case 'n':
-        digits = digits/pow(10, 9);
+        digits = digits/1000000000;
         break;
     case 'u':
-        digits = digits/pow(10, 6);
+        digits = digits/1000000;
         break;
     case 'm':
-        digits = digits/pow(10, 3);
+        digits = digits/1000;
         break;
     case 'k':
         digits = digits*1000;
@@ -88,12 +81,10 @@ float converter(std::string val_str)
     case 'T':
         digits = digits*1000000000000;
         break;
-    default:
+    default: // Ignore it
         break;
     }
-    val_str.erase(0, abbre_pos+1);
 
-    // Recursion to cover the rest of the string
     return digits;
 }
 
@@ -280,12 +271,26 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
     }
 }
 
-int N_int(std::vector<CirElement> circuit)
+int N_int(const std::vector<CirElement> &circuit)
 {
-     return circuit.size();
+    int largest = 0;
+
+    // Scan vector for largest number of nodes
+    for (int i = 0; i < circuit.size(); i++)
+    {   
+        if (circuit[i].n1 > largest)
+        {
+            largest = circuit[i].n1;
+        }
+        else if (circuit[i].n2 > largest)
+        {
+            largest = circuit[i].n2;
+        }
+    }
+    return largest;
 }
 
-int M_int(std::vector<CirSrc> sources)
+int M_int(const std::vector<CirSrc> &voltages)
 {
-    return sources.size();
+    return voltages.size();
 }
