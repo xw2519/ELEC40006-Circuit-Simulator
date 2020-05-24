@@ -6,7 +6,7 @@ Language: C++
 
 Authors: 
 - Adam Rehman 
-- Brandon Cann, 
+- Brandon Cann 
 - Xin Wang
 
 ## Updates or changes
@@ -50,3 +50,5 @@ Authors:
 
 ### 17 May 2020
 - Added transient function recognition ability into Parser.
+### 24 May 2020
+- OOP architecture implemented.
