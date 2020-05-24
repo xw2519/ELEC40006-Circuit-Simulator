@@ -6,7 +6,7 @@ Language: C++
 
 Authors: 
 - Adam Rehman 
-- Brandon Cann, 
+- Brandon Cann 
 - Xin Wang
 
 ## Updates or changes
