@@ -1,6 +1,5 @@
 // Classes
 #include "../../bin/circuit.hpp"
-#include "../../bin/analysis.hpp"
 
 // Support functions
 #include "../../bin/header.hpp"
@@ -15,12 +14,11 @@ int main()
     input_circuit.parse(std::cin);
 
     // Create analysis class variable 
-    analysis equation;
-    equation.makeDenseMatrix(input_circuit);
+    input_circuit.makeDenseMatrix();
 
     // Solve the circuit
-    equation.solve();
-    equation.print();
+    input_circuit.solve();
+    input_circuit.print_solution();
 
     // Get ending time 
     auto stop = std::chrono::high_resolution_clock::now(); 

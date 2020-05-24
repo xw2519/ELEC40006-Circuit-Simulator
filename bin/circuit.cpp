@@ -15,6 +15,7 @@ void circuit::parse(std::istream& cin)
     bool firstline = true;
     std::string line;
     std::vector<std::string> store;
+    N=0; M=0;
 
     while (std::getline(std::cin, line))
     {
@@ -82,29 +83,90 @@ void circuit::parse(std::istream& cin)
     };
 };
 
-std::vector<branch*> circuit::get_circuit()
+void circuit::makeDenseMatrix()
 {
-    return branch_store;
+    A.setZero((N+M),(N+M));
+    b = Eigen::VectorXf::Zero((N+M));
+    vcount=0;
+
+    /* Debugging purposes 
+    std::cout << A << std::endl;
+    std::cout << b << std::endl; */
+    
+    // Loop over entire circuit vector and fill in values
+    for(auto const& value: branch_store)
+    {
+        int n1 = value->getNodeL();
+        int n2 = value->getNodeR();
+
+        switch (value->getID())
+        {
+        case 'r':
+            // Check for grounded nodes
+            if (n1 == 0) {A(n2-1, n2-1) = A(n2-1, n2-1)+value->getconductance();}
+            else if (n2 == 0) {A(n1-1, n1-1) = A(n1-1, n1-1)+value->getconductance();}
+            else
+                {
+                    A(n1-1, n1-1) = A(n1-1, n1-1)+value->getconductance();
+                    A(n2-1, n2-1) = A(n2-1, n2-1)+value->getconductance();
+                    // Check if at the boundary of inner matrix A_a of size [N X N]
+                    if (n1 != N || n2 != N)
+                    {
+                        A(n1-1, n2-1) = (-1)*value->getconductance();
+                        A(n2-1, n1-1) = (-1)*value->getconductance();
+                    }
+                }
+            break;
+
+        case 'c':
+            break;
+
+        case 'l':
+            break;
+
+        case 'v':
+            vcount++;
+            if (n2 == 0 && n1 != 0) {A(n1-1,(N+vcount-1)) = 1; A((N+vcount-1),n1-1) = 1;}
+            if (n1 == 0 && n2 != 0){A(n2-1,(N+vcount-1)) = -1; A((N+vcount-1),n2-1) = -1;}
+            if (n1 != 0 && n2 != 0) // n1 is + terminal and n2 is - terminal
+            {
+                /* Debugging purposes
+                cout << "None grounded node detected" << endl;
+                */
+                A(n2-1,(N+vcount-1)) = -1; A((N+vcount-1),n2-1) = -1;
+                A(n1-1,(N+vcount-1)) = 1; A((N+vcount-1),n1-1) = 1;
+            }
+            b(N+vcount-1) = value->getvoltage();
+            break;
+
+        case 'i':
+            if (n1!=0) {b(n1-1) = b(n1-1) - value->getvoltage();}
+            if (n2!=0) {b(n2-1) = b(n2-1) + value->getvoltage();}
+            break;
+
+        default:
+            break;
+        }
+    }
 };
 
-int circuit::get_N()
-{ 
-    return this->N;
+void circuit::update()
+{
+
 };
 
-int circuit::get_M()
-{ 
-    return this->M;
+void circuit::solve()
+{
+    x = A.colPivHouseholderQr().solve(b);
 };
 
-// Outputs the content of the circuit vector
 void circuit::print_data_structure()
 {
     std::cout << "Circuit Parser Report" << std::endl;
     std::cout << std::endl;
     // Get nodes and voltage sources
-    std::cout << "Number of nodes in circuit: " << get_N() << std::endl;
-    std::cout << "Number of independent voltage sources in circuit: " << get_M() << std::endl;
+    std::cout << "Number of nodes in circuit: " << N << std::endl;
+    std::cout << "Number of independent voltage sources in circuit: " << M << std::endl;
     std::cout << std::endl;
 
     for (int i = 0; i < branch_store.size(); i++) // Print all elements stored in the vector
@@ -112,4 +174,23 @@ void circuit::print_data_structure()
         std::cout << (i+1);
         branch_store[i]->print();
     }
-};      
+};   
+
+void circuit::print_solution()
+{
+    int vcount = 0;
+    std::cout << "MNA Report:" << std::endl;
+    std::cout << std::endl;
+    std::cout << "Nodal voltages:" << std::endl;
+    for (int i = 0; i < N; i++)
+    {
+        std::cout << "Node " << (i+1) << ": " << x[i] << std::endl;
+    }
+    std::cout << std::endl;
+    std::cout << "Voltage source currents:" << std::endl;
+    for (int i = N; i < (N+M); i++)
+    {
+        vcount++;
+        std::cout << "v" << "[" << vcount << "]" << " " << "current" << ": " << x[i] << std::endl;
+    }
+};
