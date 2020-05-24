@@ -1,8 +1,0 @@
-C:\Users\alw\Desktop\LtSpice\Draft5.as
-R1 N001 N0 8
-R2 N002 N001 4
-R3 N0 N002 2
-V1 N001 N002 20
-I1 N0 N001 3
-.end
-

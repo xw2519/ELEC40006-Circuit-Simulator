@@ -3,3 +3,5 @@ Bin/.vscode/settings.json
 /.vscode/settings.json
 Tests/.vscode/settings.json
 bin/.vscode/settings.json
+tests/parser testing/.vscode/c_cpp_properties.json
+tests/parser testing/.vscode/settings.json

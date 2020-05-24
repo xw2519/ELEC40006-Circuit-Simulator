@@ -1,22 +1,37 @@
-/*
-# ===============================================================
-# About the code
-# ===============================================================
-# This code forms the 'Analysis' module' # 
-# ===============================================================
-*/
 
 #ifndef analysis_hpp
 #define analysis_hpp
 
-#include <iostream>
-#include <string>
-#include "Eigen/Core"
-#include "Eigen/Dense"
-#include "parser.hpp"
-#include <vector>
-#include <complex>
+// Support functions
+#include "header.hpp"
+#include "circuit.hpp"
 
-Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc> sources);
+class analysis
+{
+    private: // -------------------------------------------------------------------
+
+        Eigen::MatrixXf A;
+        Eigen::VectorXf b;
+        Eigen::VectorXf x;
+
+        int N, M, vcount;
+
+    public: //-----------------------------------------------------------------------
+
+        // To be implemented
+        ~analysis();
+
+        void makeDenseMatrix(circuit& input);
+
+        // Stamp new values into existing matrix
+        void update();
+
+        // Solve for matrix x
+        void solve();
+
+        // Output the content of matrix 'x'
+        void print();
+    
+};
 
 #endif
