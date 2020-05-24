@@ -6,14 +6,14 @@
 # ===============================================================
 */
 
-#ifndef Analysis_hpp
-#define Analysis_hpp
+#ifndef analysis_hpp
+#define analysis_hpp
 
 #include <iostream>
 #include <string>
 #include "Eigen/Core"
 #include "Eigen/Dense"
-#include "Parser.hpp"
+#include "parser.hpp"
 #include <vector>
 #include <complex>
 

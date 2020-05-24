@@ -1,4 +1,4 @@
-#include "Analysis.hpp"
+#include "analysis.hpp"
 
 using namespace std;
 
@@ -12,7 +12,6 @@ Eigen::VectorXf OP_Analysis(std::vector<CirElement> circuit, std::vector<CirSrc>
     // Declare and intialise matrices to 0
     Eigen::MatrixXf A; A.setZero((N+M),(N+M));
     Eigen::VectorXf b = Eigen::VectorXf::Zero((N+M));
-
 
     // Matrix entry module for circuit elements
     // Loop over entire circuit vector and fill in values

@@ -8,8 +8,8 @@
 # ===============================================================
 */
 
-#ifndef Parser_hpp
-#define Parser_hpp
+#ifndef parser_hpp
+#define parser_hpp
 
 #include <string>
 #include <iostream>
@@ -43,25 +43,33 @@ struct CirSrc
     float freq;
 };
 
+// struct for circuit function parameters
+struct CirFunctions
+{
+    std::string func_name;
+    float tprint;
+    float tstop;
+    float tstart;
+    float tmax;
+};
+
 // Parser module
 // Returns boolean true if there is an aplhabetical letter
 bool is_digit(const std::string& input);
 
 // Return the float version of the abbreviated string 
-float converter(std::string val_str);
+float converter(const std::string& val_str);
 
 // Spilts string into words separated by space and pushed into a vector
 std::vector<std::string> tokeniser (std::string input);
 
 // Sorts input into respective vectors: vector<CirElement> and vector<CirSrc>
-void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources);
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources, std::vector<CirFunctions>& functions);
 
-
-// Analysis module
 // Return number of elements in circuit: N
-int N_int(std::vector<CirElement> circuit);
+int N_int(const std::vector<CirElement> &circuit);
 
 // Return number of independent voltage sources in circuit: M
-int M_int(std::vector<CirSrc> sources);
+int M_int(const std::vector<CirSrc> &voltages);
 
 #endif

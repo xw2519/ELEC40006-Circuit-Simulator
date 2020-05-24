@@ -1,27 +1,16 @@
-#include "Parser.hpp"
+#include "parser.hpp"
 
 std::vector<std::string> tokeniser (std::string input)
 {
-
-    // Remove '(' char
+    // Remove '(' char if present
     replace(input.begin(), input.end(), '(', ' ');
 
-    // Remove ')' char
+    // Remove ')' char if present
     input.erase(std::remove(input.begin(), input.end(), ')'), input.end());
 
-    // Regex for tokenizing whitespaces
-    std::regex reg("\\s+");
- 
-    // Get an iterator after filtering through the regex
-    std::sregex_token_iterator iter(input.begin(), input.end(), reg, -1);
-
-    // Keep a dummy end iterator - Needed to construct a vector
-    // using (start, end) iterators.
-    std::sregex_token_iterator end;
- 
-    std::vector<std::string> vec(iter, end);
-
-    return vec;
+    std::istringstream iss(input);
+    std::vector<std::string> tokensied ((std::istream_iterator<std::string>(iss)), std::istream_iterator<std::string>());
+    return tokensied;
 }
 
 bool is_digit(const std::string& input)
@@ -31,7 +20,7 @@ bool is_digit(const std::string& input)
     return !input.empty() && it == input.end();
 }
 
-float converter(std::string val_str)
+float converter(const std::string& val_str)
 {
     float digits;
     // Check if there are any abbreviations
@@ -66,19 +55,19 @@ float converter(std::string val_str)
     switch (val_str[abbre_pos])
     {
     case 'f':
-        digits = digits/pow(10, 15);
+        digits = digits/1000000000000000;
         break;
     case 'p':
-        digits = digits/pow(10, 12);
+        digits = digits/1000000000000;
         break;
     case 'n':
-        digits = digits/pow(10, 9);
+        digits = digits/1000000000;
         break;
     case 'u':
-        digits = digits/pow(10, 6);
+        digits = digits/1000000;
         break;
     case 'm':
-        digits = digits/pow(10, 3);
+        digits = digits/1000;
         break;
     case 'k':
         digits = digits*1000;
@@ -92,21 +81,22 @@ float converter(std::string val_str)
     case 'T':
         digits = digits*1000000000000;
         break;
-    default:
+    default: // Ignore it
         break;
     }
-    val_str.erase(0, abbre_pos+1);
 
-    // Recursion to cover the rest of the string
     return digits;
 }
 
-void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources)
+void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<CirSrc>& sources, std::vector<CirFunctions>& functions)
 {
     CirElement x;
     CirSrc y;
+    CirFunctions z;
     std::vector<std::string> store;
     std::string line;
+
+    // First line is always the TITLE which is skipped.
     bool firsttime = true;
 
     while (std::getline(std::cin, line))
@@ -123,6 +113,16 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
         {
             break;
         }
+
+        // Check if this line is a comment, denoted by '*'
+        std::size_t presence = line.find('*');
+        if (presence!=std::string::npos)
+        {
+            /*
+            std::cout << "Comment detected." << std::endl;
+            */
+            continue;
+        }
         
         //Tokenise
         store = tokeniser(line);
@@ -137,10 +137,28 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
             x.descrip = store[0];
 
             // Get nodes in the format "n1", "n2", etc
-            // Remove 'N' char from string
-            x.n1 = stoi(store[1].erase(0,1));
-            x.n2 = stoi(store[2].erase(0,1));
-
+            // Check if node is grounded represented as '0'
+            if (tolower(store[1][0]) != 'n' && tolower(store[2][0]) == 'n')
+            {
+                x.n1 = stoi(store[1]);
+                x.n2 = stoi(store[2].erase(0,1));
+            }
+            else if (tolower(store[1][0]) == 'n' && tolower(store[2][0]) != 'n')
+            {
+                x.n1 = stoi(store[1].erase(0,1));
+                x.n2 = stoi(store[2]);
+            }
+            else if (tolower(store[1][0]) != 'n' && tolower(store[2][0]) != 'n')
+            {
+                std::cerr << "Incorrect nodes inputted." << std::endl;
+            }
+            else
+            {
+                // Remove 'N' char from string
+                x.n1 = stoi(store[1].erase(0,1));
+                x.n2 = stoi(store[2].erase(0,1));
+            }
+            
             // Detect and get values. Must have values
             if (store.size() < 3)
             {
@@ -157,7 +175,7 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
             circuit.push_back(x);
         }
 
-        // If V or I then call Src resolver
+        // If V or I then store in 'source' vector
         else if (tolower(store[0][0]) == 'v' || tolower(store[0][0]) == 'i')
         {
             // Store the element and description
@@ -166,9 +184,27 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
             y.descrip = store[0];
 
             // Get nodes in the format "n1", "n2", etc
-            // Remove 'N' char from string
-            y.n1 = stoi(store[1].erase(0,1));
-            y.n2 = stoi(store[2].erase(0,1));
+            // Check if node is grounded represented as '0'
+            if (tolower(store[1][0]) != 'n' && tolower(store[2][0]) == 'n')
+            {
+                y.n1 = stoi(store[1]);
+                y.n2 = stoi(store[2].erase(0,1));
+            }
+            else if (tolower(store[1][0]) == 'n' && tolower(store[2][0]) != 'n')
+            {
+                y.n1 = stoi(store[1].erase(0,1));
+                y.n2 = stoi(store[2]);
+            }
+            else if (tolower(store[1][0]) != 'n' && tolower(store[2][0]) != 'n')
+            {
+                std::cerr << "Nodes are inputted wrongly" << std::endl;
+            }
+            else
+            {
+                // Remove 'N' char from string
+                y.n1 = stoi(store[1].erase(0,1));
+                y.n2 = stoi(store[2].erase(0,1));
+            }
 
             if (store[3] != "SINE") // Case of DC input
             {
@@ -189,6 +225,7 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
                 // Push into sources vector
                 sources.push_back(y);
             }
+
             else if (store[3] == "SINE")
             {
                 // Ensure all digits
@@ -201,28 +238,59 @@ void parser(std::istream& cin, std::vector<CirElement>& circuit, std::vector<Cir
                 // Push into sources vector
                 sources.push_back(y);
             }
+
             else
             {
-                std::cerr << "Source type recognised." << std::endl;
+                std::cerr << "Source type unrecognised." << std::endl;
                 exit;
             }
         }
+
+        // Recognise .tran function
+        else if (store[0] == ".tran")
+        {
+            // Store function parameter
+            z.func_name = store[0];
+            z.tprint = stoi(store[1]);
+            z.tstop = stoi(store[2]);
+            z.tstart = stoi(store[3]);
+            z.tmax = stoi(store[4]);
+
+            // Push into vector
+            functions.push_back(z);
+        }
+
         else
         {
             //std::cout << buf[0] << std::endl;
-            std::cerr << "Unknown element" << std::endl;
+            std::cerr << "Unknown netlist line entered" << std::endl;
             exit;
         }
+
         store.clear();
     }
 }
 
-int N_int(std::vector<CirElement> circuit)
+int N_int(const std::vector<CirElement> &circuit)
 {
-     return circuit.size();
+    int largest = 0;
+
+    // Scan vector for largest number of nodes
+    for (int i = 0; i < circuit.size(); i++)
+    {   
+        if (circuit[i].n1 > largest)
+        {
+            largest = circuit[i].n1;
+        }
+        else if (circuit[i].n2 > largest)
+        {
+            largest = circuit[i].n2;
+        }
+    }
+    return largest;
 }
 
-int M_int(std::vector<CirSrc> sources)
+int M_int(const std::vector<CirSrc> &voltages)
 {
-    return sources.size();
+    return voltages.size();
 }
