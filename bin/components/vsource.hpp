@@ -25,9 +25,11 @@ class vsource : public branch
         
     public: //-----------------------------------------------------------------------
 
-        vsource(std::string name, int n_pos, int n_neg, std::string type, double v_value, double amp, double freq);
-
         ~vsource();
+
+        void update(std::string name, int n_pos, int n_neg, std::string type, double v_value, double amp, double freq);
+
+        void source_resolver(std::vector<std::string> store);
 
         char getID();
         

@@ -54,10 +54,11 @@ void circuit::parse(std::istream& cin)
             if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl; break;}; // Ensure nodes cannot be both grounded
 
-            vsource* point = src_resolver(store);
-            this->branch_store.push_back(point);
+            vsource* pointer = new vsource();
+            pointer->source_resolver(store);
+            this->branch_store.push_back(pointer);
             this->M++;
         }
         else if (tolower(store[0][0]) == 'i')
