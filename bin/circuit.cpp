@@ -1,10 +1,5 @@
 #include "circuit.hpp"
 
-#include "../bin/components/branch.hpp"
-#include "../bin/components/resistor.hpp"
-#include "../bin/components/vsource.hpp"
-#include "../bin/components/isource.hpp"
-
 circuit::~circuit()
 {
     
@@ -61,7 +56,8 @@ void circuit::parse(std::istream& cin)
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
 
-            this->branch_store.push_back(new vsource(store[0], n1, n2, converter(store[3])));
+            vsource* point = src_resolver(store);
+            this->branch_store.push_back(point);
             this->M++;
         }
         else if (tolower(store[0][0]) == 'i')
@@ -76,12 +72,25 @@ void circuit::parse(std::istream& cin)
             this->branch_store.push_back(new isource(store[0], n1, n2, converter(store[3])));
             this->M++;
         }
+        else if (store[0] == ".op") // DC analysis
+        {
+            func_name = ".op"; stop_time=0; timestep=0;
+        }
+        else if (store[0] == ".tran") // E.g. .tran 0 <stop time> 0 <timestep>
+        {
+            func_name = ".tran"; stop_time = converter(store[2]); stop_time = converter(store[4]);
+        }
         else
         {
-            // To be implemented
+            std::cerr << "Unsupported component or instruction inputted." << std::endl;
         }
     };
 };
+
+void circuit::func_param(std::string& func_name, double& stop_time, double& timestep)
+{
+    func_name = this->func_name; stop_time = this->stop_time; timestep = this->timestep;
+}
 
 void circuit::makeDenseMatrix()
 {
@@ -176,7 +185,7 @@ void circuit::print_data_structure()
     }
 };   
 
-void circuit::print_solution()
+void circuit::print_dc_sol()
 {
     int vcount = 0;
     std::cout << "MNA Report:" << std::endl;
@@ -193,4 +202,9 @@ void circuit::print_solution()
         vcount++;
         std::cout << "v" << "[" << vcount << "]" << " " << "current" << ": " << x[i] << std::endl;
     }
+};
+
+void print_csv()
+{
+
 };

@@ -3,6 +3,9 @@
 
 // Classes 
 #include "../bin/components/branch.hpp"
+#include "../bin/components/resistor.hpp"
+#include "../bin/components/vsource.hpp"
+#include "../bin/components/isource.hpp"
 // Support functions
 #include "header.hpp"
 
@@ -15,7 +18,11 @@ class circuit
         int 
             N, // The number of nodes in the circuit
             M, // The number of independent voltage sources in the circuit
-            vcount;
+            vcount; // Counter keeping track of number of independent voltage sources
+        
+        // Analysis function variables
+        std::string func_name;
+        double stop_time, timestep;
         
         Eigen::MatrixXf A;
         Eigen::VectorXf b;
@@ -32,6 +39,10 @@ class circuit
         // Handles the input of a netlist
         void parse(std::istream& cin);
 
+        /* Analysis function handler */
+        // Scans and returns the parameters of the analysis function inputted
+        void func_param(std::string& func_name, double& stop_time, double& timestep);
+
         /* Matrix functions */
         // Creates and populates the matrices in the format Ax = b
         void makeDenseMatrix();
@@ -47,7 +58,10 @@ class circuit
         void print_data_structure();
 
         // Output the content of matrix 'x'
-        void print_solution();
+        void print_dc_sol();
+
+        // Output solutions in .csv format
+        void print_csv();
 };
 
 #endif

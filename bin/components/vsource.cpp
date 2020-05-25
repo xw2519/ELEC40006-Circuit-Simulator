@@ -1,12 +1,15 @@
 #include "vsource.hpp"
 
-vsource::vsource(std::string name, int n_pos, int n_neg, double v_value)
+vsource::vsource(std::string name, int n_pos, int n_neg, std::string type, double v_value, double amp, double freq)
 {
     this->ID = 'v';
     this->name = name;
     this->n_pos = n_pos;
     this->n_neg = n_neg;
     this->branch_val = v_value;
+    this->vsrc_type = type;
+    this->amp = amp;
+    this->freq = freq;
 };
 
 

@@ -26,6 +26,7 @@
 
 // Custom libaries
 #include "str_handler.hpp"
+#include "vsrc_resolver.hpp"
 #include "Eigen/Core"
 #include "Eigen/Dense" // We use dense matrix initially
 

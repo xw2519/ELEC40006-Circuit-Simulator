@@ -15,10 +15,17 @@ class vsource : public branch
 {
     private: // -------------------------------------------------------------------
 
+        std::string vsrc_type;
+
+        // Sine wave
+        double  
+            offset, // DC offset
+            amp, // Amplitude of sine wave
+            freq; // Frequency of the sine wave
         
     public: //-----------------------------------------------------------------------
 
-        vsource(std::string name, int n_pos, int n_neg, double v_value);
+        vsource(std::string name, int n_pos, int n_neg, std::string type, double v_value, double amp, double freq);
 
         ~vsource();
 

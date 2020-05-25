@@ -18,7 +18,7 @@ int main()
 
     // Solve the circuit
     input_circuit.solve();
-    input_circuit.print_solution();
+    input_circuit.print_dc_sol();
 
     // Get ending time 
     auto stop = std::chrono::high_resolution_clock::now(); 
