@@ -10,13 +10,10 @@ int main()
     auto start = std::chrono::high_resolution_clock::now(); 
 
     // Initialising the input_circuit of type 'circuit' contains the parser component
-    circuit input_circuit;
-    input_circuit.parse(std::cin);
+    circuit input(std::cin);
 
     // Output the content of the vector using built in function
-    input_circuit.print_data_structure();
-
-    // Delete the pointers
+    input.Print_Edges();
 
     // Get ending time 
     auto stop = std::chrono::high_resolution_clock::now(); 

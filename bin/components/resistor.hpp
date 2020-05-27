@@ -9,32 +9,39 @@
 #ifndef resistor_hpp
 #define resistor_hpp
 
-#include "branch.hpp"
+#include "edge.hpp"
 
-class resistor : public branch
+class resistor : public edge
 {
     private: // -------------------------------------------------------------------
 
-        double // Default 0
-            r_val=0; // Resistance of resistor
+        double
+            R_value, // Value of resistance
+            g_value; // Value of conductance
         
     public: //-----------------------------------------------------------------------
 
-        resistor(std::string name, int n_pos, int n_neg, double r_value);
+        resistor(std::string in_name,int in_p_N,int in_n_N,double in_r_value)
+        {
+            ID='r'; name=in_name;
+            p_N=in_p_N; n_N=in_n_N;
+            R_value=in_r_value;
+            g_value=1/R_value;
+            edge_v=0; edge_i=0;
+        };
 
-        ~resistor();
+        ~resistor(){delete this;};
 
-        char getID();
+        double Get_r(){return this->R_value;};
 
-        int getNodeR();
+        double Get_g(){return this->g_value;};
 
-        int getNodeL();
-
-        double getconductance();
-
-        int update(){return 0;};
-
-        void print();
+        void print_edge()
+        {
+            std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
+            <<" N terminal: "<<n_N<<" Edge voltage: "<<edge_v<<" Edge current: "
+            <<edge_i<<" Resistance: "<<R_value<<" Conductance: "<<g_value<<std::endl;
+        };
 };
 
 #endif

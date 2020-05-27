@@ -1,69 +1,57 @@
+/*
+# ===============================================================
+# About the code
+# ===============================================================
+# This code forms the 'Analysis' module' # 
+# ===============================================================
+*/
+
 #ifndef circuit_hpp
 #define circuit_hpp
 
-// Classes 
-#include "../bin/components/branch.hpp"
+#include "header.hpp"
+#include "analysis_type.hpp"
+#include "node.hpp"
+#include "../bin/components/edge.hpp"
+#include "../bin/components/resistor.hpp"
 #include "../bin/components/capacitor.hpp"
 #include "../bin/components/inductor.hpp"
-#include "../bin/components/resistor.hpp"
 #include "../bin/components/vsource.hpp"
 #include "../bin/components/isource.hpp"
-// Support functions
-#include "header.hpp"
 
 class circuit
 {
-    private: // -----------------------------------------------------------------------
+    private: // ---------------------------------------------------------------------
 
-        std::vector<branch*> branch_store; // Stores the circuit inputted
+        // The number of nodes in circuit and its connected edges
+        std::vector<node> Nodes; 
 
-        int 
-            N, // The number of nodes in the circuit
-            M, // The number of independent voltage sources in the circuit
-            vcount; // Counter keeping track of number of independent voltage sources
-        
-        // Analysis function variables
-        std::string func_name;
-        double stop_time, timestep;
-        
-        Eigen::MatrixXf A;
-        Eigen::VectorXf b;
-        Eigen::VectorXf x;
-        
-    protected: // ---------------------------------------------------------------------
-    
-    public: //-------------------------------------------------------------------------
+        // The edges in the circuit used to create the vector 'nodes'
+        std::vector<edge*> Edges;
 
-        // Virtual destructor to be redefined by subclasses
-        virtual ~circuit();
+        // Contains the necessary inputted information for analysis
+        AnalysisType Analysis_param;
 
-        /* Parser related functions */
-        // Handles the input of a netlist
-        void parse(std::istream& cin);
+    public: //-----------------------------------------------------------------------
 
-        /* Analysis function handler */
-        // Scans and returns the parameters of the analysis function inputted
-        void func_param(std::string& func_name, double& stop_time, double& timestep);
+        /* Class operations */
+        circuit(std::istream& cin);
+        ~circuit();
 
-        /* Matrix functions */
-        // Creates and populates the matrices in the format Ax = b
-        void makeDenseMatrix();
 
-        // Stamp new values into existing matrix
-        void update();
+        /* Nodes operations */
+        void init_nodes(); // Initialises the content of Nodes vector
+        std::vector<node> Get_Nodes();
+        void Print_Nodes();
 
-        // Solve for matrix x
-        void solve();
 
-        /* Output functions */
-        // Outputs the content of the circuit vector
-        void print_data_structure();
+        /* Edges operations */
+        std::vector<edge*> Get_Edges();
+        void Print_Edges();
 
-        // Output the content of matrix 'x'
-        void print_dc_sol();
 
-        // Output solutions in .csv format
-        void print_csv();
+        /* Analysis operations */
+        AnalysisType Get_Analysis_param();
 };
 
 #endif

@@ -9,39 +9,48 @@
 #ifndef vsource_hpp
 #define vsource_hpp
 
-#include "branch.hpp"
+#include "edge.hpp"
 
-class vsource : public branch
+class vsource : public edge
 {
     private: // -------------------------------------------------------------------
 
-        std::string vsrc_type;
+        std::string type;
 
-        // Sine wave
         double  
             offset, // DC offset
             amp, // Amplitude of sine wave
-            freq; // Frequency of the sine wave
+            freq, // Frequency of the sine wave
+
+            voltage; // Return voltage calculated for instance in time
         
     public: //-----------------------------------------------------------------------
 
-        ~vsource();
+        vsource(std::string in_name,int in_p_N,int in_n_N,std::string in_type,double in_offset,double in_amp, double in_freq)
+        {
+            ID='v'; name=in_name;
+            p_N=in_p_N; n_N=in_n_N;
+            type = in_type;
+            offset=in_offset; amp=in_amp;
+            freq=in_freq;
+            edge_v=0; edge_i=0;
+        };
 
-        void update(std::string name, int n_pos, int n_neg, std::string type, double v_value, double amp, double freq);
+        ~vsource(){delete this;};
 
-        void source_resolver(std::vector<std::string> store);
+        double Get_voltage(double time)
+        {
+            if (type=="DC") {return offset;}
+            else if (type=="SINE") {return (offset+(amp*sin(2*M_PI*freq*time)));}
+        };
 
-        char getID();
-        
-        int getNodeR();
-
-        int getNodeL();
-
-        double getvoltage();
-
-        int Update(){return 0;};
-
-        void print();
+        void print_edge()
+        {
+            std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
+            <<" N terminal: "<<n_N<<" Edge voltage: "<<edge_v<<" Edge current: "
+            <<edge_i<<" Type: "<<type<<" Offset: "<<offset
+            <<" Amplitude: "<<amp<<" Frequency: "<<freq<<std::endl;
+        };
 };
 
 #endif
