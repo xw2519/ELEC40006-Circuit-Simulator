@@ -1,6 +1,10 @@
 #include "node.hpp"
 
-node::~node() {for(auto edge : connected_edges){delete edge;}};
+node::~node() 
+{
+    // This method prevents 'double free' problem and potential accessing unintended memory contents
+    for(int i=0;i<connected_edges.size();i++) {if (connected_edges[i]!=NULL) {connected_edges[i]=NULL;}}
+};
 
 void node::update_node(edge* in_edge) {connected_edges.push_back(in_edge);};
 
@@ -8,10 +12,6 @@ int node::connected_edges_size() {return connected_edges.size();};
 
 void node::print_node()
 {
-    std::cout<<std::endl<<"Connected Edges Report: "<<std::endl;
-
-    for (int i = 0; i < connected_edges.size(); i++)
-    {
-        for(auto edge : connected_edges) {edge->print_edge();}
-    }
+    for(int i=0;i<connected_edges.size();i++) {std::cout<<"        "; connected_edges[i]->print_edge();}
+    std::cout<<std::endl;
 };

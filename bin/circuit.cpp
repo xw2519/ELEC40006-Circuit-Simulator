@@ -102,16 +102,16 @@ circuit::circuit(std::istream& cin)
         }
         else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl;}
     };
-    std::cerr<<"Progess report: Edges stored."<<std::endl;
+    /* Debugging purposes std::cerr<<"Progess report: Edges stored."<<std::endl; */
 };
 
 circuit::~circuit()
 {
     for (auto node : Nodes) {node.~node();}
-    /* Debugging purposes */std::cerr << "Progess report: Nodes deleted." << std::endl; 
+    /* Debugging purposes std::cerr << "Progess report: Nodes deleted." << std::endl; */
 
     for (auto edge : Edges) {edge->~edge();}
-    /* Debugging purposes */std::cerr << "Progess report: Edges deleted." << std::endl; 
+    /* Debugging purposes std::cerr << "Progess report: Edges deleted." << std::endl; */
 };
 
 
@@ -121,34 +121,35 @@ void circuit::init_nodes()
     int Node_count=0;
 
     // Find largest node
-    for (auto edge : this->Edges)
+    for (int i=0; i<Edges.size();i++)
     {
-        Node_count = std::max(Node_count, edge->Get_p_N()); 
-        Node_count = std::max(Node_count, edge->Get_n_N());
+        Node_count = std::max(Node_count, Edges[i]->Get_p_N()); 
+        Node_count = std::max(Node_count, Edges[i]->Get_n_N());
     }
-    /* Debugging purposes*/ std::cerr<<"Progess report: Largest node calaculated: "<<Node_count<<std::endl; 
+    /* Debugging purposes std::cerr<<"Progess report: Largest node calaculated: "<<Node_count<<std::endl; */
     
     // Initialises the vector to the required size before entry process
     for (int i = 0; i < Node_count; i++) {node input; Nodes.push_back(input);}
+
     // Entry process by looping over 'Edges' vector
-    for (auto edge : this->Edges)
+    for (int i=0; i<Edges.size();i++)
     {
-        Nodes[edge->Get_p_N()].update_node(edge);
-        Nodes[edge->Get_n_N()].update_node(edge);
+        Nodes[Edges[i]->Get_p_N()].update_node(Edges[i]);
+        Nodes[Edges[i]->Get_n_N()].update_node(Edges[i]);
     }
-    /* Debugging purposes */ std::cerr<<"Progess report: Node initialisation successful."<<std::endl;
+    /* Debugging purposes std::cerr<<"Progess report: Node initialisation successful."<<std::endl;*/
 
     // Perform basic semantic check: Ensure node starts from 0 and is continuous
-    for (auto node : Nodes)
+    for (int i=0; i<Nodes.size(); i++)
     {
         /* Debugging purposes std::cerr<<"Progess report: Semantic check initialised."<<std::endl; */
-        if (node.connected_edges_size() == 0)
+        if (Nodes[i].connected_edges_size()== 0)
         {
             std::cerr<<"Error: Node semantic check failed. Incorrect input data."<<std::endl; 
             assert(0);
         }
     }
-    /* Debugging purposes */ std::cerr<<"Progess report: Circuit semantic check successful."<<std::endl;
+    /* Debugging purposes std::cerr<<"Progess report: Circuit semantic check successful."<<std::endl; */
 };
 
 std::vector<node> circuit::Get_Nodes() {return this->Nodes;};
@@ -156,9 +157,14 @@ std::vector<node> circuit::Get_Nodes() {return this->Nodes;};
 void circuit::Print_Nodes() 
 {
     std::cout<<std::endl; 
-    std::cout<<"Circuit Nodes Report: "<<std::endl; 
-    std::cout<<std::endl;
-    for (auto node : Nodes) {node.print_node();}
+    std::cout<<"Circuit Nodes Report: "<<std::endl;
+    std::cout<<std::endl; 
+
+    for (int i=0; i<Nodes.size(); i++) 
+    {
+        std::cout << "Node: "<<i<<" "<<std::endl;;
+        Nodes[i].print_node();
+    }
 };
 
 
