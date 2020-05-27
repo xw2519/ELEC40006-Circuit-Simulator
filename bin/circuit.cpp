@@ -27,7 +27,7 @@ circuit::circuit(std::istream& cin)
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
             
@@ -37,7 +37,7 @@ circuit::circuit(std::istream& cin)
         { 
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
@@ -48,7 +48,7 @@ circuit::circuit(std::istream& cin)
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
@@ -58,7 +58,7 @@ circuit::circuit(std::istream& cin)
         else if (tolower(store[0][0]) == 'v')
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
-            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl; break;}; // Ensure nodes cannot be both grounded
@@ -102,33 +102,76 @@ circuit::circuit(std::istream& cin)
         }
         else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl;}
     };
+    std::cerr<<"Progess report: Edges stored."<<std::endl;
 };
 
 circuit::~circuit()
 {
     for (auto node : Nodes) {node.~node();}
-    /* Debugging purposes */std::cerr << "Class operation: Nodes deleted." << std::endl; 
+    /* Debugging purposes */std::cerr << "Progess report: Nodes deleted." << std::endl; 
 
     for (auto edge : Edges) {edge->~edge();}
-    /* Debugging purposes */std::cerr << "Class operation: Edges deleted." << std::endl; 
+    /* Debugging purposes */std::cerr << "Progess report: Edges deleted." << std::endl; 
 };
 
 
 /* Nodes operations */
 void circuit::init_nodes()
 {
+    int Node_count=0;
 
+    // Find largest node
+    for (auto edge : this->Edges)
+    {
+        Node_count = std::max(Node_count, edge->Get_p_N()); 
+        Node_count = std::max(Node_count, edge->Get_n_N());
+    }
+    /* Debugging purposes*/ std::cerr<<"Progess report: Largest node calaculated: "<<Node_count<<std::endl; 
+    
+    // Initialises the vector to the required size before entry process
+    for (int i = 0; i < Node_count; i++) {node input; Nodes.push_back(input);}
+    // Entry process by looping over 'Edges' vector
+    for (auto edge : this->Edges)
+    {
+        Nodes[edge->Get_p_N()].update_node(edge);
+        Nodes[edge->Get_n_N()].update_node(edge);
+    }
+    /* Debugging purposes */ std::cerr<<"Progess report: Node initialisation successful."<<std::endl;
+
+    // Perform basic semantic check: Ensure node starts from 0 and is continuous
+    for (auto node : Nodes)
+    {
+        /* Debugging purposes std::cerr<<"Progess report: Semantic check initialised."<<std::endl; */
+        if (node.connected_edges_size() == 0)
+        {
+            std::cerr<<"Error: Node semantic check failed. Incorrect input data."<<std::endl; 
+            assert(0);
+        }
+    }
+    /* Debugging purposes */ std::cerr<<"Progess report: Circuit semantic check successful."<<std::endl;
 };
 
 std::vector<node> circuit::Get_Nodes() {return this->Nodes;};
 
-void circuit::Print_Nodes() {std::cout<<std::endl;std::cout<<"Circuit Nodes Report: "<<std::endl;std::cout<<std::endl;for (auto node : Nodes) {node.print_node();}};
+void circuit::Print_Nodes() 
+{
+    std::cout<<std::endl; 
+    std::cout<<"Circuit Nodes Report: "<<std::endl; 
+    std::cout<<std::endl;
+    for (auto node : Nodes) {node.print_node();}
+};
 
 
 /* Edges operations */
 std::vector<edge*> circuit::Get_Edges() {return this->Edges;};
 
-void circuit::Print_Edges() {std::cout<<std::endl;std::cout<<"Circuit Edge Report: "<<std::endl;std::cout<<std::endl;for (auto edge : Edges) {edge->print_edge();}};
+void circuit::Print_Edges() 
+{
+    std::cout<<std::endl;
+    std::cout<<"Circuit Edge Report: "<<std::endl;
+    std::cout<<std::endl;
+    for (auto edge : Edges) {edge->print_edge();}
+};
 
 
 /* Analysis operations */

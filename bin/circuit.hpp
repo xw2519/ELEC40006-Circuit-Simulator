@@ -23,11 +23,11 @@ class circuit
 {
     private: // ---------------------------------------------------------------------
 
-        // The number of nodes in circuit and its connected edges
-        std::vector<node> Nodes; 
-
         // The edges in the circuit used to create the vector 'nodes'
         std::vector<edge*> Edges;
+
+        // The number of nodes in circuit and its connected edges
+        std::vector<node> Nodes; 
 
         // Contains the necessary inputted information for analysis
         AnalysisType Analysis_param;
@@ -38,16 +38,14 @@ class circuit
         circuit(std::istream& cin);
         ~circuit();
 
+        /* Edges operations */
+        std::vector<edge*> Get_Edges();
+        void Print_Edges();
 
         /* Nodes operations */
         void init_nodes(); // Initialises the content of Nodes vector
         std::vector<node> Get_Nodes();
         void Print_Nodes();
-
-
-        /* Edges operations */
-        std::vector<edge*> Get_Edges();
-        void Print_Edges();
 
 
         /* Analysis operations */
