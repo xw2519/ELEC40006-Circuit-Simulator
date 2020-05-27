@@ -1,0 +1,11 @@
+       --- Operating Point ---
+
+V(n1):	 30	 voltage
+V(n2):	 15.0004	 voltage
+V(n3):	 0.000749981	 voltage
+I(C1):	 1.50004e-010	 device_current
+I(L1):	 0.749981	 device_current
+I(R2):	 -0.749981	 device_current
+I(R1):	 -0.749981	 device_current
+I(V1):	 -0.749981	 device_current
+

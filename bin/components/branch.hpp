@@ -29,7 +29,7 @@ class branch
     public: //-----------------------------------------------------------------------
     
         virtual ~branch();
-
+        
         virtual char getID(){};
 
         virtual int getNodeR(){};

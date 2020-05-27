@@ -60,5 +60,5 @@ double vsource::getvoltage()
 
 void vsource::print()
 {
-    std::cout<<" Component ID: "<<this->ID<<" Node 1: "<<this->n_pos<<" Node 2: "<<this->n_neg<<" Source Type: "<<this->vsrc_type<<" Steady value: "<<this->branch_val<<" Amplitude: "<<this->amp<<" Frequency: "<<this->freq<<std::endl;
+    std::cout<<" Component ID: "<<this->ID<<" Node 1: "<<this->n_pos<<" Node 2: "<<this->n_neg<<" Source Type: "<<this->vsrc_type<<" Steady state value: "<<this->branch_val<<" Amplitude: "<<this->amp<<" Frequency: "<<this->freq<<std::endl;
 };

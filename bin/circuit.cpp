@@ -34,18 +34,32 @@ void circuit::parse(std::istream& cin)
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
 
-            this->N++;
+            this->N = std::max(n1, n2); // Take the largest node number
             this->branch_store.push_back(new resistor(store[0], n1, n2, converter(store[3])));
         }
         else if (tolower(store[0][0]) == 'c')
-        {
-            // To be implemented
-            this->N++;
+        { 
+            store[0].erase(store[0].begin() + 0); // Remove element identifier
+            
+            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+
+            int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
+            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+
+            this->N = std::max(n1, n2); // Take the largest node number
+            this->branch_store.push_back(new capacitor(store[0], n1, n2)); 
         }
         else if (tolower(store[0][0]) == 'l')
         {
-            // To be implemented
-            this->N++;
+            store[0].erase(store[0].begin() + 0); // Remove element identifier
+            
+            if (store.size() < 3) {std::cerr << "No values entered." << std::endl;} // Ensure there is values entered
+
+            int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
+            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+
+            this->N = std::max(n1, n2); // Take the largest node number
+            this->branch_store.push_back(new inductor(store[0], n1, n2)); 
         }
         else if (tolower(store[0][0]) == 'v')
         {
@@ -88,10 +102,9 @@ void circuit::parse(std::istream& cin)
     };
 };
 
-void circuit::func_param(std::string& func_name, double& stop_time, double& timestep)
-{
-    func_name = this->func_name; stop_time = this->stop_time; timestep = this->timestep;
-}
+void circuit::func_param(std::string& func_name, double& stop_time, double& timestep) 
+{func_name = this->func_name; stop_time = this->stop_time; timestep = this->timestep;};
+
 
 void circuit::makeDenseMatrix()
 {
@@ -128,10 +141,10 @@ void circuit::makeDenseMatrix()
                 }
             break;
 
-        case 'c':
+        case 'c': 
             break;
 
-        case 'l':
+        case 'l': 
             break;
 
         case 'v':
@@ -154,10 +167,12 @@ void circuit::makeDenseMatrix()
             if (n2!=0) {b(n2-1) = b(n2-1) + value->getvoltage();}
             break;
 
-        default:
-            break;
+        default: break;
         }
     }
+    /* Debugging purposes */
+    std::cout << A << std::endl;
+    std::cout << b << std::endl; 
 };
 
 void circuit::update()
@@ -165,10 +180,7 @@ void circuit::update()
 
 };
 
-void circuit::solve()
-{
-    x = A.colPivHouseholderQr().solve(b);
-};
+void circuit::solve() {x = A.colPivHouseholderQr().solve(b);};
 
 void circuit::print_data_structure()
 {
@@ -180,10 +192,7 @@ void circuit::print_data_structure()
     std::cout << std::endl;
 
     for (int i = 0; i < branch_store.size(); i++) // Print all elements stored in the vector
-    {
-        std::cout << (i+1);
-        branch_store[i]->print();
-    }
+    {std::cout << (i+1); branch_store[i]->print();}
 };   
 
 void circuit::print_dc_sol()
@@ -193,9 +202,8 @@ void circuit::print_dc_sol()
     std::cout << std::endl;
     std::cout << "Nodal voltages:" << std::endl;
     for (int i = 0; i < N; i++)
-    {
-        std::cout << "Node " << (i+1) << ": " << x[i] << std::endl;
-    }
+    {std::cout << "Node " << (i+1) << ": " << x[i] << std::endl;}
+
     std::cout << std::endl;
     std::cout << "Voltage source currents:" << std::endl;
     for (int i = N; i < (N+M); i++)

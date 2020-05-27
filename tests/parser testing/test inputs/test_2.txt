@@ -1,0 +1,8 @@
+* C:\Users\alw\Desktop\spice\Analysis\Draft4.asc
+V1 n1 0 30
+R1 n2 n1 20
+R2 n3 n2 20
+C1 n2 0 10
+L1 n3 0 10
+.op
+.end

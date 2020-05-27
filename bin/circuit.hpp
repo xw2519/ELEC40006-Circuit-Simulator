@@ -3,6 +3,8 @@
 
 // Classes 
 #include "../bin/components/branch.hpp"
+#include "../bin/components/capacitor.hpp"
+#include "../bin/components/inductor.hpp"
 #include "../bin/components/resistor.hpp"
 #include "../bin/components/vsource.hpp"
 #include "../bin/components/isource.hpp"
@@ -35,7 +37,7 @@ class circuit
         // Virtual destructor to be redefined by subclasses
         virtual ~circuit();
 
-        /* Parse a netlist */
+        /* Parser related functions */
         // Handles the input of a netlist
         void parse(std::istream& cin);
 
