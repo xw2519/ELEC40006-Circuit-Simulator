@@ -21,6 +21,9 @@ int main()
     // Output the content of the 'Nodes' vector using built in function
     input.Print_Nodes();
 
+    // Output simulation parameters
+    input.Print_simul_parameters();
+
     // Get ending time 
     auto stop = std::chrono::high_resolution_clock::now(); 
 

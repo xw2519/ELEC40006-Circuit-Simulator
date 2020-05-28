@@ -10,7 +10,7 @@
 #define circuit_hpp
 
 #include "header.hpp"
-#include "analysis_type.hpp"
+#include "simulate.hpp"
 #include "node.hpp"
 #include "../bin/components/edge.hpp"
 #include "../bin/components/resistor.hpp"
@@ -30,7 +30,7 @@ class circuit
         std::vector<node> Nodes; 
 
         // Contains the necessary inputted information for analysis
-        AnalysisType Analysis_param;
+        simulate Simulation;
 
     public: //-----------------------------------------------------------------------
 
@@ -48,8 +48,8 @@ class circuit
         void Print_Nodes();
 
 
-        /* Analysis operations */
-        AnalysisType Get_Analysis_param();
+        /* Simulation operations */
+        void Print_simul_parameters();
 };
 
 #endif

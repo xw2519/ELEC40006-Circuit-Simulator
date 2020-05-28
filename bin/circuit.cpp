@@ -71,7 +71,7 @@ circuit::circuit(std::istream& cin)
             }
             else if (store.size() == 4) // Treat as DC source
             {
-                /* Debugging purposes std::cout << "DC detected." << std::endl */
+                /* Debugging purposes std::cout << "DC detected." << std::endl; */
                 this->Edges.push_back(new vsource(store[0], GetNode(store[1]), GetNode(store[2]), "DC", converter(store[3]), 0, 0));
             }
             else{std::cerr << "Error: Unsupported voltage source type." << std::endl;}
@@ -88,17 +88,11 @@ circuit::circuit(std::istream& cin)
         }
         else if (store[0] == ".op") // DC analysis
         {
-            this->Analysis_param.type = ".op";
-            this->Analysis_param.start_time = 0;
-            this->Analysis_param.stop_time = 0;
-            this->Analysis_param.interval = 0;
+            Simulation.update_parameters(".op",0,0,0);
         }
         else if (store[0] == ".tran") // E.g. .tran 0 <stop time> 0 <timestep>
         {
-            this->Analysis_param.type = ".tran";
-            this->Analysis_param.start_time = converter(store[2]);
-            this->Analysis_param.stop_time = 0;
-            this->Analysis_param.interval = converter(store[4]);
+            Simulation.update_parameters(".tran",converter(store[2]),0,converter(store[4]));
         }
         else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl;}
     };
@@ -107,11 +101,14 @@ circuit::circuit(std::istream& cin)
 
 circuit::~circuit()
 {
+    /* Debugging purposes std::cerr<<"Progess report: Destructor called."<<std::endl; */
     for (auto node : Nodes) {node.~node();}
     /* Debugging purposes std::cerr << "Progess report: Nodes deleted." << std::endl; */
 
     for (auto edge : Edges) {edge->~edge();}
     /* Debugging purposes std::cerr << "Progess report: Edges deleted." << std::endl; */
+
+    Simulation.~simulate();
 };
 
 
@@ -181,4 +178,7 @@ void circuit::Print_Edges()
 
 
 /* Analysis operations */
-AnalysisType circuit::Get_Analysis_param() {return this->Analysis_param;};
+void circuit::Print_simul_parameters() 
+{
+    Simulation.print_param();
+};
