@@ -28,13 +28,24 @@ class edge
             edge_i; // Edge current of component
 
     public: //-----------------------------------------------------------------------
-    
+
+        /* Get operations */
         char Get_ID(){return this->ID;} 
         std::string Get_Name(){return this->name;};
         int Get_p_N(){return this->p_N;};
         int Get_n_N(){return this->n_N;};
 
+        /* Update operations */
+        void update_edge_v(double voltage){this->edge_v=voltage;};
+        void update_edge_i(double current){this->edge_i=current;};
+
+        /* Output operations */
         void virtual print_edge()=0; // Report variables of a specific edge
+
+        /* Specific element operations */
+        double virtual Get_g(){};
+        double virtual Get_voltage(){};
+        double virtual Get_current(){};
 };
 
 #endif

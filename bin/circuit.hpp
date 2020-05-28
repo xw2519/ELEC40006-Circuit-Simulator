@@ -38,9 +38,13 @@ class circuit
         circuit(std::istream& cin);
         ~circuit();
 
+
         /* Edges operations */
         std::vector<edge*> Get_Edges();
+        int Get_M(); // Return number of independent voltage sources
+        int Get_N(); // Return number of nodes in the circuit
         void Print_Edges();
+
 
         /* Nodes operations */
         void init_nodes(); // Initialises the content of Nodes vector
@@ -49,6 +53,7 @@ class circuit
 
 
         /* Simulation operations */
+        void Init_simulation();
         void Print_simul_parameters();
 };
 

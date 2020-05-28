@@ -21,6 +21,11 @@ int main()
     // Output the content of the 'Nodes' vector using built in function
     input.Print_Nodes();
 
+    // Output critical variables 'N' and 'M'
+    std::cout<<"N variable: "<<input.Get_N()<<std::endl;
+    std::cout<<"M variable: "<<input.Get_M()<<std::endl;
+    std::cout<<std::endl;
+
     // Output simulation parameters
     input.Print_simul_parameters();
 

@@ -30,7 +30,7 @@ class isource : public edge
 
         ~isource(){delete this;};
 
-        double getcurrent(){return current;};
+        double Get_current(){return current;};
 
         void print_edge()
         {

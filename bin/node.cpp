@@ -10,6 +10,8 @@ void node::update_node(edge* in_edge) {connected_edges.push_back(in_edge);};
 
 int node::connected_edges_size() {return connected_edges.size();};
 
+std::vector<edge*> node::get_connected(){return connected_edges;};
+
 void node::print_node()
 {
     for(int i=0;i<connected_edges.size();i++) {std::cout<<"        "; connected_edges[i]->print_edge();}

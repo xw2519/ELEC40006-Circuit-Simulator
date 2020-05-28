@@ -168,6 +168,18 @@ void circuit::Print_Nodes()
 /* Edges operations */
 std::vector<edge*> circuit::Get_Edges() {return this->Edges;};
 
+int circuit::Get_M()
+{
+    int M=0; 
+
+    // Scan through vector and find 'v' sources
+    for (int i = 0; i < Edges.size(); i++) {if (Edges[i]->Get_ID() == 'v') {M++;}}
+    
+    return M;
+};
+
+int circuit::Get_N(){return Nodes.size();};
+
 void circuit::Print_Edges() 
 {
     std::cout<<std::endl;
@@ -182,3 +194,8 @@ void circuit::Print_simul_parameters()
 {
     Simulation.print_param();
 };
+
+
+/* Simulation operations */
+void circuit::Init_simulation() {Simulation.init_matrices(this->Get_N(), this->Get_M(), Nodes);};
+void circuit::Print_simul_parameters() {};
