@@ -189,13 +189,8 @@ void circuit::Print_Edges()
 };
 
 
-/* Analysis operations */
-void circuit::Print_simul_parameters() 
-{
-    Simulation.print_param();
-};
-
-
 /* Simulation operations */
-void circuit::Init_simulation() {Simulation.init_matrices(this->Get_N(), this->Get_M(), Nodes);};
-void circuit::Print_simul_parameters() {};
+void circuit::Init_simulation() {Simulation.init_matrices(this->Get_N(), this->Get_M(), Edges);};
+void circuit::Simul_solve() {Simulation.solve_matrices();};
+void circuit::Print_simul_parameters() { Simulation.print_param();};
+void circuit::Print_simul_results() {Simulation.print_x();};

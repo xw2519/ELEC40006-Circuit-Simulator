@@ -1,4 +1,4 @@
-g++ analysis.cpp ../../bin/circuit.cpp ../../bin/components/branch.cpp ../../bin/components/resistor.cpp ../../bin/components/capacitor.cpp ../../bin/components/inductor.cpp ../../bin/components/vsource.cpp ../../bin/components/isource.cpp ../../bin/str_handler.cpp -o analysis
+g++ analysis.cpp ../../bin/circuit.cpp ../../bin/simulate.cpp ../../bin/node.cpp ../../bin/str_handler.cpp -o analyser
 
-./analysis < ../analysis\ testing/test\ inputs/test_2.txt 
+./analyser < ../analysis\ testing/test\ inputs/test_1.txt 
 

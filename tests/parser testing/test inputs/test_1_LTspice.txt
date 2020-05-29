@@ -1,9 +1,10 @@
-C:\Users\alw\Desktop\LtSpice\Draft5.asc
-*Henlo
-R1 N001 0 2
-R2 N002 0 8
-R3 N003 N002 4
-V1 N002 N001 32
-V2 N003 0 20
-.end
+       --- Operating Point ---
 
+V(n001):	 -10.8571	 voltage
+V(n002):	 21.1429	 voltage
+V(n003):	 20	 voltage
+I(R3):	 -0.142857	 device_current
+I(R2):	 5.28571	 device_current
+I(R1):	 -5.42857	 device_current
+I(V2):	 0.142857	 device_current
+I(V1):	 -5.42857	 device_current

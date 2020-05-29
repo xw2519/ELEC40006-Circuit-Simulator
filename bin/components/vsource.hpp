@@ -17,6 +17,8 @@ class vsource : public edge
 
         std::string type;
 
+        int assigned_ID;
+
         double  
             offset, // DC offset
             amp, // Amplitude of sine wave
@@ -33,10 +35,16 @@ class vsource : public edge
             type = in_type;
             offset=in_offset; amp=in_amp;
             freq=in_freq;
-            edge_v=0; edge_i=0;
+            prev_edge_v=0; prev_edge_i=0;
         };
 
         ~vsource(){delete this;};
+
+        /* Voltage and Current Source operations */
+
+        int Get_assigned_ID() {return assigned_ID;};
+
+        void Update_assigned_ID(int vcount) {assigned_ID=vcount;};
 
         double Get_voltage(double time)
         {
@@ -44,11 +52,13 @@ class vsource : public edge
             else if (type=="SINE") {return (offset+(amp*sin(2*M_PI*freq*time)));}
         };
 
+        /* Output operations */
+
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<edge_v<<" Edge current: "
-            <<edge_i<<" Type: "<<type<<" Offset: "<<offset
+            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
+            <<prev_edge_i<<" Type: "<<type<<" Offset: "<<offset
             <<" Amplitude: "<<amp<<" Frequency: "<<freq<<std::endl;
         };
 };

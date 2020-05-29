@@ -54,7 +54,9 @@ class circuit
 
         /* Simulation operations */
         void Init_simulation();
+        void Simul_solve();
         void Print_simul_parameters();
+        void Print_simul_results();
 };
 
 #endif

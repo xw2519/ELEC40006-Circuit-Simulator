@@ -10,18 +10,34 @@
 #define simulate_hpp
 
 #include "header.hpp"
-#include "circuit.hpp"
+#include "node.hpp"
+#include "../bin/components/edge.hpp"
+#include "../bin/components/resistor.hpp"
+#include "../bin/components/capacitor.hpp"
+#include "../bin/components/inductor.hpp"
+#include "../bin/components/vsource.hpp"
+#include "../bin/components/isource.hpp"
 
 class simulate
 {
     private: // ---------------------------------------------------------------------
-
+    
+    /* Required transient parameters */
         std::string type;
 
     double 
         start_time,
         stop_time,
-        interval;
+        timestep;
+
+    /* Simulation parameters */
+    int 
+        N_store,
+        M_store;
+
+    double
+        current_time,
+        intervals;
 
     Eigen::MatrixXd A;
     Eigen::VectorXd x;
@@ -36,17 +52,28 @@ class simulate
         void update_parameters(std::string in_type, double start, double stop, double in_interval);
 
         /* Matrix operations */
-        void init_matrices(int N, int M, std::vector<node> Nodes); // Create conductance matrix
-        void update_matrices();
-        void solve_matrices();
+        // Create matrices based on initial conditions
+        void Init_matrices(int N, int M, std::vector<edge*>& Edges); 
 
-        double find_voltage();
+        // Updates matrices based on values of the voltage source
+        void Update_source(std::vector<edge*> vsources);
 
-        double find_current();
+        // Updates matrices based on values of dynamic elements e.g. capacitors
+        void Update_dynamic_g(std::vector<edge*>inductors,std::vector<edge*>capacitors);
+
+        // Update previous voltages and currents in the system for integration purposes
+        void Update_prev_values(std::vector<edge*>inductors,std::vector<edge*>capacitors);
+        
+        // Solves the system of equations based on current values of matrices
+        void Solve_matrices();
+
+        /* Transient simulation */
+        void Transient(std::vector<edge*>& Edges);
         
         /* Output operations */
         void print_param();
         void print_x();
+        void print_CSV();
 };
 
 #endif
