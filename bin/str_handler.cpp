@@ -31,11 +31,8 @@ double converter(const std::string& val_str)
     if (abbre_pos==std::string::npos)
     {
         // No recognised abbreviation, extract digits
-        std::string str_digits;
-        for (char const &c: val_str){if (isdigit(c)){str_digits = str_digits + c;}}
-        
-        if (str_digits.size() == 0){return 0;}
-        else{return std::stod(str_digits);}
+        try {return std::stod(val_str);}
+        catch(std::exception& e) {std::cerr<<"Invalid digit inputted."<<std::endl;};
     }
 
     // A recognised abbreviation detected

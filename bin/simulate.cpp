@@ -16,7 +16,8 @@ void simulate::update_parameters(std::string in_type, double start, double stop,
 
 void simulate::Init_matrices(int N, int M, std::vector<edge*>& Edges)
 {
-    this->N_store = N; this->M_store=M;
+    N_store = N; M_store=M;
+    /* Debugging purposes std::cerr<<"Nodes: "<<N<<" "<<M<<std::endl; */
     // Initialise matrices to appropriate sizes defult to 0: Dense matrix approach
     A.setZero((N+M),(N+M));
     b = Eigen::VectorXd::Zero((N+M));
@@ -77,13 +78,18 @@ void simulate::Init_matrices(int N, int M, std::vector<edge*>& Edges)
 
 void simulate::Update_source(std::vector<edge*>vsources)
 {
+    /* Debugging purposes std::cerr<<"Started updating voltages."<<std::endl; */
     // Update source value and input new value into matrix
     double voltage;
     for (int i = 0; i < vsources.size(); i++) 
     {
+        /* Debugging purposes std::cerr<<"Update loop "<<i<<" "<<"Time: "<<current_time; */
         voltage = vsources[i]->Get_voltage(current_time);
+        /* Debugging purposes std::cerr<<" Voltage: "<<voltage<<std::endl; */
         b(N_store+vsources[i]->Get_assigned_ID()) = voltage;
     }
+
+    /* Debugging purposes std::cerr<<"Finished updating voltages."<<std::endl; */
 };
 
 void simulate::Update_dynamic_g(std::vector<edge*>inductors,std::vector<edge*>capacitors)
@@ -140,7 +146,8 @@ void simulate::Update_prev_values(std::vector<edge*>inductors,std::vector<edge*>
     // Operation is based on 'Backward Euler' method
     for (int i = 0; i < inductors.size(); i++)
     {
-        double I_n = 
+        // Need to integrate voltage to obtain the current
+        double I_n;
     }
 
     for (int i = 0; i < capacitors.size(); i++)
@@ -148,6 +155,8 @@ void simulate::Update_prev_values(std::vector<edge*>inductors,std::vector<edge*>
         // Get capacitor nodes
         int p_node=capacitors[i]->Get_p_N(); int n_node=capacitors[i]->Get_n_N();
 
+        // Get voltage across capacitor
+        double V_n = x(p_node)-x(n_node);
 
         capacitors[i]->Set_instant_current(V_n*capacitors[i]->Get_g());
     } 
@@ -165,31 +174,42 @@ void simulate::Transient(std::vector<edge*>& Edges)
     assert(stop_time>start_time && "Fatal Error: Stop Time cannot be earlier than Start Time.");
     current_time=0; // Start time 0
     intervals=(stop_time-start_time)/timestep; 
-
+    
     // Record dynamic elements and voltage source for transient analysis
     std::vector<edge*> inductors; std::vector<edge*> capacitors; std::vector<edge*> vsources;
-    for (int i = 0; i <= Edges.size(); i++)
+
+    for (int i = 0; i < Edges.size(); i++)
     {
         if (Edges[i]->Get_ID() == 'l') {inductors.push_back(Edges[i]);}
         if (Edges[i]->Get_ID() == 'c') {capacitors.push_back(Edges[i]);}
         if (Edges[i]->Get_ID() == 'v') {vsources.push_back(Edges[i]);}
     }
-    
+    /* Debugging purposes std::cerr<<"Finished sorting dynamic elements."<<std::endl; */
+
     // Set C and L conductances
-    for (int i = 0; i < inductors.size(); i++) {inductors[i]->Set_g_value(timestep);}
-    for (int i = 0; i < capacitors.size(); i++) {capacitors[i]->Set_g_value(timestep);}
+    for (int i = 0; i < inductors.size(); i++) 
+    {
+        /* Debugging purposes std::cerr<<"Started setting inductors."<<std::endl; */
+        inductors[i]->Set_g_value(timestep);
+    }
+    for (int i = 0; i < capacitors.size(); i++) 
+    {
+        /* Debugging purposes std::cerr<<"Started setting capacitors."<<std::endl; */
+        capacitors[i]->Set_g_value(timestep);
+    }
     
-    // Transient loop
+    /* Debugging purposes std::cerr<<"Started transient analysis."<<std::endl; */
     for (int i = 0; i < intervals; i++)  
     {
         this->Update_source(vsources);
-        this->Update_dynamic_g(inductors,capacitors);
+        // this->Update_dynamic_g(inductors,capacitors);
         this->Solve_matrices();
-        this->Update_prev_values(inductors,capacitors);
+        // this->Update_prev_values(inductors,capacitors);
         this->print_CSV();     
+        if (current_time>stop_time) 
+        {std::cerr<<"Note: Current_time exceeded Stop_time."<<std::endl;break;}
 
         current_time=current_time+timestep;
-        if (current_time<stop_time) {std::cerr<<"Note: Current_time exceeded Stop_time."<<std::endl;break;}   
     }
     /* Debugging purposes: std::cerr<<"Transient completed."<<std::endl; */
 };
@@ -226,5 +246,10 @@ void simulate::print_x()
 void simulate::print_CSV() // Output voltages only in CSV format
 {
     std::cout<<current_time<<","; 
-    for(int i = 0; i < this->N_store; i++){std::cout<<x[i]<<","<<std::endl;}
+    for(int i = 0; i < this->N_store; i++)
+    {
+        std::cout<<x[i];
+        if (i!=N_store-1) {std::cout<<",";}
+        if (i==N_store-1) {std::cout<<std::endl;}
+    }
 };

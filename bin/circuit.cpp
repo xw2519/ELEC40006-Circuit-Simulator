@@ -92,7 +92,7 @@ circuit::circuit(std::istream& cin)
         }
         else if (store[0] == ".tran") // E.g. .tran 0 <stop time> 0 <timestep>
         {
-            Simulation.update_parameters(".tran",converter(store[2]),0,converter(store[4]));
+            Simulation.update_parameters(".tran",0,converter(store[2]),converter(store[4]));
         }
         else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl;}
     };
@@ -113,7 +113,7 @@ circuit::~circuit()
 
 
 /* Nodes operations */
-void circuit::init_nodes()
+void circuit::Init_nodes()
 {
     int Node_count=0;
 
@@ -190,7 +190,12 @@ void circuit::Print_Edges()
 
 
 /* Simulation operations */
-void circuit::Init_simulation() {Simulation.init_matrices(this->Get_N(), this->Get_M(), Edges);};
-void circuit::Simul_solve() {Simulation.solve_matrices();};
+void circuit::Init_simulation() {Simulation.Init_matrices(this->Get_N(), this->Get_M(), Edges);};
+void circuit::Simul_solve() {Simulation.Solve_matrices();};
+void circuit::Transient_solve()
+{
+    Simulation.Transient(Edges);
+};
+
 void circuit::Print_simul_parameters() { Simulation.print_param();};
 void circuit::Print_simul_results() {Simulation.print_x();};

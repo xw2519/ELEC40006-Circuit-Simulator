@@ -14,7 +14,7 @@ int main()
     circuit input(std::cin);
 
     // Initialising the 'Node' vector
-    input.init_nodes();
+    input.Init_nodes();
 
     // Output content of the circuit
     input.Print_Edges();

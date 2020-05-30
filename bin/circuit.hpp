@@ -47,7 +47,7 @@ class circuit
 
 
         /* Nodes operations */
-        void init_nodes(); // Initialises the content of Nodes vector
+        void Init_nodes(); // Initialises the content of Nodes vector
         std::vector<node> Get_Nodes();
         void Print_Nodes();
 
@@ -55,6 +55,7 @@ class circuit
         /* Simulation operations */
         void Init_simulation();
         void Simul_solve();
+        void Transient_solve();
         void Print_simul_parameters();
         void Print_simul_results();
 };
