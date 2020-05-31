@@ -24,8 +24,8 @@ class edge
             n_N; // Negative terminal of component
 
         double  
-            prev_edge_v, // Previous voltage of component
-            prev_edge_i; // Previous current of component
+            Prev_edge_V, // Previous voltage of component
+            Prev_edge_I; // Previous current of component
 
     public: //-----------------------------------------------------------------------
 
@@ -36,19 +36,26 @@ class edge
         int Get_n_N(){return this->n_N;};
 
         /* Update operations */
-        void Set_prev_edge_v(double voltage){this->prev_edge_v=voltage;};
-        void Set_prev_edge_i(double current){this->prev_edge_i=current;};
+        void Set_prev_edge_v(double voltage){this->Prev_edge_V=voltage;};
+        void Set_prev_edge_i(double current){this->Prev_edge_I=current;};
 
         /* Specific element operations */
         double virtual Get_g(){};
+        void virtual Set_g_value(double delta){};
 
         /* Dynamic element operations */
-        void virtual Set_g_value(double delta){};
-        void virtual Set_instant_current(double nodeV){};
-        double virtual Get_instant_current(){};
-        void virtual Set_integrat_value(double delta_src){};
-        double virtual Get_integrat_value(){};
+        double virtual Get_next_I(){};
+        void virtual Set_next_I(double Prev_edge_V){};
+        double virtual Get_prev_I(){};
+        void virtual Set_prev_I(){};
 
+        double virtual Get_next_V(){};
+        void virtual Set_next_V(){};
+        
+        
+        double virtual Get_integrat_value(){};
+        void virtual Set_integrat_value(double delta_src){};
+    
         /* Voltage and Current Source operations */
         int virtual Get_assigned_ID(){};
         void virtual Update_assigned_ID(int vcount){};

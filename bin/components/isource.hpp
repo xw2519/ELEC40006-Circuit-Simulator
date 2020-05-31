@@ -25,7 +25,7 @@ class isource : public edge
             ID='i'; name=in_name;
             p_N=in_p_N; n_N=in_n_N;
             current=in_current;
-            prev_edge_v=0; prev_edge_i=0;
+            Prev_edge_V=0; Prev_edge_I=0;
         };
 
         ~isource(){delete this;};
@@ -35,8 +35,7 @@ class isource : public edge
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
-            <<prev_edge_i<<" Current: "<<current<<std::endl;
+            <<" N terminal: "<<n_N<<" Edge voltage: "<<" Current: "<<current<<std::endl;
         };
 };
 

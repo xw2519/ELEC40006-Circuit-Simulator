@@ -27,7 +27,7 @@ class resistor : public edge
             p_N=in_p_N; n_N=in_n_N;
             R_value=in_r_value;
             g_value=1/R_value;
-            prev_edge_v=0; prev_edge_i=0;
+            Prev_edge_V=0; Prev_edge_I=0;
         };
 
         ~resistor(){delete this;};
@@ -39,8 +39,7 @@ class resistor : public edge
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
-            <<prev_edge_i<<" Resistance: "<<R_value<<" Conductance: "<<g_value<<std::endl;
+            <<" N terminal: "<<n_N<<" Resistance: "<<R_value<<" Conductance: "<<g_value<<std::endl;
         };
 };
 

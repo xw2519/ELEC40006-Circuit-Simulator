@@ -12,14 +12,8 @@ int main()
     // Initialising the input_circuit of type 'circuit' contains the parser component
     circuit input(std::cin);
 
-    // Initialising the 'Node' vector
-    input.Init_nodes();
-
     // Output the content of the 'Edges' vector using built in function
     input.Print_Edges();
-
-    // Output the content of the 'Nodes' vector using built in function
-    input.Print_Nodes();
 
     // Output critical variables 'N' and 'M'
     std::cout<<"N variable: "<<input.Get_N()<<std::endl;

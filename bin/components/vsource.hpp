@@ -35,7 +35,7 @@ class vsource : public edge
             type = in_type;
             offset=in_offset; amp=in_amp;
             freq=in_freq;
-            prev_edge_v=0; prev_edge_i=0;
+            Prev_edge_V=0; Prev_edge_I=0;
         };
 
         ~vsource(){delete this;};
@@ -57,8 +57,7 @@ class vsource : public edge
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
-            <<prev_edge_i<<" Type: "<<type<<" Offset: "<<offset
+            <<" N terminal: "<<n_N<<" Type: "<<type<<" Offset: "<<offset
             <<" Amplitude: "<<amp<<" Frequency: "<<freq<<std::endl;
         };
 };

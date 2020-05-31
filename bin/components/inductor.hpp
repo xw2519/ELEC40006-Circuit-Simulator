@@ -17,9 +17,9 @@ class inductor : public edge
 
         double 
             L_value,
-            integrat_value, // Current value in this case
+            integral_value, // Current value in this case
             g_value,
-            instant_current;
+            Next_edge_I;
         
     public: //-----------------------------------------------------------------------
 
@@ -27,12 +27,12 @@ class inductor : public edge
         inductor(std::string in_name,int in_p_N,int in_n_N,double in_l_value)
         {
             ID='l'; name=in_name;
-            p_N=in_p_N; n_N=in_n_N;
+            p_N=in_p_N; 
+            n_N=in_n_N;
             L_value=in_l_value;
-            prev_edge_v=0; prev_edge_i=0;
+            Prev_edge_I=0;
             g_value=0;
-            instant_current=0;
-            integrat_value=0;
+            Next_edge_I=0;
         };
 
         ~inductor(){delete this;};
@@ -43,17 +43,19 @@ class inductor : public edge
         /* Simulation-related functions */
         void Set_g_value(double delta){g_value=(delta/L_value);};
         double Get_g(){return g_value;};
-        void Set_instant_current(double nodeV){instant_current=g_value*nodeV;};
-        double Get_instant_current(){return instant_current;};
-        void Set_integrat_value(double delta_src){integrat_value=delta_src+integrat_value;};
-        double Get_integrat_value(){return integrat_value;};
+
+        void Set_next_I(double Prev_edge_V){Next_edge_I = Prev_edge_I + (g_value*Prev_edge_V);}
+        double Get_next_I(){return Next_edge_I;};
+
+        void Set_prev_I(){Prev_edge_I = Next_edge_I;};
+        double Get_prev_I(){return Prev_edge_I;};
 
         /* Output operations */
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
-            <<prev_edge_i<<" Inductor: "<<L_value<<" Integrated value: "<<std::endl;
+            <<" N terminal: "<<n_N<<" Edge voltage: "<<Prev_edge_V<<" Edge current: "
+            <<Prev_edge_I<<" Inductance: "<<L_value<<std::endl;
         };
 };
 

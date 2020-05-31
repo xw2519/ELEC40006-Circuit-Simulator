@@ -19,7 +19,7 @@ class capacitor : public edge
             C_value, // Value of capacitance
             integrat_value, // Voltage value in this case
             g_value,
-            instant_current;
+            instant_voltage;
         
     public: //-----------------------------------------------------------------------
 
@@ -29,9 +29,9 @@ class capacitor : public edge
             ID='c'; name=in_name;
             p_N=in_p_N; n_N=in_n_N;
             C_value=in_c_value;
-            prev_edge_v=0; prev_edge_i=0;
+            Prev_edge_V=0; Prev_edge_I=0;
             g_value=0;
-            instant_current=0;
+            instant_voltage=0;
             integrat_value=0;
         };
 
@@ -41,19 +41,18 @@ class capacitor : public edge
         double Get_C(){return this->C_value;};
 
         /* Simulation-related functions */
-        void Set_g_value(double delta){g_value=(delta/C_value);};
+        void Set_g_value(double delta){g_value=(C_value/delta);};
         double Get_g(){return g_value;};
-        void Set_instant_current(double nodeV){instant_current=g_value*nodeV;};
-        double Get_instant_current(){return instant_current;};
         void Set_integrat_value(double delta_src){integrat_value=delta_src+integrat_value;};
         double Get_integrat_value(){return integrat_value;};
+        void Set_instant_current(){instant_voltage=g_value*integrat_value;};
+        double Get_instant_current(){return instant_voltage;};
 
         /* Output operations */
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
-            <<" N terminal: "<<n_N<<" Edge voltage: "<<prev_edge_v<<" Edge current: "
-            <<prev_edge_i<<" Capacitance: "<<C_value<<std::endl;
+            <<" N terminal: "<<n_N<<" Capacitance: "<<C_value<<std::endl;
         };
 };
 

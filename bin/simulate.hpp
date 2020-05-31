@@ -1,9 +1,9 @@
 /*
-# ===================================================================================
+# =================================================================================================
 # About the code
-# ===================================================================================
+# =================================================================================================
 # This code forms the 'Analysis' module' # 
-# ===================================================================================
+# =================================================================================================
 */
 
 #ifndef simulate_hpp
@@ -20,7 +20,7 @@
 
 class simulate
 {
-    private: // ---------------------------------------------------------------------
+    private: // -----------------------------------------------------------------------------------
     
     /* Required transient parameters */
         std::string type;
@@ -43,7 +43,7 @@ class simulate
     Eigen::VectorXd x;
     Eigen::VectorXd b;
     
-    public: //-----------------------------------------------------------------------
+    public: // ------------------------------------------------------------------------------------
 
         /* Class operations */
         ~simulate() {};
@@ -54,16 +54,12 @@ class simulate
         /* Matrix operations */
         // Create matrices based on initial conditions
         void Init_matrices(int N, int M, std::vector<edge*>& Edges); 
-
         // Updates matrices based on values of the voltage source
         void Update_source(std::vector<edge*> vsources);
-
         // Updates matrices based on values of dynamic elements e.g. capacitors
-        void Update_dynamic_g(std::vector<edge*>inductors,std::vector<edge*>capacitors);
-
+        void Update_dynamic(std::vector<edge*>inductors,std::vector<edge*>capacitors);
         // Update previous voltages and currents in the system for integration purposes
         void Update_prev_values(std::vector<edge*>inductors,std::vector<edge*>capacitors);
-        
         // Solves the system of equations based on current values of matrices
         void Solve_matrices();
 
