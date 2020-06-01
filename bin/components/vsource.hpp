@@ -49,7 +49,12 @@ class vsource : public edge
         double Get_voltage(double time)
         {
             if (type=="DC") {return offset;}
-            else if (type=="SINE") {return (offset+(amp*sin(2*M_PI*freq*time)));}
+            else if (type=="SINE") 
+            {  
+                std::cerr<<time<<std::endl;
+                voltage = (amp)*sin((2*M_PI*freq*time)) + offset;
+                return voltage;
+            }
         };
 
         /* Output operations */

@@ -1,7 +1,6 @@
 * C:\Users\alw\Desktop\spice\Analysis\Draft6.asc
 R1 N002 N001 200
-L1 N002 0 10
-V1 N001 0 SINE(0 2 100)
+L1 N002 0 0.001
+V1 N001 0 SINE(0 5 10)
 .tran 0 1 0 0.001
 .end
-

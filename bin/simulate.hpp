@@ -38,6 +38,10 @@ class simulate
     double
         current_time,
         intervals;
+    std::vector<edge*>
+        inductors,
+        capacitors,
+        vsources;
 
     Eigen::MatrixXd A;
     Eigen::VectorXd x;
@@ -54,12 +58,14 @@ class simulate
         /* Matrix operations */
         // Create matrices based on initial conditions
         void Init_matrices(int N, int M, std::vector<edge*>& Edges); 
+
+        void Init_dynamic(std::vector<edge*>& Edges);
         // Updates matrices based on values of the voltage source
-        void Update_source(std::vector<edge*> vsources);
+        void Update_source();
         // Updates matrices based on values of dynamic elements e.g. capacitors
-        void Update_dynamic(std::vector<edge*>inductors,std::vector<edge*>capacitors);
+        void Update_dynamic();
         // Update previous voltages and currents in the system for integration purposes
-        void Update_prev_values(std::vector<edge*>inductors,std::vector<edge*>capacitors);
+        void Update_prev_values();
         // Solves the system of equations based on current values of matrices
         void Solve_matrices();
 

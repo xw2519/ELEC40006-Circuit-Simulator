@@ -179,7 +179,7 @@ int circuit::Get_M()
     return M;
 };
 
-int circuit::Get_N(){return Nodes.size();};
+int circuit::Get_N(){return Nodes.size()-1;};
 
 void circuit::Print_Edges() 
 {

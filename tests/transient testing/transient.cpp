@@ -19,8 +19,8 @@ int main()
     input.Init_simulation();
 
     // Output simulation parameters
-    input.Print_simul_parameters();
-    std::cout<<std::endl;
+    //input.Print_simul_parameters();
+    //std::cout<<std::endl;
 
     // Output transient results
     input.Transient_solve();
