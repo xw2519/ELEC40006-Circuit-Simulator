@@ -23,7 +23,7 @@ void simulate::Init_matrices(int N, int M, std::vector<edge*>& Edges)
     b = Eigen::VectorXd::Zero((N+M));
     x = Eigen::VectorXd::Zero((N+M));
     int vcount=0;
-    /* Debugging purposes std::cerr << A << std::endl; std::cout << b << std::endl; */ 
+    /* Debugging purposes std::cerr << A << std::endl; std::cerr << x << std::endl; std::cerr << b << std::endl; */ 
 
     for(auto const& edge:Edges)
     {
@@ -108,7 +108,6 @@ void simulate::Update_dynamic()
     for (int i = 0; i < inductors.size(); i++)
     {
         // I_(n+1) = I_n + [(delta_t)/L]*V
-        // Voltage 'V' defined using Backward Euler method: V = I_(eq)/g 
         // I_(eq) defined by I_n
         // 'g' is defined by 'delta/L' so 'R' is defined by 'L/delta'
         int p_N = inductors[i]->Get_p_N(); int n_N = inductors[i]->Get_n_N();
@@ -119,6 +118,18 @@ void simulate::Update_dynamic()
         if (n_N!=0) {n_N = n_N-1; b(n_N) = -inductors[i]->Get_prev_I();}
     }
 
+    for (int i = 0; i < capacitors.size(); i++)
+    {
+        // V_(n+1) = V_n + [(delta_t)/C]*I
+        // V_(eq) defined by V_n
+        // 'g' is defined by 'C/delta' so 'R' is defined by 'delta/C'
+        int p_N = capacitors[i]->Get_p_N(); int n_N = capacitors[i]->Get_n_N();
+
+        // Enter current contributed at that point in time into 'b' matrix
+        // std::cout << "Current entered " << inductors[i]->Get_prev_I() << std::endl;
+        if (p_N!=0) {p_N = p_N-1; b(p_N) = capacitors[i]->Get_prev_I();}
+        if (n_N!=0) {n_N = n_N-1; b(n_N) = capacitors[i]->Get_prev_I();}
+    }
 };
 
 void simulate::Update_prev_values()
@@ -126,11 +137,10 @@ void simulate::Update_prev_values()
     for (int i = 0; i < inductors.size(); i++) 
     {
         int p_N = inductors[i]->Get_p_N(); int n_N = inductors[i]->Get_n_N(); 
-
         // Obtain voltage difference
         if (p_N==0&&n_N!=0)
         {
-            inductors[i]->Set_next_I(-x(n_N-1));
+            inductors[i]->Set_next_I(x(n_N-1));
             // std::cout<<"Voltage "<<x(n_N-1)<<std::endl;
         }
         else if (p_N!=0&&n_N==0)
@@ -143,8 +153,28 @@ void simulate::Update_prev_values()
             inductors[i]->Set_next_I(x(p_N-1)-x(n_N-1));
             // std::cout<<"Voltage "<<x(p_N-1)-x(n_N-1)<<std::endl;
         }
-        
-        inductors[i]->Set_prev_I();
+        inductors[i]->Set_prev_I(0);
+    }
+
+    for (int i = 0; i < capacitors.size(); i++) 
+    {
+        int p_N = capacitors[i]->Get_p_N(); int n_N = capacitors[i]->Get_n_N(); 
+        // Obtain voltage difference
+        if (p_N==0&&n_N!=0)
+        {
+            capacitors[i]->Set_prev_I(x(n_N-1));
+            // std::cout<<"Voltage "<<x(n_N-1)<<std::endl;
+        }
+        else if (p_N!=0&&n_N==0)
+        {
+            capacitors[i]->Set_prev_I(x(p_N-1));
+            // std::cout<<"Voltage "<<x(p_N-1)<<std::endl;
+        }
+        else if (p_N!=0&&n_N!=0)
+        {
+            capacitors[i]->Set_prev_I(x(p_N-1)-x(n_N-1));
+            // std::cout<<"Voltage "<<x(p_N-1)-x(n_N-1)<<std::endl;
+        }
     }
 };
 
@@ -174,23 +204,36 @@ void simulate::Transient(std::vector<edge*>& Edges)
         double g = inductors[i]->Get_g();
         if (p_N == 0) 
         {
-            n_N = n_N-1; 
-            A(n_N, n_N) += g;
+            n_N = n_N-1; A(n_N, n_N) += g;
         }
         else if (n_N == 0) 
         {
-            p_N = p_N-1; 
-            A(p_N, p_N) += g;
-            // A(p_N-1, p_N-1) += g;
-            // A(p_N-1, p_N) -= g;
+            p_N = p_N-1; A(p_N, p_N) += g;
         }
         else
         {
             assert(p_N!=0 && n_N!=0);
             p_N=p_N-1; n_N=n_N-1;
             A(p_N, p_N) += g;
-            A(p_N-1, p_N-1) += g;
-            A(p_N-1, p_N) -= g;
+            A(n_N, n_N) += g;
+            if (p_N!=N_store||n_N!=N_store){A(p_N,n_N) -= g; A(n_N,p_N) -= g;}
+        }
+    }
+
+    for(int i = 0; i < capacitors.size(); i++) 
+    {
+        int p_N = capacitors[i]->Get_p_N(); int n_N = capacitors[i]->Get_n_N();
+        capacitors[i]->Set_g_value(timestep);
+
+        // Standard procedure to enter conductances
+        double g = capacitors[i]->Get_g();
+        if (p_N == 0) {n_N = n_N-1; A(n_N, n_N) += g;}
+        else if (n_N == 0) {p_N = p_N-1; A(p_N, p_N) += g;}
+        else
+        {
+            assert(p_N!=0 && n_N!=0);
+            p_N=p_N-1; n_N=n_N-1;
+            A(p_N, p_N) += g;
             A(n_N, n_N) += g;
             if (p_N!=N_store||n_N!=N_store){A(p_N,n_N) -= g; A(n_N,p_N) -= g;}
         }
@@ -200,30 +243,16 @@ void simulate::Transient(std::vector<edge*>& Edges)
     for (int i = 0; i < intervals; i++)  
     {
         this->Update_source();
-        
         this->Update_dynamic();
-        
         this->Solve_matrices();
-
         this->Update_prev_values(); // Update previous voltage and current values
-
-        //this->print_CSV(); // Print in .CSV format 
-        
-        /*
-        std::cout<<"A"<<std::endl;
-        std::cout<<A<<std::endl;
-        std::cout<<"X"<<std::endl;
-        std::cout<<x<<std::endl;
-        std::cout<<"b"<<std::endl;
-        std::cout<<b<<std::endl;*/
         this->print_CSV();
-        /*
+        
         if (current_time>stop_time) // Exception case error considered
-        {std::cerr<<"Note: Current_time exceeded Stop_time."<<std::endl;break;} // Checked */
+        {std::cerr<<"Note: Current_time exceeded Stop_time."<<std::endl;break;} // Checked 
 
         current_time=current_time+timestep; // Update the time
     } 
-    /* Debugging purposes: std::cerr<<"Transient completed."<<std::endl; */
 };
 
 

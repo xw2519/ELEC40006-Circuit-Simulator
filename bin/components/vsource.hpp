@@ -51,7 +51,6 @@ class vsource : public edge
             if (type=="DC") {return offset;}
             else if (type=="SINE") 
             {  
-                std::cerr<<time<<std::endl;
                 voltage = (amp)*sin((2*M_PI*freq*time)) + offset;
                 return voltage;
             }

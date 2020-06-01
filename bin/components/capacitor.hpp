@@ -17,9 +17,9 @@ class capacitor : public edge
 
         double
             C_value, // Value of capacitance
-            integrat_value, // Voltage value in this case
+            integral_value, // Voltage value in this case
             g_value,
-            instant_voltage;
+            Next_edge_I;
         
     public: //-----------------------------------------------------------------------
 
@@ -29,10 +29,9 @@ class capacitor : public edge
             ID='c'; name=in_name;
             p_N=in_p_N; n_N=in_n_N;
             C_value=in_c_value;
-            Prev_edge_V=0; Prev_edge_I=0;
+            Prev_edge_I=0;
             g_value=0;
-            instant_voltage=0;
-            integrat_value=0;
+            Next_edge_I=0;
         };
 
         ~capacitor(){delete this;};
@@ -43,10 +42,12 @@ class capacitor : public edge
         /* Simulation-related functions */
         void Set_g_value(double delta){g_value=(C_value/delta);};
         double Get_g(){return g_value;};
-        void Set_integrat_value(double delta_src){integrat_value=delta_src+integrat_value;};
-        double Get_integrat_value(){return integrat_value;};
-        void Set_instant_current(){instant_voltage=g_value*integrat_value;};
-        double Get_instant_current(){return instant_voltage;};
+
+        void Set_next_I(double Prev_edge_V){Next_edge_I = Prev_edge_I - (g_value*Prev_edge_V);}
+        double Get_next_I(){return Next_edge_I;};
+
+        void Set_prev_I(double Prev_edge_V){Prev_edge_I = g_value*Prev_edge_V;};
+        double Get_prev_I(){return Prev_edge_I;};
 
         /* Output operations */
         void print_edge()

@@ -47,7 +47,7 @@ class inductor : public edge
         void Set_next_I(double Prev_edge_V){Next_edge_I = Prev_edge_I + (g_value*Prev_edge_V);}
         double Get_next_I(){return Next_edge_I;};
 
-        void Set_prev_I(){Prev_edge_I = Next_edge_I;};
+        void Set_prev_I(double Prev_edge_V){Prev_edge_I = Next_edge_I;};
         double Get_prev_I(){return Prev_edge_I;};
 
         /* Output operations */

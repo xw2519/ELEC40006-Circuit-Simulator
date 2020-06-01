@@ -47,11 +47,12 @@ class edge
         double virtual Get_next_I(){};
         void virtual Set_next_I(double Prev_edge_V){};
         double virtual Get_prev_I(){};
-        void virtual Set_prev_I(){};
+        void virtual Set_prev_I(double Prev_edge_V){};
 
         double virtual Get_next_V(){};
-        void virtual Set_next_V(){};
-        
+        void virtual Set_next_V(double Prev_edge_V){};
+        double virtual Get_prev_V(){};
+        void virtual Set_prev_V(){};
         
         double virtual Get_integrat_value(){};
         void virtual Set_integrat_value(double delta_src){};
