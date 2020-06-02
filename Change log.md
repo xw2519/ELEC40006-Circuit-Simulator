@@ -48,5 +48,7 @@ Authors:
 - Caught a bug in Analysis module not calculating non-grounded voltage and current source.
 - Research into v2.0 begun.
 
+### 17 May 2020
+- Added transient function recognition ability into Parser.
 ### 24 May 2020
 - OOP architecture implemented.
