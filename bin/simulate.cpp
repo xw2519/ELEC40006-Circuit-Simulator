@@ -59,7 +59,7 @@ void simulate::Init_matrices(int N, int M, std::vector<edge*>& Edges)
                     A(n_N,(N+vcount)) = -1; A((N+vcount),n_N) = -1;
                     A(p_N,(N+vcount)) = 1; A((N+vcount),p_N) = 1;
                 }
-                b(N+vcount) = edge->Get_voltage(0);
+                b(N+vcount) = edge->Get_src_value();
                 edge->Update_assigned_ID(vcount);
                 vcount++;
                 break;
@@ -67,8 +67,8 @@ void simulate::Init_matrices(int N, int M, std::vector<edge*>& Edges)
             case 'i':
             {
                 // Standard procedure to enter currents contributed
-                if (p_N!=0) {p_N = p_N-1; b(p_N) = b(p_N) - edge->Get_current();}
-                if (n_N!=0) {n_N = n_N-1; b(n_N) = b(n_N) + edge->Get_current();}
+                if (p_N!=0) {p_N = p_N-1; b(p_N) = b(p_N) - edge->Get_src_value();}
+                if (n_N!=0) {n_N = n_N-1; b(n_N) = b(n_N) + edge->Get_src_value();}
                 break;
             }
         }
@@ -95,7 +95,7 @@ void simulate::Update_source()
     for (int i = 0; i < vsources.size(); i++) 
     {
         /* Debugging purposes std::cerr<<"Update loop "<<i<<" "<<"Time: "<<current_time; */
-        voltage = vsources[i]->Get_voltage(current_time);
+        voltage = vsources[i]->Get_src_value(current_time);
         /* Debugging purposes std::cout<<voltage<<std::endl; */
         b(N_store+vsources[i]->Get_assigned_ID()) = voltage;
     }
@@ -140,20 +140,16 @@ void simulate::Update_prev_values()
         // Obtain voltage difference
         if (p_N==0&&n_N!=0)
         {
-            inductors[i]->Set_next_I(x(n_N-1));
-            // std::cout<<"Voltage "<<x(n_N-1)<<std::endl;
+            inductors[i]->Set_prev_I(-x(n_N-1));
         }
         else if (p_N!=0&&n_N==0)
         {
-            inductors[i]->Set_next_I(x(p_N-1));
-            // std::cout<<"Voltage "<<x(p_N-1)<<std::endl;
+            inductors[i]->Set_prev_I(x(p_N-1));
         }
         else if (p_N!=0&&n_N!=0)
         {
-            inductors[i]->Set_next_I(x(p_N-1)-x(n_N-1));
-            // std::cout<<"Voltage "<<x(p_N-1)-x(n_N-1)<<std::endl;
+            inductors[i]->Set_prev_I(x(p_N-1)-x(n_N-1));
         }
-        inductors[i]->Set_prev_I(0);
     }
 
     for (int i = 0; i < capacitors.size(); i++) 
@@ -163,22 +159,19 @@ void simulate::Update_prev_values()
         if (p_N==0&&n_N!=0)
         {
             capacitors[i]->Set_prev_I(x(n_N-1));
-            // std::cout<<"Voltage "<<x(n_N-1)<<std::endl;
         }
         else if (p_N!=0&&n_N==0)
         {
             capacitors[i]->Set_prev_I(x(p_N-1));
-            // std::cout<<"Voltage "<<x(p_N-1)<<std::endl;
         }
         else if (p_N!=0&&n_N!=0)
         {
             capacitors[i]->Set_prev_I(x(p_N-1)-x(n_N-1));
-            // std::cout<<"Voltage "<<x(p_N-1)-x(n_N-1)<<std::endl;
         }
     }
 };
 
-void simulate::Solve_matrices() {x = A.colPivHouseholderQr().solve(b);};
+void simulate::Solve_matrices() {x = A.inverse()*b;};
 
 
 // Transient simulation functions --------------------------------------------------------------------------------------

@@ -28,6 +28,8 @@ class vsource : public edge
         
     public: //-----------------------------------------------------------------------
 
+
+        /* Class operations */
         vsource(std::string in_name,int in_p_N,int in_n_N,std::string in_type,double in_offset,double in_amp, double in_freq)
         {
             ID='v'; name=in_name;
@@ -35,18 +37,15 @@ class vsource : public edge
             type = in_type;
             offset=in_offset; amp=in_amp;
             freq=in_freq;
-            Prev_edge_V=0; Prev_edge_I=0;
         };
 
         ~vsource(){delete this;};
 
-        /* Voltage and Current Source operations */
 
+        /* Voltage Source operations */
         int Get_assigned_ID() {return assigned_ID;};
-
         void Update_assigned_ID(int vcount) {assigned_ID=vcount;};
-
-        double Get_voltage(double time)
+        double Get_src_value(double time=0)
         {
             if (type=="DC") {return offset;}
             else if (type=="SINE") 
@@ -56,8 +55,8 @@ class vsource : public edge
             }
         };
 
-        /* Output operations */
 
+        /* Output operations */
         void print_edge()
         {
             std::cout<<"ID: "<<ID<<" name: "<<name<< " P terminal: "<<p_N
