@@ -14,7 +14,7 @@
 #ifndef header_hpp
 #define header_hpp
 
-// Standard libraries
+/* Standard libraries */
 #include <string>
 #include <iostream>
 #include <vector>
@@ -24,7 +24,7 @@
 #include <algorithm>
 #include <chrono>
 
-// Custom libaries
+/* Custom libaries */
 #include "str_handler.hpp"
 #include "Eigen/Core"
 #include "Eigen/Dense" // We use dense matrix initially

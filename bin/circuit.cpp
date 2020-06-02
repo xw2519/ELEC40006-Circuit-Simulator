@@ -2,7 +2,8 @@
 #include "header.hpp"
 
 
-/* Class operations */
+// Class operations ----------------------------------------------------------------------------------------------------
+
 
 circuit::circuit(std::istream& cin)
 {
@@ -29,7 +30,11 @@ circuit::circuit(std::istream& cin)
             
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') 
+            {
+                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                break;
+            };
             
             this->Edges.push_back(new resistor(store[0], n1, n2, converter(store[3])));
         }
@@ -40,7 +45,11 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') 
+            {
+                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                break;
+            };
 
             this->Edges.push_back(new capacitor(store[0], n1, n2, converter(store[3]))); 
         }
@@ -51,7 +60,11 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') 
+            {
+                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                break;
+            };
 
             this->Edges.push_back(new inductor(store[0], n1, n2, converter(store[3]))); 
         }
@@ -61,7 +74,11 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl; break;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') 
+            {
+                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                break;
+            };
 
             // Deterimine if 'SINE' is mentioned in input
             if (store[3] == "SINE" || store[3] == "sine")
@@ -82,7 +99,11 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') {std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;}; // Ensure nodes cannot be both grounded
+            if (n1 == '0' && n2 == '0') 
+            {
+                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                break;
+            };
 
             this->Edges.push_back(new isource(store[0], n1, n2, converter(store[3])));
         }
@@ -112,7 +133,9 @@ circuit::~circuit()
 };
 
 
-/* Nodes operations */
+// Nodes operations ----------------------------------------------------------------------------------------------------
+
+
 void circuit::Init_nodes()
 {
     int Node_count=0;
@@ -166,7 +189,9 @@ void circuit::Print_Nodes()
 };
 
 
-/* Edges operations */
+// Edges operations ----------------------------------------------------------------------------------------------------
+
+
 std::vector<edge*> circuit::Get_Edges() {return this->Edges;};
 
 int circuit::Get_M()
@@ -190,13 +215,12 @@ void circuit::Print_Edges()
 };
 
 
-/* Simulation operations */
+// Simulation operations -----------------------------------------------------------------------------------------------
+
+
 void circuit::Init_simulation() {Simulation.Init_matrices(this->Get_N(), this->Get_M(), Edges);};
 void circuit::Simul_solve() {Simulation.Solve_matrices();};
-void circuit::Transient_solve()
-{
-    Simulation.Transient(Edges);
-};
+void circuit::Transient_solve() {Simulation.Transient(Edges);};
 
 void circuit::Print_simul_parameters() { Simulation.print_param();};
 void circuit::Print_simul_results() {Simulation.print_x();};

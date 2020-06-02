@@ -1,9 +1,10 @@
 /*
 # ===============================================================
-# About the code
+# About the code:
 # ===============================================================
 # This header file contains all support functions that modifies 
-# and extracts necessary information from strings.
+# and extracts necessary information from strings such as 
+# converting a 'string' into 'double' data types.
 # ===============================================================
 */
 
@@ -12,7 +13,6 @@
 
 #include "header.hpp"
 
-// Parser component
 // Returns boolean true if there is an aplhabetical letter
 bool is_digit(const std::string& input);
 
@@ -22,7 +22,7 @@ double converter(const std::string& val_str);
 // Spilts string into words separated by space and pushed into a vector
 std::vector<std::string> tokeniser (std::string input);
 
-// Extract nodes from stirng and return integer
+// Extract nodes from string and return its integer
 int GetNode (std::string& node);
 
 #endif

@@ -23,7 +23,9 @@ class simulate
     private: // -----------------------------------------------------------------------------------
     
     /* Required transient parameters */
-        std::string type;
+
+    std::string 
+        type;
 
     double 
         start_time,
@@ -31,6 +33,7 @@ class simulate
         timestep;
 
     /* Simulation parameters */
+
     int 
         N_store,
         M_store;
@@ -38,27 +41,32 @@ class simulate
     double
         current_time,
         intervals;
+
     std::vector<edge*>
         inductors,
         capacitors,
         vsources;
 
     Eigen::MatrixXd A;
-    Eigen::VectorXd x;
-    Eigen::VectorXd b;
+    Eigen::VectorXd 
+        x,
+        b;
     
     public: // ------------------------------------------------------------------------------------
 
         /* Class operations */
+
         ~simulate() {};
 
         /* Simulation parameter operations */
+
         void update_parameters(std::string in_type, double start, double stop, double in_interval);
 
         /* Matrix operations */
+
         // Create matrices based on initial conditions
         void Init_matrices(int N, int M, std::vector<edge*>& Edges); 
-
+        
         void Init_dynamic(std::vector<edge*>& Edges);
         // Updates matrices based on values of the voltage source
         void Update_source();
@@ -70,9 +78,11 @@ class simulate
         void Solve_matrices();
 
         /* Transient simulation */
+
         void Transient(std::vector<edge*>& Edges);
         
         /* Output operations */
+
         void print_param();
         void print_x();
         void print_CSV();

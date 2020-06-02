@@ -3,10 +3,10 @@
 std::vector<std::string> tokeniser (std::string input)
 {
     // Remove '(' char if present
-    replace(input.begin(), input.end(), '(', ' ');
+    replace(input.begin(),input.end(),'(',' ');
 
     // Remove ')' char if present
-    input.erase(std::remove(input.begin(), input.end(), ')'), input.end());
+    input.erase(std::remove(input.begin(),input.end(),')'),input.end());
 
     std::istringstream iss(input);
     std::vector<std::string> tokensied ((std::istream_iterator<std::string>(iss)), std::istream_iterator<std::string>());
@@ -19,7 +19,6 @@ bool is_digit(const std::string& input)
     while (it != input.end() && std::isdigit(*it) || it != input.end() && (*it=='.')) ++it;
     return !input.empty() && it == input.end();
 }
-
 
 double converter(const std::string& val_str)
 {
