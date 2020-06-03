@@ -11,22 +11,35 @@ breaklines = true,
 tabsize=2
 }
 \graphicspath{ {./Images/} }
-
 \addbibresource{biblography.bib}
+
 \setlength{\parskip}{1em}
 \begin{document}
 \begin{titlepage}
+	\clearpage\thispagestyle{empty}
 	\centering
-	{\scshape\LARGE ELEC40006 \par}
 	\vspace{1cm}
-	{\scshape\Large Electronics design project\par}
-	\vspace{1.5cm}
-	{\huge\bfseries Circuit Simulation Report\par}
+
+	% Titles
+	% Information about the University
+	{\normalsize ELEC40006 \\ 
+		Electronics Design Project\\
+		Circuit Simulation\par}
+		\vspace{2cm}
+	\centering \includegraphics[width=0.5\textwidth]{Logo.jpg}
 	\vspace{2cm}
-	{\Large\ Adam Rehman\\ Brandon Cann\\ Xin Wang \par}
+
+	{\Huge \textbf{Technical Report}} \\
+	%\vspace{1cm}
+	%{\large \textbf{xxxxx} \par}
+	\vspace{4cm}
+	{\normalsize Xin Wang\\ CID: 01751352 EIE 1st Year UG \\ \vspace{0.5cm}
+	             FIRST LAST \\ \vspace{0.5cm}
+	             FIRST LAST\par} \vspace{0.5cm}
+	{\normalsize dd-mm-yyyy \par}
+	
 	\vfill
-% Bottom of the page
-	{\large \today\par}
+	\pagebreak
 \end{titlepage}
 
 \tableofcontents
@@ -54,63 +67,96 @@ Section 5, the last section, summarises the report and discusses our overall exp
 \textit{Talk about added functions and anything else.}
 \pagebreak
 
-\section{Project management}
+\section{Project Specification}
+	\subsection{Design Problem}
+	Develop a program that is able to read in a file describing a circuit specified by the user, perform 
+	transient simulation on that circuit and output the calculated voltages at each instance in time into a file. 
+	\subsection{Program Requirements}
+	The main program requirements are listed as follows:
+	\begin{itemize}
+		\item Program must support basic circuit components listed as follows \footnote{Advanced component can be supported
+		provided development schedule is not constrained.}:
+		\begin{itemize}
+			\item Resistors
+			\item Ideal Capacitors
+			\item Ideal Inductors
+		\end{itemize}
+		\item Input file must adhere to SPICE netlist formats
+		\item The output file must be in Comma Separated Value (.CSV) format.
+		\begin{itemize}
+			\item Columns of output file represent nodes in the circuit.
+			\item Rows of output file represent an instance in the simulation.
+		\end{itemize}
+	\end{itemize}
+	\vfill
+	\pagebreak
+
+\section{Project Management}
 \pagebreak
 
-\subsection{Project timeline}
+	\subsection{Project timeline}
 
-\pagebreak
+	\pagebreak
 
-\subsection{Management approach}
-\pagebreak
+	\subsection{Management approach}
+	\pagebreak
 
-\subsection{Project responsibilities breakdown}
-\pagebreak
+	\subsection{Project responsibilities breakdown}
+	\pagebreak
 
-\section{Design of software modules}
-\pagebreak
+\section{Preliminary Designs}
+	\subsection{Object Orientated Programming}
+	The program architecture was designed with Object Orientated Programming (OOP) in mind. 
+	The OOP approach allows the program design to be rapidly and cost-effectively altered to accomodate new features
+	such as additional circuit components or analysis techniques that the client might request later on in the 
+	program's lifecycle. 
 
-\subsection{Parser module}
-\pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
-\pagebreak
+	An OOP approach has shown to be slower than preliminary programs designed without OOP to an average of of 5\% to 10\% 
+	depending on other optimisations in the program. However, the requirements of the client does not 
+	explicitly state a need for extremely fast program execution and a definitive list of circuit components was not
+	provided...
 
-\subsection{Analysis module}
-\pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
-\pagebreak
+	\subsection{Modified Nodal Analysis}
 
-\subsection{Transient module}
+	\subsection{Eigen Matrix Library}
+	\pagebreak
+
+\section{Program Design}
 \pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
-\pagebreak
+	\subsection{Parser module}
+	\pagebreak
+	\subsubsection{Features}
+	\pagebreak
+	\subsubsection{Pseudocode}
+	\pagebreak
+
+	\subsection{Analysis module}
+	\pagebreak
+	\subsubsection{Features}
+	\pagebreak
+	\subsubsection{Pseudocode}
+	\pagebreak
+
+	\subsection{Transient module}
+	\pagebreak
+		\subsubsection{Features}
+		\pagebreak
+		\subsubsection{Pseudocode}
+		\pagebreak
 
 \section{Testing}
-\subsection{\textit{Data struct}}
-The script \textit{Data struct test.sh}, when called, will compile \textit{Data struct.cpp} and passes in input 
-text file \textit{Data struct input.txt}. 
-\par
-\textbf{Pictures}
-\par
-This test is used to check the format of CirElement data structure functions as envisioned and that the methods associated with
-CirElement such as \textit{custom pow} functions correctly.
 \pagebreak
 
 \section{Optimisations}
-Typical features like clearing vectors once it's function is done such as the tokensier
+\subsection{Sparse Matrices}
 \pagebreak
 
-\section{Software comparisons}
+\section{Adding on}
 \pagebreak
 
-\section{After project report}
+\section{Appendix}
 \pagebreak
 
+\section{References}
 \printbibliography[title={References}]
 \end{document}

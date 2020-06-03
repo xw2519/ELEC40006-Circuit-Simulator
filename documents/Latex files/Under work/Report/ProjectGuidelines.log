@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  14 MAY 2020 23:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  3 JUN 2020 23:41
 entering extended mode
-**"e:/Work/ELEC40006/Documents/Latex files/Report/ProjectGuidelines.tex"
-("e:/Work/ELEC40006/Documents/Latex files/Report/ProjectGuidelines.tex"
+**"e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
+("e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -297,7 +297,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count376
 \l__pdf_internal_box=\box47
-) ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.aux")
+) ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
 \openout1 = `ProjectGuidelines.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -343,13 +343,19 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProjectGuidelines.bbl' found.
- ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.bbl")
+ ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl")
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
 \c@lstlisting=\count383
+<./Images/Logo.jpg, id=1, 1746.525pt x 632.3625pt>
+File: ./Images/Logo.jpg Graphic file (type jpg)
+<use ./Images/Logo.jpg>
+Package pdftex.def Info: ./Images/Logo.jpg  used on input line 29.
+(pdftex.def)             Requested size: 195.0pt x 70.60219pt.
  [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.toc"
+
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -360,27 +366,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `ProjectGuidelines.toc'.
 
- [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+ [1] [2] [3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 78.
+ [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
 
-LaTeX Warning: Empty bibliography on input line 115.
+LaTeX Warning: Empty bibliography on input line 161.
 
-("e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.aux")
+[24] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
 Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
 \openout1 = `ProjectGuidelines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 9748 strings out of 480930
- 176427 string characters out of 2900700
- 800871 words of memory out of 3000000
- 25558 multiletter control sequences out of 15000+200000
- 539415 words of font info for 47 fonts, out of 3000000 for 9000
+ 9754 strings out of 480930
+ 176667 string characters out of 2900700
+ 802871 words of memory out of 3000000
+ 25562 multiletter control sequences out of 15000+200000
+ 538490 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,4n,36p,875b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Report\ProjectGuidelines.pdf" (22 pages, 117483 bytes).
+ 35i,8n,36p,886b,743s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (25 pages, 261512 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
