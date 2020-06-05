@@ -16,5 +16,71 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{MNA}{article}{}
+      \name{author}{3}{}{%
+        {{hash=de255eee521e49aed4c2d9295d277bd2}{%
+           family={Ho},
+           familyi={H\bibinitperiod},
+           given={Chung-Wen},
+           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=59129d16cddab9ab7eff8bc8a8738aa7}{%
+           family={Ruehli},
+           familyi={R\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cea591a09fd94e5297da6d94e76321b2}{%
+           family={Brennan},
+           familyi={B\bibinitperiod},
+           given={Pierce},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{fullhash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{bibnamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{authorbibnamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{authornamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{authorfullhash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Circuits and Systems, IEEE Transactions on}
+      \field{month}{07}
+      \field{title}{The Modified Nodal Approach to Network Analysis}
+      \field{volume}{22}
+      \field{year}{1975}
+      \field{pages}{504\bibrangedash 509}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/TCS.1975.1084079
+      \endverb
+    \endentry
+    \entry{OOP}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=85c2c01b19dd9fe12e81ce9a44f059ee}{%
+           family={Noda},
+           familyi={N\bibinitperiod},
+           given={Taku},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{fullhash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{bibnamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authorbibnamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authornamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authorfullhash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Object Oriented Design of a Transient Analysis Program}
+      \field{year}{2007}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

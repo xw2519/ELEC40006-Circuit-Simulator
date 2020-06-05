@@ -1,57 +1,59 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Overview of the report}{3}%
+\contentsline {section}{\numberline {1}Overview of the report}{2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Project Specification}{4}%
+\contentsline {section}{\numberline {2}Project Specification}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Design Problem}{4}%
+\contentsline {subsection}{\numberline {2.1}Design Problem}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Program Requirements}{4}%
+\contentsline {subsection}{\numberline {2.2}Program Requirements}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Project Management}{5}%
+\contentsline {subsection}{\numberline {2.3}Design Criteria}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Project timeline}{6}%
+\contentsline {section}{\numberline {3}Team Management}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Management approach}{7}%
+\contentsline {subsection}{\numberline {3.1}Project timeline overview}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Project responsibilities breakdown}{8}%
+\contentsline {subsection}{\numberline {3.2}Gnatt chart}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Preliminary Designs}{9}%
+\contentsline {subsection}{\numberline {3.3}Management approach}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Object Orientated Programming}{9}%
+\contentsline {subsection}{\numberline {3.4}Team responsibilities breakdown}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Modified Nodal Analysis}{9}%
+\contentsline {subsection}{\numberline {3.5}Project meeting minutes}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Eigen Matrix Library}{9}%
+\contentsline {section}{\numberline {4}Preliminary Designs}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Program Design}{10}%
+\contentsline {subsection}{\numberline {4.1}Object Orientated Programming}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Parser module}{11}%
+\contentsline {subsection}{\numberline {4.2}Modified Nodal Analysis}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Features}{12}%
+\contentsline {subsection}{\numberline {4.3}Eigen Matrix Library}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2}Pseudocode}{13}%
+\contentsline {section}{\numberline {5}Program Design}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Analysis module}{14}%
+\contentsline {subsection}{\numberline {5.1}Top level view of the program}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Features}{15}%
+\contentsline {subsection}{\numberline {5.2}Components files}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Pseudocode}{16}%
+\contentsline {subsection}{\numberline {5.3}\textit {str handler.hpp} file}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Transient module}{17}%
+\contentsline {subsection}{\numberline {5.4}\textit {node.hpp} file}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Features}{18}%
+\contentsline {subsection}{\numberline {5.5}Circuit.cpp}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2}Pseudocode}{19}%
+\contentsline {subsection}{\numberline {5.6}Simulate.cpp}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Testing}{20}%
+\contentsline {section}{\numberline {6}Testing}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Optimisations}{21}%
+\contentsline {section}{\numberline {7}Optimisations}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Sparse Matrices}{21}%
+\contentsline {subsection}{\numberline {7.1}Sparse Matrices}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Adding on}{22}%
+\contentsline {section}{\numberline {8}Adding on}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Appendix}{23}%
+\contentsline {section}{\numberline {9}Appendix}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}References}{24}%
+\contentsline {subsection}{\numberline {9.1}Belbin Roles}{20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}References}{21}%

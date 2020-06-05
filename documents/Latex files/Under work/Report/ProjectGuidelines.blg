@@ -1,9 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectGuidelines.blg'
-[70] biber-MSWIN64:322> INFO - === 
-[89] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
-[189] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[195] Utils.pm:304> WARN - The file 'ProjectGuidelines.bcf' does not contain any citations!
-[205] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
-[205] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
-[206] Biber.pm:128> INFO - WARNINGS: 1
+[82] biber-MSWIN64:322> INFO - === 
+[102] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
+[202] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[218] Biber.pm:4256> INFO - Processing section 0
+[219] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[228] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[243] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[247] bibtex.pm:1653> INFO - LaTeX decoding ...
+[255] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[288] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[289] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[290] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[291] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[294] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
+[299] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl

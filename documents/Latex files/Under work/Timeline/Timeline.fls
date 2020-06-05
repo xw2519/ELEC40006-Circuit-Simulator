@@ -1,7 +1,7 @@
-PWD e:\Work\ELEC40006\Documents\Latex files\Timeline
+PWD e:\Work\ELEC40006\documents\Latex files\Under work\Timeline
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.tex
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.log
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.tex
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.log
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
@@ -130,9 +130,9 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlay
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.aux
-INPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.aux
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.aux
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.aux
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1bch.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1bch.fd
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchr8t.tfm
@@ -140,30 +140,28 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8t.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchr8t.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchrc8t.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8t.tfm
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.pdf
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8t.tfm
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.pdf
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchr8t.vf
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchr8r.tfm
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchri8t.vf
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8r.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchrc8t.vf
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchr8r.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchr8r.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchr8t.vf
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchri8t.vf
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8r.tfm
-INPUT e:\Work\ELEC40006\Documents\Latex files\Timeline\Timeline.aux
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\vf\bitstrea\charter\bchri8t.vf
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\bitstrea\charter\bchri8r.tfm
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Timeline\Timeline.aux
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\bitstrea\charter\bchr8a.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\bitstrea\charter\bchr8a.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\bitstrea\charter\bchri8a.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\bitstrea\charter\bchri8a.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
