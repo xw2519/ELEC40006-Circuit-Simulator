@@ -1,9 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectGuidelines.blg'
-[70] biber-MSWIN64:322> INFO - === 
-[89] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
-[189] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
-[195] Utils.pm:304> WARN - The file 'ProjectGuidelines.bcf' does not contain any citations!
-[205] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
-[205] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
-[206] Biber.pm:128> INFO - WARNINGS: 1
+[76] biber-MSWIN64:322> INFO - === 
+[97] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
+[212] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[219] Utils.pm:304> WARN - The file 'ProjectGuidelines.bcf' does not contain any citations!
+[229] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
+[229] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
+[229] Biber.pm:128> INFO - WARNINGS: 1

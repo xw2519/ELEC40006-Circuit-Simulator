@@ -174,15 +174,59 @@ void simulate::Update_prev_values()
 void simulate::Solve_matrices() {x = A.inverse()*b;};
 
 
+// Newton-Raphson approximation ----------------------------------------------------------------------------------------
+/*
+void simulate::Newton_Raphson()
+{
+    // RELTOL = 0.001 and VNTOL = 1uV and ABSTOL is 1pA
+    // Create companion model at suitable operating point
+    bool convergence=false;
+    int 
+        loop_count=0,
+        max_loop=500;
+    double
+        RELTOL=0.001,
+        ABSTOL=pow(10,-9),
+        VNTOL=pow(10,-6);
+    Eigen::VectorXd Prev_V;
+
+    while (!convergence)
+    {
+        Prev_V=x; // Store old voltages
+
+        for (int i = 0; i < non_linear.size(); i++) // Set initial guess
+        {
+            non_linear[i]->Set_Vd;
+            non_linear[i]->Set_Id;
+        }
+        
+        this->Solve_matrices();
+
+        // Check convergence conditions
+        if () //|V(n) - V(n-1)| < V(n)*RELTOL + VNTOL
+        {
+
+        }
+        else if () //|I(n) - I(n-1)| < I(n)*RELTOL + ABSTOL
+        {
+            
+        }
+        
+        // Check if iteration count reached or not
+        if (loop_count==max_loop) {assert(0 && "Non-linear approximation failed to converge");}
+        loop_count++;
+    }
+};
+*/
 // Transient simulation functions --------------------------------------------------------------------------------------
 
 
 void simulate::Transient(std::vector<edge*>& Edges)
 {
-    // Load simulation parameters
+    // Load initial simulation parameters
     assert(stop_time>start_time && "Fatal Error: Stop Time cannot be earlier than Start Time.");
-    current_time=0; // Start time 0
-    intervals=(stop_time-start_time)/timestep; // Find the number of intervals
+    current_time=0;
+    intervals=(stop_time-start_time)/timestep;
 
     Init_dynamic(Edges);
 
@@ -237,6 +281,8 @@ void simulate::Transient(std::vector<edge*>& Edges)
     {
         this->Update_source();
         this->Update_dynamic();
+        // Another for loop for Newton Raphson
+        
         this->Solve_matrices();
         this->Update_prev_values(); // Update previous voltage and current values
         this->print_CSV();
@@ -275,6 +321,27 @@ void simulate::print_x()
         vcount++;
         std::cout << "v" << "[" << vcount << "]" << " " << "current" << ": " << x[i] << std::endl;
     }
+};
+
+void simulate::print_source(std::vector<edge*>& Edges)
+{
+    assert(stop_time>start_time && "Fatal Error: Stop Time cannot be earlier than Start Time.");
+    current_time=0; // Start time 0
+    intervals=(stop_time-start_time)/timestep; // Find the number of intervals
+
+    Init_dynamic(Edges);
+
+    for (int i = 0; i < intervals; i++)  
+    {
+        this->Update_source();
+
+        std::cout<<vsources[0]->Get_src_value(current_time)<<std::endl;
+        
+        if (current_time>stop_time) // Exception case error considered
+        {std::cerr<<"Note: Current_time exceeded Stop_time."<<std::endl;break;} // Checked 
+
+        current_time=current_time+timestep; // Update the time
+    } 
 };
 
 void simulate::print_CSV() // Output voltages only in CSV format

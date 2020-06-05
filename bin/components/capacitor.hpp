@@ -34,7 +34,7 @@ class capacitor : public edge
             Prev_edge_I=0;
             Next_edge_I=0;
         };
-        ~capacitor(){delete this;};
+        ~capacitor(){if(this!=NULL){delete this;}};
 
 
         /* Simulation-related functions */

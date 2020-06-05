@@ -2,56 +2,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Overview of the report}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Project Specification}{4}%
+\contentsline {section}{\numberline {2}Project management}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Design Problem}{4}%
+\contentsline {subsection}{\numberline {2.1}Project timeline}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Program Requirements}{4}%
+\contentsline {subsection}{\numberline {2.2}Management approach}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Project Management}{5}%
+\contentsline {subsection}{\numberline {2.3}Project responsibilities breakdown}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Project timeline}{6}%
+\contentsline {section}{\numberline {3}Design of software modules}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Management approach}{7}%
+\contentsline {subsection}{\numberline {3.1}Parser module}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Project responsibilities breakdown}{8}%
+\contentsline {subsubsection}{\numberline {3.1.1}Features}{10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Preliminary Designs}{9}%
+\contentsline {subsubsection}{\numberline {3.1.2}Pseudocode}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Object Orientated Programming}{9}%
+\contentsline {subsection}{\numberline {3.2}Analysis module}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Modified Nodal Analysis}{9}%
+\contentsline {subsubsection}{\numberline {3.2.1}Features}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Eigen Matrix Library}{9}%
+\contentsline {subsubsection}{\numberline {3.2.2}Pseudocode}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Program Design}{10}%
+\contentsline {subsection}{\numberline {3.3}Transient module}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Parser module}{11}%
+\contentsline {subsubsection}{\numberline {3.3.1}Features}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Features}{12}%
+\contentsline {subsubsection}{\numberline {3.3.2}Pseudocode}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.2}Pseudocode}{13}%
+\contentsline {section}{\numberline {4}Testing}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Analysis module}{14}%
+\contentsline {subsection}{\numberline {4.1}\textit {Data struct}}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.1}Features}{15}%
+\contentsline {section}{\numberline {5}Optimisations}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.2.2}Pseudocode}{16}%
+\contentsline {section}{\numberline {6}Software comparisons}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Transient module}{17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Features}{18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2}Pseudocode}{19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Testing}{20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Optimisations}{21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Sparse Matrices}{21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Adding on}{22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Appendix}{23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}References}{24}%
+\contentsline {section}{\numberline {7}After project report}{21}%
