@@ -36,7 +36,7 @@ class inductor : public edge
             g_value=0;
             Next_edge_I=0;
         };
-        ~inductor(){delete this;};
+        ~inductor(){if(this!=NULL){delete this;}};
 
 
         /* Simulation-related functions */

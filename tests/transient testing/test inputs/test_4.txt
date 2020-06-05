@@ -1,7 +1,10 @@
 * C:\Users\alw\Desktop\spice\Analysis\Draft7.asc
-V1 N001 0 SINE(0 2 100)
-R1 N002 N001 10
-C1 N002 0 10
+V1 N001 0 SINE(0 5 10)
+R1 N002 N001 200
+C1 N002 0 30
+L1 N003 0 20
+R2 N003 N002 100
+V2 N003 0 6
 .tran 0 1 0 0.001
 .end
 

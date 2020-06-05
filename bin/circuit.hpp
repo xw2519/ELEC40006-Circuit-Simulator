@@ -56,7 +56,9 @@ class circuit
         void Init_simulation();
         void Simul_solve();
         void Transient_solve();
+
         void Print_simul_parameters();
+        void Print_vsource();
         void Print_simul_results();
 };
 

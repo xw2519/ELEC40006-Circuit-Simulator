@@ -31,7 +31,7 @@ double converter(const std::string& val_str)
     {
         // No recognised abbreviation, extract digits
         try {return std::stod(val_str);}
-        catch(std::exception& e) {std::cerr<<"Invalid digit inputted."<<std::endl;};
+        catch(std::exception& e) {std::cerr<<"Invalid digit inputted."<<std::endl; assert(0);};
     }
 
     // A recognised abbreviation detected
@@ -61,7 +61,7 @@ double converter(const std::string& val_str)
     
     // Failure to perform any conversion
     std::cerr << "Error. Failed to perform any form of conversion." << std::endl;
-    return 0;
+    assert(0);
 }
 
 int GetNode (std::string& node)
@@ -71,5 +71,5 @@ int GetNode (std::string& node)
 
     else if (tolower(node[0]) == 'n') {return stoi(node.erase(0,1));}
 
-    else {std::cerr << "Wrong node input format." << std::endl;}
+    else {std::cerr << "Wrong node input format." << std::endl; assert(0);}
 };

@@ -28,12 +28,12 @@ circuit::circuit(std::istream& cin)
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') 
             {
                 std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
-                break;
+                assert(0);
             };
             
             this->Edges.push_back(new resistor(store[0], n1, n2, converter(store[3])));
@@ -42,13 +42,13 @@ circuit::circuit(std::istream& cin)
         { 
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') 
             {
                 std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
-                break;
+                assert(0);
             };
 
             this->Edges.push_back(new capacitor(store[0], n1, n2, converter(store[3]))); 
@@ -57,13 +57,13 @@ circuit::circuit(std::istream& cin)
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
             
-            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') 
             {
                 std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
-                break;
+                assert(0);
             };
 
             this->Edges.push_back(new inductor(store[0], n1, n2, converter(store[3]))); 
@@ -71,13 +71,13 @@ circuit::circuit(std::istream& cin)
         else if (tolower(store[0][0]) == 'v')
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
-            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') 
             {
                 std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
-                break;
+                assert(0);
             };
 
             // Deterimine if 'SINE' is mentioned in input
@@ -96,13 +96,13 @@ circuit::circuit(std::istream& cin)
         else if (tolower(store[0][0]) == 'i')
         {
             store[0].erase(store[0].begin() + 0); // Remove element identifier
-            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl;} // Ensure there is values entered
+            if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
             if (n1 == '0' && n2 == '0') 
             {
                 std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
-                break;
+                assert(0);
             };
 
             this->Edges.push_back(new isource(store[0], n1, n2, converter(store[3])));
@@ -115,7 +115,7 @@ circuit::circuit(std::istream& cin)
         {
             Simulation.update_parameters(".tran",0,converter(store[2]),converter(store[4]));
         }
-        else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl;}
+        else {std::cerr << "Error: Unsupported component or instruction inputted." << std::endl; assert(0);}
     };
     /* Debugging purposes std::cerr<<"Progess report: Edges stored."<<std::endl; */
 };
@@ -222,5 +222,6 @@ void circuit::Init_simulation() {Simulation.Init_matrices(this->Get_N(), this->G
 void circuit::Simul_solve() {Simulation.Solve_matrices();};
 void circuit::Transient_solve() {Simulation.Transient(Edges);};
 
-void circuit::Print_simul_parameters() { Simulation.print_param();};
+void circuit::Print_simul_parameters() {Simulation.print_param();};
+void circuit::Print_vsource() {Simulation.print_source(Edges);};
 void circuit::Print_simul_results() {Simulation.print_x();};

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  4 JUN 2020 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  5 JUN 2020 01:15
 entering extended mode
 **"e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
 ("e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
@@ -404,81 +404,81 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <./Images/Logo.jpg, id=1, 1746.525pt x 632.3625pt>
 File: ./Images/Logo.jpg Graphic file (type jpg)
 <use ./Images/Logo.jpg>
-Package pdftex.def Info: ./Images/Logo.jpg  used on input line 21.
+Package pdftex.def Info: ./Images/Logo.jpg  used on input line 22.
 (pdftex.def)             Requested size: 113.81102pt x 41.20149pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
 [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc"
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] [2] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 7.
-)
+ [1])
 \tf@toc=\write4
 \openout4 = `ProjectGuidelines.toc'.
 
- [1] [2]
+ [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 72.
+(Font)              <7> on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 72.
- [3] [4]
-<./Images/Timeline.PNG, id=26, 364.9635pt x 382.42876pt>
+(Font)              <5> on input line 87.
+ [4] [5]
+<./Images/Timeline.PNG, id=34, 364.9635pt x 382.42876pt>
 File: ./Images/Timeline.PNG Graphic file (type png)
 <use ./Images/Timeline.PNG>
-Package pdftex.def Info: ./Images/Timeline.PNG  used on input line 110.
+Package pdftex.def Info: ./Images/Timeline.PNG  used on input line 125.
 (pdftex.def)             Requested size: 364.9626pt x 382.42781pt.
- [5 <./Images/Timeline.PNG>] [6] [7] [8] [9] [10]
-Overfull \hbox (7.24042pt too wide) in paragraph at lines 254--257
+ [6 <./Images/Timeline.PNG>] [7] [8] [9] [10] [11]
+Overfull \hbox (7.24042pt too wide) in paragraph at lines 269--272
 []\OT1/cmr/m/n/12 The OOP ap-proach al-lows the pro-gram de-sign to be rapidly and cost-effectively
  []
 
-[11] [12]
-<./Images/Flow chart.PNG, id=55, 583.17876pt x 422.57875pt>
+[12] [13]
+<./Images/Flow chart.PNG, id=62, 583.17876pt x 422.57875pt>
 File: ./Images/Flow chart.PNG Graphic file (type png)
 <use ./Images/Flow chart.PNG>
-Package pdftex.def Info: ./Images/Flow chart.PNG  used on input line 287.
+Package pdftex.def Info: ./Images/Flow chart.PNG  used on input line 302.
 (pdftex.def)             Requested size: 291.58867pt x 211.28885pt.
- [13 <./Images/Flow chart.PNG>] [14] [15] [16] [17] [18] [19]
-<./Images/Adam.PNG, id=80, 497.4585pt x 228.855pt>
+ [14 <./Images/Flow chart.PNG>] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
+<./Images/Adam.PNG, id=131, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 325.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 387.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
-<./Images/Brandon.PNG, id=81, 490.83376pt x 222.8325pt>
+<./Images/Brandon.PNG, id=132, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 330.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 392.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
-<./Images/Xin.PNG, id=82, 404.712pt x 177.0615pt>
+<./Images/Xin.PNG, id=133, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 335.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 397.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
- [20 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>] [21] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
+ [35 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>] [36] [37] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
 Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
 \openout1 = `ProjectGuidelines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11273 strings out of 480930
- 200462 string characters out of 2900700
- 829704 words of memory out of 3000000
- 27040 multiletter control sequences out of 15000+200000
- 538706 words of font info for 45 fonts, out of 3000000 for 9000
+ 11278 strings out of 480930
+ 200551 string characters out of 2900700
+ 830704 words of memory out of 3000000
+ 27045 multiletter control sequences out of 15000+200000
+ 540215 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,8n,45p,886b,1226s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (22 pages, 413366 bytes).
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (39 pages, 437931 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
