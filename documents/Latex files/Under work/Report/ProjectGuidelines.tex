@@ -4,6 +4,7 @@
 \usepackage{parskip}
 \usepackage{listings}
 \usepackage{pdfpages}
+\usepackage{subfig}
 
 \lstset{%
 basicstyle=\ttfamily,
@@ -29,9 +30,9 @@ tabsize=2
     \HRule \\[1.5cm]
      
     \begin{center}
-		Authors:\\[0.5cm] Xin Wang\\CID: 01735253\\xin.wang19@imperial.ac.uk \\[0.5cm]
+		\underline{Authors}\\[0.5cm] Xin Wang\\CID: 01735253\\xin.wang19@imperial.ac.uk \\[0.5cm]
 		Brandon Cann\\ CID: 01724765\\ brandon.cann19@imperial.ac.uk\\[0.5cm]
-		Adam Rehman\\ CID: \\adam.rehman19@imperial.ac.uk\\[0.5cm]
+		Adam Rehman\\ CID: 01720256\\adam.rehman19@imperial.ac.uk\\[0.5cm]
 	\end{center} \large
     
     \vfill % Fill the rest of the page with whitespace
@@ -82,6 +83,7 @@ program to add the mentioned features.
 			\item Rows of output file represent an instance in the simulation.
 		\end{itemize}
 	\end{itemize}
+	\vfill
 	\pagebreak
 	\subsection{Design Criteria}
 	The team has identified several factors from the list given in the Product Design Specification document.
@@ -242,14 +244,7 @@ structure is a standard procedure. The main point of discussion is related to ho
 The main design choices taken by the team has been set out below.
 	\subsection{Object Orientated Programming}
 	As the number of circuit components that we need to support is open ended besides the mandatory basic components 
-	according to the Project Breifing, the team was concerned on the ease of adding a new features or components in 
-	the future. 
-	\par
-	The team initially created a simple program based on creating nodal equations and using matrices to solve 
-	for nodal voltages. The codebase soon became unmaintainable as any errors in communication results in the program 
-	crashing. During the 2nd team meeting, the team is agreed that an Object Orientated Programming (OOP) is necessary.
-	The final program architecture was then designed OOP as the central factor affecting our other decisions. The 
-	design is detailed in the next section.
+	according to the Project Breifing, the team was concerned on the expandability of the program.
 	\par
 	The OOP approach allows the program design to be rapidly and cost-effectively altered to accomodate new features
 	such as additional circuit components or analysis techniques \cite{OOP} that the client might request later on in the 
@@ -257,6 +252,9 @@ The main design choices taken by the team has been set out below.
 	\par
 	The disadvantage to that approach is that it has shown to be slower than other preliminary programs designed 
 	without OOP to an average of of 5\% to 10\% slower depending on other optimisations in the program.
+	\par 
+	It is the team's view that execution speed was not the highest priority and the ability to expand was also 
+	important. The design is detailed in the next section.
 
 	\subsection{Modified Nodal Analysis}
 	Modified Nodal Analysis (MNA) is an extension of normal Nodal Analysis. When the team start researching similar 
@@ -267,6 +265,24 @@ The main design choices taken by the team has been set out below.
 	As stated earlier, a primary concern of the team lies in the scalability of the program. By using MNA, just like
 	other commercial programs, the team is confident that the analysis component of the program will not be a 
 	bottleneck to future developments of the program.
+	\par
+	THe advantage of MNA is in its standard procedures. The standardised algorithm for solving nodal 
+	equations allowed the team to modularise the solving aspect of the program. This meant not constantly have to 
+	make changes to one of the most important parts of the program, instead just ensuring the component is in the 
+	compatible format to be entered into the MNA algorithm.
+	\par 
+	The MNA algorithm consists of three matrices to form the matrix relation: $Ax=b$:
+	\begin{itemize}
+		\item $A$ is consists of four submatrices which includes the admittance matrix. The program treats matrix $A$ as 
+		a whole matrix instead of separating it into four small matrices and combining at the end.
+		\item $x$ represents the unknown node voltages and current of the voltage sources.
+		\item $b$ contains the values of voltage sources and current sources in the circuit.
+	\end{itemize}
+	The admittance matrix is created during the initialisation of the simulation. Non-linear elements are converted into 
+	suitable formats at each instance in time during a transient simulation. The resulting parameters are 'stamped' into the matrix
+	at each instance. Only 'stamping' the changing values instead of creating a new system of matrices saves valuable execution time
+	during program execution. The matrix inversion is handled by the Eigen library, the library supports various types of 
+	inversion with difference accuracy and speed and this is discussed in the Optimisation sector.
 
 	\subsection{Eigen Matrix Library}
 	In terms of matrix operations, the team decided to use a third-party program to handle the matrix-related operations.
@@ -277,7 +293,8 @@ The main design choices taken by the team has been set out below.
 	Boost Library which is close to 1GB.
 	Based on the concerns laid out, the team looked for a program that has a reasonable size, does not require installation 
 	in order to be used. The third-party program chosen was Eigen. It is a file that has a reasonable size and only requires that the
-	Eigen is located in the same directory and the execution scripts we provided is used.
+	Eigen is located in the same directory and the execution scripts we provided is used. A copy of Eigen is included in the program
+	files so client's ease of usage.
 	\pagebreak
 
 \section{Program Design}
@@ -287,7 +304,7 @@ The main design choices taken by the team has been set out below.
 		\includegraphics[scale=0.5]{Flow chart.PNG}
 		\caption{General flowchart of program}
 	\end{figure}
-	\textit{circuit} file forms the central section of the program, handling the input of the file and 
+	\textit{circuit.hpp} file forms the central section of the program, handling the input of the file and 
 	storing it in a form that allows the \textit{simulate} file to perform Transient Analysis on it and outputs
 	the file in the format (.CSV) specified by the client.
 	\par
@@ -299,23 +316,128 @@ The main design choices taken by the team has been set out below.
 	respective file. The file \textit{edge.hpp} is the base from which all other circuit components are derived
 	from the \textbf{components} folder. 
 	\subsection{\textit{str handler.hpp} file}
-	The \textit{str handler} file manages all string-related functions. The main function is the  
+	The \textit{str handler} file manages all string-related functions. \par
+	The main function is the is the \textit{tokenisier} function which takes in an 
+	input sentence and separates it into individual words that can be processed, 
+	converted into the required formats for processing and stored. \par
+	During conversions, checks are performed at various stages. In the product briefing, there
+	was no mention of error handling requirements but the team viewed that defensive programming 
+	was required and any errors encountered will be displayed to the user. 
+
 	\subsection{\textit{node.hpp} file}
-	As a circuit can be expressed as a Network Graph, containing branches and edges
+	A circuit can be expressed as a Network Graph, containing branches and edges.
+	The \textit{node.hpp} file expresses a node in the circuit and allows nodal equations
+	to be created.\par
+	This function is not necessary in the final design since the program skips creating nodal
+	equations and directly inputs entries into the matrix before solving it.
 	\pagebreak
-	\subsection{Circuit.cpp}
+	\subsection{\textit{circuit.hpp}}
+	As mentioned previously, \textit{circuit.hpp} manages all aspects of the program from 
+	reading in the user input, checking basic syntax errors during user entry 
+	to ensuring the simulation is successful.
+	Numerous checks are performed over the course of the simulation and any errors encountered
+	will instantly result in the simulation ending. \par
+	
+	The flow chart of \textit{circuit.hpp} is shown as below: \par
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[scale=0.5]{circuit.PNG}
+		\caption{Circuit flow chart}
+	\end{figure}
 	\pagebreak
-	\subsection{Simulate.cpp}
+	\subsection{\textit{simulate.hpp}}
+	This section of the program was where the team has spent most of the time and also where the
+	team saw many possible optimisations which will be discussed in later sections. This 
+	section handles matrix entry and controls the transient simulation. \par
+	But using the MNA technique, basic components such as voltage sources, current 
+	sources and resistors are simple and can be directly entered into the matrices for 
+	solving. However, components such as inductors and capacitors which are non-linear
+	devices has required further processing in order to support those components. 
+	At each instance in time, non-linear components need to be approximated into corresponding
+	companion models. With the program using MNA, all non-linear components are converted 
+	into a current source and resistor to allow efficient entry into the matrix.
+	\subsubsection{Non-linear components}
+	In the process of approximating non-linear components, integration is 
+	required and there are three different 
+	methods of integration each with its own corresponding equations defining 
+	current and resistance of the companion model. Each type of integration offers different
+	degree of accuracy which is explored under the Optimisation section.\par
+	Capacitors are defined with the following differential equation:
+	$$I=C\times \frac{dv}{dt}$$
+	Inductors are defined with the following differential equation:
+	$$V=L\times \frac{di}{dt}$$
+	
+	\begin{figure} 
+		\centering
+		\includegraphics[scale=0.90]{capacitor.PNG}
+		\caption{\centering Capacitor companion model parameters for different types of integration 
+		\cite{companion}}
+	\end{figure} 
+	\begin{figure} 
+		\centering
+		\includegraphics[scale=0.90]{inductor.PNG}
+		\caption{\centering Inductor companion model parameters for different types of integration 
+		\cite{companion}}
+	\end{figure}
 	\pagebreak
+	\subsection{Simulation flowchart} 
+	The listed simulation flowchart has not accounted for approximating components like Diodes which need Newton-Raphson 
+	iteration.
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[scale=0.5]{simulate.PNG} 
+	\end{figure} 
+\pagebreak
 
 \section{Testing}
+It should be noted that majority of the testing is done on Linux Ubuntu 16.04.1 LTS which runs on a virtual machine in Windows 10,
+some testing have been completed on a Windows 10 machine. As such, the listed execution times are the average of 10 execution
+times. \par 
+Numerous functions are imbedded into the program itself to aide the benchmarking process and can be used to aide in debugging.
 \pagebreak
 
 \section{Optimisations}
 \subsection{Sparse Matrices}
+Various circuit simulation engines like SPICE uses sparse matrices and it was mentioned \cite{OOP} during our research stage but 
+the current program used dense matrices. The primary concern was stability of the program as the team did not have 
+any experience with Sparse Matrices but the Eigen Library is able to implement sparse matrices. \par
+With the current supported circuit components, using dense matrices does not affect the program speed significantly. But as 
+the circuit size gets bigger and more complicated components like operational amplifiers is supported, the matrices would
+get bigger. The memory used and the processing power used would increase proportionally. \par
+Sparse matrices solves that problem as numerous entries of the matrices is zero and does not affect the results. The benefit is
+reduced memory usage and much faster program execution times which is a bottleneck in the current design.
+Due to the OOP program design, it can be quickly implemented but extensive testing would be needed.
+\subsection{Integration method}
+There are numerous different types of integration but the three most common forms of integration are as follows:
+\begin{itemize}
+	\item Forward Euler
+	\item Backward Euler
+	\item Trapezoid
+\end{itemize}
+Out of the three, Trapezoid would be the most accurate form of integration but the most processor intensive form of integration listed.
+The report has the three forms and the defined parameters. \par
+But Euler's methods are only accurate to the first degree while other methods such as the Runge-Kutta method is much more accurate.
+This method would rely on creating a specialised function that exclusively handles it and would add to the processing time but,
+with the implementation of sparse matrices, it would still result in a faster program.
+\subsection{Inversion method}
+The Eigen library supports numerous types of equation solver functions. The default type that the Eigen documentation supports is the 
+\textit{ColPivHouseholderQR} method but, using it, resulted in a consistent execution time of 50\% longer. Instead, the team 
+did not use the equation solver functions. The team used the inversion function on matrix $A$ and multiplied it directly to matrix $b$.
+\par 
+The team believes that there is be more efficient third-party algorithms that can help make the program more efficient. For example, 
+the Boost Library contains numerous functions that can entirely eliminate the need for the \textit{str handler.hpp} file and,
+as it is a extensively supported library, it would be more efficient to use it. But it would require client consultations to ensure
+the client understands and is comfortable with a larger program size. 
+
 \pagebreak
 
 \section{Adding on}
+\subsection{Graphics User Interface}
+\subsection{Diode}
+\subsection{Voltage controlled sources}
+\subsection{Current controlled sources}
+\subsection{Operational Amplifiers}
+
 \pagebreak
 
 \section{Appendix}
@@ -338,5 +460,5 @@ The main design choices taken by the team has been set out below.
 \pagebreak
 
 \section{References}
-\printbibliography[title={References}]
+\printbibliography
 \end{document}

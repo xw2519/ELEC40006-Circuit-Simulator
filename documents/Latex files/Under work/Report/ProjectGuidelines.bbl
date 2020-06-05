@@ -19,44 +19,54 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{MNA}{article}{}
-      \name{author}{3}{}{%
-        {{hash=de255eee521e49aed4c2d9295d277bd2}{%
-           family={Ho},
-           familyi={H\bibinitperiod},
-           given={Chung-Wen},
-           giveni={C\bibinithyphendelim W\bibinitperiod}}}%
-        {{hash=59129d16cddab9ab7eff8bc8a8738aa7}{%
-           family={Ruehli},
-           familyi={R\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-        {{hash=cea591a09fd94e5297da6d94e76321b2}{%
-           family={Brennan},
-           familyi={B\bibinitperiod},
-           given={Pierce},
-           giveni={P\bibinitperiod}}}%
+    \entry{MNA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c143058d34e7ed817a80810efad9d750}{%
+           family={Cheever},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
       }
-      \strng{namehash}{7c6b791b03217d1c3566c3c83eae3bb7}
-      \strng{fullhash}{7c6b791b03217d1c3566c3c83eae3bb7}
-      \strng{bibnamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
-      \strng{authorbibnamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
-      \strng{authornamehash}{7c6b791b03217d1c3566c3c83eae3bb7}
-      \strng{authorfullhash}{7c6b791b03217d1c3566c3c83eae3bb7}
+      \strng{namehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{fullhash}{c143058d34e7ed817a80810efad9d750}
+      \strng{bibnamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authorbibnamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authornamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authorfullhash}{c143058d34e7ed817a80810efad9d750}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Analysis of Circuits }}
+      \verb{doi}
+      \verb https://lpsa.swarthmore.edu/Systems/Electrical/mna/MNA1.html
+      \endverb
+    \endentry
+    \entry{companion}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f4c1d331248b976b9de746a436c0ebc7}{%
+           family={Herbst},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=502a4f09ba093bd8fa0d495bcca59024}{%
+           family={Levitt},
+           familyi={L\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{fullhash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{bibnamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authorbibnamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authornamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authorfullhash}{fb8da0e5ebfeefcaef767d6133829428}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Circuits and Systems, IEEE Transactions on}
-      \field{month}{07}
-      \field{title}{The Modified Nodal Approach to Network Analysis}
-      \field{volume}{22}
-      \field{year}{1975}
-      \field{pages}{504\bibrangedash 509}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1109/TCS.1975.1084079
-      \endverb
+      \field{title}{Companion models for basic non-linear and transient devices}
+      \field{year}{2008}
     \endentry
     \entry{OOP}{inproceedings}{}
       \name{author}{1}{}{%

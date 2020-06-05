@@ -30,58 +30,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Eigen Matrix Library}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Program Design}{14}%
+\contentsline {section}{\numberline {5}Program Design}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Top level view of the program}{14}%
+\contentsline {subsection}{\numberline {5.1}Top level view of the program}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Components files}{15}%
+\contentsline {subsection}{\numberline {5.2}Components files}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}\textit {str handler.hpp} file}{15}%
+\contentsline {subsection}{\numberline {5.3}\textit {str handler.hpp} file}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}\textit {node.hpp} file}{15}%
+\contentsline {subsection}{\numberline {5.4}\textit {node.hpp} file}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Circuit.cpp}{16}%
+\contentsline {subsection}{\numberline {5.5}\textit {circuit.hpp}}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Simulate.cpp}{17}%
+\contentsline {subsection}{\numberline {5.6}\textit {simulate.hpp}}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Project management}{18}%
+\contentsline {subsubsection}{\numberline {5.6.1}Non-linear components}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Project timeline}{19}%
+\contentsline {subsection}{\numberline {5.7}Simulation flowchart}{20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Management approach}{20}%
+\contentsline {section}{\numberline {6}Testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Project responsibilities breakdown}{21}%
+\contentsline {section}{\numberline {7}Optimisations}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Design of software modules}{22}%
+\contentsline {subsection}{\numberline {7.1}Sparse Matrices}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Parser module}{23}%
+\contentsline {subsection}{\numberline {7.2}Integration method}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Features}{24}%
+\contentsline {subsection}{\numberline {7.3}Inversion method}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Pseudocode}{25}%
+\contentsline {section}{\numberline {8}Adding on}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Analysis module}{26}%
+\contentsline {subsection}{\numberline {8.1}Graphics User Interface}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.1}Features}{27}%
+\contentsline {subsection}{\numberline {8.2}Diode}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.2.2}Pseudocode}{28}%
+\contentsline {subsection}{\numberline {8.3}Voltage controlled sources}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Transient module}{29}%
+\contentsline {subsection}{\numberline {8.4}Current controlled sources}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.1}Features}{30}%
+\contentsline {subsection}{\numberline {8.5}Operational Amplifiers}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.3.2}Pseudocode}{31}%
+\contentsline {section}{\numberline {9}Appendix}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Testing}{32}%
+\contentsline {subsection}{\numberline {9.1}Belbin Roles}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}\textit {Data struct}}{32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Optimisations}{33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Software comparisons}{34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Appendix}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1}Belbin Roles}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}After project report}{36}%
+\contentsline {section}{\numberline {10}References}{26}%

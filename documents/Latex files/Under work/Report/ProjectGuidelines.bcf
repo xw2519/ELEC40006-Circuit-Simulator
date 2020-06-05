@@ -2184,6 +2184,11 @@
   <bcf:section number="0">
     <bcf:citekey order="1">OOP</bcf:citekey>
     <bcf:citekey order="2">MNA</bcf:citekey>
+    <bcf:citekey order="3">companion</bcf:citekey>
+    <bcf:citekey order="4">companion</bcf:citekey>
+    <bcf:citekey order="5">companion</bcf:citekey>
+    <bcf:citekey order="6">companion</bcf:citekey>
+    <bcf:citekey order="7">OOP</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

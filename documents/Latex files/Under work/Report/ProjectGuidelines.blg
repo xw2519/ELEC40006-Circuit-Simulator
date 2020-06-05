@@ -1,17 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectGuidelines.blg'
-[70] biber-MSWIN64:322> INFO - === 
-[90] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
-[196] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
-[213] Biber.pm:4256> INFO - Processing section 0
-[213] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
-[223] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
-[239] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
-[243] bibtex.pm:1653> INFO - LaTeX decoding ...
-[255] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
-[295] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[296] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[296] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[296] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[300] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
-[305] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
+[71] biber-MSWIN64:322> INFO - === 
+[96] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
+[233] Biber.pm:943> INFO - Found 3 citekeys in bib section 0
+[250] Biber.pm:4256> INFO - Processing section 0
+[250] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[260] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[276] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[279] bibtex.pm:1653> INFO - LaTeX decoding ...
+[289] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[314] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\alw\AppData\Local\Temp\biber_tmp_ImOL\biblography.bib_11068.utf8, line 28, warning: 1 characters of junk seen at toplevel
+[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[331] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[331] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[331] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[338] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
+[342] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
+[343] Biber.pm:128> INFO - WARNINGS: 1
