@@ -1,0 +1,127 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  5 JUN 2020 21:57
+entering extended mode
+**"e:/Work/ELEC40006/documents/Latex files/Under work/Meeting minutes/Meeting 1/Meeting 1.tex"
+("e:/Work/ELEC40006/documents/Latex files/Under work/Meeting minutes/Meeting 1/Meeting 1.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo"
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetime.sty"
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count175
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fmtcount.sty"
+Package: fmtcount 2020/01/30 v3.07
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\keyval.tex"))
+\XKV@depth=\count176
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcprefix.sty"
+Package: fcprefix 2012/09/28
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcnumparser.sty"
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count177
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen135
+)
+\c@padzeroesN=\count178
+\fc@tmpcatcode=\count179
+\@DT@modctr=\count180
+\@ordinalctr=\count181
+\@orgargctr=\count182
+\@strctr=\count183
+\@tmpstrctr=\count184
+\@DT@loopN=\count185
+\@DT@X=\count186
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetime-defaults.sty"
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count187
+\@month=\count188
+\@year=\count189
+\c@HOUR=\count190
+\c@HOURXII=\count191
+\c@MINUTE=\count192
+\c@TOHOUR=\count193
+\c@TOMINUTE=\count194
+\c@SECOND=\count195
+\currenthour=\count196
+\currentminute=\count197
+\currentsecond=\count198
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count199
+\dayofyear=\count266
+\dayofweek=\count267
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks18
+\dt@b=\toks19
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count268
+\l__pdf_internal_box=\box45
+) ("e:/Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 1\Meeting 1.aux")
+\openout1 = `"Meeting 1.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-english.def"
+File: fc-english.def 2016/01/12
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+ [1
+
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 1\Meeting 1.aux") ) 
+Here is how much of TeX's memory you used:
+ 1659 strings out of 480930
+ 25631 string characters out of 2900700
+ 277663 words of memory out of 3000000
+ 17554 multiletter control sequences out of 15000+200000
+ 537274 words of font info for 40 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,6n,29p,1071b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 1\Meeting 1.pdf" (1 page, 77419 bytes).
+PDF statistics:
+ 35 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

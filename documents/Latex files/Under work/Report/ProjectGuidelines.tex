@@ -3,7 +3,8 @@
 \usepackage{biblatex}
 \usepackage{parskip}
 \usepackage{listings}
-
+\usepackage{pdfpages}
+\usepackage{subfig}
 
 \lstset{%
 basicstyle=\ttfamily,
@@ -11,106 +12,453 @@ breaklines = true,
 tabsize=2
 }
 \graphicspath{ {./Images/} }
-
 \addbibresource{biblography.bib}
+
 \setlength{\parskip}{1em}
 \begin{document}
+
 \begin{titlepage}
-	\centering
-	{\scshape\LARGE ELEC40006 \par}
-	\vspace{1cm}
-	{\scshape\Large Electronics design project\par}
-	\vspace{1.5cm}
-	{\huge\bfseries Circuit Simulation Report\par}
-	\vspace{2cm}
-	{\Large\ Adam Rehman\\ Brandon Cann\\ Xin Wang \par}
-	\vfill
-% Bottom of the page
-	{\large \today\par}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \includegraphics[width = 4cm]{./Images/Logo.jpg}\\[0.5cm] 
+    
+    \center 
+	\textsc{\large Department of Electrical and Electronic Engineering }\\[0.5cm] 
+	\textsc{\normalsize ELEC40006: Electronics Design Project}\\[0.5cm] 
+    
+	\HRule \\[0.4cm]
+	Circuit Simulator Technical Report
+    \HRule \\[1.5cm]
+     
+    \begin{center}
+		\underline{Authors}\\[0.5cm] Xin Wang\\CID: 01735253\\xin.wang19@imperial.ac.uk \\[0.5cm]
+		Brandon Cann\\ CID: 01724765\\ brandon.cann19@imperial.ac.uk\\[0.5cm]
+		Adam Rehman\\ CID: 01720256\\adam.rehman19@imperial.ac.uk\\[0.5cm]
+	\end{center} \large
+    
+    \vfill % Fill the rest of the page with whitespace
+ 	\small Submitted in partial fulfillment of the requirements for ELEC40006 \\ [0.5cm]
+    \makeatletter
+    \@date 
+    \makeatother
 \end{titlepage}
 
 \tableofcontents
 \pagebreak
 
-\begin{abstract}
-This report describes the design and implementation of a program that is capable of performing a transient simulation
-by calculating the node voltages at each successive instant in time. This program parses the netlist file
-into a graph data structure, performs analysis using conductance matrices and outputs the results in a CSV format.
-
--- How accurate is it?
-\par
--- Comaparison to commercial software?
-\end{abstract}
-\pagebreak
-
 \section{Overview of the report}
-This report is the distillation of multiple research documents relating to different components of the program. \par
-Section 2 gives an abstract view of the design of the program, breaking the program down into 3 modules.
-Section 3 provides a summary of the testing methodologies and a comparison to both handwritten results and results of 
-established circuit simulator software. 
-Section 4 delves into the further work done and some potential ideas to build on.
-Section 5, the last section, summarises the report and discusses our overall experiences with the development of this project.
+This report loosely follows the stages of the Software Developement Cycle. \par
+Section 2 details the design problem presented and the program requirements at are necessary for a preliminary design 
+to be established. \par
+Section 3 provides a summary of the program development timeline and the details relating to project management format
+the format of meeting minutes used to how the responsibilities are distributed among the project team. \par
+Section 4 discusses the preliminary designs produced by the team and the rationale behind some design choices implemented
+by the team. \par
+Section 5 gives an comprehensive overview of the program design, detailing the functions and flowcharts used. \par 
+Section 6 investigates the design constraints of the program, the accuracy of the results produced and the speed of 
+execution as the circuit size varies.\par
+Section 7 serves as a continuation of Section 6, discussing the possible improvements to mitigate problems encountered
+during testing. \par
+Section 8 details the possible features that can be added on to the existing program and the required modifications to the
+program to add the mentioned features.
+\pagebreak
+
+\section{Project Specification}
+	\subsection{Design Problem}
+	Develop a program that is able to read in a file describing a circuit specified by the user, perform 
+	transient simulation on that circuit and output the calculated voltages at each instance in time into a file. 
+	\subsection{Program Requirements}
+	The main program requirements are listed as follows:
+	\begin{itemize}
+		\item Program must support basic circuit components listed as follows \footnote{Advanced component can be supported
+		provided development schedule is not constrained.}:
+		\begin{itemize}
+			\item Resistors
+			\item Ideal Capacitors
+			\item Ideal Inductors
+		\end{itemize}
+		\item Input file must adhere to SPICE netlist formats
+		\item The output file must be in Comma Separated Value (.CSV) format.
+		\begin{itemize}
+			\item Columns of output file represent nodes in the circuit.
+			\item Rows of output file represent an instance in the simulation.
+		\end{itemize}
+	\end{itemize}
+	\vfill
+	\pagebreak
+	\subsection{Design Criteria}
+	The team has identified several factors from the list given in the Product Design Specification document.
+	\begin{itemize}
+		\item Maintenance: One of the most important factors the team identified. As the development timescale is 
+		constrained and the features required is open-ended, so it is important we ensure the design can 
+		incorporate new features efficiently and cost-effectively if the client wishes to add new features.
+		\item Documentation: For a non-intuitive program, proper documentation is required for client and future
+		programmers to make modifications should the client wish.
+		\item Performance: No strict performance guidelines are given by the client but the execution 
+		speed should still be reasonable. 
+		\item Time scale: 6 weeks with a definite deadline. It is important to balance proper team management
+		techniques and creating a program that meets client standards.
+		\item Testing: Numerous test programs have been created to test various aspects of the program to ensure
+		accurate results have been produced. The results produced have been verified with LTSpice, a well 
+		established circuit simulation program.
+		\item Patents: SPICE engine is a public domain software so we could possibily utilise the engine.
+		\item Ergonomics: A Graphics User Interface (GUI) is not specified by the client and could possibly 
+		make the program much easier to use.
+	\end{itemize}
+	\vfill
+	\pagebreak
+
+\section{Team Management}
+	\subsection{Project timeline overview}
+	\includegraphics{Timeline.PNG}
+	\pagebreak
+
+	\subsection{Gnatt chart}
+	\pagebreak
+
+	\subsection{Management approach}
+	The project team, with research on different forms of project management, decided on using a Waterfall project
+	management approach. The phases are listed as follows: \par
+	\begin{itemize}
+		\item System and Software Requirements.
+		\item Analysis.
+		\item Design.
+		\item Coding.
+		\item Testing.
+	\end{itemize}
+	This method is selected mainly since the project is short, requirements are clear and the team 
+	is not constantly required to report to the client at the early stages of the software development to ensure 
+	client statisfaction. \par
+
+	The Waterfall methodology prioritises proper documentation throughout the whole development process. This is important
+	to the team as the team project requires a Project Report to be submitted and, due to the ongoing remote lab orals and 
+	family-related obligations during quarantine, allows a team member to be quickly caught up should a member step out
+	of the team for a while.  
+
+	The disadvantage of the Waterfall methodology lies mainly in that no working software is produced until late in the 
+	cycle so there is a level of risk and uncertainty with not being able to meet the deadline, especially in the 
+	current state of the world \footnote{Any unforseen circumstances are listed in team meeting minutes summarised the following sections.}. 
+	The project team later realised the methodology is not exactly suitable for the Object Orientated Approach 
+	that the team eventually settled on. As the integration is done at the end, there is a possibility that any errors
+	in the program is not caught during integration.
+
+	\vfill
+	\pagebreak
+
+	\subsection{Team responsibilities breakdown}
+	The responsibilities of each team member is discussed during the 1st meeting and formalised in the 2nd meeting. The
+	respective roles are partly determined by the Belbin questionnaire provided by Mrs. Perea 
+	\footnote{Belbin questionnaire forms are found in Appendix: Belbin Roles.}
+	\par
+	The main responsibilities of each team member is listed as follows:
+	\begin{itemize}
+		\item Adam Rehman
+		\begin{itemize}
+			\item Plant
+			\begin{itemize}
+				\item Research program.
+				\item Coding the program.
+				\item Testing program.
+			\end{itemize}
+		\end{itemize}
+		\item Brandon Cann
+		\begin{itemize}
+			\item Monitor Evaluator
+			\begin{itemize}
+				\item Ensure documentation managed by Xin Wang and coding managed by Adam is in sync.
+				\item Contributes to program aspects that is falling behind.
+				\item Ensure project requirements are met.
+			\end{itemize}
+		\end{itemize}
+		\item Xin Wang
+		\begin{itemize}
+			\item Implementer
+			\begin{itemize}
+				\item Creating and managing the team Project Report and various other documentations.
+				\item Meeting minute keeper.
+				\item Ensuring code written is up to a standard format with proper comments.
+				\item Manages repository base.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+	\vfill
+	\pagebreak
+
+	\subsection{Project meeting minutes}
+	The meeting minutes follow a standard template that is attached under Appendix: Meeting Minutes. \par
+	There is no standard protocol for calling team meetings, team meeting are called usually when there is a problem
+	that is applicable to all team members. Usually, there is informal communication across various channels from 
+	WhatsApp to Discord. \par
+	Over the course of the development cycle, there has been three formal meetings and the main reasons and conclusions
+	are listed below.
+	\begin{itemize}
+		\item Meeting 1
+		\begin{itemize}
+			\item Reason: 
+			\begin{itemize}
+				\item Project team meeting each other. Not every team member knows each other.
+				\item Discuss the Circuit Simulator briefing.
+			\end{itemize}
+			\item Conclusions:
+			\begin{itemize}
+				\item Xin Wang was assigned as documentation manager and tasked with formalising the Project Requirement.
+			\end{itemize}
+		\end{itemize}
+		\item Meeting 2
+		\begin{itemize}
+			\item Reason:
+			\begin{itemize}
+				\item With a draft of the project management guidelines, team discussed the team dynamics.
+				\item Discussed general direction of our program design.
+			\end{itemize}
+			\item Conclusion:
+			\begin{itemize}
+				\item Agreed that practicing proper team management is just as important as showing practical skills 
+				in coding.
+				\item Final team management guidelines are agreed and tasked to Xin Wang to formalise in documentation.
+			\end{itemize}
+		\end{itemize}
+		\item Meeting 3
+		\begin{itemize}
+			\item Reason:
+			\begin{itemize}
+				\item Program basic requirements are nearly fulfilled. 
+				\item Meeting to discuss future program design direction.
+				\item Xin Wang has a notification by South African Embassy of a Repartiation flight.
+			\end{itemize}
+			\item Conclusion:
+			\begin{itemize}
+				\item Plans set to divide up Xin's responsibilities among the other two team members.
+				\item Documentation finalised and notes written by Xin passed to team members.
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+	\pagebreak
+
+	
+
+\section{Preliminary Designs}
+Our initial program design relied on the project briefing provided by Dr.Stott. Parsing a input file into a data 
+structure is a standard procedure. The main point of discussion is related to how the program solves for unknown voltages.
 \par
-\textit{Talk about added functions and anything else.}
-\pagebreak
+The main design choices taken by the team has been set out below.
+	\subsection{Object Orientated Programming}
+	As the number of circuit components that we need to support is open ended besides the mandatory basic components 
+	according to the Project Breifing, the team was concerned on the expandability of the program.
+	\par
+	The OOP approach allows the program design to be rapidly and cost-effectively altered to accomodate new features
+	such as additional circuit components or analysis techniques \cite{OOP} that the client might request later on in the 
+	program's lifecycle. This approach saves the programmer and the client cost and time in program maintainability.
+	\par
+	The disadvantage to that approach is that it has shown to be slower than other preliminary programs designed 
+	without OOP to an average of of 5\% to 10\% slower depending on other optimisations in the program.
+	\par 
+	It is the team's view that execution speed was not the highest priority and the ability to expand was also 
+	important. The design is detailed in the next section.
 
-\section{Project management}
-\pagebreak
+	\subsection{Modified Nodal Analysis}
+	Modified Nodal Analysis (MNA) is an extension of normal Nodal Analysis. When the team start researching similar 
+	programs like PSPICE and LTSpice, MNA was mentioned numerous times \cite{MNA} and its benefits was clearly seen when we tried 
+	to write a program that implemented normal Nodal Analysis. A problem the team encountered was trying to 
+	represent the current-dependent circuit elements like inductors efficiently. 
+	\par
+	As stated earlier, a primary concern of the team lies in the scalability of the program. By using MNA, just like
+	other commercial programs, the team is confident that the analysis component of the program will not be a 
+	bottleneck to future developments of the program.
+	\par
+	THe advantage of MNA is in its standard procedures. The standardised algorithm for solving nodal 
+	equations allowed the team to modularise the solving aspect of the program. This meant not constantly have to 
+	make changes to one of the most important parts of the program, instead just ensuring the component is in the 
+	compatible format to be entered into the MNA algorithm.
+	\par 
+	The MNA algorithm consists of three matrices to form the matrix relation: $Ax=b$:
+	\begin{itemize}
+		\item $A$ is consists of four submatrices which includes the admittance matrix. The program treats matrix $A$ as 
+		a whole matrix instead of separating it into four small matrices and combining at the end.
+		\item $x$ represents the unknown node voltages and current of the voltage sources.
+		\item $b$ contains the values of voltage sources and current sources in the circuit.
+	\end{itemize}
+	The admittance matrix is created during the initialisation of the simulation. Non-linear elements are converted into 
+	suitable formats at each instance in time during a transient simulation. The resulting parameters are 'stamped' into the matrix
+	at each instance. Only 'stamping' the changing values instead of creating a new system of matrices saves valuable execution time
+	during program execution. The matrix inversion is handled by the Eigen library, the library supports various types of 
+	inversion with difference accuracy and speed and this is discussed in the Optimisation sector.
 
-\subsection{Project timeline}
+	\subsection{Eigen Matrix Library}
+	In terms of matrix operations, the team decided to use a third-party program to handle the matrix-related operations.
+	The primary concern with choosing a third-party program was how seamless the program integrates into our program. 
+	The team does not know whether the client would be comfortable installing an unknown third-party program on their system 
+	besides the program that the client specifically requested for.\par
+	There are third-party programs that require installation such as Armadillo and some has a large file size such as the 
+	Boost Library which is close to 1GB.
+	Based on the concerns laid out, the team looked for a program that has a reasonable size, does not require installation 
+	in order to be used. The third-party program chosen was Eigen. It is a file that has a reasonable size and only requires that the
+	Eigen is located in the same directory and the execution scripts we provided is used. A copy of Eigen is included in the program
+	files so client's ease of usage.
+	\pagebreak
 
-\pagebreak
+\section{Program Design}
+	\subsection{Top level view of the program}
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[scale=0.5]{Flow chart.PNG}
+		\caption{General flowchart of program}
+	\end{figure}
+	\textit{circuit.hpp} file forms the central section of the program, handling the input of the file and 
+	storing it in a form that allows the \textit{simulate} file to perform Transient Analysis on it and outputs
+	the file in the format (.CSV) specified by the client.
+	\par
+	The theoretical information and program design for each of the main files are discussed in the following 
+	sections.
+	\pagebreak
+	\subsection{Components files}
+	Due to the OOP design methodology, each component and its necessary functions are described in its own
+	respective file. The file \textit{edge.hpp} is the base from which all other circuit components are derived
+	from the \textbf{components} folder. 
+	\subsection{\textit{str handler.hpp} file}
+	The \textit{str handler} file manages all string-related functions. \par
+	The main function is the is the \textit{tokenisier} function which takes in an 
+	input sentence and separates it into individual words that can be processed, 
+	converted into the required formats for processing and stored. \par
+	During conversions, checks are performed at various stages. In the product briefing, there
+	was no mention of error handling requirements but the team viewed that defensive programming 
+	was required and any errors encountered will be displayed to the user. 
 
-\subsection{Management approach}
-\pagebreak
-
-\subsection{Project responsibilities breakdown}
-\pagebreak
-
-\section{Design of software modules}
-\pagebreak
-
-\subsection{Parser module}
-\pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
-\pagebreak
-
-\subsection{Analysis module}
-\pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
-\pagebreak
-
-\subsection{Transient module}
-\pagebreak
-\subsubsection{Features}
-\pagebreak
-\subsubsection{Pseudocode}
+	\subsection{\textit{node.hpp} file}
+	A circuit can be expressed as a Network Graph, containing branches and edges.
+	The \textit{node.hpp} file expresses a node in the circuit and allows nodal equations
+	to be created.\par
+	This function is not necessary in the final design since the program skips creating nodal
+	equations and directly inputs entries into the matrix before solving it.
+	\pagebreak
+	\subsection{\textit{circuit.hpp}}
+	As mentioned previously, \textit{circuit.hpp} manages all aspects of the program from 
+	reading in the user input, checking basic syntax errors during user entry 
+	to ensuring the simulation is successful.
+	Numerous checks are performed over the course of the simulation and any errors encountered
+	will instantly result in the simulation ending. \par
+	
+	The flow chart of \textit{circuit.hpp} is shown as below: \par
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[scale=0.5]{circuit.PNG}
+		\caption{Circuit flow chart}
+	\end{figure}
+	\pagebreak
+	\subsection{\textit{simulate.hpp}}
+	This section of the program was where the team has spent most of the time and also where the
+	team saw many possible optimisations which will be discussed in later sections. This 
+	section handles matrix entry and controls the transient simulation. \par
+	But using the MNA technique, basic components such as voltage sources, current 
+	sources and resistors are simple and can be directly entered into the matrices for 
+	solving. However, components such as inductors and capacitors which are non-linear
+	devices has required further processing in order to support those components. 
+	At each instance in time, non-linear components need to be approximated into corresponding
+	companion models. With the program using MNA, all non-linear components are converted 
+	into a current source and resistor to allow efficient entry into the matrix.
+	\subsubsection{Non-linear components}
+	In the process of approximating non-linear components, integration is 
+	required and there are three different 
+	methods of integration each with its own corresponding equations defining 
+	current and resistance of the companion model. Each type of integration offers different
+	degree of accuracy which is explored under the Optimisation section.\par
+	Capacitors are defined with the following differential equation:
+	$$I=C\times \frac{dv}{dt}$$
+	Inductors are defined with the following differential equation:
+	$$V=L\times \frac{di}{dt}$$
+	
+	\begin{figure} 
+		\centering
+		\includegraphics[scale=0.90]{capacitor.PNG}
+		\caption{\centering Capacitor companion model parameters for different types of integration 
+		\cite{companion}}
+	\end{figure} 
+	\begin{figure} 
+		\centering
+		\includegraphics[scale=0.90]{inductor.PNG}
+		\caption{\centering Inductor companion model parameters for different types of integration 
+		\cite{companion}}
+	\end{figure}
+	\pagebreak
+	\subsection{Simulation flowchart} 
+	The listed simulation flowchart has not accounted for approximating components like Diodes which need Newton-Raphson 
+	iteration.
+	\begin{figure} [h!]
+		\centering
+		\includegraphics[scale=0.5]{simulate.PNG} 
+	\end{figure} 
 \pagebreak
 
 \section{Testing}
-\subsection{\textit{Data struct}}
-The script \textit{Data struct test.sh}, when called, will compile \textit{Data struct.cpp} and passes in input 
-text file \textit{Data struct input.txt}. 
-\par
-\textbf{Pictures}
-\par
-This test is used to check the format of CirElement data structure functions as envisioned and that the methods associated with
-CirElement such as \textit{custom pow} functions correctly.
+It should be noted that majority of the testing is done on Linux Ubuntu 16.04.1 LTS which runs on a virtual machine in Windows 10,
+some testing have been completed on a Windows 10 machine. As such, the listed execution times are the average of 10 execution
+times. \par 
+Numerous functions are imbedded into the program itself to aide the benchmarking process and can be used to aide in debugging.
 \pagebreak
 
 \section{Optimisations}
-Typical features like clearing vectors once it's function is done such as the tokensier
+\subsection{Sparse Matrices}
+Various circuit simulation engines like SPICE uses sparse matrices and it was mentioned \cite{OOP} during our research stage but 
+the current program used dense matrices. The primary concern was stability of the program as the team did not have 
+any experience with Sparse Matrices but the Eigen Library is able to implement sparse matrices. \par
+With the current supported circuit components, using dense matrices does not affect the program speed significantly. But as 
+the circuit size gets bigger and more complicated components like operational amplifiers is supported, the matrices would
+get bigger. The memory used and the processing power used would increase proportionally. \par
+Sparse matrices solves that problem as numerous entries of the matrices is zero and does not affect the results. The benefit is
+reduced memory usage and much faster program execution times which is a bottleneck in the current design.
+Due to the OOP program design, it can be quickly implemented but extensive testing would be needed.
+\subsection{Integration method}
+There are numerous different types of integration but the three most common forms of integration are as follows:
+\begin{itemize}
+	\item Forward Euler
+	\item Backward Euler
+	\item Trapezoid
+\end{itemize}
+Out of the three, Trapezoid would be the most accurate form of integration but the most processor intensive form of integration listed.
+The report has the three forms and the defined parameters. \par
+But Euler's methods are only accurate to the first degree while other methods such as the Runge-Kutta method is much more accurate.
+This method would rely on creating a specialised function that exclusively handles it and would add to the processing time but,
+with the implementation of sparse matrices, it would still result in a faster program.
+\subsection{Inversion method}
+The Eigen library supports numerous types of equation solver functions. The default type that the Eigen documentation supports is the 
+\textit{ColPivHouseholderQR} method but, using it, resulted in a consistent execution time of 50\% longer. Instead, the team 
+did not use the equation solver functions. The team used the inversion function on matrix $A$ and multiplied it directly to matrix $b$.
+\par 
+The team believes that there is be more efficient third-party algorithms that can help make the program more efficient. For example, 
+the Boost Library contains numerous functions that can entirely eliminate the need for the \textit{str handler.hpp} file and,
+as it is a extensively supported library, it would be more efficient to use it. But it would require client consultations to ensure
+the client understands and is comfortable with a larger program size. 
+
 \pagebreak
 
-\section{Software comparisons}
+\section{Adding on}
+\subsection{Graphics User Interface}
+\subsection{Diode}
+\subsection{Voltage controlled sources}
+\subsection{Current controlled sources}
+\subsection{Operational Amplifiers}
+
 \pagebreak
 
-\section{After project report}
+\section{Appendix}
+\subsection{Belbin Roles}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.5]{Adam.PNG}
+	\caption{Belbin Roles of Adam Rehman}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.5]{Brandon.PNG}
+	\caption{Belbin Roles of Brandon Cann}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.75]{Xin.PNG}
+	\caption{Belbin Roles of Xin Wang}
+\end{figure}
 \pagebreak
 
-\printbibliography[title={References}]
+\section{References}
+\printbibliography
 \end{document}

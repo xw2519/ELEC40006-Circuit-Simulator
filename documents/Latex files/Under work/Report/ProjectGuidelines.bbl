@@ -16,5 +16,81 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{MNA}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c143058d34e7ed817a80810efad9d750}{%
+           family={Cheever},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{fullhash}{c143058d34e7ed817a80810efad9d750}
+      \strng{bibnamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authorbibnamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authornamehash}{c143058d34e7ed817a80810efad9d750}
+      \strng{authorfullhash}{c143058d34e7ed817a80810efad9d750}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Analysis of Circuits }}
+      \verb{doi}
+      \verb https://lpsa.swarthmore.edu/Systems/Electrical/mna/MNA1.html
+      \endverb
+    \endentry
+    \entry{companion}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f4c1d331248b976b9de746a436c0ebc7}{%
+           family={Herbst},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=502a4f09ba093bd8fa0d495bcca59024}{%
+           family={Levitt},
+           familyi={L\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{fullhash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{bibnamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authorbibnamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authornamehash}{fb8da0e5ebfeefcaef767d6133829428}
+      \strng{authorfullhash}{fb8da0e5ebfeefcaef767d6133829428}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Companion models for basic non-linear and transient devices}
+      \field{year}{2008}
+    \endentry
+    \entry{OOP}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=85c2c01b19dd9fe12e81ce9a44f059ee}{%
+           family={Noda},
+           familyi={N\bibinitperiod},
+           given={Taku},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{fullhash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{bibnamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authorbibnamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authornamehash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \strng{authorfullhash}{85c2c01b19dd9fe12e81ce9a44f059ee}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Object Oriented Design of a Transient Analysis Program}
+      \field{year}{2007}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

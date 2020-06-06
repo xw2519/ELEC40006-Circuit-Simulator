@@ -1,0 +1,63 @@
+PWD e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.tex
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.log
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.aux
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.aux
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-english.def
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-english.def
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.pdf
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Meeting minutes\Meeting 3\Meeting 3.aux
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
