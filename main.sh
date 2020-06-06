@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e 
+
 clear
 echo "***************************************************************"
 echo "Detecting current directory for netlist files..."
