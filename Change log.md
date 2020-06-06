@@ -10,17 +10,17 @@ Authors:
 - Xin Wang
 
 ## Updates or changes
-### 5 May 2020
+### 12 May 2020
 - Project repo established.
 - Research into Circuit Simulators begun.
 
-### 7 May 2020
+### 14 May 2020
 - Tech Specifications document published.
 
-### 9 May 2020
+### 16 May 2020
 - First version of Project Management Guideline document published.
 
-### 12 May 2020
+### 21 May 2020
 - v1.0 Parser module implemented.
   - Features:
     - R, C and L element recognised but C and L not yet supported.
@@ -31,22 +31,16 @@ Authors:
     - Recognise ground node as 0 instead of N0.
     - Recognise comments denoted by '*' char
 
-### 14 May 2020
-- v1.0 Analysis module implemented.
+### 29 May 2020
+- Program modified to use OOP
   - Features:
     - Only R and independent sources supported.
-    - DC analysis supported for now.
   - Still to do:
-    - Dependent sources support.
     - C and L elements support.
 
-### 15 May 2020
-- Parser module data structure modified to support SINE voltage sources.
-- Minor code optimisation.
+### 3 June 2020
+- C and L components supported.
 
-### 16 May 2020
-- Caught a bug in Analysis module not calculating non-grounded voltage and current source.
-- Research into v2.0 begun.
-
-### 24 May 2020
-- OOP architecture implemented.
+### 4 June 2020
+- Repo corrupted, reported 'BAD OBJECT'
+- New repo established and components pushed there 
