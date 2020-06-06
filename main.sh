@@ -18,7 +18,7 @@ do
 done
 
 echo "***************************************************************"
-echo "Please enter the number of the netlist file you wish to input"
+echo "Program Error Log"
 echo "***************************************************************"
 
 read NUM

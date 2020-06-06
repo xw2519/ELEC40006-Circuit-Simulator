@@ -1,1 +1,0 @@
-g++ circuit.cpp ../bin/components/branch.cpp ../bin/components/resistor.cpp ../bin/components/vsource.cpp 

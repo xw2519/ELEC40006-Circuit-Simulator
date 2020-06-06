@@ -30,9 +30,9 @@ circuit::circuit(std::istream& cin)
             
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') 
+            if (n1 == 0 && n2 == 0) 
             {
-                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                std::cerr <<"Circuit element: r " << "n1: " << n1 << " n2: " << n2 << " Error: Both nodes cannot be grounded." << std::endl;
                 assert(0);
             };
             
@@ -45,12 +45,11 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') 
+            if (n1 == 0 && n2 == 0) 
             {
-                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                std::cerr <<"Circuit element: c " << "n1: " << n1 << " n2: " << n2 << " Error: Both nodes cannot be grounded." << std::endl;
                 assert(0);
             };
-
             this->Edges.push_back(new capacitor(store[0], n1, n2, converter(store[3]))); 
         }
         else if (tolower(store[0][0]) == 'l')
@@ -60,9 +59,9 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') 
+            if (n1 == 0 && n2 == 0)  
             {
-                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                std::cerr <<"Circuit element: l " << "n1: " << n1 << " n2: " << n2 << " Error: Both nodes cannot be grounded." << std::endl;
                 assert(0);
             };
 
@@ -74,9 +73,9 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') 
+            if (n1 == 0 && n2 == 0) 
             {
-                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                std::cerr <<"Circuit element: v "<< "n1: " << n1 << " n2: " << n2 << " Error: Both nodes cannot be grounded." << std::endl;
                 assert(0);
             };
 
@@ -99,17 +98,13 @@ circuit::circuit(std::istream& cin)
             if (store.size() < 3) {std::cerr << "Error: No values entered." << std::endl; assert(0);} // Ensure there is values entered
 
             int n1 = GetNode(store[1]), n2 = GetNode(store[2]); // Get the two nodes
-            if (n1 == '0' && n2 == '0') 
+            if (n1 == 0 && n2 == 0) 
             {
-                std::cerr << "n1: " << n1 << "n2: " << n2 << "Error: Both nodes cannot be grounded." << std::endl;
+                std::cerr <<"Circuit element: i "<< "n1: " << n1 << " n2: " << n2 << " Error: Both nodes cannot be grounded." << std::endl;
                 assert(0);
             };
 
             this->Edges.push_back(new isource(store[0], n1, n2, converter(store[3])));
-        }
-        else if (store[0] == ".op") // DC analysis
-        {
-            Simulation.update_parameters(".op",0,0,0);
         }
         else if (store[0] == ".tran") // E.g. .tran 0 <stop time> 0 <timestep>
         {
