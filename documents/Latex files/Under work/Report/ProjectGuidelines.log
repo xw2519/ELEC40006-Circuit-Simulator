@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  5 JUN 2020 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  7 JUN 2020 16:30
 entering extended mode
 **"e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
 ("e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
@@ -336,76 +336,179 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks18
 \c@AM@survey=\count378
 \AM@templatesizebox=\box48
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating.sty"
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count379
+\rotFPtop=\skip74
+\rotFPbot=\skip75
+\rot@float@box=\box49
+\rot@mess@toks=\toks19
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflscape.sty"
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip76
+
+For additional information on amsmath, use the `?' option.
+("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+ ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen145
+)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count380
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count381
+\leftroot@=\count382
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count383
+\DOTSCASE@=\count384
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count385
+\c@MaxMatrixCols=\count386
+\dotsspace@=\muskip21
+\c@parentequation=\count387
+\dspbrk@lvl=\count388
+\tag@help=\toks21
+\row@=\count389
+\column@=\count390
+\maxfields@=\count391
+\andhelp@=\toks22
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks23
+\multlinegap=\skip77
+\multlinetaggap=\skip78
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty"
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.sty"
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen145
-\captionmargin@=\dimen146
-\captionwidth=\dimen147
-\caption@tempdima=\dimen148
-\caption@indent=\dimen149
-\caption@parindent=\dimen150
-\caption@hangindent=\dimen151
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count379
-\c@continuedfloat=\count380
+\c@caption@flags=\count392
+\c@continuedfloat=\count393
 Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
 )
-\c@KVtest=\count381
-\sf@farskip=\skip74
-\sf@captopadj=\dimen152
-\sf@capskip=\skip75
-\sf@nearskip=\skip76
-\c@subfigure=\count382
-\c@subfigure@save=\count383
-\c@lofdepth=\count384
-\c@subtable=\count385
-\c@subtable@save=\count386
-\c@lotdepth=\count387
-\sf@top=\skip77
-\sf@bottom=\skip78
+\c@subfigure=\count394
+\c@subtable=\count395
 )
-\@quotelevel=\count388
-\@quotereset=\count389
+\@quotelevel=\count396
+\@quotereset=\count397
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count390
-\l__pdf_internal_box=\box49
-) ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
+\l__kernel_color_stack_int=\count398
+\l__pdf_internal_box=\box52
+) ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux"
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+)
 \openout1 = `ProjectGuidelines.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
  ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count391
-\scratchdimen=\dimen153
-\scratchbox=\box50
-\nofMPsegments=\count392
-\nofMParguments=\count393
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count394
-\MPscratchDim=\dimen154
-\MPnumerator=\count395
-\makeMPintoPDFobject=\count396
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count399
+\scratchdimen=\dimen161
+\scratchbox=\box53
+\nofMPsegments=\count400
+\nofMParguments=\count401
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count402
+\MPscratchDim=\dimen162
+\MPnumerator=\count403
+\makeMPintoPDFobject=\count404
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -423,120 +526,202 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProjectGuidelines.bbl' found.
  ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl")
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
-\c@lstlisting=\count397
-\AtBeginShipoutBox=\box51
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflscape.sty"
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+\c@lstlisting=\count405
+\AtBeginShipoutBox=\box54
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 <./Images/Logo.jpg, id=1, 1746.525pt x 632.3625pt>
 File: ./Images/Logo.jpg Graphic file (type jpg)
 <use ./Images/Logo.jpg>
-Package pdftex.def Info: ./Images/Logo.jpg  used on input line 22.
+Package pdftex.def Info: ./Images/Logo.jpg  used on input line 25.
 (pdftex.def)             Requested size: 113.81102pt x 41.20149pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 33.
 [1
 
 {C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc" [1])
 \tf@toc=\write4
 \openout4 = `ProjectGuidelines.toc'.
 
- [2] [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 73.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 73.
- [4] [5]
+ [2] [3] [4] [5]
 <./Images/Timeline.PNG, id=29, 364.9635pt x 382.42876pt>
 File: ./Images/Timeline.PNG Graphic file (type png)
 <use ./Images/Timeline.PNG>
-Package pdftex.def Info: ./Images/Timeline.PNG  used on input line 112.
+Package pdftex.def Info: ./Images/Timeline.PNG  used on input line 115.
 (pdftex.def)             Requested size: 364.9626pt x 382.42781pt.
  [6 <./Images/Timeline.PNG>] [7] [8] [9] [10] [11]
-Overfull \hbox (7.24042pt too wide) in paragraph at lines 249--252
+Overfull \hbox (7.24042pt too wide) in paragraph at lines 268--271
 []\OT1/cmr/m/n/12 The OOP ap-proach al-lows the pro-gram de-sign to be rapidly and cost-effectively
  []
 
 [12] [13] [14]
-<./Images/Flow chart.PNG, id=62, 583.17876pt x 422.57875pt>
+<./Images/Flow chart.PNG, id=64, 583.17876pt x 422.57875pt>
 File: ./Images/Flow chart.PNG Graphic file (type png)
 <use ./Images/Flow chart.PNG>
-Package pdftex.def Info: ./Images/Flow chart.PNG  used on input line 304.
+Package pdftex.def Info: ./Images/Flow chart.PNG  used on input line 341.
 (pdftex.def)             Requested size: 291.58867pt x 211.28885pt.
  [15 <./Images/Flow chart.PNG>] [16]
-<./Images/circuit.PNG, id=71, 258.9675pt x 492.84125pt>
+<./Images/circuit.PNG, id=73, 258.9675pt x 492.84125pt>
 File: ./Images/circuit.PNG Graphic file (type png)
 <use ./Images/circuit.PNG>
-Package pdftex.def Info: ./Images/circuit.PNG  used on input line 344.
+Package pdftex.def Info: ./Images/circuit.PNG  used on input line 381.
 (pdftex.def)             Requested size: 129.48341pt x 246.42001pt.
  [17 <./Images/circuit.PNG>]
-<./Images/capacitor.PNG, id=76, 266.1945pt x 230.0595pt>
+<./Images/capacitor.PNG, id=78, 266.1945pt x 230.0595pt>
 File: ./Images/capacitor.PNG Graphic file (type png)
 <use ./Images/capacitor.PNG>
-Package pdftex.def Info: ./Images/capacitor.PNG  used on input line 372.
+Package pdftex.def Info: ./Images/capacitor.PNG  used on input line 409.
 (pdftex.def)             Requested size: 239.57283pt x 207.05162pt.
-<./Images/inductor.PNG, id=77, 266.79675pt x 234.8775pt>
+<./Images/inductor.PNG, id=79, 266.79675pt x 234.8775pt>
 File: ./Images/inductor.PNG Graphic file (type png)
 <use ./Images/inductor.PNG>
-Package pdftex.def Info: ./Images/inductor.PNG  used on input line 378.
+Package pdftex.def Info: ./Images/inductor.PNG  used on input line 415.
 (pdftex.def)             Requested size: 240.11484pt x 211.38779pt.
  [18] [19 <./Images/capacitor.PNG> <./Images/inductor.PNG>]
-<./Images/simulate.PNG, id=88, 332.24126pt x 684.5575pt>
+<./Images/simulate.PNG, id=90, 332.24126pt x 684.5575pt>
 File: ./Images/simulate.PNG Graphic file (type png)
 <use ./Images/simulate.PNG>
-Package pdftex.def Info: ./Images/simulate.PNG  used on input line 388.
+Package pdftex.def Info: ./Images/simulate.PNG  used on input line 425.
 (pdftex.def)             Requested size: 166.12021pt x 342.27791pt.
- [20 <./Images/simulate.PNG>] [21] [22] [23] [24]
-<./Images/Adam.PNG, id=106, 497.4585pt x 228.855pt>
+ [20 <./Images/simulate.PNG>] [21]
+<./Images/Integration.PNG, id=98, 244.5135pt x 183.68625pt>
+File: ./Images/Integration.PNG Graphic file (type png)
+<use ./Images/Integration.PNG>
+Package pdftex.def Info: ./Images/Integration.PNG  used on input line 459.
+(pdftex.def)             Requested size: 244.5129pt x 183.68578pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22] [23 <./Images/Integration.PNG>] [24]
+<./Images/diode_model.PNG, id=111, 181.27725pt x 87.32625pt>
+File: ./Images/diode_model.PNG Graphic file (type png)
+<use ./Images/diode_model.PNG>
+Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 516.
+(pdftex.def)             Requested size: 181.27681pt x 87.32603pt.
+<./Images/Newton_Raphson.png, id=112, 543.02875pt x 965.6075pt>
+File: ./Images/Newton_Raphson.png Graphic file (type png)
+<use ./Images/Newton_Raphson.png>
+Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 535.
+(pdftex.def)             Requested size: 271.5137pt x 482.80257pt.
+ [25 <./Images/diode_model.PNG>] [26 <./Images/Newton_Raphson.png>]
+<./Images/E.png, id=121, 266.79675pt x 68.05424pt>
+File: ./Images/E.png Graphic file (type png)
+<use ./Images/E.png>
+Package pdftex.def Info: ./Images/E.png  used on input line 544.
+(pdftex.def)             Requested size: 266.79608pt x 68.05406pt.
+<./Images/E_diagram.PNG, id=122, 113.82526pt x 73.4745pt>
+File: ./Images/E_diagram.PNG Graphic file (type png)
+<use ./Images/E_diagram.PNG>
+Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 555.
+(pdftex.def)             Requested size: 91.06032pt x 58.77966pt.
+<./Images/E_matrices.PNG, id=123, 215.00325pt x 67.452pt>
+File: ./Images/E_matrices.PNG Graphic file (type png)
+<use ./Images/E_matrices.PNG>
+Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 561.
+(pdftex.def)             Requested size: 195.0pt x 61.17659pt.
+<./Images/G.png, id=124, 263.7855pt x 69.25874pt>
+File: ./Images/G.png Graphic file (type png)
+<use ./Images/G.png>
+Package pdftex.def Info: ./Images/G.png  used on input line 573.
+(pdftex.def)             Requested size: 263.78485pt x 69.25856pt.
+<./Images/G_diagram.PNG, id=125, 119.2455pt x 70.46326pt>
+File: ./Images/G_diagram.PNG Graphic file (type png)
+<use ./Images/G_diagram.PNG>
+Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 582.
+(pdftex.def)             Requested size: 95.39651pt x 56.37067pt.
+<./Images/G_matrices.PNG, id=126, 205.36725pt x 67.452pt>
+File: ./Images/G_matrices.PNG Graphic file (type png)
+<use ./Images/G_matrices.PNG>
+Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 588.
+(pdftex.def)             Requested size: 195.0pt x 64.04918pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./Images/E.png> <./Images/E_diagram.PNG> <./Images/E_matrices.PNG> <./Images/G.png>]
+<./Images/H.png, id=135, 259.56975pt x 66.84975pt>
+File: ./Images/H.png Graphic file (type png)
+<use ./Images/H.png>
+Package pdftex.def Info: ./Images/H.png  used on input line 600.
+(pdftex.def)             Requested size: 259.5691pt x 66.84956pt.
+<./Images/H_diagram.PNG, id=136, 125.268pt x 69.861pt>
+File: ./Images/H_diagram.PNG Graphic file (type png)
+<use ./Images/H_diagram.PNG>
+Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 612.
+(pdftex.def)             Requested size: 100.21452pt x 55.88885pt.
+<./Images/H_matrices.PNG, id=137, 234.27525pt x 80.09924pt>
+File: ./Images/H_matrices.PNG Graphic file (type png)
+<use ./Images/H_matrices.PNG>
+Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 618.
+(pdftex.def)             Requested size: 195.0pt x 66.673pt.
+ [28 <./Images/G_diagram.PNG> <./Images/G_matrices.PNG> <./Images/H.png> <./Images/H_diagram.PNG> <./Images/H_matrices.PNG>]
+<./Images/F.png, id=146, 258.36525pt x 65.043pt>
+File: ./Images/F.png Graphic file (type png)
+<use ./Images/F.png>
+Package pdftex.def Info: ./Images/F.png  used on input line 630.
+(pdftex.def)             Requested size: 258.36461pt x 65.04283pt.
+<./Images/F_diagram.PNG, id=147, 124.66576pt x 76.48575pt>
+File: ./Images/F_diagram.PNG Graphic file (type png)
+<use ./Images/F_diagram.PNG>
+Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 639.
+(pdftex.def)             Requested size: 99.73273pt x 61.18866pt.
+<./Images/F_matrices.PNG, id=148, 204.765pt x 66.2475pt>
+File: ./Images/F_matrices.PNG Graphic file (type png)
+<use ./Images/F_matrices.PNG>
+Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 645.
+(pdftex.def)             Requested size: 195.0pt x 63.09245pt.
+ [29 <./Images/F.png> <./Images/F_diagram.PNG> <./Images/F_matrices.PNG>]
+<./Images/Adam.PNG, id=155, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 447.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 658.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
-<./Images/Brandon.PNG, id=107, 490.83376pt x 222.8325pt>
+<./Images/Brandon.PNG, id=156, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 452.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 663.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
-<./Images/Xin.PNG, id=108, 404.712pt x 177.0615pt>
+<./Images/Xin.PNG, id=157, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 457.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 668.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
- [25 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>] [26] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
+ [30 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>]
+<./Images/Project Gnatt.PNG, id=165, 1739.49875pt x 475.7775pt>
+File: ./Images/Project Gnatt.PNG Graphic file (type png)
+<use ./Images/Project Gnatt.PNG>
+Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 677.
+(pdftex.def)             Requested size: 592.0pt x 161.92192pt.
+ [31
+
+ <./Images/Project Gnatt.PNG (PNG copy)>] [32
+
+] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
 \openout1 = `ProjectGuidelines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12529 strings out of 480930
- 223294 string characters out of 2900700
- 853529 words of memory out of 3000000
- 28282 multiletter control sequences out of 15000+200000
- 538706 words of font info for 45 fonts, out of 3000000 for 9000
+ 13243 strings out of 480930
+ 232546 string characters out of 2900700
+ 864117 words of memory out of 3000000
+ 28959 multiletter control sequences out of 15000+200000
+ 539834 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,8n,61p,886b,1419s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (27 pages, 493178 bytes).
+ 48i,10n,61p,886b,1416s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (33 pages, 675022 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 225 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

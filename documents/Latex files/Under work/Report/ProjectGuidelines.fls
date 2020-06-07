@@ -80,8 +80,24 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
@@ -101,10 +117,6 @@ OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelin
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
 INPUT Images\Logo.jpg
 INPUT .\Images\Logo.jpg
 OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf
@@ -121,6 +133,9 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.t
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
@@ -133,6 +148,8 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.
 OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT Images\Timeline.PNG
 INPUT .\Images\Timeline.PNG
 INPUT .\Images\Timeline.PNG
@@ -164,6 +181,81 @@ INPUT .\Images\simulate.PNG
 INPUT .\Images\simulate.PNG
 INPUT .\Images\simulate.PNG
 INPUT .\Images\simulate.PNG
+INPUT Images\Integration.PNG
+INPUT .\Images\Integration.PNG
+INPUT .\Images\Integration.PNG
+INPUT .\Images\Integration.PNG
+INPUT .\Images\Integration.PNG
+INPUT Images\diode_model.PNG
+INPUT .\Images\diode_model.PNG
+INPUT .\Images\diode_model.PNG
+INPUT .\Images\diode_model.PNG
+INPUT .\Images\diode_model.PNG
+INPUT Images\Newton_Raphson.png
+INPUT .\Images\Newton_Raphson.png
+INPUT .\Images\Newton_Raphson.png
+INPUT .\Images\Newton_Raphson.png
+INPUT .\Images\Newton_Raphson.png
+INPUT Images\E.png
+INPUT .\Images\E.png
+INPUT .\Images\E.png
+INPUT .\Images\E.png
+INPUT .\Images\E.png
+INPUT Images\E_diagram.PNG
+INPUT .\Images\E_diagram.PNG
+INPUT .\Images\E_diagram.PNG
+INPUT .\Images\E_diagram.PNG
+INPUT .\Images\E_diagram.PNG
+INPUT Images\E_matrices.PNG
+INPUT .\Images\E_matrices.PNG
+INPUT .\Images\E_matrices.PNG
+INPUT .\Images\E_matrices.PNG
+INPUT .\Images\E_matrices.PNG
+INPUT Images\G.png
+INPUT .\Images\G.png
+INPUT .\Images\G.png
+INPUT .\Images\G.png
+INPUT .\Images\G.png
+INPUT Images\G_diagram.PNG
+INPUT .\Images\G_diagram.PNG
+INPUT .\Images\G_diagram.PNG
+INPUT .\Images\G_diagram.PNG
+INPUT .\Images\G_diagram.PNG
+INPUT Images\G_matrices.PNG
+INPUT .\Images\G_matrices.PNG
+INPUT .\Images\G_matrices.PNG
+INPUT .\Images\G_matrices.PNG
+INPUT .\Images\G_matrices.PNG
+INPUT Images\H.png
+INPUT .\Images\H.png
+INPUT .\Images\H.png
+INPUT .\Images\H.png
+INPUT .\Images\H.png
+INPUT Images\H_diagram.PNG
+INPUT .\Images\H_diagram.PNG
+INPUT .\Images\H_diagram.PNG
+INPUT .\Images\H_diagram.PNG
+INPUT .\Images\H_diagram.PNG
+INPUT Images\H_matrices.PNG
+INPUT .\Images\H_matrices.PNG
+INPUT .\Images\H_matrices.PNG
+INPUT .\Images\H_matrices.PNG
+INPUT .\Images\H_matrices.PNG
+INPUT Images\F.png
+INPUT .\Images\F.png
+INPUT .\Images\F.png
+INPUT .\Images\F.png
+INPUT .\Images\F.png
+INPUT Images\F_diagram.PNG
+INPUT .\Images\F_diagram.PNG
+INPUT .\Images\F_diagram.PNG
+INPUT .\Images\F_diagram.PNG
+INPUT .\Images\F_diagram.PNG
+INPUT Images\F_matrices.PNG
+INPUT .\Images\F_matrices.PNG
+INPUT .\Images\F_matrices.PNG
+INPUT .\Images\F_matrices.PNG
+INPUT .\Images\F_matrices.PNG
 INPUT Images\Adam.PNG
 INPUT .\Images\Adam.PNG
 INPUT .\Images\Adam.PNG
@@ -179,6 +271,11 @@ INPUT .\Images\Xin.PNG
 INPUT .\Images\Xin.PNG
 INPUT .\Images\Xin.PNG
 INPUT .\Images\Xin.PNG
+INPUT Images\Project Gnatt.PNG
+INPUT .\Images\Project Gnatt.PNG
+INPUT .\Images\Project Gnatt.PNG
+INPUT .\Images\Project Gnatt.PNG
+INPUT .\Images\Project Gnatt.PNG
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt12.tfm
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux
 INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.run.xml
@@ -191,8 +288,14 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -203,6 +306,8 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb

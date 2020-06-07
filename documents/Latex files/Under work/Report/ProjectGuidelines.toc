@@ -14,7 +14,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Project timeline overview}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Gnatt chart}{7}%
+\contentsline {subsection}{\numberline {3.2}Team Gnatt chart}{7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Important Notes:}{7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Management approach}{8}%
 \defcounter {refsection}{0}\relax 
@@ -46,7 +48,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.6.1}Non-linear components}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.7}Simulation flowchart}{20}%
+\contentsline {subsubsection}{\numberline {5.6.2}Simulation flowchart}{20}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Testing}{21}%
 \defcounter {refsection}{0}\relax 
@@ -62,16 +64,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}Graphics User Interface}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Diode}{24}%
+\contentsline {subsection}{\numberline {8.2}Components supports}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Voltage controlled sources}{24}%
+\contentsline {subsubsection}{\numberline {8.2.1}Diode}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Current controlled sources}{24}%
+\contentsline {subsubsection}{\numberline {8.2.2}Voltage controlled voltage sources - VCVS}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.5}Operational Amplifiers}{24}%
+\contentsline {subsubsection}{\numberline {8.2.3}Voltage controlled current sources - VCCS}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Appendix}{25}%
+\contentsline {subsubsection}{\numberline {8.2.4}Current controlled voltage sources - CCVS}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Belbin Roles}{25}%
+\contentsline {subsubsection}{\numberline {8.2.5}Current controlled current sources - CCCS}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}References}{26}%
+\contentsline {section}{\numberline {9}Appendix}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Belbin Roles}{30}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}Gnatt Chart}{31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}References}{32}%

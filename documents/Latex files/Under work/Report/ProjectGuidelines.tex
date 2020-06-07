@@ -4,7 +4,10 @@
 \usepackage{parskip}
 \usepackage{listings}
 \usepackage{pdfpages}
-\usepackage{subfig}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+\usepackage{subcaption} 
 
 \lstset{%
 basicstyle=\ttfamily,
@@ -36,7 +39,7 @@ tabsize=2
 	\end{center} \large
     
     \vfill % Fill the rest of the page with whitespace
- 	\small Submitted in partial fulfillment of the requirements for ELEC40006 \\ [0.5cm]
+ 	\small Word Count: 3691 \\ [0.5cm]
     \makeatletter
     \@date 
     \makeatother
@@ -112,7 +115,23 @@ program to add the mentioned features.
 	\includegraphics{Timeline.PNG}
 	\pagebreak
 
-	\subsection{Gnatt chart}
+	\subsection{Team Gnatt chart}
+	The team Gnatt Chart is created by using the GnattProject software. It was not the most 
+	visually appealing software but, for its free features, it met the requirements of the team. \par
+	The Gnatt Project was mainly modified by Xin Wang upon requests by teammates or after meetings. Please
+	refer to the Appendix: Gnatt Chart for detailed break down of the team's Gnatt Chart. \par
+	\subsubsection{Important Notes:}
+	\begin{itemize}
+		\item Activities like ensuring standardised coding comments and formatting which was monitored by 
+		Xin Wang was a constant ongoing activity in the background. 
+		\item A team meeting ocurred after each stage of the Gnatt Chart was finished (Indicated by 
+		a change in colour).
+		\item On the 5th June of 2020, Xin Wang received a notification for a repatriation flight
+		and, in the following team meeting, the team agreed on redistributing Xin Wang's responsibilities
+		and for him to finish the existing Technical Report.
+	\end{itemize}
+	
+
 	\pagebreak
 
 	\subsection{Management approach}
@@ -271,12 +290,30 @@ The main design choices taken by the team has been set out below.
 	make changes to one of the most important parts of the program, instead just ensuring the component is in the 
 	compatible format to be entered into the MNA algorithm.
 	\par 
-	The MNA algorithm consists of three matrices to form the matrix relation: $Ax=b$:
+	The MNA algorithm consists of three matrices to form the matrix relation: $Ax=b$ \cite{MNA}:
 	\begin{itemize}
 		\item $A$ is consists of four submatrices which includes the admittance matrix. The program treats matrix $A$ as 
 		a whole matrix instead of separating it into four small matrices and combining at the end.
+		$$ A =
+		\begin{bmatrix}
+			G & B\\
+			C & D 
+		\end{bmatrix} $$
+
 		\item $x$ represents the unknown node voltages and current of the voltage sources.
+		$$ x =
+		\begin{bmatrix}
+			v \\
+			i_{v} 
+		\end{bmatrix} $$
+
 		\item $b$ contains the values of voltage sources and current sources in the circuit.
+		$$ b =
+		\begin{bmatrix}
+			i \\
+			e 
+		\end{bmatrix} $$
+
 	\end{itemize}
 	The admittance matrix is created during the initialisation of the simulation. Non-linear elements are converted into 
 	suitable formats at each instance in time during a transient simulation. The resulting parameters are 'stamped' into the matrix
@@ -380,7 +417,7 @@ The main design choices taken by the team has been set out below.
 		\cite{companion}}
 	\end{figure}
 	\pagebreak
-	\subsection{Simulation flowchart} 
+	\subsubsection{Simulation flowchart} 
 	The listed simulation flowchart has not accounted for approximating components like Diodes which need Newton-Raphson 
 	iteration.
 	\begin{figure} [h!]
@@ -414,11 +451,19 @@ There are numerous different types of integration but the three most common form
 	\item Backward Euler
 	\item Trapezoid
 \end{itemize}
-Out of the three, Trapezoid would be the most accurate form of integration but the most processor intensive form of integration listed.
-The report has the three forms and the defined parameters. \par
+Out of the three, Trapezoid is the most accurate form of integration but the most processor intensive form of integration listed.
+The report has listed the three forms of integration and its respectively defined parameters. 
+
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{Integration.PNG}
+	\caption{Accuracy comparison of different integration methods \cite{integration}}
+\end{figure}
+\par
 But Euler's methods are only accurate to the first degree while other methods such as the Runge-Kutta method is much more accurate.
 This method would rely on creating a specialised function that exclusively handles it and would add to the processing time but,
-with the implementation of sparse matrices, it would still result in a faster program.
+with the implementation of sparse matrices, the team believes it would still result in a faster program.
+
 \subsection{Inversion method}
 The Eigen library supports numerous types of equation solver functions. The default type that the Eigen documentation supports is the 
 \textit{ColPivHouseholderQR} method but, using it, resulted in a consistent execution time of 50\% longer. Instead, the team 
@@ -433,13 +478,179 @@ the client understands and is comfortable with a larger program size.
 
 \section{Adding on}
 \subsection{Graphics User Interface}
-\subsection{Diode}
-\subsection{Voltage controlled sources}
-\subsection{Current controlled sources}
-\subsection{Operational Amplifiers}
+The current user interface is very limited, it consists of only a basic interface created
+in with bash script. The output file, though in .CSV format, required the user to 
+use third-party programs like MatLab to plot the graph. If the user used the third-party
+program, GNUPLOT, it is possible to integrate graph plotting feature directly into the existing 
+script. 
+\par 
+Alternatively, a more user intuitive interface can be created in the future. Given the 
+limited programming capability of the team, a third-party program to support the 
+development of the User Interface was thought best by the team. Through research, the 
+team has identified several possible programs that can be used:
+\begin{itemize}
+	\item \textit{Qt}
+	\item \textit{wxWidgets}
+	\item \textit{gtkmm}
+\end{itemize}
+The team's primary research was centered on the \textit{Qt} program. \textit{Qt} is a open
+source program and it is relatively easy given its complete feature set, using that program
+would minimise development cost and the interface features would not be limited.
+
+Furthermore, with the C++ programming language used to create the program and the compatibility
+of \textit{Qt} with C++, the team feels confident Qt would be the program used by the team
+to implemented the Graphical User Interface.
+
+\subsection{Components supports}
+\subsubsection{Diode}
+For non-linear components like the Diode, a function would need to be created that will be able to 
+approximate the component into a compatible model for our program. The diode is defined by the 
+following relation $$i(v)=I_s(e^{(\frac{v}{V_t})}-1)$$
+
+By using the Newton-Raphson method, the non-linear equation is linearised to the following equation\cite{companion}
+$$i_{lin} = (i(v_n)-gv_n) + gv$$
+The equation can then be used to derive the following companion model:
+
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{diode_model.PNG}
+	\caption{Companion model of the diode and its defining parameters \cite{companion}}
+\end{figure}
+As the Newton-Raphson iteration method requires the calculations to converge to a solution, in the event that it does not
+converge and max repetitions have been reached, the program could implement a Convergence Helper such as \textit{gMin stepping} or
+\textit{source stepping} and, it there is no more convergence helpers left then the program will output an error to the user.
+The process of Newton-Raphson has many 
+possible optimisations to improve the convergence such as improving the model used and the algorithm of the existing model. \par
+\par 
+The basic convergence parameters that would govern whether convergence has been met will be defined as:
+\begin{itemize}
+	\item RELTOL: Tolerance of voltages and currents.
+	\item VNTOL: Tolerance of nodal voltages.
+	\item ABSTOL: Tolerance of branch current.
+	\item ITL: Max number of iterations allowed.
+\end{itemize} 
+The existing program flow chart would have to be modified to accommodate the Newton-Raphson iteration method. 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{Newton_Raphson.png}
+	\caption{Program Flowchart incorporating Newton-Raphson method}
+\end{figure}
 
 \pagebreak
+\subsubsection{Voltage controlled voltage sources - VCVS}
+VCVS are defined in the netlist in the following format: \par 
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{E.png}
+	\caption{Netlist format describing a VCVS \cite{MNA}}
+\end{figure}
+The output voltage of a VCVS is defined by the following equation: $$V_{out}=Value \times (V_{NC+}-V_{NC-})$$
+where $V_{NC+}$ and $V_{NC-}$ are the controlling nodes. Due to the MNA method used by the program, supporting VCVS is 
+easily done by modifying the existing system of matrices and solving for unknowns.
 
+\begin{figure} [h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[scale=0.8]{E_diagram.PNG}
+	  \caption{Circuit symbol of a VCVS}
+	  \label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[width= \textwidth]{E_matrices.PNG}
+	  \caption{MNA matrix entry}
+	  \label{fig:sub2}
+	\end{subfigure}
+	\caption{MNA matrix for a VCVS \cite{jahn_margraf_habchi_jacob_2003}}
+	\label{fig:test}
+\end{figure}
+
+\subsubsection{Voltage controlled current sources - VCCS}
+VCCS are defined in the netlist in the following format: \par 
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{G.png}
+	\caption{Netlist format describing a VCCS \cite{MNA}}
+\end{figure}
+VCCS output is considered as a current source hence only introduce one more unknown into the MNA matrix. 
+It could be defined as the following:
+\begin{figure} [h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[scale=0.8]{G_diagram.PNG}
+	  \caption{Circuit symbol of a VCCS}
+	  \label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[width= \textwidth]{G_matrices.PNG}
+	  \caption{MNA matrix entry}
+	  \label{fig:sub2}
+	\end{subfigure}
+	\caption{MNA matrix for a VCCS \cite{jahn_margraf_habchi_jacob_2003}}
+	\label{fig:test}
+\end{figure} \pagebreak
+
+\subsubsection{Current controlled voltage sources - CCVS}
+CCVS are defined in the netlist in the following format: \par
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{H.png}
+	\caption{Netlist format describing a CCVS \cite{MNA}}
+\end{figure}
+
+The controlling variable is current through one of the voltage sources listed as the controlling element in the netlist.
+As MNA also calculates the current through the voltage sources, it will be relatively simple to extract that current
+value and find the output of the CCVS. CCVS creates two more unknown variables.
+It could be defined as the following:
+\begin{figure} [h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[scale=0.8]{H_diagram.PNG}
+	  \caption{Circuit symbol of a CCVS}
+	  \label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[width= \textwidth]{H_matrices.PNG}
+	  \caption{MNA matrix entry}
+	  \label{fig:sub2}
+	\end{subfigure}
+	\caption{MNA matrix for a CCVS \cite{jahn_margraf_habchi_jacob_2003}}
+	\label{fig:test}
+\end{figure}
+\pagebreak
+\subsubsection{Current controlled current sources - CCCS}
+CCCS are defined in the netlist in the following format: \par
+\begin{figure} [h!]
+	\centering
+	\includegraphics[]{F.png}
+	\caption{Netlist format describing a CCCS \cite{MNA}}
+\end{figure} 
+Like the CCVS, this component is controlled by the current through the listed voltage source. It is handled similarly like the CCVS.
+CCCS creates one more unknown variable.
+\begin{figure} [h!]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[scale=0.8]{F_diagram.PNG}
+	  \caption{Circuit symbol of a CCCS}
+	  \label{fig:sub1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+	  \centering
+	  \includegraphics[width= \textwidth]{F_matrices.PNG}
+	  \caption{MNA matrix entry}
+	  \label{fig:sub2}
+	\end{subfigure}
+	\caption{MNA matrix for a CCCS \cite{jahn_margraf_habchi_jacob_2003}}
+	\label{fig:test}
+\end{figure}
+
+\pagebreak
 \section{Appendix}
 \subsection{Belbin Roles}
 \begin{figure} [h!]
@@ -457,6 +668,18 @@ the client understands and is comfortable with a larger program size.
 	\includegraphics[scale=0.75]{Xin.PNG}
 	\caption{Belbin Roles of Xin Wang}
 \end{figure}
+\pagebreak
+
+\begin{landscape}
+	\subsection{Gnatt Chart}
+	\begin{center}
+		\begin{figure}[htb]
+		\includegraphics[width=\linewidth]{Project Gnatt.PNG}
+		\caption{Gnatt Chart of Team Project}
+		\label{fig:landscape}
+		\end{figure}
+	\end{center}
+\end{landscape}
 \pagebreak
 
 \section{References}

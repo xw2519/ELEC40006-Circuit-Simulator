@@ -68,6 +68,50 @@
       \field{title}{Companion models for basic non-linear and transient devices}
       \field{year}{2008}
     \endentry
+    \entry{jahn_margraf_habchi_jacob_2003}{book}{}
+      \name{author}{4}{}{%
+        {{hash=b1e904680c5360d2b12ff16869a2bcbc}{%
+           family={Jahn},
+           familyi={J\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e1c84e489e62b14f694c529673d17a55}{%
+           family={Margraf},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=de86296776e1beea50e187b759662a3d}{%
+           family={Habchi},
+           familyi={H\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=266492426513e1c16f986e00257c10e8}{%
+           family={Jacob},
+           familyi={J\bibinitperiod},
+           given={Raimund},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c749ecdfcbd89020925ba2ada6f0300}
+      \strng{fullhash}{36a631d08bbc0fee78627d452095e9de}
+      \strng{bibnamehash}{6c749ecdfcbd89020925ba2ada6f0300}
+      \strng{authorbibnamehash}{6c749ecdfcbd89020925ba2ada6f0300}
+      \strng{authornamehash}{6c749ecdfcbd89020925ba2ada6f0300}
+      \strng{authorfullhash}{36a631d08bbc0fee78627d452095e9de}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Qucs Techncial Papers}
+      \field{year}{2003}
+      \field{pages}{108\bibrangedash 110}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://qucs.github.io/docs/technical/technical.pdf
+      \endverb
+      \verb{url}
+      \verb https://qucs.github.io/docs/technical/technical.pdf
+      \endverb
+    \endentry
     \entry{OOP}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=85c2c01b19dd9fe12e81ce9a44f059ee}{%
@@ -89,6 +133,30 @@
       \field{month}{01}
       \field{title}{Object Oriented Design of a Transient Analysis Program}
       \field{year}{2007}
+    \endentry
+    \entry{integration}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ad6f69b3f6b473c177512f66bc17b9ac}{%
+           family={Schutt-Aine},
+           familyi={S\bibinithyphendelim A\bibinitperiod},
+           given={Jose\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \strng{fullhash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \strng{bibnamehash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \strng{authorbibnamehash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \strng{authornamehash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \strng{authorfullhash}{ad6f69b3f6b473c177512f66bc17b9ac}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{MNA and SPICE}}
+      \field{year}{2020}
+      \verb{doi}
+      \verb http://emlab.illinois.edu/ece546/Lect_16.pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
