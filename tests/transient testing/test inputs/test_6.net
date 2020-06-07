@@ -1,0 +1,9 @@
+* C:\Users\alw\Desktop\spice\Analysis\Draft4.asc
+V1 N001 0 SINE(0 5 10)
+R1 N002 N001 200
+R2 N003 N002 100
+C1 N002 0 50
+C2 N003 0 100
+.tran 0 1 0 0.001
+.end
+
