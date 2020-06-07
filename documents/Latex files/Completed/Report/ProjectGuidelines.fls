@@ -1,7 +1,7 @@
-PWD e:\Work\ELEC40006\documents\Latex files\Under work\Report
+PWD e:\Work\ELEC40006\documents\Latex files\Completed\Report
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.tex
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.log
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.tex
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.log
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
@@ -104,22 +104,22 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bcf
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bcf
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
 INPUT Images\Logo.jpg
 INPUT .\Images\Logo.jpg
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.pdf
 INPUT .\Images\Logo.jpg
 INPUT .\Images\Logo.jpg
 INPUT .\Images\Logo.jpg
@@ -141,11 +141,11 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.t
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
@@ -277,9 +277,9 @@ INPUT .\Images\Project Gnatt.PNG
 INPUT .\Images\Project Gnatt.PNG
 INPUT .\Images\Project Gnatt.PNG
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt12.tfm
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux
-INPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.run.xml
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.run.xml
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.run.xml
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.run.xml
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb

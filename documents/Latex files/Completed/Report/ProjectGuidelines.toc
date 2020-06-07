@@ -52,34 +52,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Optimisations}{22}%
+\contentsline {section}{\numberline {7}Critical Analysis}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Sparse Matrices}{22}%
+\contentsline {subsection}{\numberline {7.1}OOP design}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Integration method}{22}%
+\contentsline {subsection}{\numberline {7.2}Repatriation Flight}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Inversion method}{23}%
+\contentsline {section}{\numberline {8}Optimisations}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Adding on}{24}%
+\contentsline {subsection}{\numberline {8.1}Sparse Matrices}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Graphics User Interface}{24}%
+\contentsline {subsection}{\numberline {8.2}Integration method}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Components supports}{24}%
+\contentsline {subsection}{\numberline {8.3}Inversion method}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.1}Diode}{24}%
+\contentsline {section}{\numberline {9}Adding on}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.2}Voltage controlled voltage sources - VCVS}{27}%
+\contentsline {subsection}{\numberline {9.1}Graphics User Interface}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.3}Voltage controlled current sources - VCCS}{27}%
+\contentsline {subsection}{\numberline {9.2}Components supports}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.4}Current controlled voltage sources - CCVS}{28}%
+\contentsline {subsubsection}{\numberline {9.2.1}Diode}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.2.5}Current controlled current sources - CCCS}{29}%
+\contentsline {subsubsection}{\numberline {9.2.2}Voltage controlled voltage sources - VCVS}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Appendix}{30}%
+\contentsline {subsubsection}{\numberline {9.2.3}Voltage controlled current sources - VCCS}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Belbin Roles}{30}%
+\contentsline {subsubsection}{\numberline {9.2.4}Current controlled voltage sources - CCVS}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Gnatt Chart}{31}%
+\contentsline {subsubsection}{\numberline {9.2.5}Current controlled current sources - CCCS}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}References}{32}%
+\contentsline {section}{\numberline {10}Reflections}{32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}Xin Wang}{32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}Brandon Cann}{32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3}Adam Rehman}{32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Appendix}{33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1}Belbin Roles}{33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2}Gnatt Chart}{34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}References}{35}%

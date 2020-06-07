@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  7 JUN 2020 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  7 JUN 2020 18:06
 entering extended mode
-**"e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
-("e:/Work/ELEC40006/documents/Latex files/Under work/Report/ProjectGuidelines.tex"
+**"e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex"
+("e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -433,7 +433,7 @@ Package caption Info: rotating package is loaded.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count398
 \l__pdf_internal_box=\box52
-) ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux"
+) ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux"
 
 LaTeX Warning: Label `fig:sub1' multiply defined.
 
@@ -525,7 +525,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProjectGuidelines.bbl' found.
- ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.bbl")
+ ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl")
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 \c@lstlisting=\count405
@@ -544,7 +544,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.toc" [1])
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc" [1])
 \tf@toc=\write4
 \openout4 = `ProjectGuidelines.toc'.
 
@@ -588,121 +588,121 @@ File: ./Images/simulate.PNG Graphic file (type png)
 <use ./Images/simulate.PNG>
 Package pdftex.def Info: ./Images/simulate.PNG  used on input line 425.
 (pdftex.def)             Requested size: 166.12021pt x 342.27791pt.
- [20 <./Images/simulate.PNG>] [21]
-<./Images/Integration.PNG, id=98, 244.5135pt x 183.68625pt>
+ [20 <./Images/simulate.PNG>] [21] [22] [23]
+<./Images/Integration.PNG, id=104, 244.5135pt x 183.68625pt>
 File: ./Images/Integration.PNG Graphic file (type png)
 <use ./Images/Integration.PNG>
-Package pdftex.def Info: ./Images/Integration.PNG  used on input line 459.
+Package pdftex.def Info: ./Images/Integration.PNG  used on input line 495.
 (pdftex.def)             Requested size: 244.5129pt x 183.68578pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22] [23 <./Images/Integration.PNG>] [24]
-<./Images/diode_model.PNG, id=111, 181.27725pt x 87.32625pt>
+[24] [25 <./Images/Integration.PNG>] [26]
+<./Images/diode_model.PNG, id=117, 181.27725pt x 87.32625pt>
 File: ./Images/diode_model.PNG Graphic file (type png)
 <use ./Images/diode_model.PNG>
-Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 516.
+Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 552.
 (pdftex.def)             Requested size: 181.27681pt x 87.32603pt.
-<./Images/Newton_Raphson.png, id=112, 543.02875pt x 965.6075pt>
+<./Images/Newton_Raphson.png, id=118, 543.02875pt x 965.6075pt>
 File: ./Images/Newton_Raphson.png Graphic file (type png)
 <use ./Images/Newton_Raphson.png>
-Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 535.
+Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 571.
 (pdftex.def)             Requested size: 271.5137pt x 482.80257pt.
- [25 <./Images/diode_model.PNG>] [26 <./Images/Newton_Raphson.png>]
-<./Images/E.png, id=121, 266.79675pt x 68.05424pt>
+ [27 <./Images/diode_model.PNG>] [28 <./Images/Newton_Raphson.png>]
+<./Images/E.png, id=127, 266.79675pt x 68.05424pt>
 File: ./Images/E.png Graphic file (type png)
 <use ./Images/E.png>
-Package pdftex.def Info: ./Images/E.png  used on input line 544.
+Package pdftex.def Info: ./Images/E.png  used on input line 580.
 (pdftex.def)             Requested size: 266.79608pt x 68.05406pt.
-<./Images/E_diagram.PNG, id=122, 113.82526pt x 73.4745pt>
+<./Images/E_diagram.PNG, id=128, 113.82526pt x 73.4745pt>
 File: ./Images/E_diagram.PNG Graphic file (type png)
 <use ./Images/E_diagram.PNG>
-Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 555.
+Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 591.
 (pdftex.def)             Requested size: 91.06032pt x 58.77966pt.
-<./Images/E_matrices.PNG, id=123, 215.00325pt x 67.452pt>
+<./Images/E_matrices.PNG, id=129, 215.00325pt x 67.452pt>
 File: ./Images/E_matrices.PNG Graphic file (type png)
 <use ./Images/E_matrices.PNG>
-Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 561.
+Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 597.
 (pdftex.def)             Requested size: 195.0pt x 61.17659pt.
-<./Images/G.png, id=124, 263.7855pt x 69.25874pt>
+<./Images/G.png, id=130, 263.7855pt x 69.25874pt>
 File: ./Images/G.png Graphic file (type png)
 <use ./Images/G.png>
-Package pdftex.def Info: ./Images/G.png  used on input line 573.
+Package pdftex.def Info: ./Images/G.png  used on input line 609.
 (pdftex.def)             Requested size: 263.78485pt x 69.25856pt.
-<./Images/G_diagram.PNG, id=125, 119.2455pt x 70.46326pt>
+<./Images/G_diagram.PNG, id=131, 119.2455pt x 70.46326pt>
 File: ./Images/G_diagram.PNG Graphic file (type png)
 <use ./Images/G_diagram.PNG>
-Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 582.
+Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 618.
 (pdftex.def)             Requested size: 95.39651pt x 56.37067pt.
-<./Images/G_matrices.PNG, id=126, 205.36725pt x 67.452pt>
+<./Images/G_matrices.PNG, id=132, 205.36725pt x 67.452pt>
 File: ./Images/G_matrices.PNG Graphic file (type png)
 <use ./Images/G_matrices.PNG>
-Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 588.
+Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 624.
 (pdftex.def)             Requested size: 195.0pt x 64.04918pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27 <./Images/E.png> <./Images/E_diagram.PNG> <./Images/E_matrices.PNG> <./Images/G.png>]
-<./Images/H.png, id=135, 259.56975pt x 66.84975pt>
+[29 <./Images/E.png> <./Images/E_diagram.PNG> <./Images/E_matrices.PNG> <./Images/G.png>]
+<./Images/H.png, id=141, 259.56975pt x 66.84975pt>
 File: ./Images/H.png Graphic file (type png)
 <use ./Images/H.png>
-Package pdftex.def Info: ./Images/H.png  used on input line 600.
+Package pdftex.def Info: ./Images/H.png  used on input line 636.
 (pdftex.def)             Requested size: 259.5691pt x 66.84956pt.
-<./Images/H_diagram.PNG, id=136, 125.268pt x 69.861pt>
+<./Images/H_diagram.PNG, id=142, 125.268pt x 69.861pt>
 File: ./Images/H_diagram.PNG Graphic file (type png)
 <use ./Images/H_diagram.PNG>
-Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 612.
+Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 648.
 (pdftex.def)             Requested size: 100.21452pt x 55.88885pt.
-<./Images/H_matrices.PNG, id=137, 234.27525pt x 80.09924pt>
+<./Images/H_matrices.PNG, id=143, 234.27525pt x 80.09924pt>
 File: ./Images/H_matrices.PNG Graphic file (type png)
 <use ./Images/H_matrices.PNG>
-Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 618.
+Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 654.
 (pdftex.def)             Requested size: 195.0pt x 66.673pt.
- [28 <./Images/G_diagram.PNG> <./Images/G_matrices.PNG> <./Images/H.png> <./Images/H_diagram.PNG> <./Images/H_matrices.PNG>]
-<./Images/F.png, id=146, 258.36525pt x 65.043pt>
+ [30 <./Images/G_diagram.PNG> <./Images/G_matrices.PNG> <./Images/H.png> <./Images/H_diagram.PNG> <./Images/H_matrices.PNG>]
+<./Images/F.png, id=153, 258.36525pt x 65.043pt>
 File: ./Images/F.png Graphic file (type png)
 <use ./Images/F.png>
-Package pdftex.def Info: ./Images/F.png  used on input line 630.
+Package pdftex.def Info: ./Images/F.png  used on input line 666.
 (pdftex.def)             Requested size: 258.36461pt x 65.04283pt.
-<./Images/F_diagram.PNG, id=147, 124.66576pt x 76.48575pt>
+<./Images/F_diagram.PNG, id=154, 124.66576pt x 76.48575pt>
 File: ./Images/F_diagram.PNG Graphic file (type png)
 <use ./Images/F_diagram.PNG>
-Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 639.
+Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 675.
 (pdftex.def)             Requested size: 99.73273pt x 61.18866pt.
-<./Images/F_matrices.PNG, id=148, 204.765pt x 66.2475pt>
+<./Images/F_matrices.PNG, id=155, 204.765pt x 66.2475pt>
 File: ./Images/F_matrices.PNG Graphic file (type png)
 <use ./Images/F_matrices.PNG>
-Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 645.
+Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 681.
 (pdftex.def)             Requested size: 195.0pt x 63.09245pt.
- [29 <./Images/F.png> <./Images/F_diagram.PNG> <./Images/F_matrices.PNG>]
-<./Images/Adam.PNG, id=155, 497.4585pt x 228.855pt>
+ [31 <./Images/F.png> <./Images/F_diagram.PNG> <./Images/F_matrices.PNG>] [32]
+<./Images/Adam.PNG, id=165, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 658.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 723.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
-<./Images/Brandon.PNG, id=156, 490.83376pt x 222.8325pt>
+<./Images/Brandon.PNG, id=166, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 663.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 728.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
-<./Images/Xin.PNG, id=157, 404.712pt x 177.0615pt>
+<./Images/Xin.PNG, id=167, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 668.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 733.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
- [30 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>]
-<./Images/Project Gnatt.PNG, id=165, 1739.49875pt x 475.7775pt>
+ [33 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>]
+<./Images/Project Gnatt.PNG, id=174, 1739.49875pt x 475.7775pt>
 File: ./Images/Project Gnatt.PNG Graphic file (type png)
 <use ./Images/Project Gnatt.PNG>
-Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 677.
+Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 742.
 (pdftex.def)             Requested size: 592.0pt x 161.92192pt.
- [31
+ [34
 
- <./Images/Project Gnatt.PNG (PNG copy)>] [32
+ <./Images/Project Gnatt.PNG (PNG copy)>] [35
 
-] ("e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.aux")
+] ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -712,16 +712,16 @@ Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  13243 strings out of 480930
- 232546 string characters out of 2900700
+ 232532 string characters out of 2900700
  864117 words of memory out of 3000000
  28959 multiletter control sequences out of 15000+200000
  539834 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,10n,61p,886b,1416s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,10n,61p,885b,1416s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "e:/Work\ELEC40006\documents\Latex files\Under work\Report\ProjectGuidelines.pdf" (33 pages, 675022 bytes).
+Output written on "e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.pdf" (36 pages, 681255 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
