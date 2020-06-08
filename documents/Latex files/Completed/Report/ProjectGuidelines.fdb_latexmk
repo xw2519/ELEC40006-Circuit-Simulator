@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber ProjectGuidelines"] 1591543703 "ProjectGuidelines.bcf" "ProjectGuidelines.bbl" "ProjectGuidelines" 1591549592
-  "ProjectGuidelines.bcf" 1591549591 103181 dcfa6f415b82cd36b449d85da225302e "pdflatex"
+["biber ProjectGuidelines"] 1591543703 "ProjectGuidelines.bcf" "ProjectGuidelines.bbl" "ProjectGuidelines" 1591617954
+  "ProjectGuidelines.bcf" 1591617954 103181 dcfa6f415b82cd36b449d85da225302e "pdflatex"
   "biblography.bib" 1591542663 1435 0d4199dfcddb5037d8e787f4925ee3d0 ""
   (generated)
   "ProjectGuidelines.blg"
   "ProjectGuidelines.bbl"
-["pdflatex"] 1591549589 "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" "ProjectGuidelines" 1591549592
+["pdflatex"] 1591617952 "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" "ProjectGuidelines" 1591617954
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1588782330 14064 e60fb7849188587b080cad6ade16d4b1 ""
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1588803624 10016677 2ec5bb806e2debf93b1063d30ceaa460 ""
   "C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1591309617 135735 c42ad2c60f57181ce51b1f94a147eabc ""
@@ -123,19 +123,19 @@
   "Images/diode_model.PNG" 1591465930 6134 5990b057f20683ff618a13e46cc7eac6 ""
   "Images/inductor.PNG" 1591367182 16956 85b3c1a7a1ffadfe9ff1287850346392 ""
   "Images/simulate.PNG" 1591377540 16269 d4dc43dad03bf4f358a2e2698f3c7333 ""
-  "ProjectGuidelines.aux" 1591549591 15372 db3bf4d631ca11b93f4cd19388bef3d5 "pdflatex"
+  "ProjectGuidelines.aux" 1591617954 15372 db3bf4d631ca11b93f4cd19388bef3d5 "pdflatex"
   "ProjectGuidelines.bbl" 1591543705 6363 f75afac68066f21dbc75cbda3bb154ed "biber ProjectGuidelines"
-  "ProjectGuidelines.run.xml" 1591549591 2397 4f9cbefdb7237959761fc73c0dc62c9a "pdflatex"
-  "ProjectGuidelines.tex" 1591549588 37246 aaa376e880ebe79f0165329d104d226c ""
-  "ProjectGuidelines.toc" 1591549591 5237 737e10bd6d59362df59e5fb6bb069ee0 "pdflatex"
-  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux" 1591549591 15372 db3bf4d631ca11b93f4cd19388bef3d5 ""
-  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" 1591549588 37246 aaa376e880ebe79f0165329d104d226c ""
+  "ProjectGuidelines.run.xml" 1591617954 2397 4f9cbefdb7237959761fc73c0dc62c9a "pdflatex"
+  "ProjectGuidelines.tex" 1591617951 37659 9c983f94fb49a3d528db56139003856d ""
+  "ProjectGuidelines.toc" 1591617954 5237 737e10bd6d59362df59e5fb6bb069ee0 "pdflatex"
+  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux" 1591617954 15372 db3bf4d631ca11b93f4cd19388bef3d5 ""
+  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" 1591617951 37659 9c983f94fb49a3d528db56139003856d ""
   (generated)
-  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf"
-  "ProjectGuidelines.bcf"
-  "ProjectGuidelines.pdf"
   "ProjectGuidelines.run.xml"
   "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.log"
+  "ProjectGuidelines.pdf"
+  "ProjectGuidelines.aux"
   "ProjectGuidelines.toc"
   "ProjectGuidelines.log"
-  "ProjectGuidelines.aux"
+  "ProjectGuidelines.bcf"
+  "e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf"

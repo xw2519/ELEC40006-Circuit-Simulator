@@ -49,37 +49,45 @@ tabsize=2
 \pagebreak
 
 \section{Overview of the report}
-This report loosely follows the stages of the Software Developement Cycle. \par
-Section 2 details the design problem presented and the program requirements at are necessary for a preliminary design 
+Report layout loosely follows the stages of the Software Developement Cycle. \par
+Section 2 detailed the design problem presented and the program requirements at are necessary for a preliminary design 
 to be established. \par
-Section 3 provides a summary of the program development timeline and the details relating to project management format
-the format of meeting minutes used to how the responsibilities are distributed among the project team. \par
-Section 4 discusses the preliminary designs produced by the team and the rationale behind some design choices implemented
+Section 3 provideed a summary of the program development timeline and the details related to project management,
+format of meeting minutes used to how the responsibilities are distributed among the project team. \par
+Section 4 discussed the preliminary designs the team had produced and the rationale behind some design choices the team had 
+implemented. \par
+Section 5 gave a comprehensive overview of the program design, the functions and flowcharts used during program 
+developement. \par 
+Section 6 investigated the design constraints of the program, the accuracy of the results had produced and the speed of 
+execution as the circuit size varied.\par
+Section 7 discussed the major unforeseen problems encountered by the team over the course of the project and 
+how the team attempted to mitigate that problem. \par
+Section 8 discussed the possible improvements noted by the team that could mitigate concerns encountered
 by the team. \par
-Section 5 gives an comprehensive overview of the program design, detailing the functions and flowcharts used. \par 
-Section 6 investigates the design constraints of the program, the accuracy of the results produced and the speed of 
-execution as the circuit size varies.\par
-Section 7 serves as a continuation of Section 6, discussing the possible improvements to mitigate problems encountered
-during testing. \par
-Section 8 details the possible features that can be added on to the existing program and the required modifications to the
-program to add the mentioned features.
+Section 9 detailed the possible features that can be added on to the existing program and the required modifications to the
+program to add the mentioned features. \par 
+Section 10 contained the reflections written by each teammate towards the end of the project. \par
 \pagebreak
 
 \section{Project Specification}
 	\subsection{Design Problem}
 	Develop a program that is able to read in a file describing a circuit specified by the user, perform 
-	transient simulation on that circuit and output the calculated voltages at each instance in time into a file. 
+	transient simulation on that circuit and output the calculated voltages at each instance in time into a specific file
+	format. 
 	\subsection{Program Requirements}
 	The main program requirements are listed as follows:
 	\begin{itemize}
 		\item Program must support basic circuit components listed as follows \footnote{Advanced component can be supported
-		provided development schedule is not constrained.}:
+		provided basic components are already implemented.}:
 		\begin{itemize}
 			\item Resistors
 			\item Ideal Capacitors
 			\item Ideal Inductors
 		\end{itemize}
-		\item Input file must adhere to SPICE netlist formats
+		\item Parser to be designed to take in a input file of SPICE netlist format.
+		\begin{itemize}
+			\item Basic syntax checks to be performed.
+		\end{itemize}
 		\item The output file must be in Comma Separated Value (.CSV) format.
 		\begin{itemize}
 			\item Columns of output file represent nodes in the circuit.
@@ -89,7 +97,8 @@ program to add the mentioned features.
 	\vfill
 	\pagebreak
 	\subsection{Design Criteria}
-	The team has identified several factors from the list given in the Product Design Specification document.
+	The team had identified several factors from the list given in the Product Design Specification \footnote{}
+	document.
 	\begin{itemize}
 		\item Maintenance: One of the most important factors the team identified. As the development timescale is 
 		constrained and the features required is open-ended, so it is important we ensure the design can 
