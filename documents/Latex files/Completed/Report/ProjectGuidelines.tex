@@ -49,7 +49,7 @@ tabsize=2
 \pagebreak
 
 \section{Overview of the report}
-Report layout loosely follows the stages of the Software Developement Cycle. \par
+Report layout loosely follows the stages of the Software Development Cycle. \par
 Section 2 detailed the design problem presented and the program requirements at are necessary for a preliminary design 
 to be established. \par
 Section 3 provideed a summary of the program development timeline and the details related to project management,
@@ -57,7 +57,7 @@ format of meeting minutes used to how the responsibilities are distributed among
 Section 4 discussed the preliminary designs the team had produced and the rationale behind some design choices the team had 
 implemented. \par
 Section 5 gave a comprehensive overview of the program design, the functions and flowcharts used during program 
-developement. \par 
+development. \par 
 Section 6 investigated the design constraints of the program, the accuracy of the results had produced and the speed of 
 execution as the circuit size varied.\par
 Section 7 discussed the major unforeseen problems encountered by the team over the course of the project and 
@@ -97,23 +97,24 @@ Section 10 contained the reflections written by each teammate towards the end of
 	\vfill
 	\pagebreak
 	\subsection{Design Criteria}
-	The team had identified several factors from the list given in the Product Design Specification \footnote{}
-	document.
+	The team had identified several factors from the list of factors given in the Product Design Specification
+	\footnote{Document included in \textit{documents} folder.} document.
 	\begin{itemize}
-		\item Maintenance: One of the most important factors the team identified. As the development timescale is 
-		constrained and the features required is open-ended, so it is important we ensure the design can 
-		incorporate new features efficiently and cost-effectively if the client wishes to add new features.
-		\item Documentation: For a non-intuitive program, proper documentation is required for client and future
-		programmers to make modifications should the client wish.
+		\item Maintenance: One of the most important factors the team identified. As the development timescale was 
+		constrained and the features required was open-ended, so it was very important we ensured the design could 
+		incorporate new features efficiently and cost-effectively if the client wished to add new features.
+		\item Documentation: For a non-intuitive program, proper documentation was required for client and future
+		programmers to make modifications should the client wished.
 		\item Performance: No strict performance guidelines are given by the client but the execution 
 		speed should still be reasonable. 
-		\item Time scale: 6 weeks with a definite deadline. It is important to balance proper team management
-		techniques and creating a program that meets client standards.
-		\item Testing: Numerous test programs have been created to test various aspects of the program to ensure
-		accurate results have been produced. The results produced have been verified with LTSpice, a well 
+		\item Time scale: 6 weeks with a definite deadline. It was important to balance proper team management
+		techniques and creating a program that met client standards.
+		\item Testing: Test programs have been created to test various aspects of the program to ensure
+		accurate results have been produced. The results produced have been verified with LTSpice, a well
 		established circuit simulation program.
-		\item Patents: SPICE engine is a public domain software so we could possibily utilise the engine.
-		\item Ergonomics: A Graphics User Interface (GUI) is not specified by the client and could possibly 
+		\item Patents: SPICE engine is a public domain software so we could possibly incorporate SPICE into 
+		developing the program.
+		\item Ergonomics: A Graphics User Interface (GUI) was not required by the client but it could possibly 
 		make the program much easier to use.
 	\end{itemize}
 	\vfill
@@ -121,31 +122,31 @@ Section 10 contained the reflections written by each teammate towards the end of
 
 \section{Team Management}
 	\subsection{Project timeline overview}
+	Xin Wang managed the team's project timeline and any modifications to the timeline required the agreement of all
+	teammates. \par
 	\includegraphics{Timeline.PNG}
 	\pagebreak
 
 	\subsection{Team Gnatt chart}
-	The team Gnatt Chart is created by using the GnattProject software. It was not the most 
+	The team Gnatt Chart waas created by using \textit{GnattProject} software. It was not the most 
 	visually appealing software but, for its free features, it met the requirements of the team. \par
-	The Gnatt Project was mainly modified by Xin Wang upon requests by teammates or after meetings. Please
-	refer to the Appendix: Gnatt Chart for detailed break down of the team's Gnatt Chart. \par
+	The Gnatt Project was mainly modified by Xin Wang upon requests by teammates after team meetings. Please
+	refer to Appendix: Gnatt Chart for details of the team's Gnatt Chart. \par
 	\subsubsection{Important Notes:}
 	\begin{itemize}
-		\item Activities like ensuring standardised coding comments and formatting which was monitored by 
-		Xin Wang was a constant ongoing activity in the background. 
-		\item A team meeting ocurred after each stage of the Gnatt Chart was finished (Indicated by 
+		\item Activities like ensuring standardised coding comments and formatting which had been monitored by 
+		Xin Wang was a constant background activity. 
+		\item A team meeting ocurred after each major stage of the Gnatt Chart finished (Indicated by 
 		a change in colour).
 		\item On the 5th June of 2020, Xin Wang received a notification for a repatriation flight
 		and, in the following team meeting, the team agreed on redistributing Xin Wang's responsibilities
 		and for him to finish the existing Technical Report.
 	\end{itemize}
-	
-
 	\pagebreak
 
 	\subsection{Management approach}
-	The project team, with research on different forms of project management, decided on using a Waterfall project
-	management approach. The phases are listed as follows: \par
+	The project team, after research on forms of project management, decided on using a Waterfall project
+	management approach. The phases of the project are listed as follows: \par
 	\begin{itemize}
 		\item System and Software Requirements.
 		\item Analysis.
@@ -153,57 +154,58 @@ Section 10 contained the reflections written by each teammate towards the end of
 		\item Coding.
 		\item Testing.
 	\end{itemize}
-	This method is selected mainly since the project is short, requirements are clear and the team 
-	is not constantly required to report to the client at the early stages of the software development to ensure 
-	client statisfaction. \par
+	This method was selected mainly due to the short duration of the project, requirements are clear and the team 
+	was not constantly required to report to the client at the early stages of the software development to ensure 
+	client satisfaction. \par
 
-	The Waterfall methodology prioritises proper documentation throughout the whole development process. This is important
-	to the team as the team project requires a Project Report to be submitted and, due to the ongoing remote lab orals and 
-	family-related obligations during quarantine, allows a team member to be quickly caught up should a member step out
+	The Waterfall methodology prioritised proper documentation throughout the whole development process. This was important
+	to the team as the team project required a Project Report to be submitted and, due to the ongoing remote lab orals and 
+	family-related obligations during quarantine, allowed a team member to be quickly caught up if a member stepped out
 	of the team for a while.  
 
-	The disadvantage of the Waterfall methodology lies mainly in that no working software is produced until late in the 
-	cycle so there is a level of risk and uncertainty with not being able to meet the deadline, especially in the 
-	current state of the world \footnote{Any unforseen circumstances are listed in team meeting minutes summarised the following sections.}. 
-	The project team later realised the methodology is not exactly suitable for the Object Orientated Approach 
-	that the team eventually settled on. As the integration is done at the end, there is a possibility that any errors
-	in the program is not caught during integration.
+	The disadvantage of the Waterfall methodology was mainly in that no working software was produced until late in the 
+	cycle so there had been a level of risk and uncertainty with not being able to meet the deadline, especially in the 
+	with the remote working environment \footnote{Any unforeseen circumstances are listed in team meeting minutes 
+	summarised under the Critical Analysis section.}. 
+	The team had later realised the methodology was not exactly suitable for the Object Orientated Approach 
+	that the team wanted to implement. As the integration was done at the end, there was concerns in the possibility that any errors
+	in the program would not be noticed during the integration stage.
 
 	\vfill
 	\pagebreak
 
 	\subsection{Team responsibilities breakdown}
-	The responsibilities of each team member is discussed during the 1st meeting and formalised in the 2nd meeting. The
-	respective roles are partly determined by the Belbin questionnaire provided by Mrs. Perea 
+	The responsibilities of each team member was discussed during the 1st meeting and had been formalised in the 2nd meeting. The
+	respective roles are influenced by the Belbin questionnaire provided.
 	\footnote{Belbin questionnaire forms are found in Appendix: Belbin Roles.}
 	\par
-	The main responsibilities of each team member is listed as follows:
+	The main responsibilities of each team member are listed as follows:
 	\begin{itemize}
 		\item Adam Rehman
 		\begin{itemize}
-			\item Plant
+			\item Belbin role: Plant
 			\begin{itemize}
 				\item Research program.
 				\item Coding the program.
 				\item Testing program.
 			\end{itemize}
 		\end{itemize}
-		\item Brandon Cann
+		\item Belbin role: Brandon Cann
 		\begin{itemize}
 			\item Monitor Evaluator
 			\begin{itemize}
-				\item Ensure documentation managed by Xin Wang and coding managed by Adam is in sync.
+				\item Ensure documentation managed by Xin Wang and coding managed by Adam was in sync.
 				\item Contributes to program aspects that are falling behind.
 				\item Ensure project requirements are met.
 			\end{itemize}
 		\end{itemize}
-		\item Xin Wang
+		\item Belbin role: Xin Wang
 		\begin{itemize}
 			\item Implementer
 			\begin{itemize}
 				\item Creating and managing the team Project Report and various other documentations.
 				\item Meeting minute keeper.
-				\item Ensuring code written is up to a standard format with proper comments.
+				\item Ensuring code written was up to a standard format with proper comments.
 				\item Manages repository base.
 			\end{itemize}
 		\end{itemize}
@@ -213,11 +215,11 @@ Section 10 contained the reflections written by each teammate towards the end of
 	\pagebreak
 
 	\subsection{Project meeting minutes}
-	The meeting minutes follow a standard template that is attached under Appendix: Meeting Minutes. \par
-	There is no standard protocol for calling team meetings, they are called usually when there is a problem
-	that is applicable to all team members. Usually, there is informal communication across various channels from 
+	The meeting minutes follow a standard template that was attached under Appendix: Meeting Minutes. \par
+	There was no standard protocol for calling team meetings, they are called usually when there was a problem
+	that had affected all team members. Usually, there were smaller informal meetings across various channels from 
 	WhatsApp to Discord. \par
-	Over the course of the development cycle, there has been three formal meetings and the main reasons and conclusions
+	Over the course of the development cycle, there had been three formal meetings and the main reasons and conclusions
 	are listed below.
 	\begin{itemize}
 		\item Meeting 1
@@ -225,7 +227,7 @@ Section 10 contained the reflections written by each teammate towards the end of
 			\item Reason: 
 			\begin{itemize}
 				\item Project team meeting each other. Not every team member knows each other.
-				\item Discuss the Circuit Simulator briefing.
+				\item Discussed the Circuit Simulator Briefing.
 			\end{itemize}
 			\item Conclusions:
 			\begin{itemize}
@@ -241,7 +243,7 @@ Section 10 contained the reflections written by each teammate towards the end of
 			\end{itemize}
 			\item Conclusion:
 			\begin{itemize}
-				\item Agreed that practicing proper team management is just as important as showing practical skills 
+				\item Agreed that practicing proper team management was just as important as showing practical skills 
 				in coding.
 				\item Final team management guidelines are agreed and tasked to Xin Wang to formalise in documentation.
 			\end{itemize}
@@ -252,7 +254,7 @@ Section 10 contained the reflections written by each teammate towards the end of
 			\begin{itemize}
 				\item Program basic requirements are nearly fulfilled. 
 				\item Meeting to discuss future program design direction.
-				\item Xin Wang has a notification by South African Embassy of a Repartiation flight.
+				\item Xin Wang had a notification by South African Embassy of a Repatriation flight.
 			\end{itemize}
 			\item Conclusion:
 			\begin{itemize}
@@ -266,57 +268,58 @@ Section 10 contained the reflections written by each teammate towards the end of
 	
 
 \section{Preliminary Designs}
-Our initial program design relied on the project briefing provided by Dr Stott. Parsing a input file into a data 
-structure is a standard procedure. The main point of discussion is related to how the program solves for unknown voltages.
+The initial program design relied on the project briefing provided. Parsing a input file into a data 
+structure was a simple task. The main point of discussion was related to how the program solved for unknown voltages.
 \par
 The main design choices taken by the team has been set out below.
-	\subsection{Object Orientated Programming}
-	As the number of circuit components that we need to support is open ended besides the mandatory basic components 
-	according to the Project Breifing, the team was concerned on the expandability of the program.
+	\subsection{Object Orientated Programming [OOP]}
+	As the circuit components the program needed to support was an open ended requirement except the mandatory basic components 
+	listed, the team was concerned on the expandability of the program.
 	\par
-	The OOP approach allows the program design to be rapidly and cost-effectively altered to accomodate new features
-	such as additional circuit components or analysis techniques \cite{OOP} that the client might request later on in the 
-	program's lifecycle. This approach saves the programmer and the client cost and time in program maintainability.
+	The OOP approach allowed the program design to be rapidly and cost-effectively altered to accommodate new features
+	such as new circuit components or analysis techniques \cite{OOP} that the client might request later on in the 
+	program's lifecycle. Increased program maintainability will save the programmer time and the client cost in program's 
+	active lifetime.
 	\par
-	The disadvantage to that approach is that it has shown to be slower than other preliminary programs designed 
+	The disadvantage was that it has been shown to be slower than other preliminary programs designed 
 	without OOP to an average of of 5\% to 10\% slower depending on other optimisations in the program.
 	\par 
-	It is the team's view that execution speed was not the highest priority and the ability to expand was also 
-	important. The design is detailed in the next section.
+	It was the team's view that execution speed was not the highest priority and the ability to expand the program's feature set
+	was also important. The design was detailed in the next section.
 
 	\subsection{Modified Nodal Analysis}
-	Modified Nodal Analysis (MNA) is an extension of normal Nodal Analysis. When the team start researching similar 
-	programs like PSPICE and LTSpice, MNA was mentioned numerous times \cite{MNA} and its benefits was clearly seen when we tried 
-	to write a program that implemented normal Nodal Analysis. A problem the team encountered was trying to 
+	Modified Nodal Analysis (MNA) was an extension of normal Nodal Analysis. When the team studied similar 
+	programs like PSPICE and LTSpice, MNA had been mentioned numerous times \cite{MNA} and its benefits had been proved during
+	trails of programs based on preliminary designs. A problem the team encountered was trying to 
 	represent the current-dependent circuit elements like inductors efficiently. 
 	\par
-	As stated earlier, a primary concern of the team lies in the scalability of the program. By using MNA, just like
-	other commercial programs, the team is confident that the analysis component of the program will not be a 
+	As stated earlier, it was a primary concern of the team the scalability of the program. By using MNA, just like
+	other commercial programs, the team was confident that the analysis component of the program would not be a 
 	bottleneck to future developments of the program.
 	\par
-	THe advantage of MNA is in its standard procedures. The standardised algorithm for solving nodal 
-	equations allowed the team to modularise the solving aspect of the program. This meant not constantly have to 
-	make changes to one of the most important parts of the program, instead just ensuring the component is in the 
+	The advantage of MNA was in its standard procedures. The standardised MNA algorithm for solving nodal 
+	equations allowed the team to modularise the solving aspect of the program. This meant not constantly be required to 
+	make changes to one of the most important parts of the program, instead just ensuring the component was in the 
 	compatible format to be entered into the MNA algorithm.
 	\par 
-	The MNA algorithm consists of three matrices to form the matrix relation: $Ax=b$ \cite{MNA}:
+	The MNA algorithm consisted of three matrices that form the matrix relation: $Ax=b$ \cite{MNA}:
 	\begin{itemize}
-		\item $A$ is consists of four submatrices which includes the admittance matrix. The program treats matrix $A$ as 
-		a whole matrix instead of separating it into four small matrices and combining at the end.
+		\item $A$ was consisted of four sub-matrices which included the admittance matrix. The program treated matrix $A$ as 
+		a whole matrix instead of four smaller matrices and combining at the end.
 		$$ A =
 		\begin{bmatrix}
 			G & B\\
 			C & D 
 		\end{bmatrix} $$
 
-		\item $x$ represents the unknown node voltages and current of the voltage sources.
+		\item $x$ represented the unknown node voltages and current of the voltage sources.
 		$$ x =
 		\begin{bmatrix}
 			v \\
 			i_{v} 
 		\end{bmatrix} $$
 
-		\item $b$ contains the values of voltage sources and current sources in the circuit.
+		\item $b$ contained the values of voltage sources and current sources in the circuit.
 		$$ b =
 		\begin{bmatrix}
 			i \\
@@ -324,23 +327,23 @@ The main design choices taken by the team has been set out below.
 		\end{bmatrix} $$
 
 	\end{itemize}
-	The admittance matrix is created during the initialisation of the simulation. Non-linear elements are converted into 
-	suitable formats at each instance in time during a transient simulation. The resulting parameters are 'stamped' into the matrix
-	at each instance. Only 'stamping' the changing values instead of creating a new system of matrices saves valuable execution time
-	during program execution. The matrix inversion is handled by the Eigen library, the library supports various types of 
-	inversion with difference accuracy and speed and this is discussed in the Optimisation sector.
+	The admittance matrix was created during initialisation stage of the simulation. Non-linear elements are converted into 
+	suitable formats at each instance in time during transient simulation. The resulting model parameters are 'stamped' into the matrix
+	at each instance. Only 'stamping' the changing values instead of creating a new system of matrices saved valuable execution time
+	during program execution. The matrix inversion was handled by the Eigen library, the library supported various types of 
+	inversion with different accuracy and speed, this was discussed under the Optimisation sector.
 
 	\subsection{Eigen Matrix Library}
-	In terms of matrix operations, the team decided to use a third-party program to handle the matrix-related operations.
-	The primary concern with choosing a third-party program was how seamless the program integrates into our program. 
-	The team does not know whether the client would be comfortable installing an unknown third-party program on their system 
-	besides the program that the client specifically requested for.\par
-	There are third-party programs that require installation such as Armadillo and some has a large file size such as the 
-	Boost Library which is close to 1GB.
+	In terms of matrix operations, the team had decided to use a third-party program to handle the matrix-related operations in
+	order to save development time and minimise potential errors.
+	The primary concern the choice of third-party program was how seamless the program integrated into our program. 
+	The team did not know whether the client would be comfortable installing an unknown third-party program on their system 
+	besides the program the client specifically requested.\par
+	There are third-party programs that required installation such as Armadillo and some had a large file size such as the 
+	Boost Library which was close to 1GB.
 	Based on the concerns laid out, the team looked for a program that has a reasonable size, does not require installation 
-	in order to be used. The third-party program chosen was Eigen. It is a file that has a reasonable size and only requires that the
-	Eigen is located in the same directory and the execution scripts we provided is used. A copy of Eigen is included in the program
-	files so client's ease of usage.
+	in order to be used. The third-party program chosen was Eigen. It was a file that had a reasonable size and only required that the
+	Eigen library was located in the same directory. A copy of Eigen was included in the program files for client's ease of usage.
 	\pagebreak
 
 \section{Program Design}
@@ -350,8 +353,8 @@ The main design choices taken by the team has been set out below.
 		\includegraphics[scale=0.5]{Flow chart.PNG}
 		\caption{General flowchart of program}
 	\end{figure}
-	\textit{circuit.hpp} file forms the central section of the program, handling the input of the file and 
-	storing it in a form that allows the \textit{simulate} file to perform Transient Analysis on it and outputs
+	\textit{circuit.hpp} file formed the centre of the program, handled the input of the file and 
+	stored it in a form that allowed the \textit{simulate} file to perform Transient Analysis on it and output
 	the file in the format (.CSV) specified by the client.
 	\par
 	The theoretical information and program design for each of the main files are discussed in the following 
@@ -362,27 +365,29 @@ The main design choices taken by the team has been set out below.
 	respective file. The file \textit{edge.hpp} is the base from which all other circuit components are derived
 	from the \textbf{components} folder. 
 	\subsection{\textit{str handler.hpp} file}
-	The \textit{str handler} file manages all string-related functions. \par
-	The main function is the is the \textit{tokenisier} function which takes in an 
-	input sentence and separates it into individual words that can be processed, 
-	converted into the required formats for processing and stored. \par
+	The \textit{str handler} file managed all string-related functions. \par
+	The main function is the \textit{tokenisier} function which take in an 
+	input sentence and separated it into individual words that can be processed, 
+	converted into the required formats for processing and storage. \par
 	During conversions, checks are performed at various stages. In the product briefing, there
 	was no mention of error handling requirements but the team viewed that defensive programming 
 	was required and any errors encountered will be displayed to the user. 
 
 	\subsection{\textit{node.hpp} file}
-	A circuit can be expressed as a Network Graph, containing branches and edges.
-	The \textit{node.hpp} file expresses a node in the circuit and allows nodal equations
+	A circuit can be expressed as a Network Graph, containing branches and edges. This notation was used to abstractly express
+	the circuit and arrange how the the program operates.
+	The function of the \textit{node.hpp} file is to represent a node in the circuit and allow nodal equations
 	to be created.\par
-	This function is not necessary in the final design since the program skips creating nodal
-	equations and directly inputs entries into the matrix before solving it.
+	This function was not necessary in the final design as the program skipped creating nodal
+	equations and directly input entries into the matrix before solving it. This part is kept to allow other functions to 
+	be developed such as printing nodal equations.
 	\pagebreak
 	\subsection{\textit{circuit.hpp}}
-	As mentioned previously, \textit{circuit.hpp} manages all aspects of the program from 
+	As mentioned previously, \textit{circuit.hpp} managed all aspects of the program from 
 	reading in the user input, checking basic syntax errors during user entry 
 	to ensuring the simulation is successful.
 	Numerous checks are performed over the course of the simulation and any errors encountered
-	will instantly result in the simulation ending. \par
+	will instantly result in the simulation ending with an error message outputted. \par
 	
 	The flow chart of \textit{circuit.hpp} is shown as below: \par
 	\begin{figure} [h!]
@@ -394,20 +399,20 @@ The main design choices taken by the team has been set out below.
 	\subsection{\textit{simulate.hpp}}
 	This section of the program was where the team has spent most of the time and also where the
 	team saw many possible optimisations which will be discussed in later sections. This 
-	section handles matrix entry and controls the transient simulation. \par
+	section handled matrix entry and controlled the transient simulation. \par
 	But using the MNA technique, basic components such as voltage sources, current 
 	sources and resistors are simple and can be directly entered into the matrices for 
 	solving. However, components such as inductors and capacitors which are non-linear
-	devices has required further processing in order to support those components. 
+	devices required further processing in order to support those components. 
 	At each instance in time, non-linear components need to be approximated into corresponding
 	companion models. With the program using MNA, all non-linear components are converted 
 	into a current source and resistor to allow efficient entry into the matrix.
 	\subsubsection{Non-linear components}
-	In the process of approximating non-linear components, integration is 
+	In the process of approximating non-linear components, integration would be 
 	required and there are three different 
 	methods of integration each with its own corresponding equations defining 
 	current and resistance of the companion model. Each type of integration offers different
-	degree of accuracy which is explored under the Optimisation section.\par
+	degrees of accuracy which are explored under the Optimisation section.\par
 	Capacitors are defined with the following differential equation:
 	$$I=C\times \frac{dv}{dt}$$
 	Inductors are defined with the following differential equation:
@@ -436,7 +441,7 @@ The main design choices taken by the team has been set out below.
 \pagebreak
 
 \section{Testing}
-It should be noted that majority of the testing is done on Linux Ubuntu 16.04.1 LTS which runs on a virtual machine in Windows 10,
+It should be noted that majority of the testing was done on Linux Ubuntu 16.04.1 LTS which ran on a virtual machine in Windows 10,
 some testing have been completed on a Windows 10 machine. As such, the listed execution times are the average of 10 execution
 times. \par 
 Numerous functions are imbedded into the program itself to aide the benchmarking process and can be used to aide in debugging.
@@ -458,7 +463,8 @@ responsibilities that Xin Wang handled was very critical in this final stage of 
 
 In the final team meeting, the team was briefed by Xin Wang of the state of the reports and what was still outstanding. 
 As it was the weekend, the team could not reach the professors in charge of the project so the team had to make the 
-decisions and mitigate the possible effects of Xin's absence. The meeting conclusions are summarised as below:
+decisions, mitigate the possible effects of Xin's absence and seek guidance as soon as possible.
+The steps the team undertook are summarised as below:
 \begin{itemize}
 	\item Xin Wang to complete what can be completed on the report (Some data such as Testing has been completed yet)
 	\item Xin Wang, once report is completed, shall handover the responsibilities to the remaining two teammates.
@@ -471,7 +477,7 @@ decisions and mitigate the possible effects of Xin's absence. The meeting conclu
 	\end{itemize}
 \end{itemize}
 The team understood that in the workplace, there would be unforeseen circumstances that affected the team's workflow.
-It is important that the client's basic requirements are still met albeit some of the more advanced features would not be 
+It was important that the client's basic requirements are still met albeit some of the more advanced features would not be 
 able to be completed but will still be documented under section: Adding On for the client to see and consider implementing.
 \par 
 Xin Wang will constantly keep the team brief on whether he can lend any help in preparing the program for submission. However
@@ -496,8 +502,8 @@ There are numerous different types of integration but the three most common form
 	\item Backward Euler
 	\item Trapezoid
 \end{itemize}
-Out of the three, Trapezoid is the most accurate form of integration but the most processor intensive form of integration listed.
-The report has listed the three forms of integration and its respectively defined parameters. 
+Out of the three, Trapezoid was the most accurate form of integration but the most processor intensive form of integration listed.
+The report had listed the three forms of integration and its respectively defined parameters. 
 
 \begin{figure} [h!]
 	\centering
@@ -505,40 +511,40 @@ The report has listed the three forms of integration and its respectively define
 	\caption{Accuracy comparison of different integration methods \cite{integration}}
 \end{figure}
 \par
-But Euler's methods are only accurate to the first degree while other methods such as the Runge-Kutta method is much more accurate.
+But Euler's methods are only accurate to the first degree and Trapezoid to the second degree.
+Other methods such as the Runge-Kutta method would be much more accurate.
 This method would rely on creating a specialised function that exclusively handles it and would add to the processing time but,
-with the implementation of sparse matrices, the team believes it would still result in a faster program.
+if sparse matrices were implemented, the team believes it would still result in a faster program.
 
 \subsection{Inversion method}
-The Eigen library supports numerous types of equation solver functions. The default type that the Eigen documentation supports is the 
-\textit{ColPivHouseholderQR} method but, using it, resulted in a consistent execution time of 50\% longer. Instead, the team 
+The Eigen library supported numerous types of equation solver functions. The default type that the Eigen documentation support was the 
+\textit{ColPivHouseholderQR} method but, using it, resulted in a average execution time of 50\% longer. Instead, the team 
 did not use the equation solver functions. The team used the inversion function on matrix $A$ and multiplied it directly to matrix $b$.
 \par 
-The team believes that there is be more efficient third-party algorithms that can help make the program more efficient. For example, 
+The team believes that there would be more efficient third-party algorithms that can help make the program more efficient. For example, 
 the Boost Library contains numerous functions that can entirely eliminate the need for the \textit{str handler.hpp} file and,
 as it is a extensively supported library, it would be more efficient to use it. But it would require client consultations to ensure
-the client understands and is comfortable with a larger program size. 
-
+the client understands and was comfortable with a larger program size. 
 \pagebreak
 
 \section{Adding on}
 \subsection{Graphics User Interface}
-The current user interface is very limited, it consists of only a basic interface created
-in with bash script. The output file, though in .CSV format, required the user to 
+The current user interface was very limited, it consisted of only a basic interface created
+with bash script. The output file, though in .CSV format, required the user to 
 use third-party programs like MatLab to plot the graph. If the user used the third-party
-program, GNUPLOT, it is possible to integrate graph plotting feature directly into the existing 
+program, GNUPLOT, it was possible to integrate graph plotting feature directly into the existing 
 script. 
 \par 
 Alternatively, a more user intuitive interface can be created in the future. Given the 
 limited programming capability of the team, a third-party program to support the 
-development of the User Interface was thought best by the team. Through research, the 
-team has identified several possible programs that can be used:
+development of the User Interface is seen as the most viable by the team. Through research, the 
+team has identified several possible programs that could be used:
 \begin{itemize}
 	\item \textit{Qt}
 	\item \textit{wxWidgets}
 	\item \textit{gtkmm}
 \end{itemize}
-The team's primary research was centered on the \textit{Qt} program. \textit{Qt} is a open
+The team's primary research is centered on the \textit{Qt} program. \textit{Qt} is a open
 source program and it is relatively easy given its complete feature set, using that program
 would minimise development cost and the interface features would not be limited.
 
@@ -562,10 +568,10 @@ The equation can then be used to derive the following companion model:
 	\caption{Companion model of the diode and its defining parameters \cite{companion}}
 \end{figure}
 As the Newton-Raphson iteration method requires the calculations to converge to a solution, in the event that it does not
-converge and max repetitions have been reached, the program could implement a Convergence Helper such as \textit{gMin stepping} or
-\textit{source stepping} and, it there is no more convergence helpers left then the program will output an error to the user.
+converge and max repetitions have been reached, the program could implement a convergence helper such as \textit{gMin stepping} or
+\textit{source stepping} and, if there is no more convergence helpers left, then the program will output an error to the user.
 The process of Newton-Raphson has many 
-possible optimisations to improve the convergence such as improving the model used and the algorithm of the existing model. \par
+possible optimisations to improve the convergence such as improving the model used and the algorithm of the existing model.
 \par 
 The basic convergence parameters that would govern whether convergence has been met will be defined as:
 \begin{itemize}
@@ -583,7 +589,7 @@ The existing program flow chart would have to be modified to accommodate the New
 
 \pagebreak
 \subsubsection{Voltage controlled voltage sources - VCVS}
-VCVS are defined in the netlist in the following format: \par 
+VCVS would be defined in the netlist in the following format: \par 
 \begin{figure} [h!]
 	\centering
 	\includegraphics[]{E.png}
@@ -612,7 +618,7 @@ easily done by modifying the existing system of matrices and solving for unknown
 \end{figure}
 
 \subsubsection{Voltage controlled current sources - VCCS}
-VCCS are defined in the netlist in the following format: \par 
+VCCS would be  defined in the netlist in the following format: \par 
 \begin{figure} [h!]
 	\centering
 	\includegraphics[]{G.png}
@@ -639,7 +645,7 @@ It could be defined as the following:
 \end{figure} \pagebreak
 
 \subsubsection{Current controlled voltage sources - CCVS}
-CCVS are defined in the netlist in the following format: \par
+CCVS would be defined in the netlist in the following format: \par
 \begin{figure} [h!]
 	\centering
 	\includegraphics[]{H.png}
@@ -669,13 +675,13 @@ It could be defined as the following:
 \end{figure}
 \pagebreak
 \subsubsection{Current controlled current sources - CCCS}
-CCCS are defined in the netlist in the following format: \par
+CCCS would be defined in the netlist in the following format: \par
 \begin{figure} [h!]
 	\centering
 	\includegraphics[]{F.png}
 	\caption{Netlist format describing a CCCS \cite{MNA}}
 \end{figure} 
-Like the CCVS, this component is controlled by the current through the listed voltage source. It is handled similarly like the CCVS.
+Like the CCVS, this component is controlled by the current through the listed voltage source. It is handled similarly like CCVS.
 CCCS creates one more unknown variable.
 \begin{figure} [h!]
 	\centering
@@ -754,6 +760,18 @@ allow me to contribute more the next time I work in a team.
 		\end{figure}
 	\end{center}
 \end{landscape}
+\pagebreak
+
+\subsection{Meeting Minute Template}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{Minute1.PNG}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{Minute2.PNG}
+\end{figure}
 \pagebreak
 
 \section{References}

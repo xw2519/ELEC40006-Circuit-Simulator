@@ -1,7 +1,7 @@
-PWD e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template
+PWD e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.tex
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.log
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.tex
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.log
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
@@ -29,9 +29,9 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux
-INPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-english.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-english.def
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
@@ -46,10 +46,11 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.t
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1000.tfm
-OUTPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.pdf
+OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.pdf
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT e:\Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux
+INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -60,5 +61,3 @@ INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb

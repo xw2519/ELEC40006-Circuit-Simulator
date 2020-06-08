@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  7 MAY 2020 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  8 JUN 2020 13:56
 entering extended mode
-**"e:/Work/ELEC40006/Documents/Latex files/Minutes/Minute Template/Template.tex"
-("e:/Work/ELEC40006/Documents/Latex files/Minutes/Minute Template/Template.tex"
+**"e:/Work/ELEC40006/documents/Latex files/Completed/Meeting minutes/Minute Template/Template.tex"
+("e:/Work/ELEC40006/documents/Latex files/Completed/Meeting minutes/Minute Template/Template.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -81,7 +81,7 @@ LaTeX Info: Redefining \today on input line 736.
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count268
 \l__pdf_internal_box=\box45
-) ("e:/Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux")
+) ("e:/Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux")
 \openout1 = `Template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -109,19 +109,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 11.
  [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("e:/Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.aux") ) 
+{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] ("e:/Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.aux") ) 
 Here is how much of TeX's memory you used:
- 1654 strings out of 480930
- 25427 string characters out of 2900700
- 275649 words of memory out of 3000000
- 17551 multiletter control sequences out of 15000+200000
- 536313 words of font info for 37 fonts, out of 3000000 for 9000
+ 1655 strings out of 480930
+ 25622 string characters out of 2900700
+ 276659 words of memory out of 3000000
+ 17552 multiletter control sequences out of 15000+200000
+ 536620 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,29p,1057b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on "e:/Work\ELEC40006\Documents\Latex files\Minutes\Minute Template\Template.pdf" (1 page, 60398 bytes).
+ 39i,6n,29p,1075b,213s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "e:/Work\ELEC40006\documents\Latex files\Completed\Meeting minutes\Minute Template\Template.pdf" (2 pages, 52761 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

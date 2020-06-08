@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Preliminary Designs}{12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Object Orientated Programming}{12}%
+\contentsline {subsection}{\numberline {4.1}Object Orientated Programming [OOP]}{12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Modified Nodal Analysis}{12}%
 \defcounter {refsection}{0}\relax 
@@ -96,4 +96,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {11.2}Gnatt Chart}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}References}{35}%
+\contentsline {subsection}{\numberline {11.3}Meeting Minute Template}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}References}{37}%
