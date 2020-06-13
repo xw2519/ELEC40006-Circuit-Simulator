@@ -1,11 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.6)  8 JUN 2020 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.11)  11 JUN 2020 13:31
 entering extended mode
-**"e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex"
-("e:/Work/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex"
+(c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-04-06> ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+L3 programming layer <2020-06-03> (c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+(c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
@@ -19,53 +22,53 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-04 v0.32 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+) (c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+) (c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count175
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+ (c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+)) (c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count176
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/logreq\logreq.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+)) (c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -120,13 +123,13 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \bibhang=\skip56
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\blx@langwohyphens=\language78
+\blx@langwohyphens=\language86
 \c@mincomprange=\count284
 \c@maxcomprange=\count285
 \c@mincompwidth=\count286
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
@@ -215,12 +218,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip70
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 \c@textcitecount=\count355
 \c@textcitetotal=\count356
@@ -238,18 +241,18 @@ File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count364
 \c@bbx:relatedtotal=\count365
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -265,11 +268,11 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/parskip\parskip.sty"
-Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.sty"
+)) (c:/texlive/2020/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-05-19 v2.0e non-zero parskip adjustments
+) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count366
 \lst@gtempboxa=\box45
 \lst@token=\toks16
@@ -282,18 +285,18 @@ Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
 \lst@newlines=\count370
 \lst@lineno=\count371
 \lst@maxwidth=\dimen140
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count372
 \lst@skipnumbers=\count373
 \lst@framebox=\box46
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count374
 \calc@Bcount=\count375
@@ -305,13 +308,13 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count376
 \calc@Cskip=\skip73
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"
+ (c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -327,7 +330,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
 \AM@pagewidth=\dimen143
 \AM@pageheight=\dimen144
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.def"
+ (c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box47
@@ -336,34 +339,34 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks18
 \c@AM@survey=\count378
 \AM@templatesizebox=\box48
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count379
 \rotFPtop=\skip74
 \rotFPbot=\skip75
 \rot@float@box=\box49
 \rot@mess@toks=\toks19
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdflscape\pdflscape.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip76
 
 For additional information on amsmath, use the `?' option.
-("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+ (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen145
-)) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+)) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen146
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count380
@@ -403,12 +406,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty"
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.sty"
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+ (c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+ (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/05/30 v1.12 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen154
 \captionmargin@=\dimen155
@@ -429,11 +432,11 @@ Package caption Info: rotating package is loaded.
 )
 \@quotelevel=\count396
 \@quotereset=\count397
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
+ (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count398
 \l__pdf_internal_box=\box52
-) ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux"
+) (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux
 
 LaTeX Warning: Label `fig:sub1' multiply defined.
 
@@ -496,7 +499,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+ (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count399
 \scratchdimen=\dimen161
@@ -509,13 +512,15 @@ LaTeX Font Info:    ... okay on input line 21.
 \MPnumerator=\count403
 \makeMPintoPDFobject=\count404
 \everyMPtoPDFconversion=\toks26
-) ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-)
+ (c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- ("C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx"
+ (c:/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -525,7 +530,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'ProjectGuidelines.bbl' found.
- ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl")
+ (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.bbl)
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 \c@lstlisting=\count405
@@ -544,47 +549,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 [1
 
-{C:/Users/alw/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Logo.jpg>] ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc" [1])
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Logo.jpg>] (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.toc [1])
 \tf@toc=\write4
 \openout4 = `ProjectGuidelines.toc'.
 
  [2] [3] [4] [5]
-<./Images/Timeline.PNG, id=30, 364.9635pt x 382.42876pt>
+<./Images/Timeline.PNG, id=31, 364.9635pt x 382.42876pt>
 File: ./Images/Timeline.PNG Graphic file (type png)
 <use ./Images/Timeline.PNG>
 Package pdftex.def Info: ./Images/Timeline.PNG  used on input line 127.
 (pdftex.def)             Requested size: 364.9626pt x 382.42781pt.
- [6 <./Images/Timeline.PNG>] [7] [8] [9] [10] [11] [12] [13] [14]
-<./Images/Flow chart.PNG, id=65, 583.17876pt x 422.57875pt>
+ [6 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Timeline.PNG>] [7] [8] [9] [10] [11] [12] [13] [14]
+<./Images/Flow chart.PNG, id=66, 583.17876pt x 422.57875pt>
 File: ./Images/Flow chart.PNG Graphic file (type png)
 <use ./Images/Flow chart.PNG>
 Package pdftex.def Info: ./Images/Flow chart.PNG  used on input line 353.
 (pdftex.def)             Requested size: 291.58867pt x 211.28885pt.
- [15 <./Images/Flow chart.PNG>] [16]
-<./Images/circuit.PNG, id=74, 258.9675pt x 492.84125pt>
+ [15 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Flow chart.PNG>] [16]
+<./Images/circuit.PNG, id=75, 258.9675pt x 492.84125pt>
 File: ./Images/circuit.PNG Graphic file (type png)
 <use ./Images/circuit.PNG>
 Package pdftex.def Info: ./Images/circuit.PNG  used on input line 395.
 (pdftex.def)             Requested size: 129.48341pt x 246.42001pt.
- [17 <./Images/circuit.PNG>]
-<./Images/capacitor.PNG, id=79, 266.1945pt x 230.0595pt>
+ [17 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/circuit.PNG>]
+<./Images/capacitor.PNG, id=80, 266.1945pt x 230.0595pt>
 File: ./Images/capacitor.PNG Graphic file (type png)
 <use ./Images/capacitor.PNG>
 Package pdftex.def Info: ./Images/capacitor.PNG  used on input line 423.
 (pdftex.def)             Requested size: 239.57283pt x 207.05162pt.
-<./Images/inductor.PNG, id=80, 266.79675pt x 234.8775pt>
+<./Images/inductor.PNG, id=81, 266.79675pt x 234.8775pt>
 File: ./Images/inductor.PNG Graphic file (type png)
 <use ./Images/inductor.PNG>
 Package pdftex.def Info: ./Images/inductor.PNG  used on input line 429.
 (pdftex.def)             Requested size: 240.11484pt x 211.38779pt.
- [18] [19 <./Images/capacitor.PNG> <./Images/inductor.PNG>]
-<./Images/simulate.PNG, id=91, 332.24126pt x 684.5575pt>
+ [18] [19 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/capacitor.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/inductor.PNG>]
+<./Images/simulate.PNG, id=92, 332.24126pt x 684.5575pt>
 File: ./Images/simulate.PNG Graphic file (type png)
 <use ./Images/simulate.PNG>
 Package pdftex.def Info: ./Images/simulate.PNG  used on input line 439.
 (pdftex.def)             Requested size: 166.12021pt x 342.27791pt.
- [20 <./Images/simulate.PNG>] [21] [22] [23]
-<./Images/Integration.PNG, id=105, 244.5135pt x 183.68625pt>
+ [20 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG>] [21] [22] [23]
+<./Images/Integration.PNG, id=106, 244.5135pt x 183.68625pt>
 File: ./Images/Integration.PNG Graphic file (type png)
 <use ./Images/Integration.PNG>
 Package pdftex.def Info: ./Images/Integration.PNG  used on input line 510.
@@ -593,44 +598,44 @@ Package pdftex.def Info: ./Images/Integration.PNG  used on input line 510.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25 <./Images/Integration.PNG>] [26]
-<./Images/diode_model.PNG, id=118, 181.27725pt x 87.32625pt>
+[24] [25 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG>] [26]
+<./Images/diode_model.PNG, id=119, 181.27725pt x 87.32625pt>
 File: ./Images/diode_model.PNG Graphic file (type png)
 <use ./Images/diode_model.PNG>
 Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 567.
 (pdftex.def)             Requested size: 181.27681pt x 87.32603pt.
-<./Images/Newton_Raphson.png, id=119, 543.02875pt x 965.6075pt>
+<./Images/Newton_Raphson.png, id=120, 543.02875pt x 965.6075pt>
 File: ./Images/Newton_Raphson.png Graphic file (type png)
 <use ./Images/Newton_Raphson.png>
 Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 586.
 (pdftex.def)             Requested size: 271.5137pt x 482.80257pt.
- [27 <./Images/diode_model.PNG>] [28 <./Images/Newton_Raphson.png>]
-<./Images/E.png, id=128, 266.79675pt x 68.05424pt>
+ [27 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG>] [28 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png>]
+<./Images/E.png, id=129, 266.79675pt x 68.05424pt>
 File: ./Images/E.png Graphic file (type png)
 <use ./Images/E.png>
 Package pdftex.def Info: ./Images/E.png  used on input line 595.
 (pdftex.def)             Requested size: 266.79608pt x 68.05406pt.
-<./Images/E_diagram.PNG, id=129, 113.82526pt x 73.4745pt>
+<./Images/E_diagram.PNG, id=130, 113.82526pt x 73.4745pt>
 File: ./Images/E_diagram.PNG Graphic file (type png)
 <use ./Images/E_diagram.PNG>
 Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 606.
 (pdftex.def)             Requested size: 91.06032pt x 58.77966pt.
-<./Images/E_matrices.PNG, id=130, 215.00325pt x 67.452pt>
+<./Images/E_matrices.PNG, id=131, 215.00325pt x 67.452pt>
 File: ./Images/E_matrices.PNG Graphic file (type png)
 <use ./Images/E_matrices.PNG>
 Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 612.
 (pdftex.def)             Requested size: 195.0pt x 61.17659pt.
-<./Images/G.png, id=131, 263.7855pt x 69.25874pt>
+<./Images/G.png, id=132, 263.7855pt x 69.25874pt>
 File: ./Images/G.png Graphic file (type png)
 <use ./Images/G.png>
 Package pdftex.def Info: ./Images/G.png  used on input line 624.
 (pdftex.def)             Requested size: 263.78485pt x 69.25856pt.
-<./Images/G_diagram.PNG, id=132, 119.2455pt x 70.46326pt>
+<./Images/G_diagram.PNG, id=133, 119.2455pt x 70.46326pt>
 File: ./Images/G_diagram.PNG Graphic file (type png)
 <use ./Images/G_diagram.PNG>
 Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 633.
 (pdftex.def)             Requested size: 95.39651pt x 56.37067pt.
-<./Images/G_matrices.PNG, id=133, 205.36725pt x 67.452pt>
+<./Images/G_matrices.PNG, id=134, 205.36725pt x 67.452pt>
 File: ./Images/G_matrices.PNG Graphic file (type png)
 <use ./Images/G_matrices.PNG>
 Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 639.
@@ -639,84 +644,84 @@ Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 639.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <./Images/E.png> <./Images/E_diagram.PNG> <./Images/E_matrices.PNG> <./Images/G.png>]
-<./Images/H.png, id=142, 259.56975pt x 66.84975pt>
+[29 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png>]
+<./Images/H.png, id=143, 259.56975pt x 66.84975pt>
 File: ./Images/H.png Graphic file (type png)
 <use ./Images/H.png>
 Package pdftex.def Info: ./Images/H.png  used on input line 651.
 (pdftex.def)             Requested size: 259.5691pt x 66.84956pt.
-<./Images/H_diagram.PNG, id=143, 125.268pt x 69.861pt>
+<./Images/H_diagram.PNG, id=144, 125.268pt x 69.861pt>
 File: ./Images/H_diagram.PNG Graphic file (type png)
 <use ./Images/H_diagram.PNG>
 Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 663.
 (pdftex.def)             Requested size: 100.21452pt x 55.88885pt.
-<./Images/H_matrices.PNG, id=144, 234.27525pt x 80.09924pt>
+<./Images/H_matrices.PNG, id=145, 234.27525pt x 80.09924pt>
 File: ./Images/H_matrices.PNG Graphic file (type png)
 <use ./Images/H_matrices.PNG>
 Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 669.
 (pdftex.def)             Requested size: 195.0pt x 66.673pt.
- [30 <./Images/G_diagram.PNG> <./Images/G_matrices.PNG> <./Images/H.png> <./Images/H_diagram.PNG> <./Images/H_matrices.PNG>]
-<./Images/F.png, id=154, 258.36525pt x 65.043pt>
+ [30 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG>]
+<./Images/F.png, id=155, 258.36525pt x 65.043pt>
 File: ./Images/F.png Graphic file (type png)
 <use ./Images/F.png>
 Package pdftex.def Info: ./Images/F.png  used on input line 681.
 (pdftex.def)             Requested size: 258.36461pt x 65.04283pt.
-<./Images/F_diagram.PNG, id=155, 124.66576pt x 76.48575pt>
+<./Images/F_diagram.PNG, id=156, 124.66576pt x 76.48575pt>
 File: ./Images/F_diagram.PNG Graphic file (type png)
 <use ./Images/F_diagram.PNG>
 Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 690.
 (pdftex.def)             Requested size: 99.73273pt x 61.18866pt.
-<./Images/F_matrices.PNG, id=156, 204.765pt x 66.2475pt>
+<./Images/F_matrices.PNG, id=157, 204.765pt x 66.2475pt>
 File: ./Images/F_matrices.PNG Graphic file (type png)
 <use ./Images/F_matrices.PNG>
 Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 696.
 (pdftex.def)             Requested size: 195.0pt x 63.09245pt.
- [31 <./Images/F.png> <./Images/F_diagram.PNG> <./Images/F_matrices.PNG>] [32]
-<./Images/Adam.PNG, id=166, 497.4585pt x 228.855pt>
+ [31 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG>] [32] [33]
+<./Images/Adam.PNG, id=170, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 738.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 753.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
-<./Images/Brandon.PNG, id=167, 490.83376pt x 222.8325pt>
+<./Images/Brandon.PNG, id=171, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 743.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 758.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
-<./Images/Xin.PNG, id=168, 404.712pt x 177.0615pt>
+<./Images/Xin.PNG, id=172, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 748.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 763.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
- [33 <./Images/Adam.PNG> <./Images/Brandon.PNG> <./Images/Xin.PNG>]
-<./Images/Project Gnatt.PNG, id=175, 1739.49875pt x 475.7775pt>
+ [34 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG>]
+<./Images/Project Gnatt.PNG, id=179, 1739.49875pt x 475.7775pt>
 File: ./Images/Project Gnatt.PNG Graphic file (type png)
 <use ./Images/Project Gnatt.PNG>
-Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 757.
+Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 772.
 (pdftex.def)             Requested size: 592.0pt x 161.92192pt.
- [34
+ [35
 
- <./Images/Project Gnatt.PNG (PNG copy)>]
-<./Images/Minute1.PNG, id=179, 366.168pt x 519.74174pt>
+ <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Project Gnatt.PNG (PNG copy)>]
+<./Images/Minute1.PNG, id=183, 366.168pt x 519.74174pt>
 File: ./Images/Minute1.PNG Graphic file (type png)
 <use ./Images/Minute1.PNG>
-Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 768.
+Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 783.
 (pdftex.def)             Requested size: 390.0pt x 553.58038pt.
-<./Images/Minute2.PNG, id=180, 364.9635pt x 518.53725pt>
+<./Images/Minute2.PNG, id=184, 364.9635pt x 518.53725pt>
 File: ./Images/Minute2.PNG Graphic file (type png)
 <use ./Images/Minute2.PNG>
-Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 773.
+Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 788.
 (pdftex.def)             Requested size: 390.0pt x 554.141pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35
+[36
 
- <./Images/Minute1.PNG>]
+ <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute1.PNG>]
 
-LaTeX Warning: Text page 36 contains only floats.
+LaTeX Warning: Text page 37 contains only floats.
 
-[36 <./Images/Minute2.PNG>] [37] ("e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux")
+[37 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG>] [38] (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -725,17 +730,18 @@ Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13257 strings out of 480930
- 232795 string characters out of 2900700
- 864117 words of memory out of 3000000
- 28970 multiletter control sequences out of 15000+200000
- 540180 words of font info for 51 fonts, out of 3000000 for 9000
+ 13322 strings out of 480478
+ 231987 string characters out of 5903485
+ 864782 words of memory out of 5000000
+ 29187 multiletter control sequences out of 15000+600000
+ 540180 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,10n,61p,885b,1416s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/alw/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "e:/Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.pdf" (38 pages, 749083 bytes).
+ 45i,10n,61p,903b,1416s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" (39 pages, 735390 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

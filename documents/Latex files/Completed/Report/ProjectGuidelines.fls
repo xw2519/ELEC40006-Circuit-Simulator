@@ -1,327 +1,260 @@
-PWD e:\Work\ELEC40006\documents\Latex files\Completed\Report
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.tex
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.log
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\infwarerr\infwarerr.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\iftex.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\generic\atbegshi\atbegshi.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\rotating.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pdflscape\pdflscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3backend\l3backend-pdfmode.def
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bcf
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.bbl
-INPUT Images\Logo.jpg
-INPUT .\Images\Logo.jpg
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.pdf
-INPUT .\Images\Logo.jpg
-INPUT .\Images\Logo.jpg
-INPUT .\Images\Logo.jpg
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.toc
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
-INPUT Images\Timeline.PNG
-INPUT .\Images\Timeline.PNG
-INPUT .\Images\Timeline.PNG
-INPUT .\Images\Timeline.PNG
-INPUT .\Images\Timeline.PNG
-INPUT Images\Flow chart.PNG
-INPUT .\Images\Flow chart.PNG
-INPUT .\Images\Flow chart.PNG
-INPUT .\Images\Flow chart.PNG
-INPUT .\Images\Flow chart.PNG
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT Images\circuit.PNG
-INPUT .\Images\circuit.PNG
-INPUT .\Images\circuit.PNG
-INPUT .\Images\circuit.PNG
-INPUT .\Images\circuit.PNG
-INPUT Images\capacitor.PNG
-INPUT .\Images\capacitor.PNG
-INPUT .\Images\capacitor.PNG
-INPUT .\Images\capacitor.PNG
-INPUT .\Images\capacitor.PNG
-INPUT Images\inductor.PNG
-INPUT .\Images\inductor.PNG
-INPUT .\Images\inductor.PNG
-INPUT .\Images\inductor.PNG
-INPUT .\Images\inductor.PNG
-INPUT Images\simulate.PNG
-INPUT .\Images\simulate.PNG
-INPUT .\Images\simulate.PNG
-INPUT .\Images\simulate.PNG
-INPUT .\Images\simulate.PNG
-INPUT Images\Integration.PNG
-INPUT .\Images\Integration.PNG
-INPUT .\Images\Integration.PNG
-INPUT .\Images\Integration.PNG
-INPUT .\Images\Integration.PNG
-INPUT Images\diode_model.PNG
-INPUT .\Images\diode_model.PNG
-INPUT .\Images\diode_model.PNG
-INPUT .\Images\diode_model.PNG
-INPUT .\Images\diode_model.PNG
-INPUT Images\Newton_Raphson.png
-INPUT .\Images\Newton_Raphson.png
-INPUT .\Images\Newton_Raphson.png
-INPUT .\Images\Newton_Raphson.png
-INPUT .\Images\Newton_Raphson.png
-INPUT Images\E.png
-INPUT .\Images\E.png
-INPUT .\Images\E.png
-INPUT .\Images\E.png
-INPUT .\Images\E.png
-INPUT Images\E_diagram.PNG
-INPUT .\Images\E_diagram.PNG
-INPUT .\Images\E_diagram.PNG
-INPUT .\Images\E_diagram.PNG
-INPUT .\Images\E_diagram.PNG
-INPUT Images\E_matrices.PNG
-INPUT .\Images\E_matrices.PNG
-INPUT .\Images\E_matrices.PNG
-INPUT .\Images\E_matrices.PNG
-INPUT .\Images\E_matrices.PNG
-INPUT Images\G.png
-INPUT .\Images\G.png
-INPUT .\Images\G.png
-INPUT .\Images\G.png
-INPUT .\Images\G.png
-INPUT Images\G_diagram.PNG
-INPUT .\Images\G_diagram.PNG
-INPUT .\Images\G_diagram.PNG
-INPUT .\Images\G_diagram.PNG
-INPUT .\Images\G_diagram.PNG
-INPUT Images\G_matrices.PNG
-INPUT .\Images\G_matrices.PNG
-INPUT .\Images\G_matrices.PNG
-INPUT .\Images\G_matrices.PNG
-INPUT .\Images\G_matrices.PNG
-INPUT Images\H.png
-INPUT .\Images\H.png
-INPUT .\Images\H.png
-INPUT .\Images\H.png
-INPUT .\Images\H.png
-INPUT Images\H_diagram.PNG
-INPUT .\Images\H_diagram.PNG
-INPUT .\Images\H_diagram.PNG
-INPUT .\Images\H_diagram.PNG
-INPUT .\Images\H_diagram.PNG
-INPUT Images\H_matrices.PNG
-INPUT .\Images\H_matrices.PNG
-INPUT .\Images\H_matrices.PNG
-INPUT .\Images\H_matrices.PNG
-INPUT .\Images\H_matrices.PNG
-INPUT Images\F.png
-INPUT .\Images\F.png
-INPUT .\Images\F.png
-INPUT .\Images\F.png
-INPUT .\Images\F.png
-INPUT Images\F_diagram.PNG
-INPUT .\Images\F_diagram.PNG
-INPUT .\Images\F_diagram.PNG
-INPUT .\Images\F_diagram.PNG
-INPUT .\Images\F_diagram.PNG
-INPUT Images\F_matrices.PNG
-INPUT .\Images\F_matrices.PNG
-INPUT .\Images\F_matrices.PNG
-INPUT .\Images\F_matrices.PNG
-INPUT .\Images\F_matrices.PNG
-INPUT Images\Adam.PNG
-INPUT .\Images\Adam.PNG
-INPUT .\Images\Adam.PNG
-INPUT .\Images\Adam.PNG
-INPUT .\Images\Adam.PNG
-INPUT Images\Brandon.PNG
-INPUT .\Images\Brandon.PNG
-INPUT .\Images\Brandon.PNG
-INPUT .\Images\Brandon.PNG
-INPUT .\Images\Brandon.PNG
-INPUT Images\Xin.PNG
-INPUT .\Images\Xin.PNG
-INPUT .\Images\Xin.PNG
-INPUT .\Images\Xin.PNG
-INPUT .\Images\Xin.PNG
-INPUT Images\Project Gnatt.PNG
-INPUT .\Images\Project Gnatt.PNG
-INPUT .\Images\Project Gnatt.PNG
-INPUT .\Images\Project Gnatt.PNG
-INPUT .\Images\Project Gnatt.PNG
-INPUT Images\Minute1.PNG
-INPUT .\Images\Minute1.PNG
-INPUT .\Images\Minute1.PNG
-INPUT .\Images\Minute1.PNG
-INPUT .\Images\Minute1.PNG
-INPUT Images\Minute2.PNG
-INPUT .\Images\Minute2.PNG
-INPUT .\Images\Minute2.PNG
-INPUT .\Images\Minute2.PNG
-INPUT .\Images\Minute2.PNG
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmtt12.tfm
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.aux
-INPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.run.xml
-OUTPUT e:\Work\ELEC40006\documents\Latex files\Completed\Report\ProjectGuidelines.run.xml
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\alw\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb
-INPUT C:\Users\alw\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+PWD c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report
+INPUT c:/texlive/2020/texmf.cnf
+INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.log
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/logreq/logreq.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux
+INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT c:/texlive/2020/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.bcf
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.bbl
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.bbl
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.bbl
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Logo.jpg
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Logo.jpg
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Logo.jpg
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.toc
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.toc
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.toc
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Timeline.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Timeline.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Timeline.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Flow chart.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Flow chart.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Flow chart.PNG
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/circuit.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/circuit.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/circuit.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/capacitor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/capacitor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/capacitor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/inductor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/inductor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/inductor.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Project Gnatt.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Project Gnatt.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Project Gnatt.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute1.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute1.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute1.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux
+INPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.run.xml
+OUTPUT c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.run.xml
+INPUT c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
