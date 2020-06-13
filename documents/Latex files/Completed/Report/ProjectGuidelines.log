@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.11)  13 JUN 2020 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.11)  13 JUN 2020 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,23 +680,23 @@ Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 700.
 <./Images/Adam.PNG, id=170, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 757.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 772.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
 <./Images/Brandon.PNG, id=171, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 762.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 777.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
 <./Images/Xin.PNG, id=172, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 767.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 782.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
  [34 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG>]
 <./Images/Project Gnatt.PNG, id=179, 1739.49875pt x 475.7775pt>
 File: ./Images/Project Gnatt.PNG Graphic file (type png)
 <use ./Images/Project Gnatt.PNG>
-Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 776.
+Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 791.
 (pdftex.def)             Requested size: 592.0pt x 161.92192pt.
  [35
 
@@ -704,12 +704,12 @@ Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 776.
 <./Images/Minute1.PNG, id=183, 366.168pt x 519.74174pt>
 File: ./Images/Minute1.PNG Graphic file (type png)
 <use ./Images/Minute1.PNG>
-Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 787.
+Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 802.
 (pdftex.def)             Requested size: 390.0pt x 553.58038pt.
 <./Images/Minute2.PNG, id=184, 364.9635pt x 518.53725pt>
 File: ./Images/Minute2.PNG Graphic file (type png)
 <use ./Images/Minute2.PNG>
-Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 792.
+Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 807.
 (pdftex.def)             Requested size: 390.0pt x 554.141pt.
 
 
@@ -738,7 +738,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  45i,10n,61p,903b,1416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" (39 pages, 735503 bytes).
+Output written on "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" (39 pages, 736409 bytes).
 PDF statistics:
  256 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams

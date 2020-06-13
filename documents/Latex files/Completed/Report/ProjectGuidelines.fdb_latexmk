@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber ProjectGuidelines"] 1592072528 "ProjectGuidelines.bcf" "ProjectGuidelines.bbl" "ProjectGuidelines" 1592073128
-  "ProjectGuidelines.bcf" 1592073128 103181 dcfa6f415b82cd36b449d85da225302e "pdflatex"
+["biber ProjectGuidelines"] 1592072528 "ProjectGuidelines.bcf" "ProjectGuidelines.bbl" "ProjectGuidelines" 1592075186
+  "ProjectGuidelines.bcf" 1592075186 103181 dcfa6f415b82cd36b449d85da225302e "pdflatex"
   "biblography.bib" 1591610856 1387 0d4199dfcddb5037d8e787f4925ee3d0 ""
   (generated)
   "ProjectGuidelines.blg"
   "ProjectGuidelines.bbl"
-["pdflatex"] 1592073126 "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" "ProjectGuidelines" 1592073128
+["pdflatex"] 1592075184 "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" "ProjectGuidelines" 1592075186
   "./Images/Adam.PNG" 1591610856 39810 a1f75cb803a1ae9578492c5faeb8e97a ""
   "./Images/Brandon.PNG" 1591610856 36052 a8744ea76e70e9215162264e17d82782 ""
   "./Images/E.png" 1591610856 5037 e7833ebfd89457ae0a098a6705692231 ""
@@ -61,13 +61,13 @@
   "Images/diode_model.PNG" 1591610856 6134 5990b057f20683ff618a13e46cc7eac6 ""
   "Images/inductor.PNG" 1591610856 16956 85b3c1a7a1ffadfe9ff1287850346392 ""
   "Images/simulate.PNG" 1591610856 16269 d4dc43dad03bf4f358a2e2698f3c7333 ""
-  "ProjectGuidelines.aux" 1592073128 15546 2350cb85b508360c8bed54f232861323 "pdflatex"
+  "ProjectGuidelines.aux" 1592075186 15546 2350cb85b508360c8bed54f232861323 "pdflatex"
   "ProjectGuidelines.bbl" 1592072530 6363 f75afac68066f21dbc75cbda3bb154ed "biber ProjectGuidelines"
-  "ProjectGuidelines.run.xml" 1592073128 2397 4f9cbefdb7237959761fc73c0dc62c9a "pdflatex"
-  "ProjectGuidelines.tex" 1592073125 39367 f272a78e00f74fc48ce578301f8656cd ""
-  "ProjectGuidelines.toc" 1592073128 5353 01f6133788166530275de130115fd58a "pdflatex"
-  "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux" 1592073128 15546 2350cb85b508360c8bed54f232861323 ""
-  "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" 1592073125 39367 f272a78e00f74fc48ce578301f8656cd ""
+  "ProjectGuidelines.run.xml" 1592075186 2397 4f9cbefdb7237959761fc73c0dc62c9a "pdflatex"
+  "ProjectGuidelines.tex" 1592075183 40650 96415448162a4a69bba1f623b2d50386 ""
+  "ProjectGuidelines.toc" 1592075186 5353 01f6133788166530275de130115fd58a "pdflatex"
+  "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux" 1592075186 15546 2350cb85b508360c8bed54f232861323 ""
+  "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.tex" 1592075183 40650 96415448162a4a69bba1f623b2d50386 ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1591872896 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1591873748 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1591873406 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -167,11 +167,11 @@
   "c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1591877462 2434758 2911900f1d9327490484806a0a1235fc ""
   "c:/texlive/2020/texmf.cnf" 1591877354 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "ProjectGuidelines.run.xml"
-  "ProjectGuidelines.log"
   "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf"
   "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.log"
-  "ProjectGuidelines.aux"
-  "ProjectGuidelines.bcf"
   "ProjectGuidelines.toc"
   "ProjectGuidelines.pdf"
+  "ProjectGuidelines.run.xml"
+  "ProjectGuidelines.aux"
+  "ProjectGuidelines.log"
+  "ProjectGuidelines.bcf"
