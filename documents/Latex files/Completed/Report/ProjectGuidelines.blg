@@ -1,19 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'ProjectGuidelines.blg'
-[65] biber-MSWIN32:322> INFO - === 
-[82] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
-[189] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
-[206] Biber.pm:4256> INFO - Processing section 0
-[207] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
-[247] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
-[276] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
-[284] bibtex.pm:1653> INFO - LaTeX decoding ...
-[300] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
-[365] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\Ajinizer\AppData\Local\Temp\biber_tmp_bfHQ\biblography.bib_4608.utf8, line 28, warning: 1 characters of junk seen at toplevel
-[377] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[377] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[377] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[377] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[418] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
-[421] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
-[427] Biber.pm:128> INFO - WARNINGS: 1
+[77] biber-MSWIN32:322> INFO - === 
+[95] Biber.pm:415> INFO - Reading 'ProjectGuidelines.bcf'
+[221] Biber.pm:943> INFO - Found 5 citekeys in bib section 0
+[239] Biber.pm:4256> INFO - Processing section 0
+[240] Utils.pm:75> INFO - Globbing data source 'biblography.bib'
+[269] Utils.pm:91> INFO - Globbed data source 'biblography.bib' to biblography.bib
+[299] Biber.pm:4455> INFO - Looking for bibtex format file 'biblography.bib' for section 0
+[301] bibtex.pm:1653> INFO - LaTeX decoding ...
+[313] bibtex.pm:1471> INFO - Found BibTeX data source 'biblography.bib'
+[382] Utils.pm:304> WARN - BibTeX subsystem: C:\Users\Ajinizer\AppData\Local\Temp\biber_tmp_Yaxt\biblography.bib_12596.utf8, line 28, warning: 1 characters of junk seen at toplevel
+[407] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[408] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[408] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[408] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[493] bbl.pm:652> INFO - Writing 'ProjectGuidelines.bbl' with encoding 'UTF-8'
+[496] bbl.pm:755> INFO - Output to ProjectGuidelines.bbl
+[497] Biber.pm:128> INFO - WARNINGS: 1

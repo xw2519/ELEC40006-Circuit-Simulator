@@ -52,50 +52,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Critical Analysis}{22}%
+\contentsline {subsection}{\numberline {6.1}Parser}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}OOP design}{22}%
+\contentsline {subsection}{\numberline {6.2}Analyser}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Repatriation Flight}{22}%
+\contentsline {subsection}{\numberline {6.3}Power Source}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Optimisations}{24}%
+\contentsline {subsection}{\numberline {6.4}Error testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Sparse Matrices}{24}%
+\contentsline {subsection}{\numberline {6.5}Transient testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Integration method}{24}%
+\contentsline {subsection}{\numberline {6.6}Final testing}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Inversion method}{25}%
+\contentsline {section}{\numberline {7}Critical Analysis}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Adding on}{26}%
+\contentsline {subsection}{\numberline {7.1}OOP design}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Graphics User Interface}{26}%
+\contentsline {subsection}{\numberline {7.2}Repatriation Flight}{26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Components supports}{26}%
+\contentsline {section}{\numberline {8}Optimisations}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.1}Diode}{26}%
+\contentsline {subsection}{\numberline {8.1}Sparse Matrices}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.2}Voltage controlled voltage sources - VCVS}{29}%
+\contentsline {subsection}{\numberline {8.2}Integration method}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.3}Voltage controlled current sources - VCCS}{29}%
+\contentsline {subsection}{\numberline {8.3}Inversion method}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.4}Current controlled voltage sources - CCVS}{30}%
+\contentsline {section}{\numberline {9}Adding on}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.5}Current controlled current sources - CCCS}{31}%
+\contentsline {subsection}{\numberline {9.1}Graphics User Interface}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Reflections}{32}%
+\contentsline {subsection}{\numberline {9.2}Components supports}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Xin Wang}{32}%
+\contentsline {subsubsection}{\numberline {9.2.1}Diode}{30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Brandon Cann}{32}%
+\contentsline {subsubsection}{\numberline {9.2.2}Voltage controlled voltage sources - VCVS}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3}Adam Rehman}{33}%
+\contentsline {subsubsection}{\numberline {9.2.3}Voltage controlled current sources - VCCS}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Appendix}{34}%
+\contentsline {subsubsection}{\numberline {9.2.4}Current controlled voltage sources - CCVS}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1}Belbin Roles}{34}%
+\contentsline {subsubsection}{\numberline {9.2.5}Current controlled current sources - CCCS}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2}Gnatt Chart}{35}%
+\contentsline {section}{\numberline {10}Reflections}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3}Meeting Minute Template}{36}%
+\contentsline {subsection}{\numberline {10.1}Xin Wang}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}References}{38}%
+\contentsline {subsection}{\numberline {10.2}Brandon Cann}{36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3}Adam Rehman}{37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Appendix}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1}Belbin Roles}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2}Gnatt Chart}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3}Meeting Minute Template}{40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}References}{42}%

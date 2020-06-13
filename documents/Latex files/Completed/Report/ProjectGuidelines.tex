@@ -43,7 +43,7 @@ tabsize=2
 	\end{center} \large
 
     \vfill % Fill the rest of the page with whitespace
- 	\small Word Count: 5066 \\ [0.5cm]
+ 	\small Word Count: 5265 \\ [0.5cm]
     \makeatletter
     \@date 
     \makeatother
@@ -447,9 +447,73 @@ The main design choices taken by the team has been set out below.
 \section{Testing}
 It should be noted that majority of the testing was done on Linux Ubuntu 16.04.1 LTS which ran on a virtual machine in Windows 10,
 some testing have been completed on a Windows 10 machine. As such, the listed execution times are the average of 10 execution
-times. \par 
+times.
+\par 
 Numerous functions are imbedded into the program itself to aide the benchmarking process and can be used to aide in debugging.
+\subsection{Parser}
+In the folder "/tests/parser testing" we created a .cpp program, test inputs, and a .sh to compile and run the program so that we 
+could check if the input was parsed correctly.
+\subsection{Analyser}
+In the folder "/tests/analysis testing" we tested if the circuit analyser (single timestamp computation) would work successfully. 
+We also created a seperate .cpp program, with test inputs and a .sh to compile this.
+\subsection{Power Source}
+In the folder "/tests/power source testing" we tested the power source since we were previously only using current sources to 
+drive the circuits.
+\subsection{Error testing}
+In the folder "/tests/error testing" we implemented validation checks so that errors would be thrown when a user input was invalid.
+\subsection{Transient testing}
+In the folder "/tests/transient testing" we tested to make sure the transient analysis worked correctly. This then ended up becoming 
+our main program. 
+\subsection{Final testing}
+To test we created 4 model circuits that collectively used all of the components we implemented.
+Then we ran the program output through the matlab script to generate the output graph. 
+For each of these we also ran the LTSpice Simulation and compared them.
+\par
+Test 1:
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.75]{test_1_circuit.PNG}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.5]{test_1_output_graph.PNG}
+\end{figure}
+\par
 \pagebreak
+Test 2:
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.75]{test_2_circuit.PNG}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.25]{test_2_output_graph.PNG}
+\end{figure}
+\par
+\pagebreak
+Test 3:
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.75]{test_3_circuit.PNG}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.25]{test_3_output_graph.PNG}
+\end{figure}
+\par
+\pagebreak
+Test 4:
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.75]{test_4_circuit.PNG}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[scale=0.25]{test_4_output_graph.PNG}
+\end{figure}
+\par
+\pagebreak
+
 \section{Critical Analysis}
 Throughout the process of program development, the team encountered two unforeseen circumstances that set the team back 
 and required some adjustments on the timeline.
@@ -506,6 +570,7 @@ There are numerous different types of integration but the three most common form
 	\item Backward Euler
 	\item Trapezoid
 \end{itemize}
+\pagebreak
 Out of the three, Trapezoid was the most accurate form of integration but the most processor intensive form of integration listed.
 The report had listed the three forms of integration and its respectively defined parameters. 
 

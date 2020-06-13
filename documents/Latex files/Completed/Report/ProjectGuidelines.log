@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.11)  13 JUN 2020 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.6.11)  13 JUN 2020 21:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,140 +588,180 @@ File: ./Images/simulate.PNG Graphic file (type png)
 <use ./Images/simulate.PNG>
 Package pdftex.def Info: ./Images/simulate.PNG  used on input line 443.
 (pdftex.def)             Requested size: 166.12021pt x 342.27791pt.
- [20 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG>] [21] [22] [23]
-<./Images/Integration.PNG, id=106, 244.5135pt x 183.68625pt>
+ [20 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/simulate.PNG>] [21]
+<./Images/test_1_circuit.PNG, id=100, 409.53pt x 216.81pt>
+File: ./Images/test_1_circuit.PNG Graphic file (type png)
+<use ./Images/test_1_circuit.PNG>
+Package pdftex.def Info: ./Images/test_1_circuit.PNG  used on input line 475.
+(pdftex.def)             Requested size: 307.14674pt x 162.60709pt.
+<./Images/test_1_output_graph.PNG, id=101, 481.8pt x 361.35pt>
+File: ./Images/test_1_output_graph.PNG Graphic file (type png)
+<use ./Images/test_1_output_graph.PNG>
+Package pdftex.def Info: ./Images/test_1_output_graph.PNG  used on input line 479.
+(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
+ [22 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_1_circuit.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_1_output_graph.PNG (PNG copy)>]
+<./Images/test_2_circuit.PNG, id=106, 451.6875pt x 192.11775pt>
+File: ./Images/test_2_circuit.PNG Graphic file (type png)
+<use ./Images/test_2_circuit.PNG>
+Package pdftex.def Info: ./Images/test_2_circuit.PNG  used on input line 486.
+(pdftex.def)             Requested size: 338.76479pt x 144.08795pt.
+<./Images/test_2_output_graph.PNG, id=107, 1157.07281pt x 361.35pt>
+File: ./Images/test_2_output_graph.PNG Graphic file (type png)
+<use ./Images/test_2_output_graph.PNG>
+Package pdftex.def Info: ./Images/test_2_output_graph.PNG  used on input line 490.
+(pdftex.def)             Requested size: 289.2675pt x 90.33728pt.
+ [23 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_2_circuit.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_2_output_graph.PNG (PNG copy)>]
+<./Images/test_3_circuit.PNG, id=112, 388.45125pt x 181.8795pt>
+File: ./Images/test_3_circuit.PNG Graphic file (type png)
+<use ./Images/test_3_circuit.PNG>
+Package pdftex.def Info: ./Images/test_3_circuit.PNG  used on input line 497.
+(pdftex.def)             Requested size: 291.3377pt x 136.40927pt.
+<./Images/test_3_output_graph.PNG, id=113, 1157.07281pt x 361.35pt>
+File: ./Images/test_3_output_graph.PNG Graphic file (type png)
+<use ./Images/test_3_output_graph.PNG>
+Package pdftex.def Info: ./Images/test_3_output_graph.PNG  used on input line 501.
+(pdftex.def)             Requested size: 289.2675pt x 90.33728pt.
+ [24 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_3_circuit.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_3_output_graph.PNG (PNG copy)>]
+<./Images/test_4_circuit.PNG, id=119, 441.44925pt x 146.949pt>
+File: ./Images/test_4_circuit.PNG Graphic file (type png)
+<use ./Images/test_4_circuit.PNG>
+Package pdftex.def Info: ./Images/test_4_circuit.PNG  used on input line 508.
+(pdftex.def)             Requested size: 331.0861pt x 110.21147pt.
+<./Images/test_4_output_graph.PNG, id=120, 1157.07281pt x 361.35pt>
+File: ./Images/test_4_output_graph.PNG Graphic file (type png)
+<use ./Images/test_4_output_graph.PNG>
+Package pdftex.def Info: ./Images/test_4_output_graph.PNG  used on input line 512.
+(pdftex.def)             Requested size: 289.2675pt x 90.33728pt.
+ [25 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_4_circuit.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/test_4_output_graph.PNG (PNG copy)>] [26] [27] [28]
+<./Images/Integration.PNG, id=134, 244.5135pt x 183.68625pt>
 File: ./Images/Integration.PNG Graphic file (type png)
 <use ./Images/Integration.PNG>
-Package pdftex.def Info: ./Images/Integration.PNG  used on input line 514.
+Package pdftex.def Info: ./Images/Integration.PNG  used on input line 579.
 (pdftex.def)             Requested size: 244.5129pt x 183.68578pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24] [25 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG>] [26]
-<./Images/diode_model.PNG, id=119, 181.27725pt x 87.32625pt>
+ [29 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Integration.PNG>] [30]
+<./Images/diode_model.PNG, id=144, 181.27725pt x 87.32625pt>
 File: ./Images/diode_model.PNG Graphic file (type png)
 <use ./Images/diode_model.PNG>
-Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 571.
+Package pdftex.def Info: ./Images/diode_model.PNG  used on input line 636.
 (pdftex.def)             Requested size: 181.27681pt x 87.32603pt.
-<./Images/Newton_Raphson.png, id=120, 543.02875pt x 965.6075pt>
+<./Images/Newton_Raphson.png, id=145, 543.02875pt x 965.6075pt>
 File: ./Images/Newton_Raphson.png Graphic file (type png)
 <use ./Images/Newton_Raphson.png>
-Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 590.
+Package pdftex.def Info: ./Images/Newton_Raphson.png  used on input line 655.
 (pdftex.def)             Requested size: 271.5137pt x 482.80257pt.
- [27 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG>] [28 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png>]
-<./Images/E.png, id=129, 266.79675pt x 68.05424pt>
+ [31 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/diode_model.PNG>] [32 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Newton_Raphson.png>]
+<./Images/E.png, id=154, 266.79675pt x 68.05424pt>
 File: ./Images/E.png Graphic file (type png)
 <use ./Images/E.png>
-Package pdftex.def Info: ./Images/E.png  used on input line 599.
+Package pdftex.def Info: ./Images/E.png  used on input line 664.
 (pdftex.def)             Requested size: 266.79608pt x 68.05406pt.
-<./Images/E_diagram.PNG, id=130, 113.82526pt x 73.4745pt>
+<./Images/E_diagram.PNG, id=155, 113.82526pt x 73.4745pt>
 File: ./Images/E_diagram.PNG Graphic file (type png)
 <use ./Images/E_diagram.PNG>
-Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 610.
+Package pdftex.def Info: ./Images/E_diagram.PNG  used on input line 675.
 (pdftex.def)             Requested size: 91.06032pt x 58.77966pt.
-<./Images/E_matrices.PNG, id=131, 215.00325pt x 67.452pt>
+<./Images/E_matrices.PNG, id=156, 215.00325pt x 67.452pt>
 File: ./Images/E_matrices.PNG Graphic file (type png)
 <use ./Images/E_matrices.PNG>
-Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 616.
+Package pdftex.def Info: ./Images/E_matrices.PNG  used on input line 681.
 (pdftex.def)             Requested size: 195.0pt x 61.17659pt.
-<./Images/G.png, id=132, 263.7855pt x 69.25874pt>
+<./Images/G.png, id=157, 263.7855pt x 69.25874pt>
 File: ./Images/G.png Graphic file (type png)
 <use ./Images/G.png>
-Package pdftex.def Info: ./Images/G.png  used on input line 628.
+Package pdftex.def Info: ./Images/G.png  used on input line 693.
 (pdftex.def)             Requested size: 263.78485pt x 69.25856pt.
-<./Images/G_diagram.PNG, id=133, 119.2455pt x 70.46326pt>
+<./Images/G_diagram.PNG, id=158, 119.2455pt x 70.46326pt>
 File: ./Images/G_diagram.PNG Graphic file (type png)
 <use ./Images/G_diagram.PNG>
-Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 637.
+Package pdftex.def Info: ./Images/G_diagram.PNG  used on input line 702.
 (pdftex.def)             Requested size: 95.39651pt x 56.37067pt.
-<./Images/G_matrices.PNG, id=134, 205.36725pt x 67.452pt>
+<./Images/G_matrices.PNG, id=159, 205.36725pt x 67.452pt>
 File: ./Images/G_matrices.PNG Graphic file (type png)
 <use ./Images/G_matrices.PNG>
-Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 643.
+Package pdftex.def Info: ./Images/G_matrices.PNG  used on input line 708.
 (pdftex.def)             Requested size: 195.0pt x 64.04918pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png>]
-<./Images/H.png, id=143, 259.56975pt x 66.84975pt>
+[33 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/E_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G.png>]
+<./Images/H.png, id=168, 259.56975pt x 66.84975pt>
 File: ./Images/H.png Graphic file (type png)
 <use ./Images/H.png>
-Package pdftex.def Info: ./Images/H.png  used on input line 655.
+Package pdftex.def Info: ./Images/H.png  used on input line 720.
 (pdftex.def)             Requested size: 259.5691pt x 66.84956pt.
-<./Images/H_diagram.PNG, id=144, 125.268pt x 69.861pt>
+<./Images/H_diagram.PNG, id=169, 125.268pt x 69.861pt>
 File: ./Images/H_diagram.PNG Graphic file (type png)
 <use ./Images/H_diagram.PNG>
-Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 667.
+Package pdftex.def Info: ./Images/H_diagram.PNG  used on input line 732.
 (pdftex.def)             Requested size: 100.21452pt x 55.88885pt.
-<./Images/H_matrices.PNG, id=145, 234.27525pt x 80.09924pt>
+<./Images/H_matrices.PNG, id=170, 234.27525pt x 80.09924pt>
 File: ./Images/H_matrices.PNG Graphic file (type png)
 <use ./Images/H_matrices.PNG>
-Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 673.
+Package pdftex.def Info: ./Images/H_matrices.PNG  used on input line 738.
 (pdftex.def)             Requested size: 195.0pt x 66.673pt.
- [30 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG>]
-<./Images/F.png, id=155, 258.36525pt x 65.043pt>
+ [34 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/G_matrices.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/H_matrices.PNG>]
+<./Images/F.png, id=179, 258.36525pt x 65.043pt>
 File: ./Images/F.png Graphic file (type png)
 <use ./Images/F.png>
-Package pdftex.def Info: ./Images/F.png  used on input line 685.
+Package pdftex.def Info: ./Images/F.png  used on input line 750.
 (pdftex.def)             Requested size: 258.36461pt x 65.04283pt.
-<./Images/F_diagram.PNG, id=156, 124.66576pt x 76.48575pt>
+<./Images/F_diagram.PNG, id=180, 124.66576pt x 76.48575pt>
 File: ./Images/F_diagram.PNG Graphic file (type png)
 <use ./Images/F_diagram.PNG>
-Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 694.
+Package pdftex.def Info: ./Images/F_diagram.PNG  used on input line 759.
 (pdftex.def)             Requested size: 99.73273pt x 61.18866pt.
-<./Images/F_matrices.PNG, id=157, 204.765pt x 66.2475pt>
+<./Images/F_matrices.PNG, id=181, 204.765pt x 66.2475pt>
 File: ./Images/F_matrices.PNG Graphic file (type png)
 <use ./Images/F_matrices.PNG>
-Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 700.
+Package pdftex.def Info: ./Images/F_matrices.PNG  used on input line 765.
 (pdftex.def)             Requested size: 195.0pt x 63.09245pt.
- [31 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG>] [32] [33]
-<./Images/Adam.PNG, id=170, 497.4585pt x 228.855pt>
+ [35 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F.png> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_diagram.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/F_matrices.PNG>] [36] [37]
+<./Images/Adam.PNG, id=195, 497.4585pt x 228.855pt>
 File: ./Images/Adam.PNG Graphic file (type png)
 <use ./Images/Adam.PNG>
-Package pdftex.def Info: ./Images/Adam.PNG  used on input line 772.
+Package pdftex.def Info: ./Images/Adam.PNG  used on input line 837.
 (pdftex.def)             Requested size: 248.72864pt x 114.42722pt.
-<./Images/Brandon.PNG, id=171, 490.83376pt x 222.8325pt>
+<./Images/Brandon.PNG, id=196, 490.83376pt x 222.8325pt>
 File: ./Images/Brandon.PNG Graphic file (type png)
 <use ./Images/Brandon.PNG>
-Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 777.
+Package pdftex.def Info: ./Images/Brandon.PNG  used on input line 842.
 (pdftex.def)             Requested size: 245.41628pt x 111.41597pt.
-<./Images/Xin.PNG, id=172, 404.712pt x 177.0615pt>
+<./Images/Xin.PNG, id=197, 404.712pt x 177.0615pt>
 File: ./Images/Xin.PNG Graphic file (type png)
 <use ./Images/Xin.PNG>
-Package pdftex.def Info: ./Images/Xin.PNG  used on input line 782.
+Package pdftex.def Info: ./Images/Xin.PNG  used on input line 847.
 (pdftex.def)             Requested size: 303.53325pt x 132.79578pt.
- [34 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG>]
-<./Images/Project Gnatt.PNG, id=179, 1739.49875pt x 475.7775pt>
+ [38 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Adam.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Brandon.PNG> <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Xin.PNG>]
+<./Images/Project Gnatt.PNG, id=204, 1739.49875pt x 475.7775pt>
 File: ./Images/Project Gnatt.PNG Graphic file (type png)
 <use ./Images/Project Gnatt.PNG>
-Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 791.
+Package pdftex.def Info: ./Images/Project Gnatt.PNG  used on input line 856.
 (pdftex.def)             Requested size: 592.0pt x 161.92192pt.
- [35
+ [39
 
  <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Project Gnatt.PNG (PNG copy)>]
-<./Images/Minute1.PNG, id=183, 366.168pt x 519.74174pt>
+<./Images/Minute1.PNG, id=208, 366.168pt x 519.74174pt>
 File: ./Images/Minute1.PNG Graphic file (type png)
 <use ./Images/Minute1.PNG>
-Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 802.
+Package pdftex.def Info: ./Images/Minute1.PNG  used on input line 867.
 (pdftex.def)             Requested size: 390.0pt x 553.58038pt.
-<./Images/Minute2.PNG, id=184, 364.9635pt x 518.53725pt>
+<./Images/Minute2.PNG, id=209, 364.9635pt x 518.53725pt>
 File: ./Images/Minute2.PNG Graphic file (type png)
 <use ./Images/Minute2.PNG>
-Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 807.
+Package pdftex.def Info: ./Images/Minute2.PNG  used on input line 872.
 (pdftex.def)             Requested size: 390.0pt x 554.141pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36
+[40
 
  <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute1.PNG>]
 
-LaTeX Warning: Text page 37 contains only floats.
+LaTeX Warning: Text page 41 contains only floats.
 
-[37 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG>] [38] (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux)
+[41 <c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/./Images/Minute2.PNG>] [42] (c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -730,18 +770,18 @@ Package logreq Info: Writing requests to 'ProjectGuidelines.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13325 strings out of 480478
- 232038 string characters out of 5903485
+ 13373 strings out of 480478
+ 233462 string characters out of 5903485
  864782 words of memory out of 5000000
- 29190 multiletter control sequences out of 15000+600000
+ 29230 multiletter control sequences out of 15000+600000
  541019 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,10n,61p,903b,1416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" (39 pages, 736409 bytes).
+Output written on "c:/Users/Ajinizer/Desktop/ELEC40006/documents/Latex files/Completed/Report/ProjectGuidelines.pdf" (43 pages, 999565 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
