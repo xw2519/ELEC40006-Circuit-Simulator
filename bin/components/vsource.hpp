@@ -5,7 +5,7 @@
 # This code forms the 'Analysis' module' # 
 # ===============================================================
 */
-
+#define _USE_MATH_DEFINES
 #ifndef vsource_hpp
 #define vsource_hpp
 
